@@ -1,0 +1,222 @@
+{
+  "navLinks": [
+    {
+      "label": "Home",
+      "link": {
+        "id": "6630df1d9663292463780c7b",
+        "name": "Home",
+        "slug": "home",
+        "layout": [
+          {
+            "heading": "tes",
+            "text": "dfdfdfgfdgfdgfdsfdsf",
+            "backgroundImage": {
+              "id": "6630df139663292463780c74",
+              "alt": "dfddf",
+              "filename": "Screenshot.png",
+              "mimeType": "image/png",
+              "filesize": 33043,
+              "width": 642,
+              "height": 622,
+              "createdAt": "2024-04-30T12:07:47.925Z",
+              "updatedAt": "2024-04-30T12:07:47.925Z",
+              "url": "http://localhost:4000/media/Screenshot.png"
+            },
+            "id": "6630df1da7bbe62edc62c03b",
+            "blockType": "hero"
+          },
+          {
+            "heading": "ddfd",
+            "text": "fffff",
+            "image": {
+              "id": "6630eee56ee6ce9add67dde1",
+              "alt": "ff",
+              "filename": "image_2024_04_29T12_34_16_800Z.png",
+              "mimeType": "image/png",
+              "filesize": 12378,
+              "width": 329,
+              "height": 446,
+              "createdAt": "2024-04-30T13:15:17.588Z",
+              "updatedAt": "2024-04-30T13:15:17.588Z",
+              "url": "http://localhost:4000/media/image_2024_04_29T12_34_16_800Z.png"
+            },
+            "direction": "default",
+            "id": "6630eec8075ebf77595af321",
+            "blockType": "twoColumn"
+          }
+        ],
+        "createdAt": "2024-04-30T12:07:57.221Z",
+        "updatedAt": "2024-05-02T09:41:26.122Z"
+      },
+      "id": "663a0b99bd5a1e1415561105"
+    },
+    {
+      "label": "About Us",
+      "link": {
+        "id": "663a09e2af4dedb881ed7698",
+        "name": "About Us",
+        "slug": "about-us",
+        "layout": [
+          {
+            "heading": "Fd",
+            "text": "ddf",
+            "id": "663a09e2d76a8e31b0e1d3af",
+            "blockType": "hero"
+          }
+        ],
+        "createdAt": "2024-05-07T11:00:50.514Z",
+        "updatedAt": "2024-05-07T11:00:50.514Z"
+      },
+      "id": "663a0ba9bd5a1e1415561106"
+    },
+    {
+      "label": "Services",
+      "link": {
+        "id": "663a1277af4dedb881ed7773",
+        "name": "Services",
+        "slug": "services",
+        "layout": [
+          {
+            "heading": "dfds",
+            "text": "dfdfdf",
+            "id": "663a1277d76a8e31b0e1d3b3",
+            "blockType": "hero"
+          }
+        ],
+        "createdAt": "2024-05-07T11:37:27.969Z",
+        "updatedAt": "2024-05-07T11:37:27.969Z"
+      },
+      "id": "663a1245bd5a1e1415561108"
+    },
+    {
+      "label": "Our Culture",
+      "link": {
+        "id": "663a0a8baf4dedb881ed76e3",
+        "name": "Our Culture",
+        "slug": "our-culture",
+        "layout": [
+          {
+            "heading": "dfd",
+            "text": "dfdfdf",
+            "id": "663a0a8bd76a8e31b0e1d3b1",
+            "blockType": "hero"
+          }
+        ],
+        "createdAt": "2024-05-07T11:03:39.689Z",
+        "updatedAt": "2024-05-07T11:03:39.689Z"
+      },
+      "parent": {
+        "id": "663a09e2af4dedb881ed7698",
+        "name": "About Us",
+        "slug": "about-us",
+        "layout": [
+          {
+            "heading": "Fd",
+            "text": "ddf",
+            "id": "663a09e2d76a8e31b0e1d3af",
+            "blockType": "hero"
+          }
+        ],
+        "createdAt": "2024-05-07T11:00:50.514Z",
+        "updatedAt": "2024-05-07T11:00:50.514Z"
+      },
+      "id": "663a12f8bd5a1e141556110b"
+    },
+    {
+      "label": "Careers",
+      "link": {
+        "id": "663a0aa1af4dedb881ed76f0",
+        "name": "Careers",
+        "slug": "careers",
+        "layout": [
+          {
+            "heading": "dfdf",
+            "text": "dfdffd",
+            "id": "663a0aa1d76a8e31b0e1d3b2",
+            "blockType": "hero"
+          }
+        ],
+        "createdAt": "2024-05-07T11:04:01.384Z",
+        "updatedAt": "2024-05-07T11:04:01.384Z"
+      },
+      "parent": {
+        "id": "663a09e2af4dedb881ed7698",
+        "name": "About Us",
+        "slug": "about-us",
+        "layout": [
+          {
+            "heading": "Fd",
+            "text": "ddf",
+            "id": "663a09e2d76a8e31b0e1d3af",
+            "blockType": "hero"
+          }
+        ],
+        "createdAt": "2024-05-07T11:00:50.514Z",
+        "updatedAt": "2024-05-07T11:00:50.514Z"
+      },
+      "id": "663a140bbd5a1e141556110c"
+    },
+    {
+      "label": "Solutions",
+      "link": {
+        "id": "663a12beaf4dedb881ed7783",
+        "name": "Solutions",
+        "slug": "solutions",
+        "layout": [
+          {
+            "heading": "dfdf",
+            "text": "dfdfdf",
+            "id": "663a12bed76a8e31b0e1d3b4",
+            "blockType": "hero"
+          }
+        ],
+        "createdAt": "2024-05-07T11:38:38.126Z",
+        "updatedAt": "2024-05-07T11:38:38.126Z"
+      },
+      "id": "663a421a71bdfdb0d42961fa"
+    },
+    {
+      "label": "Industries",
+      "id": "663a423171bdfdb0d42961fb"
+    },
+    {
+      "label": "Journal",
+      "id": "663a424571bdfdb0d42961fc"
+    },
+    {
+      "label": "Contact",
+      "link": {
+        "id": "663a0a15af4dedb881ed76a5",
+        "name": "Contact Us",
+        "slug": "contact-us",
+        "layout": [
+          {
+            "heading": "hdfdsf",
+            "text": "dsfdsfdsfdsf",
+            "id": "663a0a15d76a8e31b0e1d3b0",
+            "blockType": "hero"
+          }
+        ],
+        "createdAt": "2024-05-07T11:01:41.337Z",
+        "updatedAt": "2024-05-07T11:01:41.337Z"
+      },
+      "id": "663a467f4f6c02a291754d15"
+    }
+  ],
+  "globalType": "header",
+  "createdAt": "2024-05-06T12:12:46.023Z",
+  "updatedAt": "2024-05-07T15:19:40.702Z",
+  "logo": {
+    "id": "6639e1d5de80854f6d9346bc",
+    "alt": "Allzone Tech",
+    "filename": "allzone_logo-1.svg",
+    "mimeType": "image/svg+xml",
+    "filesize": 51775,
+    "width": 153,
+    "height": 46,
+    "createdAt": "2024-05-07T08:09:57.888Z",
+    "updatedAt": "2024-05-07T08:09:57.888Z",
+    "url": "http://localhost:4000/media/allzone_logo-1.svg"
+  },
+  "id": "6638c93dde80854f6d9345a2"
+}
