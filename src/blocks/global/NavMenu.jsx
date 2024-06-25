@@ -11,32 +11,34 @@ import { FiAlignJustify, FiPlus } from "react-icons/fi";
 import header from "@/globalData/header.json";
 import Link from "next/link";
 import Image from "next/image";
+import NavItem from "./NavItem";
 
 function transformData(data) {
-  const transformedData = { navLinks: [] };
+  return data.navLinks.reduce(
+    (acc, item) => {
+      const transformedItem = { ...item };
 
-  data.navLinks.forEach((item) => {
-    const transformedItem = { ...item };
+      if (item.parent) {
+        const parentIndex = acc.navLinks.findIndex(
+          (el) => el.link.id === item.parent.id
+        );
 
-    if (item.parent) {
-      const parentIndex = transformedData.navLinks.findIndex(
-        (el) => el.link.id === item.parent.id
-      );
-
-      if (parentIndex !== -1) {
-        if (!transformedData.navLinks[parentIndex].childrens) {
-          transformedData.navLinks[parentIndex].childrens = [];
+        if (parentIndex !== -1) {
+          if (!acc.navLinks[parentIndex].childrens) {
+            acc.navLinks[parentIndex].childrens = [];
+          }
+          acc.navLinks[parentIndex].childrens.push(transformedItem);
+        } else {
+          acc.navLinks.push(transformedItem);
         }
-        transformedData.navLinks[parentIndex].childrens.push(transformedItem);
       } else {
-        transformedData.navLinks.push(transformedItem);
+        acc.navLinks.push(transformedItem);
       }
-    } else {
-      transformedData.navLinks.push(transformedItem);
-    }
-  });
 
-  return transformedData;
+      return acc;
+    },
+    { navLinks: [] }
+  );
 }
 
 const newData = transformData(header);
@@ -72,34 +74,14 @@ const NavMenu = () => {
             <SheetDescription>
               <div>
                 <ul className="text-black">
-                  {newData.navLinks.map((link) => {
-                    const href =
-                      link.link.slug === "home" ? "/" : `/${link.link.slug}`;
-                    return (
-                      <li key={link.label} className="relative group pt-2">
-                        <div className="flex items-center justify-between cursor-pointer space-x-2 font-bold">
-                          <Link href={href} onClick={closeSheet}>
-                            <span>{link.label}</span>
-                          </Link>
-                          <FiPlus />
-                        </div>
-                        {link.childrens && (
-                          <ul className="absolute top-full left-0 bg-white shadow-md rounded-lg py-2 px-4 hidden group-hover:block z-10">
-                            {link.childrens.map((sublink) => (
-                              <li key={sublink.label} className="pt-2">
-                                <Link
-                                  href={`/${sublink.link.slug}`}
-                                  onClick={closeSheet}
-                                >
-                                  {sublink.label}
-                                </Link>
-                              </li>
-                            ))}
-                          </ul>
-                        )}
-                      </li>
-                    );
-                  })}
+                  {newData.navLinks.map((link) => (
+                    <NavItem
+                      key={link.label}
+                      link={link}
+                      closeSheet={closeSheet}
+                      showPlusIcon={true} // Pass showPlusIcon prop as true in NavMenu.jsx
+                    />
+                  ))}
                 </ul>
               </div>
             </SheetDescription>

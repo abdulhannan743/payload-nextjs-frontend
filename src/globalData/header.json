@@ -283,18 +283,18 @@
   ],
   "globalType": "header",
   "createdAt": "2024-05-06T12:12:46.023Z",
-  "updatedAt": "2024-06-24T10:29:05.457Z",
+  "updatedAt": "2024-06-25T15:07:23.584Z",
   "logo": {
-    "id": "66794a6cd1894a77dc9b1733",
+    "id": "667add09d7d6499e7c4dbd84",
     "alt": "logo",
-    "filename": "allzone_logo-21.svg",
+    "filename": "allzone_logo-23.svg",
     "mimeType": "image/svg+xml",
     "filesize": 51784,
     "width": 153,
     "height": 46,
-    "createdAt": "2024-06-24T10:29:00.363Z",
-    "updatedAt": "2024-06-24T10:29:00.363Z",
-    "url": "http://localhost:4000/media/allzone_logo-21.svg"
+    "createdAt": "2024-06-25T15:06:49.342Z",
+    "updatedAt": "2024-06-25T15:06:49.342Z",
+    "url": "http://localhost:4000/media/allzone_logo-23.svg"
   },
   "link": [
     {
