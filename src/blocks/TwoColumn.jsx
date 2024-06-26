@@ -1,10 +1,11 @@
-import React from 'react'
+import Image from "next/image";
+import React from "react";
 
-export default function TwoColumn({heading, text, image, direction}) {
+export default function TwoColumn({ heading, text, image, direction }) {
   return (
     <div>
-        <h2>{heading}</h2>
-        <p>{text}</p>
+      <h2>{heading}</h2>
+      <p>{text}</p>
     </div>
-  )
+  );
 }

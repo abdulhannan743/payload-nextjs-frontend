@@ -1,3 +1,843 @@
 {
-  "bottomNavLinks": []
+  "name": "Footer",
+  "slug": "footer",
+  "layout": [
+    {
+      "backgroundColor": "none",
+      "paddingTop": "medium",
+      "paddingBottom": "medium",
+      "Image": {
+        "id": "6669ad7860788cac92c081e4",
+        "alt": "logo",
+        "filename": "allzone_logo-15.svg",
+        "mimeType": "image/svg+xml",
+        "filesize": 51784,
+        "width": 153,
+        "height": 46,
+        "createdAt": "2024-06-12T14:15:20.562Z",
+        "updatedAt": "2024-06-12T14:15:20.562Z",
+        "url": "http://localhost:4000/media/allzone_logo-15.svg"
+      },
+      "columns": [
+        {
+          "width": "half",
+          "alignment": "left",
+          "content": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "children": [
+                    {
+                      "detail": 0,
+                      "format": 0,
+                      "mode": "normal",
+                      "style": "",
+                      "text": "AllZone Tech's flexible platform helps you find and hire top talent, a fully remote company having engineers, designers and QA professionals who match your time zone and understand your needs.",
+                      "type": "text",
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "format": "",
+                  "indent": 0,
+                  "type": "paragraph",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "id": "6669ada83d163783cd75df8b"
+        }
+      ],
+      "link": [],
+      "id": "6669ad5a3d163783cd75df8a",
+      "blockName": "Footer Content Block",
+      "blockType": "content"
+    },
+    {
+      "backgroundColor": "none",
+      "Heading": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Contact Info",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "heading",
+              "version": 1,
+              "tag": "h3"
+            }
+          ],
+          "direction": "ltr"
+        }
+      },
+      "address": [
+        {
+          "title": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "children": [
+                    {
+                      "detail": 0,
+                      "format": 0,
+                      "mode": "normal",
+                      "style": "",
+                      "text": "USA Address:",
+                      "type": "text",
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "format": "",
+                  "indent": 0,
+                  "type": "heading",
+                  "version": 1,
+                  "tag": "h4"
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "Address": "2055 Limestone Rd STE 200-C, Wilmington, DE 19808, United States.",
+          "id": "666ad8abcee35ee4b29545c0"
+        },
+        {
+          "title": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "children": [
+                    {
+                      "detail": 0,
+                      "format": 0,
+                      "mode": "normal",
+                      "style": "",
+                      "text": "QATAR Address:",
+                      "type": "text",
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "format": "",
+                  "indent": 0,
+                  "type": "heading",
+                  "version": 1,
+                  "tag": "h4"
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "Address": "Office No. 1, Floor No. 9, QFC Tower1 Doha, Qatar.",
+          "id": "666ad8cccee35ee4b29545c1"
+        }
+      ],
+      "email": [],
+      "contactNumber": [
+        {
+          "title": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "children": [
+                    {
+                      "detail": 0,
+                      "format": 0,
+                      "mode": "normal",
+                      "style": "",
+                      "text": "Contact Number",
+                      "type": "text",
+                      "version": 1
+                    },
+                    {
+                      "type": "linebreak",
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "format": "",
+                  "indent": 0,
+                  "type": "paragraph",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "contactNumber": 3215688174,
+          "id": "666adde7cee35ee4b29545cd"
+        },
+        {
+          "contactNumber": 3099858253,
+          "id": "666ade24cee35ee4b29545ce"
+        }
+      ],
+      "id": "666ad89dcee35ee4b29545bf",
+      "blockName": "Contact Info ",
+      "blockType": "contactInfo"
+    }
+  ],
+  "globalType": "footer",
+  "createdAt": "2024-05-31T16:35:04.543Z",
+  "updatedAt": "2024-06-13T19:07:56.889Z",
+  "navLinks": [
+    {
+      "label": "Home",
+      "link": {
+        "id": "6630df1d9663292463780c7b",
+        "name": "Home",
+        "slug": "home",
+        "layout": [
+          {
+            "heading": "I am Home Page.",
+            "text": "AllZone Technologies has won the Best Software House Presidential Award 2023",
+            "link": [],
+            "id": "66696d51b3f80b427e880657",
+            "blockName": "Home Content",
+            "blockType": "hero"
+          }
+        ],
+        "createdAt": "2024-04-30T12:07:57.221Z",
+        "updatedAt": "2024-06-20T16:04:54.721Z"
+      },
+      "parent": {
+        "id": "6630df1d9663292463780c7b",
+        "name": "Home",
+        "slug": "home",
+        "layout": [
+          {
+            "heading": "I am Home Page.",
+            "text": "AllZone Technologies has won the Best Software House Presidential Award 2023",
+            "link": [],
+            "id": "66696d51b3f80b427e880657",
+            "blockName": "Home Content",
+            "blockType": "hero"
+          }
+        ],
+        "createdAt": "2024-04-30T12:07:57.221Z",
+        "updatedAt": "2024-06-20T16:04:54.721Z"
+      },
+      "id": "666b41bc6ebcc384bfa8dcb5"
+    },
+    {
+      "label": "About Us",
+      "link": {
+        "id": "663a09e2af4dedb881ed7698",
+        "name": "About Us",
+        "slug": "about-us",
+        "layout": [
+          {
+            "heading": "Hello from About us page.",
+            "text": "I am the descrition.",
+            "backgroundImage": "666092fa57861575735cc251",
+            "id": "663a09e2d76a8e31b0e1d3af",
+            "blockType": "hero",
+            "link": []
+          }
+        ],
+        "createdAt": "2024-05-07T11:00:50.514Z",
+        "updatedAt": "2024-06-05T16:32:00.128Z"
+      },
+      "parent": {
+        "id": "663a09e2af4dedb881ed7698",
+        "name": "About Us",
+        "slug": "about-us",
+        "layout": [
+          {
+            "heading": "Hello from About us page.",
+            "text": "I am the descrition.",
+            "backgroundImage": "666092fa57861575735cc251",
+            "id": "663a09e2d76a8e31b0e1d3af",
+            "blockType": "hero",
+            "link": []
+          }
+        ],
+        "createdAt": "2024-05-07T11:00:50.514Z",
+        "updatedAt": "2024-06-05T16:32:00.128Z"
+      },
+      "id": "666b41c76ebcc384bfa8dcb6"
+    },
+    {
+      "label": "Services",
+      "link": {
+        "id": "663a1277af4dedb881ed7773",
+        "name": "Services",
+        "slug": "services",
+        "layout": [
+          {
+            "heading": "Services",
+            "text": "Hello from this page.",
+            "backgroundImage": "6660946657861575735cc323",
+            "id": "663a1277d76a8e31b0e1d3b3",
+            "blockType": "hero",
+            "link": []
+          }
+        ],
+        "createdAt": "2024-05-07T11:37:27.969Z",
+        "updatedAt": "2024-06-05T16:49:10.208Z"
+      },
+      "parent": {
+        "id": "663a1277af4dedb881ed7773",
+        "name": "Services",
+        "slug": "services",
+        "layout": [
+          {
+            "heading": "Services",
+            "text": "Hello from this page.",
+            "backgroundImage": "6660946657861575735cc323",
+            "id": "663a1277d76a8e31b0e1d3b3",
+            "blockType": "hero",
+            "link": []
+          }
+        ],
+        "createdAt": "2024-05-07T11:37:27.969Z",
+        "updatedAt": "2024-06-05T16:49:10.208Z"
+      },
+      "id": "666b41d16ebcc384bfa8dcb7"
+    },
+    {
+      "label": "Technologies",
+      "link": {
+        "id": "663a0a8baf4dedb881ed76e3",
+        "name": "Technologies",
+        "slug": "technologies",
+        "layout": [
+          {
+            "heading": "Second Head",
+            "text": "I am Hero Second Block.",
+            "backgroundImage": "6661bb440599c56b004d6a04",
+            "id": "6661bb27564a9e0c239526e8",
+            "blockType": "hero",
+            "link": []
+          },
+          {
+            "heading": "Technologies",
+            "text": "Hello from Technologies page.",
+            "backgroundImage": "666096bb57861575735cc462",
+            "id": "663a0a8bd76a8e31b0e1d3b1",
+            "blockType": "hero",
+            "link": []
+          }
+        ],
+        "createdAt": "2024-05-07T11:03:39.689Z",
+        "updatedAt": "2024-06-06T13:37:35.816Z"
+      },
+      "parent": {
+        "id": "663a0a8baf4dedb881ed76e3",
+        "name": "Technologies",
+        "slug": "technologies",
+        "layout": [
+          {
+            "heading": "Second Head",
+            "text": "I am Hero Second Block.",
+            "backgroundImage": "6661bb440599c56b004d6a04",
+            "id": "6661bb27564a9e0c239526e8",
+            "blockType": "hero",
+            "link": []
+          },
+          {
+            "heading": "Technologies",
+            "text": "Hello from Technologies page.",
+            "backgroundImage": "666096bb57861575735cc462",
+            "id": "663a0a8bd76a8e31b0e1d3b1",
+            "blockType": "hero",
+            "link": []
+          }
+        ],
+        "createdAt": "2024-05-07T11:03:39.689Z",
+        "updatedAt": "2024-06-06T13:37:35.816Z"
+      },
+      "id": "666b41e06ebcc384bfa8dcb8"
+    },
+    {
+      "label": "Journal",
+      "link": {
+        "id": "663a12beaf4dedb881ed7783",
+        "name": "Journal",
+        "slug": "journal",
+        "layout": [
+          {
+            "heading": "Journal",
+            "text": "Hello From Journal page.",
+            "backgroundImage": "6660975d57861575735cc4c9",
+            "id": "663a12bed76a8e31b0e1d3b4",
+            "blockType": "hero",
+            "link": []
+          }
+        ],
+        "createdAt": "2024-05-07T11:38:38.126Z",
+        "updatedAt": "2024-06-05T16:51:30.022Z"
+      },
+      "parent": {
+        "id": "663a12beaf4dedb881ed7783",
+        "name": "Journal",
+        "slug": "journal",
+        "layout": [
+          {
+            "heading": "Journal",
+            "text": "Hello From Journal page.",
+            "backgroundImage": "6660975d57861575735cc4c9",
+            "id": "663a12bed76a8e31b0e1d3b4",
+            "blockType": "hero",
+            "link": []
+          }
+        ],
+        "createdAt": "2024-05-07T11:38:38.126Z",
+        "updatedAt": "2024-06-05T16:51:30.022Z"
+      },
+      "id": "666b41eb6ebcc384bfa8dcb9"
+    },
+    {
+      "label": "Careers",
+      "link": {
+        "id": "663a0aa1af4dedb881ed76f0",
+        "name": "Careers",
+        "slug": "careers",
+        "layout": [
+          {
+            "heading": "Careers ",
+            "text": "Hello fro career page.",
+            "backgroundImage": "6660953e57861575735cc390",
+            "id": "663a0aa1d76a8e31b0e1d3b2",
+            "blockType": "hero",
+            "link": []
+          }
+        ],
+        "createdAt": "2024-05-07T11:04:01.384Z",
+        "updatedAt": "2024-06-05T16:42:29.941Z"
+      },
+      "parent": {
+        "id": "663a0aa1af4dedb881ed76f0",
+        "name": "Careers",
+        "slug": "careers",
+        "layout": [
+          {
+            "heading": "Careers ",
+            "text": "Hello fro career page.",
+            "backgroundImage": "6660953e57861575735cc390",
+            "id": "663a0aa1d76a8e31b0e1d3b2",
+            "blockType": "hero",
+            "link": []
+          }
+        ],
+        "createdAt": "2024-05-07T11:04:01.384Z",
+        "updatedAt": "2024-06-05T16:42:29.941Z"
+      },
+      "id": "666b41f56ebcc384bfa8dcba"
+    },
+    {
+      "label": "Contact ",
+      "link": {
+        "id": "663a0a15af4dedb881ed76a5",
+        "name": "Contact Us",
+        "slug": "contact-us",
+        "layout": [
+          {
+            "heading": "Contact Us",
+            "text": "hello from Contact us",
+            "link": [],
+            "id": "663a0a15d76a8e31b0e1d3b0",
+            "blockType": "hero"
+          }
+        ],
+        "createdAt": "2024-05-07T11:01:41.337Z",
+        "updatedAt": "2024-06-24T10:49:05.385Z"
+      },
+      "parent": {
+        "id": "663a0a15af4dedb881ed76a5",
+        "name": "Contact Us",
+        "slug": "contact-us",
+        "layout": [
+          {
+            "heading": "Contact Us",
+            "text": "hello from Contact us",
+            "link": [],
+            "id": "663a0a15d76a8e31b0e1d3b0",
+            "blockType": "hero"
+          }
+        ],
+        "createdAt": "2024-05-07T11:01:41.337Z",
+        "updatedAt": "2024-06-24T10:49:05.385Z"
+      },
+      "id": "666b42066ebcc384bfa8dcbb"
+    }
+  ],
+  "link": [
+    {
+      "type": "page",
+      "label": "Hire Software Developers",
+      "page": {
+        "id": "663a1277af4dedb881ed7773",
+        "name": "Services",
+        "slug": "services",
+        "layout": [
+          {
+            "heading": "Services",
+            "text": "Hello from this page.",
+            "backgroundImage": "6660946657861575735cc323",
+            "id": "663a1277d76a8e31b0e1d3b3",
+            "blockType": "hero",
+            "link": []
+          }
+        ],
+        "createdAt": "2024-05-07T11:37:27.969Z",
+        "updatedAt": "2024-06-05T16:49:10.208Z"
+      },
+      "parent": {
+        "id": "663a1277af4dedb881ed7773",
+        "name": "Services",
+        "slug": "services",
+        "layout": [
+          {
+            "heading": "Services",
+            "text": "Hello from this page.",
+            "backgroundImage": "6660946657861575735cc323",
+            "id": "663a1277d76a8e31b0e1d3b3",
+            "blockType": "hero",
+            "link": []
+          }
+        ],
+        "createdAt": "2024-05-07T11:37:27.969Z",
+        "updatedAt": "2024-06-05T16:49:10.208Z"
+      },
+      "id": "666b42e7051ab2a2ed9d18a1"
+    },
+    {
+      "type": "page",
+      "label": "Hire Mobile App Developers",
+      "page": {
+        "id": "663a0a8baf4dedb881ed76e3",
+        "name": "Technologies",
+        "slug": "technologies",
+        "layout": [
+          {
+            "heading": "Second Head",
+            "text": "I am Hero Second Block.",
+            "backgroundImage": "6661bb440599c56b004d6a04",
+            "id": "6661bb27564a9e0c239526e8",
+            "blockType": "hero",
+            "link": []
+          },
+          {
+            "heading": "Technologies",
+            "text": "Hello from Technologies page.",
+            "backgroundImage": "666096bb57861575735cc462",
+            "id": "663a0a8bd76a8e31b0e1d3b1",
+            "blockType": "hero",
+            "link": []
+          }
+        ],
+        "createdAt": "2024-05-07T11:03:39.689Z",
+        "updatedAt": "2024-06-06T13:37:35.816Z"
+      },
+      "parent": {
+        "id": "663a0a8baf4dedb881ed76e3",
+        "name": "Technologies",
+        "slug": "technologies",
+        "layout": [
+          {
+            "heading": "Second Head",
+            "text": "I am Hero Second Block.",
+            "backgroundImage": "6661bb440599c56b004d6a04",
+            "id": "6661bb27564a9e0c239526e8",
+            "blockType": "hero",
+            "link": []
+          },
+          {
+            "heading": "Technologies",
+            "text": "Hello from Technologies page.",
+            "backgroundImage": "666096bb57861575735cc462",
+            "id": "663a0a8bd76a8e31b0e1d3b1",
+            "blockType": "hero",
+            "link": []
+          }
+        ],
+        "createdAt": "2024-05-07T11:03:39.689Z",
+        "updatedAt": "2024-06-06T13:37:35.816Z"
+      },
+      "id": "666b42fa051ab2a2ed9d18a2"
+    },
+    {
+      "type": "page",
+      "label": "Hire Front-end Developers",
+      "page": {
+        "id": "663a09e2af4dedb881ed7698",
+        "name": "About Us",
+        "slug": "about-us",
+        "layout": [
+          {
+            "heading": "Hello from About us page.",
+            "text": "I am the descrition.",
+            "backgroundImage": "666092fa57861575735cc251",
+            "id": "663a09e2d76a8e31b0e1d3af",
+            "blockType": "hero",
+            "link": []
+          }
+        ],
+        "createdAt": "2024-05-07T11:00:50.514Z",
+        "updatedAt": "2024-06-05T16:32:00.128Z"
+      },
+      "parent": {
+        "id": "663a09e2af4dedb881ed7698",
+        "name": "About Us",
+        "slug": "about-us",
+        "layout": [
+          {
+            "heading": "Hello from About us page.",
+            "text": "I am the descrition.",
+            "backgroundImage": "666092fa57861575735cc251",
+            "id": "663a09e2d76a8e31b0e1d3af",
+            "blockType": "hero",
+            "link": []
+          }
+        ],
+        "createdAt": "2024-05-07T11:00:50.514Z",
+        "updatedAt": "2024-06-05T16:32:00.128Z"
+      },
+      "id": "666b4321051ab2a2ed9d18a3"
+    },
+    {
+      "type": "page",
+      "label": "Hire Back-end Developers",
+      "page": {
+        "id": "663a0aa1af4dedb881ed76f0",
+        "name": "Careers",
+        "slug": "careers",
+        "layout": [
+          {
+            "heading": "Careers ",
+            "text": "Hello fro career page.",
+            "backgroundImage": "6660953e57861575735cc390",
+            "id": "663a0aa1d76a8e31b0e1d3b2",
+            "blockType": "hero",
+            "link": []
+          }
+        ],
+        "createdAt": "2024-05-07T11:04:01.384Z",
+        "updatedAt": "2024-06-05T16:42:29.941Z"
+      },
+      "parent": {
+        "id": "663a0aa1af4dedb881ed76f0",
+        "name": "Careers",
+        "slug": "careers",
+        "layout": [
+          {
+            "heading": "Careers ",
+            "text": "Hello fro career page.",
+            "backgroundImage": "6660953e57861575735cc390",
+            "id": "663a0aa1d76a8e31b0e1d3b2",
+            "blockType": "hero",
+            "link": []
+          }
+        ],
+        "createdAt": "2024-05-07T11:04:01.384Z",
+        "updatedAt": "2024-06-05T16:42:29.941Z"
+      },
+      "id": "666b4331051ab2a2ed9d18a4"
+    },
+    {
+      "type": "page",
+      "label": "Hire Full Stack Developers",
+      "page": {
+        "id": "663a0a15af4dedb881ed76a5",
+        "name": "Contact Us",
+        "slug": "contact-us",
+        "layout": [
+          {
+            "heading": "Contact Us",
+            "text": "hello from Contact us",
+            "link": [],
+            "id": "663a0a15d76a8e31b0e1d3b0",
+            "blockType": "hero"
+          }
+        ],
+        "createdAt": "2024-05-07T11:01:41.337Z",
+        "updatedAt": "2024-06-24T10:49:05.385Z"
+      },
+      "parent": {
+        "id": "663a0a15af4dedb881ed76a5",
+        "name": "Contact Us",
+        "slug": "contact-us",
+        "layout": [
+          {
+            "heading": "Contact Us",
+            "text": "hello from Contact us",
+            "link": [],
+            "id": "663a0a15d76a8e31b0e1d3b0",
+            "blockType": "hero"
+          }
+        ],
+        "createdAt": "2024-05-07T11:01:41.337Z",
+        "updatedAt": "2024-06-24T10:49:05.385Z"
+      },
+      "id": "666b433f051ab2a2ed9d18a5"
+    },
+    {
+      "type": "page",
+      "label": "Hire MEAN Stack Developers",
+      "page": {
+        "id": "6630df1d9663292463780c7b",
+        "name": "Home",
+        "slug": "home",
+        "layout": [
+          {
+            "heading": "I am Home Page.",
+            "text": "AllZone Technologies has won the Best Software House Presidential Award 2023",
+            "link": [],
+            "id": "66696d51b3f80b427e880657",
+            "blockName": "Home Content",
+            "blockType": "hero"
+          }
+        ],
+        "createdAt": "2024-04-30T12:07:57.221Z",
+        "updatedAt": "2024-06-20T16:04:54.721Z"
+      },
+      "parent": {
+        "id": "6630df1d9663292463780c7b",
+        "name": "Home",
+        "slug": "home",
+        "layout": [
+          {
+            "heading": "I am Home Page.",
+            "text": "AllZone Technologies has won the Best Software House Presidential Award 2023",
+            "link": [],
+            "id": "66696d51b3f80b427e880657",
+            "blockName": "Home Content",
+            "blockType": "hero"
+          }
+        ],
+        "createdAt": "2024-04-30T12:07:57.221Z",
+        "updatedAt": "2024-06-20T16:04:54.721Z"
+      },
+      "id": "666b4354051ab2a2ed9d18a6"
+    },
+    {
+      "type": "page",
+      "label": "Hire MERN Stack Developers",
+      "page": {
+        "id": "663a1277af4dedb881ed7773",
+        "name": "Services",
+        "slug": "services",
+        "layout": [
+          {
+            "heading": "Services",
+            "text": "Hello from this page.",
+            "backgroundImage": "6660946657861575735cc323",
+            "id": "663a1277d76a8e31b0e1d3b3",
+            "blockType": "hero",
+            "link": []
+          }
+        ],
+        "createdAt": "2024-05-07T11:37:27.969Z",
+        "updatedAt": "2024-06-05T16:49:10.208Z"
+      },
+      "parent": {
+        "id": "663a1277af4dedb881ed7773",
+        "name": "Services",
+        "slug": "services",
+        "layout": [
+          {
+            "heading": "Services",
+            "text": "Hello from this page.",
+            "backgroundImage": "6660946657861575735cc323",
+            "id": "663a1277d76a8e31b0e1d3b3",
+            "blockType": "hero",
+            "link": []
+          }
+        ],
+        "createdAt": "2024-05-07T11:37:27.969Z",
+        "updatedAt": "2024-06-05T16:49:10.208Z"
+      },
+      "id": "666b4369051ab2a2ed9d18a7"
+    },
+    {
+      "type": "page",
+      "label": "Hire Django Developers",
+      "page": {
+        "id": "663a0a8baf4dedb881ed76e3",
+        "name": "Technologies",
+        "slug": "technologies",
+        "layout": [
+          {
+            "heading": "Second Head",
+            "text": "I am Hero Second Block.",
+            "backgroundImage": "6661bb440599c56b004d6a04",
+            "id": "6661bb27564a9e0c239526e8",
+            "blockType": "hero",
+            "link": []
+          },
+          {
+            "heading": "Technologies",
+            "text": "Hello from Technologies page.",
+            "backgroundImage": "666096bb57861575735cc462",
+            "id": "663a0a8bd76a8e31b0e1d3b1",
+            "blockType": "hero",
+            "link": []
+          }
+        ],
+        "createdAt": "2024-05-07T11:03:39.689Z",
+        "updatedAt": "2024-06-06T13:37:35.816Z"
+      },
+      "parent": {
+        "id": "663a0a8baf4dedb881ed76e3",
+        "name": "Technologies",
+        "slug": "technologies",
+        "layout": [
+          {
+            "heading": "Second Head",
+            "text": "I am Hero Second Block.",
+            "backgroundImage": "6661bb440599c56b004d6a04",
+            "id": "6661bb27564a9e0c239526e8",
+            "blockType": "hero",
+            "link": []
+          },
+          {
+            "heading": "Technologies",
+            "text": "Hello from Technologies page.",
+            "backgroundImage": "666096bb57861575735cc462",
+            "id": "663a0a8bd76a8e31b0e1d3b1",
+            "blockType": "hero",
+            "link": []
+          }
+        ],
+        "createdAt": "2024-05-07T11:03:39.689Z",
+        "updatedAt": "2024-06-06T13:37:35.816Z"
+      },
+      "id": "666b437e051ab2a2ed9d18a8"
+    }
+  ],
+  "id": "6659fc382340acadb7ec9c16"
 }

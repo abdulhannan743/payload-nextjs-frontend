@@ -8,47 +8,35 @@
         "slug": "home",
         "layout": [
           {
-            "heading": "tes",
-            "text": "dfdfdfgfdgfdgfdsfdsf",
-            "backgroundImage": {
-              "id": "6630df139663292463780c74",
-              "alt": "dfddf",
-              "filename": "Screenshot.png",
-              "mimeType": "image/png",
-              "filesize": 33043,
-              "width": 642,
-              "height": 622,
-              "createdAt": "2024-04-30T12:07:47.925Z",
-              "updatedAt": "2024-04-30T12:07:47.925Z",
-              "url": "http://localhost:4000/media/Screenshot.png"
-            },
-            "id": "6630df1da7bbe62edc62c03b",
+            "heading": "I am Home Page.",
+            "text": "AllZone Technologies has won the Best Software House Presidential Award 2023",
+            "link": [],
+            "id": "66696d51b3f80b427e880657",
+            "blockName": "Home Content",
             "blockType": "hero"
-          },
-          {
-            "heading": "ddfd",
-            "text": "fffff",
-            "image": {
-              "id": "6630eee56ee6ce9add67dde1",
-              "alt": "ff",
-              "filename": "image_2024_04_29T12_34_16_800Z.png",
-              "mimeType": "image/png",
-              "filesize": 12378,
-              "width": 329,
-              "height": 446,
-              "createdAt": "2024-04-30T13:15:17.588Z",
-              "updatedAt": "2024-04-30T13:15:17.588Z",
-              "url": "http://localhost:4000/media/image_2024_04_29T12_34_16_800Z.png"
-            },
-            "direction": "default",
-            "id": "6630eec8075ebf77595af321",
-            "blockType": "twoColumn"
           }
         ],
         "createdAt": "2024-04-30T12:07:57.221Z",
-        "updatedAt": "2024-05-02T09:41:26.122Z"
+        "updatedAt": "2024-06-20T16:04:54.721Z"
       },
-      "id": "663a0b99bd5a1e1415561105"
+      "parent": {
+        "id": "6630df1d9663292463780c7b",
+        "name": "Home",
+        "slug": "home",
+        "layout": [
+          {
+            "heading": "I am Home Page.",
+            "text": "AllZone Technologies has won the Best Software House Presidential Award 2023",
+            "link": [],
+            "id": "66696d51b3f80b427e880657",
+            "blockName": "Home Content",
+            "blockType": "hero"
+          }
+        ],
+        "createdAt": "2024-04-30T12:07:57.221Z",
+        "updatedAt": "2024-06-20T16:04:54.721Z"
+      },
+      "id": "666af8b192a93b4aac22f3e1"
     },
     {
       "label": "About Us",
@@ -58,16 +46,35 @@
         "slug": "about-us",
         "layout": [
           {
-            "heading": "Fd",
-            "text": "ddf",
+            "heading": "Hello from About us page.",
+            "text": "I am the descrition.",
+            "backgroundImage": "666092fa57861575735cc251",
             "id": "663a09e2d76a8e31b0e1d3af",
-            "blockType": "hero"
+            "blockType": "hero",
+            "link": []
           }
         ],
         "createdAt": "2024-05-07T11:00:50.514Z",
-        "updatedAt": "2024-05-07T11:00:50.514Z"
+        "updatedAt": "2024-06-05T16:32:00.128Z"
       },
-      "id": "663a0ba9bd5a1e1415561106"
+      "parent": {
+        "id": "663a09e2af4dedb881ed7698",
+        "name": "About Us",
+        "slug": "about-us",
+        "layout": [
+          {
+            "heading": "Hello from About us page.",
+            "text": "I am the descrition.",
+            "backgroundImage": "666092fa57861575735cc251",
+            "id": "663a09e2d76a8e31b0e1d3af",
+            "blockType": "hero",
+            "link": []
+          }
+        ],
+        "createdAt": "2024-05-07T11:00:50.514Z",
+        "updatedAt": "2024-06-05T16:32:00.128Z"
+      },
+      "id": "666af8ca92a93b4aac22f3e2"
     },
     {
       "label": "Services",
@@ -77,50 +84,127 @@
         "slug": "services",
         "layout": [
           {
-            "heading": "dfds",
-            "text": "dfdfdf",
+            "heading": "Services",
+            "text": "Hello from this page.",
+            "backgroundImage": "6660946657861575735cc323",
             "id": "663a1277d76a8e31b0e1d3b3",
-            "blockType": "hero"
+            "blockType": "hero",
+            "link": []
           }
         ],
         "createdAt": "2024-05-07T11:37:27.969Z",
-        "updatedAt": "2024-05-07T11:37:27.969Z"
+        "updatedAt": "2024-06-05T16:49:10.208Z"
       },
-      "id": "663a1245bd5a1e1415561108"
-    },
-    {
-      "label": "Our Culture",
-      "link": {
-        "id": "663a0a8baf4dedb881ed76e3",
-        "name": "Our Culture",
-        "slug": "our-culture",
+      "parent": {
+        "id": "663a1277af4dedb881ed7773",
+        "name": "Services",
+        "slug": "services",
         "layout": [
           {
-            "heading": "dfd",
-            "text": "dfdfdf",
+            "heading": "Services",
+            "text": "Hello from this page.",
+            "backgroundImage": "6660946657861575735cc323",
+            "id": "663a1277d76a8e31b0e1d3b3",
+            "blockType": "hero",
+            "link": []
+          }
+        ],
+        "createdAt": "2024-05-07T11:37:27.969Z",
+        "updatedAt": "2024-06-05T16:49:10.208Z"
+      },
+      "id": "666afeafa50500a1ca20ecf9"
+    },
+    {
+      "label": "Technologies",
+      "link": {
+        "id": "663a0a8baf4dedb881ed76e3",
+        "name": "Technologies",
+        "slug": "technologies",
+        "layout": [
+          {
+            "heading": "Second Head",
+            "text": "I am Hero Second Block.",
+            "backgroundImage": "6661bb440599c56b004d6a04",
+            "id": "6661bb27564a9e0c239526e8",
+            "blockType": "hero",
+            "link": []
+          },
+          {
+            "heading": "Technologies",
+            "text": "Hello from Technologies page.",
+            "backgroundImage": "666096bb57861575735cc462",
             "id": "663a0a8bd76a8e31b0e1d3b1",
-            "blockType": "hero"
+            "blockType": "hero",
+            "link": []
           }
         ],
         "createdAt": "2024-05-07T11:03:39.689Z",
-        "updatedAt": "2024-05-07T11:03:39.689Z"
+        "updatedAt": "2024-06-06T13:37:35.816Z"
       },
       "parent": {
-        "id": "663a09e2af4dedb881ed7698",
-        "name": "About Us",
-        "slug": "about-us",
+        "id": "663a0a8baf4dedb881ed76e3",
+        "name": "Technologies",
+        "slug": "technologies",
         "layout": [
           {
-            "heading": "Fd",
-            "text": "ddf",
-            "id": "663a09e2d76a8e31b0e1d3af",
-            "blockType": "hero"
+            "heading": "Second Head",
+            "text": "I am Hero Second Block.",
+            "backgroundImage": "6661bb440599c56b004d6a04",
+            "id": "6661bb27564a9e0c239526e8",
+            "blockType": "hero",
+            "link": []
+          },
+          {
+            "heading": "Technologies",
+            "text": "Hello from Technologies page.",
+            "backgroundImage": "666096bb57861575735cc462",
+            "id": "663a0a8bd76a8e31b0e1d3b1",
+            "blockType": "hero",
+            "link": []
           }
         ],
-        "createdAt": "2024-05-07T11:00:50.514Z",
-        "updatedAt": "2024-05-07T11:00:50.514Z"
+        "createdAt": "2024-05-07T11:03:39.689Z",
+        "updatedAt": "2024-06-06T13:37:35.816Z"
       },
-      "id": "663a12f8bd5a1e141556110b"
+      "id": "666afebfa50500a1ca20ecfa"
+    },
+    {
+      "label": "Journal",
+      "link": {
+        "id": "663a12beaf4dedb881ed7783",
+        "name": "Journal",
+        "slug": "journal",
+        "layout": [
+          {
+            "heading": "Journal",
+            "text": "Hello From Journal page.",
+            "backgroundImage": "6660975d57861575735cc4c9",
+            "id": "663a12bed76a8e31b0e1d3b4",
+            "blockType": "hero",
+            "link": []
+          }
+        ],
+        "createdAt": "2024-05-07T11:38:38.126Z",
+        "updatedAt": "2024-06-05T16:51:30.022Z"
+      },
+      "parent": {
+        "id": "663a12beaf4dedb881ed7783",
+        "name": "Journal",
+        "slug": "journal",
+        "layout": [
+          {
+            "heading": "Journal",
+            "text": "Hello From Journal page.",
+            "backgroundImage": "6660975d57861575735cc4c9",
+            "id": "663a12bed76a8e31b0e1d3b4",
+            "blockType": "hero",
+            "link": []
+          }
+        ],
+        "createdAt": "2024-05-07T11:38:38.126Z",
+        "updatedAt": "2024-06-05T16:51:30.022Z"
+      },
+      "id": "666afec9a50500a1ca20ecfb"
     },
     {
       "label": "Careers",
@@ -130,93 +214,127 @@
         "slug": "careers",
         "layout": [
           {
-            "heading": "dfdf",
-            "text": "dfdffd",
+            "heading": "Careers ",
+            "text": "Hello fro career page.",
+            "backgroundImage": "6660953e57861575735cc390",
             "id": "663a0aa1d76a8e31b0e1d3b2",
-            "blockType": "hero"
+            "blockType": "hero",
+            "link": []
           }
         ],
         "createdAt": "2024-05-07T11:04:01.384Z",
-        "updatedAt": "2024-05-07T11:04:01.384Z"
+        "updatedAt": "2024-06-05T16:42:29.941Z"
       },
       "parent": {
-        "id": "663a09e2af4dedb881ed7698",
-        "name": "About Us",
-        "slug": "about-us",
+        "id": "663a0aa1af4dedb881ed76f0",
+        "name": "Careers",
+        "slug": "careers",
         "layout": [
           {
-            "heading": "Fd",
-            "text": "ddf",
-            "id": "663a09e2d76a8e31b0e1d3af",
-            "blockType": "hero"
+            "heading": "Careers ",
+            "text": "Hello fro career page.",
+            "backgroundImage": "6660953e57861575735cc390",
+            "id": "663a0aa1d76a8e31b0e1d3b2",
+            "blockType": "hero",
+            "link": []
           }
         ],
-        "createdAt": "2024-05-07T11:00:50.514Z",
-        "updatedAt": "2024-05-07T11:00:50.514Z"
+        "createdAt": "2024-05-07T11:04:01.384Z",
+        "updatedAt": "2024-06-05T16:42:29.941Z"
       },
-      "id": "663a140bbd5a1e141556110c"
+      "id": "666afed4a50500a1ca20ecfc"
     },
     {
-      "label": "Solutions",
-      "link": {
-        "id": "663a12beaf4dedb881ed7783",
-        "name": "Solutions",
-        "slug": "solutions",
-        "layout": [
-          {
-            "heading": "dfdf",
-            "text": "dfdfdf",
-            "id": "663a12bed76a8e31b0e1d3b4",
-            "blockType": "hero"
-          }
-        ],
-        "createdAt": "2024-05-07T11:38:38.126Z",
-        "updatedAt": "2024-05-07T11:38:38.126Z"
-      },
-      "id": "663a421a71bdfdb0d42961fa"
-    },
-    {
-      "label": "Industries",
-      "id": "663a423171bdfdb0d42961fb"
-    },
-    {
-      "label": "Journal",
-      "id": "663a424571bdfdb0d42961fc"
-    },
-    {
-      "label": "Contact",
+      "label": "Contact ",
       "link": {
         "id": "663a0a15af4dedb881ed76a5",
         "name": "Contact Us",
         "slug": "contact-us",
         "layout": [
           {
-            "heading": "hdfdsf",
-            "text": "dsfdsfdsfdsf",
+            "heading": "Contact Us",
+            "text": "hello from Contact us",
+            "link": [],
             "id": "663a0a15d76a8e31b0e1d3b0",
             "blockType": "hero"
           }
         ],
         "createdAt": "2024-05-07T11:01:41.337Z",
-        "updatedAt": "2024-05-07T11:01:41.337Z"
+        "updatedAt": "2024-06-24T10:49:05.385Z"
       },
-      "id": "663a467f4f6c02a291754d15"
+      "parent": {
+        "id": "663a0a15af4dedb881ed76a5",
+        "name": "Contact Us",
+        "slug": "contact-us",
+        "layout": [
+          {
+            "heading": "Contact Us",
+            "text": "hello from Contact us",
+            "link": [],
+            "id": "663a0a15d76a8e31b0e1d3b0",
+            "blockType": "hero"
+          }
+        ],
+        "createdAt": "2024-05-07T11:01:41.337Z",
+        "updatedAt": "2024-06-24T10:49:05.385Z"
+      },
+      "id": "666afee8a50500a1ca20ecfd"
     }
   ],
   "globalType": "header",
   "createdAt": "2024-05-06T12:12:46.023Z",
-  "updatedAt": "2024-05-07T15:19:40.702Z",
+  "updatedAt": "2024-06-25T15:07:23.584Z",
   "logo": {
-    "id": "6639e1d5de80854f6d9346bc",
-    "alt": "Allzone Tech",
-    "filename": "allzone_logo-1.svg",
+    "id": "667add09d7d6499e7c4dbd84",
+    "alt": "logo",
+    "filename": "allzone_logo-23.svg",
     "mimeType": "image/svg+xml",
-    "filesize": 51775,
+    "filesize": 51784,
     "width": 153,
     "height": 46,
-    "createdAt": "2024-05-07T08:09:57.888Z",
-    "updatedAt": "2024-05-07T08:09:57.888Z",
-    "url": "http://localhost:4000/media/allzone_logo-1.svg"
+    "createdAt": "2024-06-25T15:06:49.342Z",
+    "updatedAt": "2024-06-25T15:06:49.342Z",
+    "url": "http://localhost:4000/media/allzone_logo-23.svg"
   },
+  "link": [
+    {
+      "type": "page",
+      "label": "Let's Talk",
+      "page": {
+        "id": "663a0a15af4dedb881ed76a5",
+        "name": "Contact Us",
+        "slug": "contact-us",
+        "layout": [
+          {
+            "heading": "Contact Us",
+            "text": "hello from Contact us",
+            "link": [],
+            "id": "663a0a15d76a8e31b0e1d3b0",
+            "blockType": "hero"
+          }
+        ],
+        "createdAt": "2024-05-07T11:01:41.337Z",
+        "updatedAt": "2024-06-24T10:49:05.385Z"
+      },
+      "parent": {
+        "id": "663a0a15af4dedb881ed76a5",
+        "name": "Contact Us",
+        "slug": "contact-us",
+        "layout": [
+          {
+            "heading": "Contact Us",
+            "text": "hello from Contact us",
+            "link": [],
+            "id": "663a0a15d76a8e31b0e1d3b0",
+            "blockType": "hero"
+          }
+        ],
+        "createdAt": "2024-05-07T11:01:41.337Z",
+        "updatedAt": "2024-06-24T10:49:05.385Z"
+      },
+      "id": "66744aed63a18005b019fca3"
+    }
+  ],
+  "layout": [],
   "id": "6638c93dde80854f6d9345a2"
 }
