@@ -1,8 +1,11 @@
 import React from "react";
-import Image from "next/image";
-import TwoColumn from "./TwoColumn";
 
-export default function Home({ heading, text, backgroundImage }) {
+type HomeProps = {
+  heading: string;
+  text: string;
+};
+
+export default function Home({ heading, text }: HomeProps) {
   return (
     <div className="flex bg-white">
       <div className="relative overflow-hidden max-w-xl pl-20 pr-20 pb-10">
