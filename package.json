@@ -6,7 +6,7 @@
     "dev": "tsx scripts/fetchGlobalData.ts && next dev",
     "build": "next build",
     "start": "next start",
-    "prebuild": "node scripts/fetchGlobalData.ts",
+    "prebuild": "tsx scripts/fetchGlobalData.ts",
     "lint": "next lint"
   },
   "dependencies": {
