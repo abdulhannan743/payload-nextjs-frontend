@@ -17,7 +17,7 @@
           }
         ],
         "createdAt": "2024-04-30T12:07:57.221Z",
-        "updatedAt": "2024-06-20T16:04:54.721Z"
+        "updatedAt": "2024-06-26T13:34:54.398Z"
       },
       "parent": {
         "id": "6630df1d9663292463780c7b",
@@ -34,7 +34,7 @@
           }
         ],
         "createdAt": "2024-04-30T12:07:57.221Z",
-        "updatedAt": "2024-06-20T16:04:54.721Z"
+        "updatedAt": "2024-06-26T13:34:54.398Z"
       },
       "id": "666af8b192a93b4aac22f3e1"
     },
@@ -283,18 +283,18 @@
   ],
   "globalType": "header",
   "createdAt": "2024-05-06T12:12:46.023Z",
-  "updatedAt": "2024-06-25T15:07:23.584Z",
+  "updatedAt": "2024-06-27T16:50:24.141Z",
   "logo": {
-    "id": "667add09d7d6499e7c4dbd84",
-    "alt": "logo",
-    "filename": "allzone_logo-23.svg",
+    "id": "6639e1d5de80854f6d9346bc",
+    "alt": "Allzone Tech",
+    "filename": "allzone_logo-1.svg",
     "mimeType": "image/svg+xml",
-    "filesize": 51784,
+    "filesize": 51775,
     "width": 153,
     "height": 46,
-    "createdAt": "2024-06-25T15:06:49.342Z",
-    "updatedAt": "2024-06-25T15:06:49.342Z",
-    "url": "http://localhost:4000/media/allzone_logo-23.svg"
+    "createdAt": "2024-05-07T08:09:57.888Z",
+    "updatedAt": "2024-05-07T08:09:57.888Z",
+    "url": "http://localhost:4000/media/allzone_logo-1.svg"
   },
   "link": [
     {
