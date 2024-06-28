@@ -1,9 +1,9 @@
 import React from "react";
-import header from "@/globalData/header.json";
 import Image from "next/image";
 import Link from "next/link";
 import NavMenu from "./NavMenu";
 import NavItem from "./NavItem"; // Import the new NavItem component
+import { fetchWrapper } from "@/src/utils/fetchWrapper";
 
 function transformData(data) {
   return data.navLinks.reduce(
@@ -33,12 +33,15 @@ function transformData(data) {
   );
 }
 
-const newData = transformData(header);
-
-export default function Header() {
+export default async function Header() {
+  const header = await fetchWrapper({
+    url: "/api/globals/header",
+    method: "GET",
+  });
   const buttonLink = header.link?.[0];
   const buttonLabel = buttonLink?.label;
   const buttonUrl = buttonLink?.page?.slug;
+  const newData = transformData(header);
 
   return (
     <header className="bg-white py-14">

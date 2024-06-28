@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+'use client';
+import React from "react";
 import {
   Sheet,
   SheetContent,
@@ -8,7 +9,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { FiAlignJustify, FiPlus } from "react-icons/fi";
-import header from "@/globalData/header.json";
+import header from "@/src/globalData/header.json";
 import Link from "next/link";
 import Image from "next/image";
 import NavItem from "./NavItem";
@@ -44,7 +45,7 @@ function transformData(data) {
 const newData = transformData(header);
 
 const NavMenu = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = React.useState(false);
 
   const closeSheet = () => setIsOpen(false);
 

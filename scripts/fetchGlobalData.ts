@@ -1,13 +1,23 @@
-const { default: axios } = require("axios");
-const fs = require("fs").promises;
-require("dotenv").config();
-const { loadEnvConfig } = require("@next/env");
+import axios, { AxiosResponse } from "axios";
+import { promises as fs } from "fs";
+import { config } from "dotenv";
+import { loadEnvConfig } from "@next/env";
 
+config();
 loadEnvConfig(process.cwd());
 
-async function fetchData(endpoint) {
+interface EndpointData {
+  [key: string]: string;
+}
+
+const endpoints: EndpointData = {
+  header: "/api/globals/header",
+  footer: "/api/globals/footer",
+};
+
+async function fetchData<T>(endpoint: string): Promise<T> {
   try {
-    const response = await axios(
+    const response: AxiosResponse<T> = await axios.get(
       `${process.env.NEXT_PUBLIC_BACKEND_URL}${endpoint}`
     );
     return response.data;
@@ -17,7 +27,7 @@ async function fetchData(endpoint) {
   }
 }
 
-async function writeToFile(filePath, data) {
+async function writeToFile(filePath: string, data: unknown): Promise<void> {
   try {
     const jsonValue = JSON.stringify(data, null, 2);
     await fs.writeFile(filePath, jsonValue);
@@ -27,18 +37,18 @@ async function writeToFile(filePath, data) {
   }
 }
 
-async function fetchGlobalData() {
+interface GlobalData {
+  key: string;
+  data: unknown;
+}
+
+async function fetchGlobalData(): Promise<void> {
   try {
     console.log("Running Initial Fetch");
 
-    const endpoints = {
-      header: "/api/globals/header",
-      footer: "/api/globals/footer",
-    };
-
-    const globalData = await Promise.all(
+    const globalData: GlobalData[] = await Promise.all(
       Object.keys(endpoints).map(async (key) => {
-        const data = await fetchData(endpoints[key]);
+        const data = await fetchData<unknown>(endpoints[key]);
         return { key, data };
       })
     );
