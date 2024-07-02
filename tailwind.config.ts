@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      clipPath: {
+        "diagonal-top-right": "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -74,7 +77,16 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        ".clip-diagonal-top-right": {
+          clipPath: "polygon(0 0, 93% 0, 100% 100%, 0 100%)",
+        },
+      });
+    },
+    require("tailwindcss-animate"),
+  ],
 } satisfies Config;
 
 export default config;
