@@ -19,16 +19,19 @@ const TechnologiesCard: React.FC<TechnologiesCardProps> = ({
       <div className="text-black">
         <div className="flex flex-col md:flex-row md:space-x-4 flex-wrap">
           <ul className="space-y-3 lg:border-l border-dashed border-gray-500 pl-4 lg:text-xs">
-            {link.map((tech) => (
-              <li key={tech.id}>
-                <Link
-                  href={tech.page.slug}
-                  className="hover:text-blue-500 hover:underline"
-                >
-                  {tech.label}
-                </Link>
-              </li>
-            ))}
+            {link.map((tech) => {
+              const href =
+                tech.page.slug === "home" ? "/" : `/${tech.page.slug}`;
+              return (
+                <li key={tech.id}>
+                  <Link href={href} passHref>
+                    <span className="hover:text-blue-500 hover:underline">
+                      {tech.label}
+                    </span>
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>

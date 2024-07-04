@@ -16,13 +16,17 @@ const NavigationCard: React.FC<NavigationCardProps> = ({
     <div className="text-black lg:text-xs lg:border-l border-dashed border-gray-500 mt-2 md:mt-4">
       <nav className="pl-2 md:pl-4">
         <ul className="space-y-2 md:space-y-3">
-          {navLinks.map((service, index) => (
-            <li key={index}>
-              <Link href={service.parent.slug}>
-                <span>{service.label}</span>
-              </Link>
-            </li>
-          ))}
+          {navLinks.map((service, index) => {
+            const href =
+              service.parent.slug === "home" ? "/" : `/${service.parent.slug}`;
+            return (
+              <li key={index}>
+                <Link href={href} passHref>
+                  <span>{service.label}</span>
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       </nav>
     </div>

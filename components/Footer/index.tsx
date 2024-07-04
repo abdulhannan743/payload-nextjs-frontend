@@ -44,17 +44,17 @@ const Footer: React.FC = () => {
       </div>
 
       {imageSection?.slides?.[0]?.media && (
-        <div className="ml-4 md:ml-32 mt-4 md:mt-0">
+        <div className="ml-4 md:ml-32 mt-4 md:mt-0 md:mr-20">
           <Image
             src={imageSection.slides[0].media.url}
             alt={imageSection.slides[0].media.alt}
-            width={700}
-            height={500}
+            width={imageSection.slides[0].media.width}
+            height={imageSection.slides[0].media.height}
           />
         </div>
       )}
 
-      <div className="bg-sky-950 w-full md:w-10/12 h-16 flex flex-col md:flex-row items-center justify-between pl-4 md:pl-16 pr-4 md:pr-24 clip-diagonal-top-right mt-4 md:mt-0">
+      <div className="bg-sky-950 lg:max-w-screen-xl md:w-10/12 h-16 flex flex-col md:flex-row items-center justify-between pl-4 md:pl-16 pr-4 md:pr-24 clip-diagonal-top-right mt-4 md:mt-0">
         {textSection && (
           <p className="text-slate-400 text-xs md:text-sm text-center md:text-left">
             {renderRichText(textSection.typography)}
