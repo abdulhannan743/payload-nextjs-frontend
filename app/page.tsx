@@ -7,11 +7,18 @@ export default async function HomePage() {
     method: "GET",
   });
   const homeData = response?.docs[0].layout;
+  console.log(homeData);
 
   return (
     <>
       {homeData?.map((data: any) => (
-        <Home key={data?.id} heading={data?.heading} text={data?.text} />
+        <Home
+          key={data?.id}
+          heading={data?.heading}
+          text={data?.text}
+          link={data?.link}
+          slides={data?.slides}
+        />
       ))}
     </>
   );
