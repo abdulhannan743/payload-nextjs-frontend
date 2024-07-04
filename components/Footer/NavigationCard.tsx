@@ -1,5 +1,4 @@
 import React from "react";
-import { Card, CardTitle, CardDescription } from "@/components/ui/card";
 import Link from "next/link";
 import { NavLink } from "@/src/types/footerTypes";
 
@@ -12,11 +11,11 @@ const NavigationCard: React.FC<NavigationCardProps> = ({
   heading,
   navLinks,
 }) => (
-  <Card className="ml-0 md:ml-6 pt-12 bg-slate-100 divide-x divide-dashed md:divide-solid mr-0 md:mr-0">
-    <CardTitle className="text-blue-900 font-bold">{heading}</CardTitle>
-    <CardDescription className="text-black text-xs	">
-      <nav className="mt-4 pl-6">
-        <ul className="space-y-2">
+  <div className="bg-stone-200 p-6">
+    <div className="text-blue-900 font-bold text-lg md:text-lg">{heading}</div>
+    <div className="text-black lg:text-xs lg:border-l border-dashed border-gray-500 mt-2 md:mt-4">
+      <nav className="pl-2 md:pl-4">
+        <ul className="space-y-2 md:space-y-3">
           {navLinks.map((service, index) => (
             <li key={index}>
               <Link href={service.parent.slug}>
@@ -26,8 +25,8 @@ const NavigationCard: React.FC<NavigationCardProps> = ({
           ))}
         </ul>
       </nav>
-    </CardDescription>
-  </Card>
+    </div>
+  </div>
 );
 
 export default NavigationCard;

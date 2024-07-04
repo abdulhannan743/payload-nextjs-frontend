@@ -13,111 +13,110 @@
             "link": [
               {
                 "type": "page",
-                "label": "Get in touch",
+                "label": "Get In Touch",
                 "page": {
-                  "id": "663a09e2af4dedb881ed7698",
-                  "name": "About Us",
-                  "slug": "about-us",
+                  "id": "663a0a15af4dedb881ed76a5",
+                  "name": "Contact Us",
+                  "slug": "contact-us",
                   "layout": [
                     {
-                      "heading": "Hello from About us Page dummy.",
-                      "text": "I am the descrition.",
+                      "heading": "Contact Us Page dummy",
+                      "text": "hello from Contact us",
                       "link": [],
-                      "id": "663a09e2d76a8e31b0e1d3af",
+                      "id": "663a0a15d76a8e31b0e1d3b0",
                       "blockType": "hero"
                     }
                   ],
-                  "createdAt": "2024-05-07T11:00:50.514Z",
-                  "updatedAt": "2024-07-01T14:51:56.389Z"
+                  "createdAt": "2024-05-07T11:01:41.337Z",
+                  "updatedAt": "2024-07-01T14:15:21.745Z"
                 },
                 "parent": {
-                  "id": "663a09e2af4dedb881ed7698",
-                  "name": "About Us",
-                  "slug": "about-us",
+                  "id": "663a0a15af4dedb881ed76a5",
+                  "name": "Contact Us",
+                  "slug": "contact-us",
                   "layout": [
                     {
-                      "heading": "Hello from About us Page dummy.",
-                      "text": "I am the descrition.",
+                      "heading": "Contact Us Page dummy",
+                      "text": "hello from Contact us",
                       "link": [],
-                      "id": "663a09e2d76a8e31b0e1d3af",
+                      "id": "663a0a15d76a8e31b0e1d3b0",
                       "blockType": "hero"
                     }
                   ],
-                  "createdAt": "2024-05-07T11:00:50.514Z",
-                  "updatedAt": "2024-07-01T14:51:56.389Z"
+                  "createdAt": "2024-05-07T11:01:41.337Z",
+                  "updatedAt": "2024-07-01T14:15:21.745Z"
                 },
-                "id": "6682fdab4fdd36359cc9eb91"
+                "id": "66855da29de23e27a469eb3f"
               }
             ],
             "slides": [
               {
                 "media": {
                   "id": "6682ad8c102596380fca6ee4",
-                  "alt": "tech dev",
-                  "filename": "onbench.svg",
-                  "mimeType": "image/svg+xml",
-                  "filesize": 79684,
+                  "alt": "trophy",
+                  "filename": "5-1.png",
+                  "mimeType": "image/png",
+                  "filesize": 25799,
                   "width": 93,
-                  "height": 128,
+                  "height": 242,
                   "createdAt": "2024-07-01T13:22:20.265Z",
-                  "updatedAt": "2024-07-01T13:22:23.094Z",
-                  "url": "http://localhost:4000/media/onbench.svg"
+                  "updatedAt": "2024-07-03T12:12:10.800Z",
+                  "url": "http://localhost:4000/media/5-1.png"
                 },
-                "id": "6682fdcb4fdd36359cc9eb92"
+                "id": "66855db29de23e27a469eb40"
               },
               {
                 "media": {
                   "id": "6682ad9e102596380fca6efc",
-                  "alt": "bg",
+                  "alt": "group photo",
+                  "filename": "azt-photo-1.svg",
+                  "mimeType": "image/svg+xml",
+                  "filesize": 1626960,
+                  "width": 373,
+                  "height": 243,
+                  "createdAt": "2024-07-01T13:22:38.604Z",
+                  "updatedAt": "2024-07-03T12:04:03.421Z",
+                  "url": "http://localhost:4000/media/azt-photo-1.svg"
+                },
+                "id": "66855dca9de23e27a469eb41"
+              },
+              {
+                "media": {
+                  "id": "6682adb6102596380fca6f15",
+                  "alt": "blue bg",
                   "filename": "Blue-bg.svg",
                   "mimeType": "image/svg+xml",
                   "filesize": 124216,
                   "width": 374,
                   "height": 129,
-                  "createdAt": "2024-07-01T13:22:38.604Z",
-                  "updatedAt": "2024-07-01T13:22:41.784Z",
+                  "createdAt": "2024-07-01T13:23:02.370Z",
+                  "updatedAt": "2024-07-03T12:04:41.065Z",
                   "url": "http://localhost:4000/media/Blue-bg.svg"
                 },
-                "id": "6682fdd14fdd36359cc9eb93"
-              },
-              {
-                "media": {
-                  "id": "6682adb6102596380fca6f15",
-                  "alt": "award",
-                  "filename": "award.svg",
-                  "mimeType": "image/svg+xml",
-                  "filesize": 711304,
-                  "width": 93,
-                  "height": 237,
-                  "createdAt": "2024-07-01T13:23:02.370Z",
-                  "updatedAt": "2024-07-01T13:23:05.270Z",
-                  "url": "http://localhost:4000/media/award.svg"
-                },
-                "id": "6682fdd64fdd36359cc9eb94"
+                "id": "66855dd29de23e27a469eb42"
               },
               {
                 "media": {
                   "id": "6682ad66102596380fca6ecd",
-                  "alt": "Group photo",
-                  "filename": "azt-photo.svg",
+                  "alt": "dev",
+                  "filename": "onbench.svg",
                   "mimeType": "image/svg+xml",
-                  "filesize": 1626960,
-                  "width": 373,
-                  "height": 243,
+                  "filesize": 79684,
+                  "width": 93,
+                  "height": 128,
                   "createdAt": "2024-07-01T13:21:42.413Z",
-                  "updatedAt": "2024-07-01T13:21:52.402Z",
-                  "url": "http://localhost:4000/media/azt-photo.svg"
+                  "updatedAt": "2024-07-03T12:05:48.017Z",
+                  "url": "http://localhost:4000/media/onbench.svg"
                 },
-                "id": "6682fdda4fdd36359cc9eb95"
+                "id": "66855dd89de23e27a469eb43"
               }
             ],
-            "id": "6682fd914fdd36359cc9eb90",
-            "blockName": "Hero Section",
+            "id": "66855d859de23e27a469eb3e",
             "blockType": "home"
           }
         ],
         "createdAt": "2024-07-01T16:57:37.241Z",
-        "updatedAt": "2024-07-02T14:42:00.630Z"
+        "updatedAt": "2024-07-03T14:19:16.897Z"
       },
       "parent": {
         "id": "6682e001997fca6ec2333ba1",
@@ -130,111 +129,110 @@
             "link": [
               {
                 "type": "page",
-                "label": "Get in touch",
+                "label": "Get In Touch",
                 "page": {
-                  "id": "663a09e2af4dedb881ed7698",
-                  "name": "About Us",
-                  "slug": "about-us",
+                  "id": "663a0a15af4dedb881ed76a5",
+                  "name": "Contact Us",
+                  "slug": "contact-us",
                   "layout": [
                     {
-                      "heading": "Hello from About us Page dummy.",
-                      "text": "I am the descrition.",
+                      "heading": "Contact Us Page dummy",
+                      "text": "hello from Contact us",
                       "link": [],
-                      "id": "663a09e2d76a8e31b0e1d3af",
+                      "id": "663a0a15d76a8e31b0e1d3b0",
                       "blockType": "hero"
                     }
                   ],
-                  "createdAt": "2024-05-07T11:00:50.514Z",
-                  "updatedAt": "2024-07-01T14:51:56.389Z"
+                  "createdAt": "2024-05-07T11:01:41.337Z",
+                  "updatedAt": "2024-07-01T14:15:21.745Z"
                 },
                 "parent": {
-                  "id": "663a09e2af4dedb881ed7698",
-                  "name": "About Us",
-                  "slug": "about-us",
+                  "id": "663a0a15af4dedb881ed76a5",
+                  "name": "Contact Us",
+                  "slug": "contact-us",
                   "layout": [
                     {
-                      "heading": "Hello from About us Page dummy.",
-                      "text": "I am the descrition.",
+                      "heading": "Contact Us Page dummy",
+                      "text": "hello from Contact us",
                       "link": [],
-                      "id": "663a09e2d76a8e31b0e1d3af",
+                      "id": "663a0a15d76a8e31b0e1d3b0",
                       "blockType": "hero"
                     }
                   ],
-                  "createdAt": "2024-05-07T11:00:50.514Z",
-                  "updatedAt": "2024-07-01T14:51:56.389Z"
+                  "createdAt": "2024-05-07T11:01:41.337Z",
+                  "updatedAt": "2024-07-01T14:15:21.745Z"
                 },
-                "id": "6682fdab4fdd36359cc9eb91"
+                "id": "66855da29de23e27a469eb3f"
               }
             ],
             "slides": [
               {
                 "media": {
                   "id": "6682ad8c102596380fca6ee4",
-                  "alt": "tech dev",
-                  "filename": "onbench.svg",
-                  "mimeType": "image/svg+xml",
-                  "filesize": 79684,
+                  "alt": "trophy",
+                  "filename": "5-1.png",
+                  "mimeType": "image/png",
+                  "filesize": 25799,
                   "width": 93,
-                  "height": 128,
+                  "height": 242,
                   "createdAt": "2024-07-01T13:22:20.265Z",
-                  "updatedAt": "2024-07-01T13:22:23.094Z",
-                  "url": "http://localhost:4000/media/onbench.svg"
+                  "updatedAt": "2024-07-03T12:12:10.800Z",
+                  "url": "http://localhost:4000/media/5-1.png"
                 },
-                "id": "6682fdcb4fdd36359cc9eb92"
+                "id": "66855db29de23e27a469eb40"
               },
               {
                 "media": {
                   "id": "6682ad9e102596380fca6efc",
-                  "alt": "bg",
+                  "alt": "group photo",
+                  "filename": "azt-photo-1.svg",
+                  "mimeType": "image/svg+xml",
+                  "filesize": 1626960,
+                  "width": 373,
+                  "height": 243,
+                  "createdAt": "2024-07-01T13:22:38.604Z",
+                  "updatedAt": "2024-07-03T12:04:03.421Z",
+                  "url": "http://localhost:4000/media/azt-photo-1.svg"
+                },
+                "id": "66855dca9de23e27a469eb41"
+              },
+              {
+                "media": {
+                  "id": "6682adb6102596380fca6f15",
+                  "alt": "blue bg",
                   "filename": "Blue-bg.svg",
                   "mimeType": "image/svg+xml",
                   "filesize": 124216,
                   "width": 374,
                   "height": 129,
-                  "createdAt": "2024-07-01T13:22:38.604Z",
-                  "updatedAt": "2024-07-01T13:22:41.784Z",
+                  "createdAt": "2024-07-01T13:23:02.370Z",
+                  "updatedAt": "2024-07-03T12:04:41.065Z",
                   "url": "http://localhost:4000/media/Blue-bg.svg"
                 },
-                "id": "6682fdd14fdd36359cc9eb93"
-              },
-              {
-                "media": {
-                  "id": "6682adb6102596380fca6f15",
-                  "alt": "award",
-                  "filename": "award.svg",
-                  "mimeType": "image/svg+xml",
-                  "filesize": 711304,
-                  "width": 93,
-                  "height": 237,
-                  "createdAt": "2024-07-01T13:23:02.370Z",
-                  "updatedAt": "2024-07-01T13:23:05.270Z",
-                  "url": "http://localhost:4000/media/award.svg"
-                },
-                "id": "6682fdd64fdd36359cc9eb94"
+                "id": "66855dd29de23e27a469eb42"
               },
               {
                 "media": {
                   "id": "6682ad66102596380fca6ecd",
-                  "alt": "Group photo",
-                  "filename": "azt-photo.svg",
+                  "alt": "dev",
+                  "filename": "onbench.svg",
                   "mimeType": "image/svg+xml",
-                  "filesize": 1626960,
-                  "width": 373,
-                  "height": 243,
+                  "filesize": 79684,
+                  "width": 93,
+                  "height": 128,
                   "createdAt": "2024-07-01T13:21:42.413Z",
-                  "updatedAt": "2024-07-01T13:21:52.402Z",
-                  "url": "http://localhost:4000/media/azt-photo.svg"
+                  "updatedAt": "2024-07-03T12:05:48.017Z",
+                  "url": "http://localhost:4000/media/onbench.svg"
                 },
-                "id": "6682fdda4fdd36359cc9eb95"
+                "id": "66855dd89de23e27a469eb43"
               }
             ],
-            "id": "6682fd914fdd36359cc9eb90",
-            "blockName": "Hero Section",
+            "id": "66855d859de23e27a469eb3e",
             "blockType": "home"
           }
         ],
         "createdAt": "2024-07-01T16:57:37.241Z",
-        "updatedAt": "2024-07-02T14:42:00.630Z"
+        "updatedAt": "2024-07-03T14:19:16.897Z"
       },
       "id": "666af8b192a93b4aac22f3e1"
     },

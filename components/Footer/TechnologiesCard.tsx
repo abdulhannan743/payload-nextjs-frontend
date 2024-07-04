@@ -1,5 +1,4 @@
 import React from "react";
-import { Card, CardTitle, CardDescription } from "@/components/ui/card";
 import { LinkItem } from "@/src/types/footerTypes";
 import Link from "next/link";
 
@@ -12,31 +11,15 @@ const TechnologiesCard: React.FC<TechnologiesCardProps> = ({
   linkHeading,
   link,
 }) => {
-  const halfIndex = Math.ceil(link.length / 2);
-  const firstHalf = link.slice(0, halfIndex);
-  const secondHalf = link.slice(halfIndex);
-
   return (
-    <Card className="p-6 bg-slate-100 space-y-4 pt-12">
-      <CardTitle className="text-blue-900 font-bold">
+    <div className="bg-stone-200 p-4 md:p-6 space-y-4">
+      <div className="text-blue-900 font-bold text-lg md:text-lg">
         {linkHeading.heading}
-      </CardTitle>
-      <CardDescription className="text-black max-w-2xl">
-        <div className="grid grid-cols-2">
-          <ul className="space-y-4 pr-4 border-l border-dashed pl-4 text-xs	">
-            {firstHalf.map((tech) => (
-              <li key={tech.id}>
-                <Link
-                  href={tech.page.slug}
-                  className="hover:text-blue-500 hover:underline"
-                >
-                  {tech.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-          <ul className="space-y-4 pl-4 border-l border-dashed pl-4 text-xs	">
-            {secondHalf.map((tech) => (
+      </div>
+      <div className="text-black">
+        <div className="flex flex-col md:flex-row md:space-x-4 flex-wrap">
+          <ul className="space-y-3 lg:border-l border-dashed border-gray-500 pl-4 lg:text-xs">
+            {link.map((tech) => (
               <li key={tech.id}>
                 <Link
                   href={tech.page.slug}
@@ -48,8 +31,8 @@ const TechnologiesCard: React.FC<TechnologiesCardProps> = ({
             ))}
           </ul>
         </div>
-      </CardDescription>
-    </Card>
+      </div>
+    </div>
   );
 };
 

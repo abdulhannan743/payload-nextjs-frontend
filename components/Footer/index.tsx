@@ -25,8 +25,8 @@ const Footer: React.FC = () => {
       .join(" ") || "";
 
   return (
-    <footer className="bg-slate-100 pt-6">
-      <div className="flex flex-col md:flex-row">
+    <footer className="bg-zinc-200 pt-10 md:pt-14">
+      <div className="flex flex-col md:flex-row px-20  lg:flex-nowrap md:flex-wrap">
         {companySection && (
           <CompanyCard
             footerImage={companySection.Image}
@@ -44,28 +44,26 @@ const Footer: React.FC = () => {
       </div>
 
       {imageSection?.slides?.[0]?.media && (
-        <div className="ml-32">
+        <div className="ml-4 md:ml-32 mt-4 md:mt-0">
           <Image
             src={imageSection.slides[0].media.url}
             alt={imageSection.slides[0].media.alt}
-            // width={imageSection.slides[0].media.width}
-            // height={imageSection.slides[0].media.height}
             width={700}
             height={500}
           />
         </div>
       )}
 
-      <div className="bg-sky-950 w-10/12	 h-16 flex flex-col md:flex-row items-center justify-between pl-16 pr-40 clip-diagonal-top-right">
+      <div className="bg-sky-950 w-full md:w-10/12 h-16 flex flex-col md:flex-row items-center justify-between pl-4 md:pl-16 pr-4 md:pr-24 clip-diagonal-top-right mt-4 md:mt-0">
         {textSection && (
-          <p className="text-slate-200 text-sm text-center">
+          <p className="text-slate-400 text-xs md:text-sm text-center md:text-left">
             {renderRichText(textSection.typography)}
             <span className="text-white font-semibold ml-1">
               {renderRichText(textSection.paragraph)}
             </span>
           </p>
         )}
-        <div className="flex flex-row text-blue-600 space-x-2">
+        <div className="flex flex-row text-blue-600 space-x-2 mt-2 md:mt-0">
           <FaLinkedin size={20} color="white" />
           <BiLogoInstagramAlt size={20} color="white" />
           <IoLogoFacebook size={20} color="white" />

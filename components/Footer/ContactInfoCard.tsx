@@ -1,5 +1,4 @@
 import React from "react";
-import { Card, CardTitle, CardDescription } from "@/components/ui/card";
 import { IoLocationSharp } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa";
@@ -24,12 +23,12 @@ const ContactInfo: React.FC<ContactInfoProps> = ({
 }) => (
   <div>
     {hasTitle && (
-      <div className="flex items-center space-x-3">
-        <div className=" text-blue-900">{icon}</div>
+      <div className="flex items-center space-x-3 ">
+        <div className="text-blue-900">{icon}</div>
         <h5 className="font-bold text-sm text-blue-900">{title}</h5>
       </div>
     )}
-    <p className="text-sm ml-11 text-xs">{content}</p>
+    <p className="lg:text-xs md:text-sm lg:ml-11 md:ml-11 pb-2">{content}</p>
   </div>
 );
 
@@ -38,11 +37,11 @@ const ContactInfoCard: React.FC<ContactInfoCardProps> = ({ layout }) => {
   const headingText = Heading?.root?.children?.[0]?.children?.[0]?.text || "--";
 
   return (
-    <Card className="p-6 bg-slate-100 mt-8 w-64">
-      <CardTitle className="text-blue-900 font-bold pb-4">
+    <div className="bg-stone-200 lg:p-4 md:p-6 lg:pr-16 md:pr-20 pl-2 ">
+      <div className="text-blue-900 font-bold text-lg md:text-lg mb-4 mt-2">
         {headingText}
-      </CardTitle>
-      <CardDescription className="text-black">
+      </div>
+      <div>
         {address?.map((addr, index) => (
           <ContactInfo
             key={index}
@@ -73,8 +72,8 @@ const ContactInfoCard: React.FC<ContactInfoCardProps> = ({ layout }) => {
             content={contact?.contactNumber || "--"}
           />
         ))}
-      </CardDescription>
-    </Card>
+      </div>
+    </div>
   );
 };
 

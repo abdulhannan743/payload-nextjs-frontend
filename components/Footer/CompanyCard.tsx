@@ -1,12 +1,4 @@
 import React from "react";
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-  CardContent,
-  CardFooter,
-} from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
 import { FaLongArrowAltRight } from "react-icons/fa";
@@ -30,38 +22,36 @@ const CompanyCard: React.FC<CompanyCardProps> = ({
 }) => {
   if (!footerImage || !text || !buttonData) return null;
   return (
-    <Card className="bg-slate-100 max-w-80 pl-10">
-      <CardHeader>
-        <CardTitle className="py-4">
+    <div className="bg-stone-200  lg:max-w-80 pr-4">
+      <div>
+        <div className="py-4">
           <Image
             src={footerImage.url}
             alt={footerImage.alt}
             width={footerImage.width}
             height={footerImage.height}
           />
-        </CardTitle>
-        <CardDescription className="text-black text-xs font-normal">
-          {text}
-        </CardDescription>
-      </CardHeader>
-      <CardContent>
+        </div>
+        <div className="text-black lg:text-xs mb-6">{text}</div>
+      </div>
+      <div>
         <Link href={buttonData.page.slug}>
           <Button variant={"custom"} size={"md"}>
             <span className="mr-2">{buttonData.label}</span>
-            <FaLongArrowAltRight />
+            <FaLongArrowAltRight className="mt-1" />
           </Button>
         </Link>
-      </CardContent>
-      <CardFooter className="flex items-center">
+      </div>
+      <div className="flex items-center mt-4">
         <div className="border rounded-full bg-blue-900 text-white p-2">
           <TbArrowBarToDown size={20} />
         </div>
-        <div className="ml-2">
-          <p className="font-bold text-xs">{profileText}</p>
-          <span className="text-xs">{profileSize}</span>
+        <div className="ml-2 mt-3">
+          <p className="font-bold lg:text-xs">{profileText}</p>
+          <span className="lg:text-xs">{profileSize}</span>
         </div>
-      </CardFooter>
-    </Card>
+      </div>
+    </div>
   );
 };
 
