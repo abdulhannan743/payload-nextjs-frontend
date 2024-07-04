@@ -25,12 +25,16 @@ const config = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
+          DEFAULT: "#0D4C8F",
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
+          DEFAULT: "#20C897",
           foreground: "hsl(var(--secondary-foreground))",
+        },
+        gray: {
+          DEFAULT: "#666666",
+          foreground: "hsl(var(--gray-foreground))",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
@@ -74,7 +78,10 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    require('tailwind-scrollbar')({ preferredStrategy: 'pseudoelements' }),
+  ],
 } satisfies Config;
 
 export default config;
