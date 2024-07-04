@@ -1,22 +1,25 @@
 import React from "react";
 import Link from "next/link";
-const Menu = ({ navLinks }) => {
+import { NavLinkType } from "@/src/types/headerTypes";
+
+interface MenuProps {
+  navLinks: NavLinkType[];
+}
+
+const Menu: React.FC<MenuProps> = ({ navLinks }) => {
   return (
     <div>
       {navLinks.map((link) => {
         if (link.parent) {
-          // Render submenu
-          return null; // Submenus will be rendered separately
+          return null;
         } else {
-          // Render main link
           return (
             <div key={link.label}>
               <div>{link.label}</div>
-              {link.link.layout.map((item, index) => (
+              {link.layout?.map((item, index) => (
                 <div key={index}>
                   <div>{item.heading}</div>
                   <div>{item.text}</div>
-                  {/* You can render other elements like images if needed */}
                 </div>
               ))}
             </div>
@@ -27,7 +30,10 @@ const Menu = ({ navLinks }) => {
   );
 };
 
-const SubMenu = ({ parentLink, navLinks }) => {
+const SubMenu: React.FC<{
+  parentLink: NavLinkType;
+  navLinks: NavLinkType[];
+}> = ({ parentLink, navLinks }) => {
   return (
     <div key={parentLink.label}>
       <div>{parentLink.label}</div>
@@ -39,11 +45,10 @@ const SubMenu = ({ parentLink, navLinks }) => {
           .map((sublink) => (
             <li key={sublink.label}>
               <div>{sublink.label}</div>
-              {sublink.link.parent.map((item, index) => (
+              {sublink.layout?.map((item, index) => (
                 <div key={index}>
-                  <div>{item.label}</div>
-                  <div>{item.slug}</div>
-                  {/* You can render other elements like images if needed */}
+                  <div>{item.heading}</div>
+                  <div>{item.text}</div>
                 </div>
               ))}
             </li>
@@ -53,7 +58,7 @@ const SubMenu = ({ parentLink, navLinks }) => {
   );
 };
 
-const MenuWithSubmenu = ({ navLinks }) => {
+const MenuWithSubmenu: React.FC<MenuProps> = ({ navLinks }) => {
   return (
     <div>
       {navLinks.map((link) => {

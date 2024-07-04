@@ -2,24 +2,25 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import NavMenu from "./NavMenu";
-import NavItem from "./NavItem"; // Import the new NavItem component
+import NavItem from "./NavItem";
 import { fetchWrapper } from "@/src/utils/fetchWrapper";
+import { HeaderType, NavLinkType } from "@/src/types/headerTypes";
 
-function transformData(data) {
-  return data.navLinks.reduce(
+function transformData(data: HeaderType): { navLinks: NavLinkType[] } {
+  return data.navLinks.reduce<{ navLinks: NavLinkType[] }>(
     (acc, item) => {
       const transformedItem = { ...item };
 
       if (item.parent) {
         const parentIndex = acc.navLinks.findIndex(
-          (el) => el.link.id === item.parent.id
+          (el) => el.link.id === item.parent?.id
         );
 
         if (parentIndex !== -1) {
           if (!acc.navLinks[parentIndex].childrens) {
             acc.navLinks[parentIndex].childrens = [];
           }
-          acc.navLinks[parentIndex].childrens.push(transformedItem);
+          acc?.navLinks[parentIndex]?.childrens?.push(transformedItem);
         } else {
           acc.navLinks.push(transformedItem);
         }
@@ -34,10 +35,11 @@ function transformData(data) {
 }
 
 export default async function Header() {
-  const header = await fetchWrapper({
+  const header: HeaderType = await fetchWrapper({
     url: "/api/globals/header",
     method: "GET",
   });
+
   const buttonLink = header.link?.[0];
   const buttonLabel = buttonLink?.label;
   const buttonUrl = buttonLink?.page?.slug;
@@ -68,11 +70,13 @@ export default async function Header() {
             <NavItem key={link.label} link={link} />
           ))}
         </ul>
-        <Link href={`/${buttonUrl}`}>
-          <button className="hidden md:block border border-blue-500 text-blue-500 rounded-md items-center lg:ml-10 w-28 h-9 font-bold text-sm font-roboto mr-14 lg:mr-0">
-            {buttonLabel}
-          </button>
-        </Link>
+        {buttonUrl && (
+          <Link href={`/${buttonUrl}`}>
+            <button className="hidden md:block border border-blue-500 text-blue-500 rounded-md items-center lg:ml-10 w-28 h-9 font-bold text-sm font-roboto mr-14 lg:mr-0">
+              {buttonLabel}
+            </button>
+          </Link>
+        )}
       </nav>
     </header>
   );

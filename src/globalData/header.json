@@ -3,38 +3,236 @@
     {
       "label": "Home",
       "link": {
-        "id": "6630df1d9663292463780c7b",
+        "id": "6682e001997fca6ec2333ba1",
         "name": "Home",
         "slug": "home",
         "layout": [
           {
-            "heading": "I am Home Page.",
-            "text": "AllZone Technologies has won the Best Software House Presidential Award 2023",
-            "link": [],
-            "id": "66696d51b3f80b427e880657",
-            "blockName": "Home Content",
-            "blockType": "hero"
+            "heading": "AllZone Technologies  has won the Best Software House Presidential Award 2023",
+            "text": "AllZone Technologies is a prestigious LCCI IT Presidential Award\n2023-winning Company. It's been standing like a shining symbol of\nexcellence in software development and consultancy and\noutsourcing dedicated teams of skilled developers.",
+            "link": [
+              {
+                "type": "page",
+                "label": "Get In Touch",
+                "page": {
+                  "id": "663a0a15af4dedb881ed76a5",
+                  "name": "Contact Us",
+                  "slug": "contact-us",
+                  "layout": [
+                    {
+                      "heading": "Contact Us Page dummy",
+                      "text": "hello from Contact us",
+                      "link": [],
+                      "id": "663a0a15d76a8e31b0e1d3b0",
+                      "blockType": "hero"
+                    }
+                  ],
+                  "createdAt": "2024-05-07T11:01:41.337Z",
+                  "updatedAt": "2024-07-01T14:15:21.745Z"
+                },
+                "parent": {
+                  "id": "663a0a15af4dedb881ed76a5",
+                  "name": "Contact Us",
+                  "slug": "contact-us",
+                  "layout": [
+                    {
+                      "heading": "Contact Us Page dummy",
+                      "text": "hello from Contact us",
+                      "link": [],
+                      "id": "663a0a15d76a8e31b0e1d3b0",
+                      "blockType": "hero"
+                    }
+                  ],
+                  "createdAt": "2024-05-07T11:01:41.337Z",
+                  "updatedAt": "2024-07-01T14:15:21.745Z"
+                },
+                "id": "66855da29de23e27a469eb3f"
+              }
+            ],
+            "slides": [
+              {
+                "media": {
+                  "id": "6682ad8c102596380fca6ee4",
+                  "alt": "trophy",
+                  "filename": "5-1.png",
+                  "mimeType": "image/png",
+                  "filesize": 25799,
+                  "width": 93,
+                  "height": 242,
+                  "createdAt": "2024-07-01T13:22:20.265Z",
+                  "updatedAt": "2024-07-03T12:12:10.800Z",
+                  "url": "http://localhost:4000/media/5-1.png"
+                },
+                "id": "66855db29de23e27a469eb40"
+              },
+              {
+                "media": {
+                  "id": "6682ad9e102596380fca6efc",
+                  "alt": "group photo",
+                  "filename": "azt-photo-1.svg",
+                  "mimeType": "image/svg+xml",
+                  "filesize": 1626960,
+                  "width": 373,
+                  "height": 243,
+                  "createdAt": "2024-07-01T13:22:38.604Z",
+                  "updatedAt": "2024-07-03T12:04:03.421Z",
+                  "url": "http://localhost:4000/media/azt-photo-1.svg"
+                },
+                "id": "66855dca9de23e27a469eb41"
+              },
+              {
+                "media": {
+                  "id": "6682adb6102596380fca6f15",
+                  "alt": "blue bg",
+                  "filename": "Blue-bg.svg",
+                  "mimeType": "image/svg+xml",
+                  "filesize": 124216,
+                  "width": 374,
+                  "height": 129,
+                  "createdAt": "2024-07-01T13:23:02.370Z",
+                  "updatedAt": "2024-07-03T12:04:41.065Z",
+                  "url": "http://localhost:4000/media/Blue-bg.svg"
+                },
+                "id": "66855dd29de23e27a469eb42"
+              },
+              {
+                "media": {
+                  "id": "6682ad66102596380fca6ecd",
+                  "alt": "dev",
+                  "filename": "onbench.svg",
+                  "mimeType": "image/svg+xml",
+                  "filesize": 79684,
+                  "width": 93,
+                  "height": 128,
+                  "createdAt": "2024-07-01T13:21:42.413Z",
+                  "updatedAt": "2024-07-03T12:05:48.017Z",
+                  "url": "http://localhost:4000/media/onbench.svg"
+                },
+                "id": "66855dd89de23e27a469eb43"
+              }
+            ],
+            "id": "66855d859de23e27a469eb3e",
+            "blockType": "home"
           }
         ],
-        "createdAt": "2024-04-30T12:07:57.221Z",
-        "updatedAt": "2024-06-26T13:34:54.398Z"
+        "createdAt": "2024-07-01T16:57:37.241Z",
+        "updatedAt": "2024-07-03T14:19:16.897Z"
       },
       "parent": {
-        "id": "6630df1d9663292463780c7b",
+        "id": "6682e001997fca6ec2333ba1",
         "name": "Home",
         "slug": "home",
         "layout": [
           {
-            "heading": "I am Home Page.",
-            "text": "AllZone Technologies has won the Best Software House Presidential Award 2023",
-            "link": [],
-            "id": "66696d51b3f80b427e880657",
-            "blockName": "Home Content",
-            "blockType": "hero"
+            "heading": "AllZone Technologies  has won the Best Software House Presidential Award 2023",
+            "text": "AllZone Technologies is a prestigious LCCI IT Presidential Award\n2023-winning Company. It's been standing like a shining symbol of\nexcellence in software development and consultancy and\noutsourcing dedicated teams of skilled developers.",
+            "link": [
+              {
+                "type": "page",
+                "label": "Get In Touch",
+                "page": {
+                  "id": "663a0a15af4dedb881ed76a5",
+                  "name": "Contact Us",
+                  "slug": "contact-us",
+                  "layout": [
+                    {
+                      "heading": "Contact Us Page dummy",
+                      "text": "hello from Contact us",
+                      "link": [],
+                      "id": "663a0a15d76a8e31b0e1d3b0",
+                      "blockType": "hero"
+                    }
+                  ],
+                  "createdAt": "2024-05-07T11:01:41.337Z",
+                  "updatedAt": "2024-07-01T14:15:21.745Z"
+                },
+                "parent": {
+                  "id": "663a0a15af4dedb881ed76a5",
+                  "name": "Contact Us",
+                  "slug": "contact-us",
+                  "layout": [
+                    {
+                      "heading": "Contact Us Page dummy",
+                      "text": "hello from Contact us",
+                      "link": [],
+                      "id": "663a0a15d76a8e31b0e1d3b0",
+                      "blockType": "hero"
+                    }
+                  ],
+                  "createdAt": "2024-05-07T11:01:41.337Z",
+                  "updatedAt": "2024-07-01T14:15:21.745Z"
+                },
+                "id": "66855da29de23e27a469eb3f"
+              }
+            ],
+            "slides": [
+              {
+                "media": {
+                  "id": "6682ad8c102596380fca6ee4",
+                  "alt": "trophy",
+                  "filename": "5-1.png",
+                  "mimeType": "image/png",
+                  "filesize": 25799,
+                  "width": 93,
+                  "height": 242,
+                  "createdAt": "2024-07-01T13:22:20.265Z",
+                  "updatedAt": "2024-07-03T12:12:10.800Z",
+                  "url": "http://localhost:4000/media/5-1.png"
+                },
+                "id": "66855db29de23e27a469eb40"
+              },
+              {
+                "media": {
+                  "id": "6682ad9e102596380fca6efc",
+                  "alt": "group photo",
+                  "filename": "azt-photo-1.svg",
+                  "mimeType": "image/svg+xml",
+                  "filesize": 1626960,
+                  "width": 373,
+                  "height": 243,
+                  "createdAt": "2024-07-01T13:22:38.604Z",
+                  "updatedAt": "2024-07-03T12:04:03.421Z",
+                  "url": "http://localhost:4000/media/azt-photo-1.svg"
+                },
+                "id": "66855dca9de23e27a469eb41"
+              },
+              {
+                "media": {
+                  "id": "6682adb6102596380fca6f15",
+                  "alt": "blue bg",
+                  "filename": "Blue-bg.svg",
+                  "mimeType": "image/svg+xml",
+                  "filesize": 124216,
+                  "width": 374,
+                  "height": 129,
+                  "createdAt": "2024-07-01T13:23:02.370Z",
+                  "updatedAt": "2024-07-03T12:04:41.065Z",
+                  "url": "http://localhost:4000/media/Blue-bg.svg"
+                },
+                "id": "66855dd29de23e27a469eb42"
+              },
+              {
+                "media": {
+                  "id": "6682ad66102596380fca6ecd",
+                  "alt": "dev",
+                  "filename": "onbench.svg",
+                  "mimeType": "image/svg+xml",
+                  "filesize": 79684,
+                  "width": 93,
+                  "height": 128,
+                  "createdAt": "2024-07-01T13:21:42.413Z",
+                  "updatedAt": "2024-07-03T12:05:48.017Z",
+                  "url": "http://localhost:4000/media/onbench.svg"
+                },
+                "id": "66855dd89de23e27a469eb43"
+              }
+            ],
+            "id": "66855d859de23e27a469eb3e",
+            "blockType": "home"
           }
         ],
-        "createdAt": "2024-04-30T12:07:57.221Z",
-        "updatedAt": "2024-06-26T13:34:54.398Z"
+        "createdAt": "2024-07-01T16:57:37.241Z",
+        "updatedAt": "2024-07-03T14:19:16.897Z"
       },
       "id": "666af8b192a93b4aac22f3e1"
     },
@@ -46,16 +244,15 @@
         "slug": "about-us",
         "layout": [
           {
-            "heading": "Hello from About us page.",
+            "heading": "Hello from About us Page dummy.",
             "text": "I am the descrition.",
-            "backgroundImage": "666092fa57861575735cc251",
+            "link": [],
             "id": "663a09e2d76a8e31b0e1d3af",
-            "blockType": "hero",
-            "link": []
+            "blockType": "hero"
           }
         ],
         "createdAt": "2024-05-07T11:00:50.514Z",
-        "updatedAt": "2024-06-05T16:32:00.128Z"
+        "updatedAt": "2024-07-01T14:51:56.389Z"
       },
       "parent": {
         "id": "663a09e2af4dedb881ed7698",
@@ -63,16 +260,15 @@
         "slug": "about-us",
         "layout": [
           {
-            "heading": "Hello from About us page.",
+            "heading": "Hello from About us Page dummy.",
             "text": "I am the descrition.",
-            "backgroundImage": "666092fa57861575735cc251",
+            "link": [],
             "id": "663a09e2d76a8e31b0e1d3af",
-            "blockType": "hero",
-            "link": []
+            "blockType": "hero"
           }
         ],
         "createdAt": "2024-05-07T11:00:50.514Z",
-        "updatedAt": "2024-06-05T16:32:00.128Z"
+        "updatedAt": "2024-07-01T14:51:56.389Z"
       },
       "id": "666af8ca92a93b4aac22f3e2"
     },
@@ -84,16 +280,15 @@
         "slug": "services",
         "layout": [
           {
-            "heading": "Services",
+            "heading": "Services Page dummy",
             "text": "Hello from this page.",
-            "backgroundImage": "6660946657861575735cc323",
+            "link": [],
             "id": "663a1277d76a8e31b0e1d3b3",
-            "blockType": "hero",
-            "link": []
+            "blockType": "hero"
           }
         ],
         "createdAt": "2024-05-07T11:37:27.969Z",
-        "updatedAt": "2024-06-05T16:49:10.208Z"
+        "updatedAt": "2024-07-01T14:10:39.019Z"
       },
       "parent": {
         "id": "663a1277af4dedb881ed7773",
@@ -101,16 +296,15 @@
         "slug": "services",
         "layout": [
           {
-            "heading": "Services",
+            "heading": "Services Page dummy",
             "text": "Hello from this page.",
-            "backgroundImage": "6660946657861575735cc323",
+            "link": [],
             "id": "663a1277d76a8e31b0e1d3b3",
-            "blockType": "hero",
-            "link": []
+            "blockType": "hero"
           }
         ],
         "createdAt": "2024-05-07T11:37:27.969Z",
-        "updatedAt": "2024-06-05T16:49:10.208Z"
+        "updatedAt": "2024-07-01T14:10:39.019Z"
       },
       "id": "666afeafa50500a1ca20ecf9"
     },
@@ -122,24 +316,22 @@
         "slug": "technologies",
         "layout": [
           {
-            "heading": "Second Head",
+            "heading": "Second Head Page dummy",
             "text": "I am Hero Second Block.",
-            "backgroundImage": "6661bb440599c56b004d6a04",
+            "link": [],
             "id": "6661bb27564a9e0c239526e8",
-            "blockType": "hero",
-            "link": []
+            "blockType": "hero"
           },
           {
             "heading": "Technologies",
             "text": "Hello from Technologies page.",
-            "backgroundImage": "666096bb57861575735cc462",
+            "link": [],
             "id": "663a0a8bd76a8e31b0e1d3b1",
-            "blockType": "hero",
-            "link": []
+            "blockType": "hero"
           }
         ],
         "createdAt": "2024-05-07T11:03:39.689Z",
-        "updatedAt": "2024-06-06T13:37:35.816Z"
+        "updatedAt": "2024-07-01T14:16:08.906Z"
       },
       "parent": {
         "id": "663a0a8baf4dedb881ed76e3",
@@ -147,24 +339,22 @@
         "slug": "technologies",
         "layout": [
           {
-            "heading": "Second Head",
+            "heading": "Second Head Page dummy",
             "text": "I am Hero Second Block.",
-            "backgroundImage": "6661bb440599c56b004d6a04",
+            "link": [],
             "id": "6661bb27564a9e0c239526e8",
-            "blockType": "hero",
-            "link": []
+            "blockType": "hero"
           },
           {
             "heading": "Technologies",
             "text": "Hello from Technologies page.",
-            "backgroundImage": "666096bb57861575735cc462",
+            "link": [],
             "id": "663a0a8bd76a8e31b0e1d3b1",
-            "blockType": "hero",
-            "link": []
+            "blockType": "hero"
           }
         ],
         "createdAt": "2024-05-07T11:03:39.689Z",
-        "updatedAt": "2024-06-06T13:37:35.816Z"
+        "updatedAt": "2024-07-01T14:16:08.906Z"
       },
       "id": "666afebfa50500a1ca20ecfa"
     },
@@ -176,16 +366,15 @@
         "slug": "journal",
         "layout": [
           {
-            "heading": "Journal",
-            "text": "Hello From Journal page.",
-            "backgroundImage": "6660975d57861575735cc4c9",
+            "heading": "Journal Page dummy",
+            "text": "Hello From Journal Page.",
+            "link": [],
             "id": "663a12bed76a8e31b0e1d3b4",
-            "blockType": "hero",
-            "link": []
+            "blockType": "hero"
           }
         ],
         "createdAt": "2024-05-07T11:38:38.126Z",
-        "updatedAt": "2024-06-05T16:51:30.022Z"
+        "updatedAt": "2024-07-01T14:10:19.034Z"
       },
       "parent": {
         "id": "663a12beaf4dedb881ed7783",
@@ -193,16 +382,15 @@
         "slug": "journal",
         "layout": [
           {
-            "heading": "Journal",
-            "text": "Hello From Journal page.",
-            "backgroundImage": "6660975d57861575735cc4c9",
+            "heading": "Journal Page dummy",
+            "text": "Hello From Journal Page.",
+            "link": [],
             "id": "663a12bed76a8e31b0e1d3b4",
-            "blockType": "hero",
-            "link": []
+            "blockType": "hero"
           }
         ],
         "createdAt": "2024-05-07T11:38:38.126Z",
-        "updatedAt": "2024-06-05T16:51:30.022Z"
+        "updatedAt": "2024-07-01T14:10:19.034Z"
       },
       "id": "666afec9a50500a1ca20ecfb"
     },
@@ -214,16 +402,15 @@
         "slug": "careers",
         "layout": [
           {
-            "heading": "Careers ",
+            "heading": "Careers Page dummy",
             "text": "Hello fro career page.",
-            "backgroundImage": "6660953e57861575735cc390",
+            "link": [],
             "id": "663a0aa1d76a8e31b0e1d3b2",
-            "blockType": "hero",
-            "link": []
+            "blockType": "hero"
           }
         ],
         "createdAt": "2024-05-07T11:04:01.384Z",
-        "updatedAt": "2024-06-05T16:42:29.941Z"
+        "updatedAt": "2024-07-01T14:10:49.330Z"
       },
       "parent": {
         "id": "663a0aa1af4dedb881ed76f0",
@@ -231,16 +418,15 @@
         "slug": "careers",
         "layout": [
           {
-            "heading": "Careers ",
+            "heading": "Careers Page dummy",
             "text": "Hello fro career page.",
-            "backgroundImage": "6660953e57861575735cc390",
+            "link": [],
             "id": "663a0aa1d76a8e31b0e1d3b2",
-            "blockType": "hero",
-            "link": []
+            "blockType": "hero"
           }
         ],
         "createdAt": "2024-05-07T11:04:01.384Z",
-        "updatedAt": "2024-06-05T16:42:29.941Z"
+        "updatedAt": "2024-07-01T14:10:49.330Z"
       },
       "id": "666afed4a50500a1ca20ecfc"
     },
@@ -252,7 +438,7 @@
         "slug": "contact-us",
         "layout": [
           {
-            "heading": "Contact Us",
+            "heading": "Contact Us Page dummy",
             "text": "hello from Contact us",
             "link": [],
             "id": "663a0a15d76a8e31b0e1d3b0",
@@ -260,7 +446,7 @@
           }
         ],
         "createdAt": "2024-05-07T11:01:41.337Z",
-        "updatedAt": "2024-06-24T10:49:05.385Z"
+        "updatedAt": "2024-07-01T14:15:21.745Z"
       },
       "parent": {
         "id": "663a0a15af4dedb881ed76a5",
@@ -268,7 +454,7 @@
         "slug": "contact-us",
         "layout": [
           {
-            "heading": "Contact Us",
+            "heading": "Contact Us Page dummy",
             "text": "hello from Contact us",
             "link": [],
             "id": "663a0a15d76a8e31b0e1d3b0",
@@ -276,14 +462,14 @@
           }
         ],
         "createdAt": "2024-05-07T11:01:41.337Z",
-        "updatedAt": "2024-06-24T10:49:05.385Z"
+        "updatedAt": "2024-07-01T14:15:21.745Z"
       },
       "id": "666afee8a50500a1ca20ecfd"
     }
   ],
   "globalType": "header",
   "createdAt": "2024-05-06T12:12:46.023Z",
-  "updatedAt": "2024-06-27T16:50:24.141Z",
+  "updatedAt": "2024-07-01T17:00:46.119Z",
   "logo": {
     "id": "6639e1d5de80854f6d9346bc",
     "alt": "Allzone Tech",
@@ -306,7 +492,7 @@
         "slug": "contact-us",
         "layout": [
           {
-            "heading": "Contact Us",
+            "heading": "Contact Us Page dummy",
             "text": "hello from Contact us",
             "link": [],
             "id": "663a0a15d76a8e31b0e1d3b0",
@@ -314,7 +500,7 @@
           }
         ],
         "createdAt": "2024-05-07T11:01:41.337Z",
-        "updatedAt": "2024-06-24T10:49:05.385Z"
+        "updatedAt": "2024-07-01T14:15:21.745Z"
       },
       "parent": {
         "id": "663a0a15af4dedb881ed76a5",
@@ -322,7 +508,7 @@
         "slug": "contact-us",
         "layout": [
           {
-            "heading": "Contact Us",
+            "heading": "Contact Us Page dummy",
             "text": "hello from Contact us",
             "link": [],
             "id": "663a0a15d76a8e31b0e1d3b0",
@@ -330,7 +516,7 @@
           }
         ],
         "createdAt": "2024-05-07T11:01:41.337Z",
-        "updatedAt": "2024-06-24T10:49:05.385Z"
+        "updatedAt": "2024-07-01T14:15:21.745Z"
       },
       "id": "66744aed63a18005b019fca3"
     }
