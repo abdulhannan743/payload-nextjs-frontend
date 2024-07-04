@@ -1,6 +1,6 @@
 import React from "react";
 
-type Service = {
+type Item = {
   id: string;
   title: string;
   description: string;
@@ -14,7 +14,7 @@ type ServicesProps = {
     id: string;
     blockName: string;
     blockType: string;
-    service: Service[];
+    items: Item[];
   };
 };
 
@@ -24,7 +24,7 @@ function ServicesSection({ serviceData }: ServicesProps) {
     title: "Services We offer For Software Development & Consultancy",
     description:
       "we at, AllZone Technologies provide custom software development and consultancy services. Moreover, we have expertise in cross-platform mobile app development, and AllZone Technologies is second to none. Also, have expertise in AI, IoT, and data analytics. Make a Call for a Software Consultancy. Be a partner with one of the finest software development firms.",
-    service: [
+    items: [
       {
         title: "Custom Software Development",
         description:
@@ -88,7 +88,7 @@ function ServicesSection({ serviceData }: ServicesProps) {
       </div>
       <div className="overflow-x-scroll px-2 md:px-0 scrollbar scrollbar-thumb-primary scrollbar-track-gray-200 scrollbar-thin">
         <div className="inline-flex gap-8 pb-8">
-          {serviceData?.service?.map((item) => (
+          {serviceData?.items?.map((item) => (
             <div
               key={item.id}
               className="bg-white p-4 shadow-md rounded-lg min-w-[400px] max-w-[400px] mx-auto"

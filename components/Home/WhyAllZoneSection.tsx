@@ -1,6 +1,6 @@
 import React from "react";
 
-type Service = {
+type Item = {
   id: string;
   title: string;
   description: string;
@@ -13,7 +13,7 @@ type WhyAllZoneSectionProps = {
     title: string;
     blockName: string;
     blockType: string;
-    service: Service[];
+    items: Item[];
   };
 };
 
@@ -22,7 +22,7 @@ function WhyAllZoneSection({ whyAllzoneData }: WhyAllZoneSectionProps) {
   whyAllzoneData = {
     title:
       "Why AllZone Technologies For Software Development & Staff Augmentation?",
-    service: [
+    items: [
       {
         title: "Tailored Solutions",
         description:
@@ -67,7 +67,7 @@ function WhyAllZoneSection({ whyAllzoneData }: WhyAllZoneSectionProps) {
         <hr className="bg-secondary border-none h-[2px] w-[50px]" />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {whyAllzoneData.service.map((item) => (
+        {whyAllzoneData.items.map((item) => (
           <div
             key={item.id}
             className="bg-[#F5F5F5] p-6 pt-20 shadow-md rounded-lg flex flex-col text-left gap-5 relative"
