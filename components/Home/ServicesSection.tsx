@@ -1,6 +1,7 @@
 import React from "react";
+import ScrollableContainer from "../ui/ScrollableContainer";
 
-type Item = {
+type Service = {
   id: string;
   title: string;
   description: string;
@@ -14,7 +15,7 @@ type ServicesProps = {
     id: string;
     blockName: string;
     blockType: string;
-    items: Item[];
+    items: Service[];
   };
 };
 
@@ -73,7 +74,7 @@ function ServicesSection({ serviceData }: ServicesProps) {
     blockType: "services",
   };
   return (
-    <div className="py-16 px-6 md:px-12 lg:px-60 bg-[#F9F9F9]">
+    <div className="pt-16 pb-10 px-12 md:px-20 lg:px-60 bg-[#F9F9F9]">
       <div className="max-w-5xl mx-auto flex flex-col items-center justify-center gap-6 mb-12">
         <h1 className="text-3xl md:text-4xl font-bold text-center">
           {serviceData?.title}
@@ -82,16 +83,16 @@ function ServicesSection({ serviceData }: ServicesProps) {
           <hr className="bg-secondary border-none h-[2px] w-[10px]" />
           <hr className="bg-secondary border-none h-[2px] w-[50px]" />
         </div>
-        <p className="text-lg text-centertext-gray">
+        <p className="text-lg text-center text-gray">
           {serviceData?.description}
         </p>
       </div>
-      <div className="overflow-x-scroll px-2 md:px-0 scrollbar scrollbar-thumb-primary scrollbar-track-gray-200 scrollbar-thin">
-        <div className="inline-flex gap-8 pb-8">
+      <ScrollableContainer scrollAxis="x">
+        <div className="flex gap-8 pb-8">
           {serviceData?.items?.map((item) => (
             <div
               key={item.id}
-              className="bg-white p-4 shadow-md rounded-lg min-w-[400px] max-w-[400px] mx-auto"
+              className="bg-white p-4 shadow-md rounded-lg min-w-[350px] max-w-[350px] mx-auto"
             >
               <img
                 src={`/assets/icons/${item.iconName}.svg`}
@@ -105,7 +106,7 @@ function ServicesSection({ serviceData }: ServicesProps) {
             </div>
           ))}
         </div>
-      </div>
+      </ScrollableContainer>
     </div>
   );
 }

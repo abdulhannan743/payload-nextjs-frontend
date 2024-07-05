@@ -1,6 +1,6 @@
 import React from "react";
 
-type Item = {
+type Quality = {
   id: string;
   title: string;
   description: string;
@@ -13,7 +13,7 @@ type WhyAllZoneSectionProps = {
     title: string;
     blockName: string;
     blockType: string;
-    items: Item[];
+    items: Quality[];
   };
 };
 
