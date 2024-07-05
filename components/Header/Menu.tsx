@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { NavLinkType } from "@/src/types/headerTypes";
+import type { NavLinkType } from "@/src/types/headerTypes";
 
 interface MenuProps {
   navLinks: NavLinkType[];

@@ -4,7 +4,7 @@ import Link from "next/link";
 import NavMenu from "./NavMenu";
 import NavItem from "./NavItem";
 import { fetchWrapper } from "@/src/utils/fetchWrapper";
-import { HeaderType, NavLinkType } from "@/src/types/headerTypes";
+import type { HeaderType, NavLinkType } from "@/src/types/headerTypes";
 
 function transformData(data: HeaderType): { navLinks: NavLinkType[] } {
   return data.navLinks.reduce<{ navLinks: NavLinkType[] }>(

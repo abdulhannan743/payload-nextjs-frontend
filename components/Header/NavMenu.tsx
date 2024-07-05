@@ -13,7 +13,7 @@ import header from "@/src/globalData/header.json";
 import Link from "next/link";
 import Image from "next/image";
 import NavItem from "./NavItem";
-import { HeaderType, NavLinkType } from "@/src/types/headerTypes";
+import type { HeaderType, NavLinkType } from "@/src/types/headerTypes";
 
 function transformData(data: HeaderType) {
   return data.navLinks.reduce<{ navLinks: NavLinkType[] }>(

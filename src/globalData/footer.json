@@ -341,115 +341,265 @@
         "slug": "home",
         "layout": [
           {
-            "heading": "AllZone Technologies  has won the Best Software House Presidential Award 2023",
-            "text": "AllZone Technologies is a prestigious LCCI IT Presidential Award\n2023-winning Company. It's been standing like a shining symbol of\nexcellence in software development and consultancy and\noutsourcing dedicated teams of skilled developers.",
-            "link": [
-              {
-                "type": "page",
-                "label": "Get In Touch",
-                "page": {
-                  "id": "663a0a15af4dedb881ed76a5",
-                  "name": "Contact Us",
-                  "slug": "contact-us",
-                  "layout": [
-                    {
-                      "heading": "Contact Us Page dummy",
-                      "text": "hello from Contact us",
-                      "link": [],
-                      "id": "663a0a15d76a8e31b0e1d3b0",
-                      "blockType": "hero"
+            "matadata": {
+              "heading": "Frequently Asked Questions",
+              "typoPara": [
+                {
+                  "typography": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "Does AllZone Technologies offer staff augmentation & software development services?",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "heading",
+                          "version": 1,
+                          "tag": "h3"
+                        }
+                      ],
+                      "direction": "ltr"
                     }
-                  ],
-                  "createdAt": "2024-05-07T11:01:41.337Z",
-                  "updatedAt": "2024-07-01T14:15:21.745Z"
-                },
-                "parent": {
-                  "id": "663a0a15af4dedb881ed76a5",
-                  "name": "Contact Us",
-                  "slug": "contact-us",
-                  "layout": [
-                    {
-                      "heading": "Contact Us Page dummy",
-                      "text": "hello from Contact us",
-                      "link": [],
-                      "id": "663a0a15d76a8e31b0e1d3b0",
-                      "blockType": "hero"
+                  },
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "Yes. AllZone Technologies is one of the best software development, consultancy companies that offer team augmentation services for startups, enterprises, and businesses. The company provides a highly skilled and dedicated team of engineers. They develop programming solutions, cross-platform mobile applications, cloud-native solutions, program maintenance, MVP, ERP, and CRM.",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "paragraph",
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
                     }
-                  ],
-                  "createdAt": "2024-05-07T11:01:41.337Z",
-                  "updatedAt": "2024-07-01T14:15:21.745Z"
+                  },
+                  "id": "668690982ed446829a2123a0"
                 },
-                "id": "66855da29de23e27a469eb3f"
-              }
-            ],
-            "slides": [
-              {
-                "media": {
-                  "id": "6682ad8c102596380fca6ee4",
-                  "alt": "trophy",
-                  "filename": "5-1.png",
-                  "mimeType": "image/png",
-                  "filesize": 25799,
-                  "width": 93,
-                  "height": 242,
-                  "createdAt": "2024-07-01T13:22:20.265Z",
-                  "updatedAt": "2024-07-03T12:12:10.800Z",
-                  "url": "http://localhost:4000/media/5-1.png"
+                {
+                  "typography": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "What types of technologies does AllZone Technologies have under its belt?",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "heading",
+                          "version": 1,
+                          "tag": "h3"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "Yes. AllZone Technologies is one of the best software development, consultancy companies that offer team augmentation services for startups, enterprises, and businesses. The company provides a highly skilled and dedicated team of engineers. They develop programming solutions, cross-platform mobile applications, cloud-native solutions, program maintenance, MVP, ERP, and CRM.",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "paragraph",
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "id": "668690b12ed446829a2123a1"
                 },
-                "id": "66855db29de23e27a469eb40"
-              },
-              {
-                "media": {
-                  "id": "6682ad9e102596380fca6efc",
-                  "alt": "group photo",
-                  "filename": "azt-photo-1.svg",
-                  "mimeType": "image/svg+xml",
-                  "filesize": 1626960,
-                  "width": 373,
-                  "height": 243,
-                  "createdAt": "2024-07-01T13:22:38.604Z",
-                  "updatedAt": "2024-07-03T12:04:03.421Z",
-                  "url": "http://localhost:4000/media/azt-photo-1.svg"
+                {
+                  "typography": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "How does the company software development process achieve faster delivery and increased efficiency?",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "heading",
+                          "version": 1,
+                          "tag": "h3"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "Yes. AllZone Technologies is one of the best software development, consultancy companies that offer team augmentation services for startups, enterprises, and businesses. The company provides a highly skilled and dedicated team of engineers. They develop programming solutions, cross-platform mobile applications, cloud-native solutions, program maintenance, MVP, ERP, and CRM.",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "paragraph",
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "id": "668690c72ed446829a2123a2"
                 },
-                "id": "66855dca9de23e27a469eb41"
-              },
-              {
-                "media": {
-                  "id": "6682adb6102596380fca6f15",
-                  "alt": "blue bg",
-                  "filename": "Blue-bg.svg",
-                  "mimeType": "image/svg+xml",
-                  "filesize": 124216,
-                  "width": 374,
-                  "height": 129,
-                  "createdAt": "2024-07-01T13:23:02.370Z",
-                  "updatedAt": "2024-07-03T12:04:41.065Z",
-                  "url": "http://localhost:4000/media/Blue-bg.svg"
-                },
-                "id": "66855dd29de23e27a469eb42"
-              },
-              {
-                "media": {
-                  "id": "6682ad66102596380fca6ecd",
-                  "alt": "dev",
-                  "filename": "onbench.svg",
-                  "mimeType": "image/svg+xml",
-                  "filesize": 79684,
-                  "width": 93,
-                  "height": 128,
-                  "createdAt": "2024-07-01T13:21:42.413Z",
-                  "updatedAt": "2024-07-03T12:05:48.017Z",
-                  "url": "http://localhost:4000/media/onbench.svg"
-                },
-                "id": "66855dd89de23e27a469eb43"
-              }
-            ],
-            "id": "66855d859de23e27a469eb3e",
-            "blockType": "home"
+                {
+                  "typography": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "What makes AllZone Technologies’ staff augmentation services better than others?",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "heading",
+                          "version": 1,
+                          "tag": "h3"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "Yes. AllZone Technologies is one of the best software development, consultancy companies that offer team augmentation services for startups, enterprises, and businesses. The company provides a highly skilled and dedicated team of engineers. They develop programming solutions, cross-platform mobile applications, cloud-native solutions, program maintenance, MVP, ERP, and CRM.",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "paragraph",
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "id": "668690d72ed446829a2123a3"
+                }
+              ]
+            },
+            "id": "6686907d2ed446829a21239f",
+            "blockType": "metaData"
           }
         ],
         "createdAt": "2024-07-01T16:57:37.241Z",
-        "updatedAt": "2024-07-03T14:19:16.897Z"
+        "updatedAt": "2024-07-04T12:09:27.181Z"
       },
       "parent": {
         "id": "6682e001997fca6ec2333ba1",
@@ -457,115 +607,265 @@
         "slug": "home",
         "layout": [
           {
-            "heading": "AllZone Technologies  has won the Best Software House Presidential Award 2023",
-            "text": "AllZone Technologies is a prestigious LCCI IT Presidential Award\n2023-winning Company. It's been standing like a shining symbol of\nexcellence in software development and consultancy and\noutsourcing dedicated teams of skilled developers.",
-            "link": [
-              {
-                "type": "page",
-                "label": "Get In Touch",
-                "page": {
-                  "id": "663a0a15af4dedb881ed76a5",
-                  "name": "Contact Us",
-                  "slug": "contact-us",
-                  "layout": [
-                    {
-                      "heading": "Contact Us Page dummy",
-                      "text": "hello from Contact us",
-                      "link": [],
-                      "id": "663a0a15d76a8e31b0e1d3b0",
-                      "blockType": "hero"
+            "matadata": {
+              "heading": "Frequently Asked Questions",
+              "typoPara": [
+                {
+                  "typography": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "Does AllZone Technologies offer staff augmentation & software development services?",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "heading",
+                          "version": 1,
+                          "tag": "h3"
+                        }
+                      ],
+                      "direction": "ltr"
                     }
-                  ],
-                  "createdAt": "2024-05-07T11:01:41.337Z",
-                  "updatedAt": "2024-07-01T14:15:21.745Z"
-                },
-                "parent": {
-                  "id": "663a0a15af4dedb881ed76a5",
-                  "name": "Contact Us",
-                  "slug": "contact-us",
-                  "layout": [
-                    {
-                      "heading": "Contact Us Page dummy",
-                      "text": "hello from Contact us",
-                      "link": [],
-                      "id": "663a0a15d76a8e31b0e1d3b0",
-                      "blockType": "hero"
+                  },
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "Yes. AllZone Technologies is one of the best software development, consultancy companies that offer team augmentation services for startups, enterprises, and businesses. The company provides a highly skilled and dedicated team of engineers. They develop programming solutions, cross-platform mobile applications, cloud-native solutions, program maintenance, MVP, ERP, and CRM.",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "paragraph",
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
                     }
-                  ],
-                  "createdAt": "2024-05-07T11:01:41.337Z",
-                  "updatedAt": "2024-07-01T14:15:21.745Z"
+                  },
+                  "id": "668690982ed446829a2123a0"
                 },
-                "id": "66855da29de23e27a469eb3f"
-              }
-            ],
-            "slides": [
-              {
-                "media": {
-                  "id": "6682ad8c102596380fca6ee4",
-                  "alt": "trophy",
-                  "filename": "5-1.png",
-                  "mimeType": "image/png",
-                  "filesize": 25799,
-                  "width": 93,
-                  "height": 242,
-                  "createdAt": "2024-07-01T13:22:20.265Z",
-                  "updatedAt": "2024-07-03T12:12:10.800Z",
-                  "url": "http://localhost:4000/media/5-1.png"
+                {
+                  "typography": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "What types of technologies does AllZone Technologies have under its belt?",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "heading",
+                          "version": 1,
+                          "tag": "h3"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "Yes. AllZone Technologies is one of the best software development, consultancy companies that offer team augmentation services for startups, enterprises, and businesses. The company provides a highly skilled and dedicated team of engineers. They develop programming solutions, cross-platform mobile applications, cloud-native solutions, program maintenance, MVP, ERP, and CRM.",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "paragraph",
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "id": "668690b12ed446829a2123a1"
                 },
-                "id": "66855db29de23e27a469eb40"
-              },
-              {
-                "media": {
-                  "id": "6682ad9e102596380fca6efc",
-                  "alt": "group photo",
-                  "filename": "azt-photo-1.svg",
-                  "mimeType": "image/svg+xml",
-                  "filesize": 1626960,
-                  "width": 373,
-                  "height": 243,
-                  "createdAt": "2024-07-01T13:22:38.604Z",
-                  "updatedAt": "2024-07-03T12:04:03.421Z",
-                  "url": "http://localhost:4000/media/azt-photo-1.svg"
+                {
+                  "typography": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "How does the company software development process achieve faster delivery and increased efficiency?",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "heading",
+                          "version": 1,
+                          "tag": "h3"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "Yes. AllZone Technologies is one of the best software development, consultancy companies that offer team augmentation services for startups, enterprises, and businesses. The company provides a highly skilled and dedicated team of engineers. They develop programming solutions, cross-platform mobile applications, cloud-native solutions, program maintenance, MVP, ERP, and CRM.",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "paragraph",
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "id": "668690c72ed446829a2123a2"
                 },
-                "id": "66855dca9de23e27a469eb41"
-              },
-              {
-                "media": {
-                  "id": "6682adb6102596380fca6f15",
-                  "alt": "blue bg",
-                  "filename": "Blue-bg.svg",
-                  "mimeType": "image/svg+xml",
-                  "filesize": 124216,
-                  "width": 374,
-                  "height": 129,
-                  "createdAt": "2024-07-01T13:23:02.370Z",
-                  "updatedAt": "2024-07-03T12:04:41.065Z",
-                  "url": "http://localhost:4000/media/Blue-bg.svg"
-                },
-                "id": "66855dd29de23e27a469eb42"
-              },
-              {
-                "media": {
-                  "id": "6682ad66102596380fca6ecd",
-                  "alt": "dev",
-                  "filename": "onbench.svg",
-                  "mimeType": "image/svg+xml",
-                  "filesize": 79684,
-                  "width": 93,
-                  "height": 128,
-                  "createdAt": "2024-07-01T13:21:42.413Z",
-                  "updatedAt": "2024-07-03T12:05:48.017Z",
-                  "url": "http://localhost:4000/media/onbench.svg"
-                },
-                "id": "66855dd89de23e27a469eb43"
-              }
-            ],
-            "id": "66855d859de23e27a469eb3e",
-            "blockType": "home"
+                {
+                  "typography": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "What makes AllZone Technologies’ staff augmentation services better than others?",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "heading",
+                          "version": 1,
+                          "tag": "h3"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "Yes. AllZone Technologies is one of the best software development, consultancy companies that offer team augmentation services for startups, enterprises, and businesses. The company provides a highly skilled and dedicated team of engineers. They develop programming solutions, cross-platform mobile applications, cloud-native solutions, program maintenance, MVP, ERP, and CRM.",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "paragraph",
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "id": "668690d72ed446829a2123a3"
+                }
+              ]
+            },
+            "id": "6686907d2ed446829a21239f",
+            "blockType": "metaData"
           }
         ],
         "createdAt": "2024-07-01T16:57:37.241Z",
-        "updatedAt": "2024-07-03T14:19:16.897Z"
+        "updatedAt": "2024-07-04T12:09:27.181Z"
       },
       "id": "666b41bc6ebcc384bfa8dcb5"
     },
@@ -810,115 +1110,265 @@
         "slug": "home",
         "layout": [
           {
-            "heading": "AllZone Technologies  has won the Best Software House Presidential Award 2023",
-            "text": "AllZone Technologies is a prestigious LCCI IT Presidential Award\n2023-winning Company. It's been standing like a shining symbol of\nexcellence in software development and consultancy and\noutsourcing dedicated teams of skilled developers.",
-            "link": [
-              {
-                "type": "page",
-                "label": "Get In Touch",
-                "page": {
-                  "id": "663a0a15af4dedb881ed76a5",
-                  "name": "Contact Us",
-                  "slug": "contact-us",
-                  "layout": [
-                    {
-                      "heading": "Contact Us Page dummy",
-                      "text": "hello from Contact us",
-                      "link": [],
-                      "id": "663a0a15d76a8e31b0e1d3b0",
-                      "blockType": "hero"
+            "matadata": {
+              "heading": "Frequently Asked Questions",
+              "typoPara": [
+                {
+                  "typography": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "Does AllZone Technologies offer staff augmentation & software development services?",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "heading",
+                          "version": 1,
+                          "tag": "h3"
+                        }
+                      ],
+                      "direction": "ltr"
                     }
-                  ],
-                  "createdAt": "2024-05-07T11:01:41.337Z",
-                  "updatedAt": "2024-07-01T14:15:21.745Z"
-                },
-                "parent": {
-                  "id": "663a0a15af4dedb881ed76a5",
-                  "name": "Contact Us",
-                  "slug": "contact-us",
-                  "layout": [
-                    {
-                      "heading": "Contact Us Page dummy",
-                      "text": "hello from Contact us",
-                      "link": [],
-                      "id": "663a0a15d76a8e31b0e1d3b0",
-                      "blockType": "hero"
+                  },
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "Yes. AllZone Technologies is one of the best software development, consultancy companies that offer team augmentation services for startups, enterprises, and businesses. The company provides a highly skilled and dedicated team of engineers. They develop programming solutions, cross-platform mobile applications, cloud-native solutions, program maintenance, MVP, ERP, and CRM.",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "paragraph",
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
                     }
-                  ],
-                  "createdAt": "2024-05-07T11:01:41.337Z",
-                  "updatedAt": "2024-07-01T14:15:21.745Z"
+                  },
+                  "id": "668690982ed446829a2123a0"
                 },
-                "id": "66855da29de23e27a469eb3f"
-              }
-            ],
-            "slides": [
-              {
-                "media": {
-                  "id": "6682ad8c102596380fca6ee4",
-                  "alt": "trophy",
-                  "filename": "5-1.png",
-                  "mimeType": "image/png",
-                  "filesize": 25799,
-                  "width": 93,
-                  "height": 242,
-                  "createdAt": "2024-07-01T13:22:20.265Z",
-                  "updatedAt": "2024-07-03T12:12:10.800Z",
-                  "url": "http://localhost:4000/media/5-1.png"
+                {
+                  "typography": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "What types of technologies does AllZone Technologies have under its belt?",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "heading",
+                          "version": 1,
+                          "tag": "h3"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "Yes. AllZone Technologies is one of the best software development, consultancy companies that offer team augmentation services for startups, enterprises, and businesses. The company provides a highly skilled and dedicated team of engineers. They develop programming solutions, cross-platform mobile applications, cloud-native solutions, program maintenance, MVP, ERP, and CRM.",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "paragraph",
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "id": "668690b12ed446829a2123a1"
                 },
-                "id": "66855db29de23e27a469eb40"
-              },
-              {
-                "media": {
-                  "id": "6682ad9e102596380fca6efc",
-                  "alt": "group photo",
-                  "filename": "azt-photo-1.svg",
-                  "mimeType": "image/svg+xml",
-                  "filesize": 1626960,
-                  "width": 373,
-                  "height": 243,
-                  "createdAt": "2024-07-01T13:22:38.604Z",
-                  "updatedAt": "2024-07-03T12:04:03.421Z",
-                  "url": "http://localhost:4000/media/azt-photo-1.svg"
+                {
+                  "typography": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "How does the company software development process achieve faster delivery and increased efficiency?",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "heading",
+                          "version": 1,
+                          "tag": "h3"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "Yes. AllZone Technologies is one of the best software development, consultancy companies that offer team augmentation services for startups, enterprises, and businesses. The company provides a highly skilled and dedicated team of engineers. They develop programming solutions, cross-platform mobile applications, cloud-native solutions, program maintenance, MVP, ERP, and CRM.",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "paragraph",
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "id": "668690c72ed446829a2123a2"
                 },
-                "id": "66855dca9de23e27a469eb41"
-              },
-              {
-                "media": {
-                  "id": "6682adb6102596380fca6f15",
-                  "alt": "blue bg",
-                  "filename": "Blue-bg.svg",
-                  "mimeType": "image/svg+xml",
-                  "filesize": 124216,
-                  "width": 374,
-                  "height": 129,
-                  "createdAt": "2024-07-01T13:23:02.370Z",
-                  "updatedAt": "2024-07-03T12:04:41.065Z",
-                  "url": "http://localhost:4000/media/Blue-bg.svg"
-                },
-                "id": "66855dd29de23e27a469eb42"
-              },
-              {
-                "media": {
-                  "id": "6682ad66102596380fca6ecd",
-                  "alt": "dev",
-                  "filename": "onbench.svg",
-                  "mimeType": "image/svg+xml",
-                  "filesize": 79684,
-                  "width": 93,
-                  "height": 128,
-                  "createdAt": "2024-07-01T13:21:42.413Z",
-                  "updatedAt": "2024-07-03T12:05:48.017Z",
-                  "url": "http://localhost:4000/media/onbench.svg"
-                },
-                "id": "66855dd89de23e27a469eb43"
-              }
-            ],
-            "id": "66855d859de23e27a469eb3e",
-            "blockType": "home"
+                {
+                  "typography": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "What makes AllZone Technologies’ staff augmentation services better than others?",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "heading",
+                          "version": 1,
+                          "tag": "h3"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "Yes. AllZone Technologies is one of the best software development, consultancy companies that offer team augmentation services for startups, enterprises, and businesses. The company provides a highly skilled and dedicated team of engineers. They develop programming solutions, cross-platform mobile applications, cloud-native solutions, program maintenance, MVP, ERP, and CRM.",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "paragraph",
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "id": "668690d72ed446829a2123a3"
+                }
+              ]
+            },
+            "id": "6686907d2ed446829a21239f",
+            "blockType": "metaData"
           }
         ],
         "createdAt": "2024-07-01T16:57:37.241Z",
-        "updatedAt": "2024-07-03T14:19:16.897Z"
+        "updatedAt": "2024-07-04T12:09:27.181Z"
       },
       "parent": {
         "id": "6682e001997fca6ec2333ba1",
@@ -926,115 +1376,265 @@
         "slug": "home",
         "layout": [
           {
-            "heading": "AllZone Technologies  has won the Best Software House Presidential Award 2023",
-            "text": "AllZone Technologies is a prestigious LCCI IT Presidential Award\n2023-winning Company. It's been standing like a shining symbol of\nexcellence in software development and consultancy and\noutsourcing dedicated teams of skilled developers.",
-            "link": [
-              {
-                "type": "page",
-                "label": "Get In Touch",
-                "page": {
-                  "id": "663a0a15af4dedb881ed76a5",
-                  "name": "Contact Us",
-                  "slug": "contact-us",
-                  "layout": [
-                    {
-                      "heading": "Contact Us Page dummy",
-                      "text": "hello from Contact us",
-                      "link": [],
-                      "id": "663a0a15d76a8e31b0e1d3b0",
-                      "blockType": "hero"
+            "matadata": {
+              "heading": "Frequently Asked Questions",
+              "typoPara": [
+                {
+                  "typography": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "Does AllZone Technologies offer staff augmentation & software development services?",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "heading",
+                          "version": 1,
+                          "tag": "h3"
+                        }
+                      ],
+                      "direction": "ltr"
                     }
-                  ],
-                  "createdAt": "2024-05-07T11:01:41.337Z",
-                  "updatedAt": "2024-07-01T14:15:21.745Z"
-                },
-                "parent": {
-                  "id": "663a0a15af4dedb881ed76a5",
-                  "name": "Contact Us",
-                  "slug": "contact-us",
-                  "layout": [
-                    {
-                      "heading": "Contact Us Page dummy",
-                      "text": "hello from Contact us",
-                      "link": [],
-                      "id": "663a0a15d76a8e31b0e1d3b0",
-                      "blockType": "hero"
+                  },
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "Yes. AllZone Technologies is one of the best software development, consultancy companies that offer team augmentation services for startups, enterprises, and businesses. The company provides a highly skilled and dedicated team of engineers. They develop programming solutions, cross-platform mobile applications, cloud-native solutions, program maintenance, MVP, ERP, and CRM.",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "paragraph",
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
                     }
-                  ],
-                  "createdAt": "2024-05-07T11:01:41.337Z",
-                  "updatedAt": "2024-07-01T14:15:21.745Z"
+                  },
+                  "id": "668690982ed446829a2123a0"
                 },
-                "id": "66855da29de23e27a469eb3f"
-              }
-            ],
-            "slides": [
-              {
-                "media": {
-                  "id": "6682ad8c102596380fca6ee4",
-                  "alt": "trophy",
-                  "filename": "5-1.png",
-                  "mimeType": "image/png",
-                  "filesize": 25799,
-                  "width": 93,
-                  "height": 242,
-                  "createdAt": "2024-07-01T13:22:20.265Z",
-                  "updatedAt": "2024-07-03T12:12:10.800Z",
-                  "url": "http://localhost:4000/media/5-1.png"
+                {
+                  "typography": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "What types of technologies does AllZone Technologies have under its belt?",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "heading",
+                          "version": 1,
+                          "tag": "h3"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "Yes. AllZone Technologies is one of the best software development, consultancy companies that offer team augmentation services for startups, enterprises, and businesses. The company provides a highly skilled and dedicated team of engineers. They develop programming solutions, cross-platform mobile applications, cloud-native solutions, program maintenance, MVP, ERP, and CRM.",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "paragraph",
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "id": "668690b12ed446829a2123a1"
                 },
-                "id": "66855db29de23e27a469eb40"
-              },
-              {
-                "media": {
-                  "id": "6682ad9e102596380fca6efc",
-                  "alt": "group photo",
-                  "filename": "azt-photo-1.svg",
-                  "mimeType": "image/svg+xml",
-                  "filesize": 1626960,
-                  "width": 373,
-                  "height": 243,
-                  "createdAt": "2024-07-01T13:22:38.604Z",
-                  "updatedAt": "2024-07-03T12:04:03.421Z",
-                  "url": "http://localhost:4000/media/azt-photo-1.svg"
+                {
+                  "typography": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "How does the company software development process achieve faster delivery and increased efficiency?",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "heading",
+                          "version": 1,
+                          "tag": "h3"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "Yes. AllZone Technologies is one of the best software development, consultancy companies that offer team augmentation services for startups, enterprises, and businesses. The company provides a highly skilled and dedicated team of engineers. They develop programming solutions, cross-platform mobile applications, cloud-native solutions, program maintenance, MVP, ERP, and CRM.",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "paragraph",
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "id": "668690c72ed446829a2123a2"
                 },
-                "id": "66855dca9de23e27a469eb41"
-              },
-              {
-                "media": {
-                  "id": "6682adb6102596380fca6f15",
-                  "alt": "blue bg",
-                  "filename": "Blue-bg.svg",
-                  "mimeType": "image/svg+xml",
-                  "filesize": 124216,
-                  "width": 374,
-                  "height": 129,
-                  "createdAt": "2024-07-01T13:23:02.370Z",
-                  "updatedAt": "2024-07-03T12:04:41.065Z",
-                  "url": "http://localhost:4000/media/Blue-bg.svg"
-                },
-                "id": "66855dd29de23e27a469eb42"
-              },
-              {
-                "media": {
-                  "id": "6682ad66102596380fca6ecd",
-                  "alt": "dev",
-                  "filename": "onbench.svg",
-                  "mimeType": "image/svg+xml",
-                  "filesize": 79684,
-                  "width": 93,
-                  "height": 128,
-                  "createdAt": "2024-07-01T13:21:42.413Z",
-                  "updatedAt": "2024-07-03T12:05:48.017Z",
-                  "url": "http://localhost:4000/media/onbench.svg"
-                },
-                "id": "66855dd89de23e27a469eb43"
-              }
-            ],
-            "id": "66855d859de23e27a469eb3e",
-            "blockType": "home"
+                {
+                  "typography": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "What makes AllZone Technologies’ staff augmentation services better than others?",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "heading",
+                          "version": 1,
+                          "tag": "h3"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "Yes. AllZone Technologies is one of the best software development, consultancy companies that offer team augmentation services for startups, enterprises, and businesses. The company provides a highly skilled and dedicated team of engineers. They develop programming solutions, cross-platform mobile applications, cloud-native solutions, program maintenance, MVP, ERP, and CRM.",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "paragraph",
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "id": "668690d72ed446829a2123a3"
+                }
+              ]
+            },
+            "id": "6686907d2ed446829a21239f",
+            "blockType": "metaData"
           }
         ],
         "createdAt": "2024-07-01T16:57:37.241Z",
-        "updatedAt": "2024-07-03T14:19:16.897Z"
+        "updatedAt": "2024-07-04T12:09:27.181Z"
       },
       "id": "666b42e7051ab2a2ed9d18a1"
     },

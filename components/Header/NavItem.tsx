@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FiPlus } from "react-icons/fi";
-import { NavLinkType } from "@/src/types/headerTypes";
+import type { NavLinkType } from "@/src/types/headerTypes";
 
 interface NavItemProps {
   link: NavLinkType;
