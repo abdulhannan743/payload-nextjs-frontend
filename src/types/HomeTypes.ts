@@ -1,22 +1,26 @@
+export type TypographyNode = {
+  text: string;
+  detail?: number;
+  format?: number;
+  mode?: string;
+  style?: string;
+  type?: string;
+  version?: number;
+};
+
+export type TypographyChild = {
+  children: TypographyNode[];
+  direction?: string;
+  format?: string;
+  indent?: number;
+  type?: string;
+  version?: number;
+  tag?: string;
+};
+
 export type Typography = {
   root: {
-    children: Array<{
-      children: Array<{
-        text: string;
-        detail?: number;
-        format?: number;
-        mode?: string;
-        style?: string;
-        type?: string;
-        version?: number;
-      }>;
-      direction?: string;
-      format?: string;
-      indent?: number;
-      type?: string;
-      version?: number;
-      tag?: string;
-    }>;
+    children: TypographyChild[];
     direction?: string;
     format?: string;
     indent?: number;

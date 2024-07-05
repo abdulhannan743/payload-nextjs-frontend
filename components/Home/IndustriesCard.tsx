@@ -5,20 +5,28 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { AccordionData, IndustriesCardProps } from "@/src/types/HomeTypes";
+import type { IndustriesCardProps, AccordionData } from "@/src/types/HomeTypes";
 
-const extractAccordionData = (matadata: any): AccordionData[] => {
-  return matadata.typoPara.map((item: any) => {
-    const question = item.typography.root.children[0].children[0].text;
-    const answer = item.paragraph.root.children[0].children[0].text;
+const extractAccordionData = (
+  typoPara: IndustriesCardProps["matadata"]["typoPara"]
+): AccordionData[] => {
+  return typoPara.map(({ typography, paragraph }) => {
+    const question =
+      typography?.root?.children?.[0]?.children?.[0]?.text ||
+      "No question available";
+    const answer =
+      paragraph?.root?.children?.[0]?.children?.[0]?.text ||
+      "No answer available";
     return { question, answer };
   });
 };
 
-const IndustriesCard = ({ heading, matadata }: IndustriesCardProps) => {
-  const dataArray: AccordionData[] = extractAccordionData(matadata);
+const IndustriesCard: React.FC<IndustriesCardProps> = ({
+  heading,
+  matadata,
+}) => {
+  const dataArray = extractAccordionData(matadata.typoPara);
 
-  console.log("matadata", dataArray);
   return (
     <div className="py-10">
       <h2 className="text-3xl font-bold mt-8">{heading}</h2>

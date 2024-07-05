@@ -9,7 +9,9 @@ export default function Home({ heading, text, matadata }: HomeProps) {
         <h2 className="font-bold text-3xl mb-4 text-blue-500">{heading}</h2>
         <p className="text-lg text-black">{text}</p>
       </div>
-      <IndustriesCard heading={matadata.heading} matadata={matadata} />
+      {matadata && (
+        <IndustriesCard heading={matadata.heading} matadata={matadata} />
+      )}
     </div>
   );
 }
