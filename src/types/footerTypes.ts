@@ -38,11 +38,11 @@ export type Slide = {
 };
 
 export type Typography = {
-  root: { children: { children: { text: string } }[] };
+  root: { children: Array<{ children: Array<{ text: string }> }> };
 };
 
 export type Paragraph = {
-  root: { children: { children: { text: string } }[] };
+  root: { children: Array<{ children: Array<{ text: string }> }> };
 };
 
 export type NavLink = {

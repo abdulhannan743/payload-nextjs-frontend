@@ -4,12 +4,12 @@ import Link from "next/link";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { TbArrowBarToDown } from "react-icons/tb";
 import { Button } from "@/components/ui/button";
-import { ImageType, ButtonData } from "@/src/types/footerTypes";
+import type { ImageType, ButtonData } from "@/src/types/footerTypes";
 
 type CompanyCardProps = {
-  footerImage?: ImageType;
-  text?: string;
-  buttonData?: ButtonData;
+  footerImage: ImageType;
+  text: string;
+  buttonData: ButtonData;
 };
 
 const profileText = "Company Deck";
@@ -20,7 +20,6 @@ const CompanyCard: React.FC<CompanyCardProps> = ({
   text,
   buttonData,
 }) => {
-  if (!footerImage || !text || !buttonData) return null;
   return (
     <div className="bg-stone-200  lg:max-w-80 pr-4">
       <div>
@@ -36,7 +35,7 @@ const CompanyCard: React.FC<CompanyCardProps> = ({
       </div>
       <div>
         <Link href={buttonData.page.slug}>
-          <Button variant={"custom"} size={"md"}>
+          <Button variant={"brand"} size={"md"}>
             <span className="mr-2">{buttonData.label}</span>
             <FaLongArrowAltRight className="mt-1" />
           </Button>

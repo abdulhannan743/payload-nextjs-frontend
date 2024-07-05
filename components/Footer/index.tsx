@@ -8,40 +8,54 @@ import CompanyCard from "./CompanyCard";
 import NavigationCard from "./NavigationCard";
 import TechnologiesCard from "./TechnologiesCard";
 import ContactInfoCard from "./ContactInfoCard";
-import { FooterData } from "@/src/types/footerTypes";
+import type { FooterData, RichTextType } from "@/src/types/footerTypes";
+import FlexContainer from "./FlexContainer";
+import FlexChild from "./FlexChild";
 
 const Footer: React.FC = () => {
-  const { layout, heading, navLinks, linkHeading, link }: FooterData =
-    footer as FooterData;
+  const { layout, heading, navLinks, linkHeading, link } = footer as FooterData;
 
   const companySection = layout?.[0];
   const contactSection = layout?.[1];
   const imageSection = layout?.[2];
   const textSection = layout?.[3];
 
-  const renderRichText = (richTextObject: any) =>
+  const renderRichText = (richTextObject?: RichTextType) =>
     richTextObject?.root?.children
-      ?.map((child: any) => child.children[0]?.text)
+      ?.map((child) => child.children[0]?.text)
       .join(" ") || "";
 
   return (
     <footer className="bg-zinc-200 pt-10 md:pt-14">
-      <div className="flex flex-col md:flex-row px-20  lg:flex-nowrap md:flex-wrap">
-        {companySection && (
-          <CompanyCard
-            footerImage={companySection.Image}
-            text={companySection.text}
-            buttonData={companySection.link?.[0]}
-          />
-        )}
+      <FlexContainer className="flex-col md:flex-row px-20 lg:flex-nowrap md:flex-wrap">
+        {companySection &&
+          companySection.Image &&
+          companySection.text &&
+          companySection.link?.[0] && (
+            <FlexChild>
+              <CompanyCard
+                footerImage={companySection.Image}
+                text={companySection.text}
+                buttonData={companySection.link[0]}
+              />
+            </FlexChild>
+          )}
         {heading && navLinks && (
-          <NavigationCard heading={heading} navLinks={navLinks} />
+          <FlexChild>
+            <NavigationCard heading={heading} navLinks={navLinks} />
+          </FlexChild>
         )}
         {linkHeading && link && (
-          <TechnologiesCard linkHeading={linkHeading} link={link} />
+          <FlexChild>
+            <TechnologiesCard linkHeading={linkHeading} link={link} />
+          </FlexChild>
         )}
-        {contactSection && <ContactInfoCard layout={contactSection} />}
-      </div>
+        {contactSection && (
+          <FlexChild>
+            <ContactInfoCard layout={contactSection} />
+          </FlexChild>
+        )}
+      </FlexContainer>
 
       {imageSection?.slides?.[0]?.media && (
         <div className="ml-4 md:ml-32 mt-4 md:mt-0 md:mr-20">

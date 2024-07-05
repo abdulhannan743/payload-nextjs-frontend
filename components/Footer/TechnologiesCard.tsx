@@ -1,6 +1,7 @@
 import React from "react";
-import { LinkItem } from "@/src/types/footerTypes";
-import Link from "next/link";
+import type { LinkItem } from "@/src/types/footerTypes";
+import CustomLink from "./CustomLink";
+import Container from "./Container";
 
 type TechnologiesCardProps = {
   linkHeading: { heading: string };
@@ -12,30 +13,22 @@ const TechnologiesCard: React.FC<TechnologiesCardProps> = ({
   link,
 }) => {
   return (
-    <div className="bg-stone-200 p-4 md:p-6 space-y-4">
+    <Container>
       <div className="text-blue-900 font-bold text-lg md:text-lg">
         {linkHeading.heading}
       </div>
       <div className="text-black">
         <div className="flex flex-col md:flex-row md:space-x-4 flex-wrap">
           <ul className="space-y-3 lg:border-l border-dashed border-gray-500 pl-4 lg:text-xs">
-            {link.map((tech) => {
-              const href =
-                tech.page.slug === "home" ? "/" : `/${tech.page.slug}`;
-              return (
-                <li key={tech.id}>
-                  <Link href={href} passHref>
-                    <span className="hover:text-blue-500 hover:underline">
-                      {tech.label}
-                    </span>
-                  </Link>
-                </li>
-              );
-            })}
+            {link.map((tech) => (
+              <li key={tech.id}>
+                <CustomLink slug={tech.page.slug} label={tech.label} />
+              </li>
+            ))}
           </ul>
         </div>
       </div>
-    </div>
+    </Container>
   );
 };
 

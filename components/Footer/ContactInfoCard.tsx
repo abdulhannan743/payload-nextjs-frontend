@@ -2,11 +2,12 @@ import React from "react";
 import { IoLocationSharp } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa";
-import { Layout } from "@/src/types/footerTypes";
+import type { Layout } from "@/src/types/footerTypes";
+import Container from "./Container";
 
 type ContactInfoProps = {
   icon: React.ReactNode;
-  title: string;
+  title?: string;
   content: string;
   hasTitle?: boolean;
 };
@@ -35,9 +36,8 @@ const ContactInfo: React.FC<ContactInfoProps> = ({
 const ContactInfoCard: React.FC<ContactInfoCardProps> = ({ layout }) => {
   const { address, email, contactNumber, Heading } = layout;
   const headingText = Heading?.root?.children?.[0]?.children?.[0]?.text || "--";
-
   return (
-    <div className="bg-stone-200 lg:p-4 md:p-6 lg:pr-16 md:pr-20 pl-2 ">
+    <Container className="bg-stone-200 lg:p-4 md:p-6 lg:pr-16 md:pr-20 pl-2 ">
       <div className="text-blue-900 font-bold text-lg md:text-lg mb-4 mt-2">
         {headingText}
       </div>
@@ -48,6 +48,7 @@ const ContactInfoCard: React.FC<ContactInfoCardProps> = ({ layout }) => {
             icon={<IoLocationSharp size={27} />}
             title={addr?.title?.root?.children[0]?.children[0]?.text || "--"}
             content={addr.Address || "--"}
+            hasTitle={true}
           />
         ))}
         {email?.map((em, index) => (
@@ -56,6 +57,7 @@ const ContactInfoCard: React.FC<ContactInfoCardProps> = ({ layout }) => {
             icon={<MdEmail size={26} className="pl-1 mr-1" />}
             title={em?.title?.root?.children[0]?.children[0]?.text || "--"}
             content={em.email || "--"}
+            hasTitle={true}
           />
         ))}
         {contactNumber?.map((contact, index) => (
@@ -70,10 +72,11 @@ const ContactInfoCard: React.FC<ContactInfoCardProps> = ({ layout }) => {
                 : ""
             }
             content={contact?.contactNumber || "--"}
+            hasTitle={index === 0}
           />
         ))}
       </div>
-    </div>
+    </Container>
   );
 };
 
