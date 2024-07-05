@@ -11,7 +11,12 @@ export default async function HomePage() {
   return (
     <>
       {homeData?.map((data: any) => (
-        <Home key={data?.id} heading={data?.heading} text={data?.text} />
+        <Home
+          key={data?.id}
+          heading={data?.heading}
+          text={data?.text}
+          matadata={data.matadata}
+        />
       ))}
     </>
   );

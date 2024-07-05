@@ -1,17 +1,15 @@
 import React from "react";
+import IndustriesCard from "./IndustriesCard";
+import { HomeProps } from "@/src/types/HomeTypes";
 
-type HomeProps = {
-  heading: string;
-  text: string;
-};
-
-export default function Home({ heading, text }: HomeProps) {
+export default function Home({ heading, text, matadata }: HomeProps) {
   return (
-    <div className="flex bg-white">
-      <div className="relative overflow-hidden max-w-xl pl-20 pr-20 pb-10">
+    <div className="flex bg-white flex-col px-64">
+      <div className="relative overflow-hidden max-w-xl">
         <h2 className="font-bold text-3xl mb-4 text-blue-500">{heading}</h2>
         <p className="text-lg text-black">{text}</p>
       </div>
+      <IndustriesCard heading={matadata.heading} matadata={matadata} />
     </div>
   );
 }
