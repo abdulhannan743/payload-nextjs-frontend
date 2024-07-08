@@ -10,7 +10,7 @@ function ScrollableContainer({
   scrollAxis,
 }: ScrollableContainerProps) {
   return (
-    <div className={`overflow-${scrollAxis}-scroll scrollbar-custom`}>
+    <div className={`overflow-x-scroll scrollbar-custom`}>
       <style>
         {`
               .scrollbar-custom {
