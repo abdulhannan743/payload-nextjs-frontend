@@ -6,13 +6,11 @@ export default async function HomePage() {
     url: "/api/pages?where[slug][equals]=home",
     method: "GET",
   });
-  const homeData = response?.docs[0].layout;
+  const homePageData = response?.docs[0].layout;
 
   return (
     <>
-      {homeData?.map((data: any) => (
-        <Home key={data?.id} heading={data?.heading} text={data?.text} />
-      ))}
+      <Home homePageData={homePageData} />
     </>
   );
 }
