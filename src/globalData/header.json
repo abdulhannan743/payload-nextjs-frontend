@@ -8,23 +8,658 @@
         "slug": "home",
         "layout": [
           {
-            "title": "data",
-            "description": "data",
-            "link": [
-              {
-                "type": "custom",
-                "label": "View More",
-                "url": "#",
-                "id": "668c0e96e005db681ffa68fc"
-              }
-            ],
-            "items": [],
-            "id": "668c0e93e005db681ffa68fb",
-            "blockType": "services"
+            "matadata": {
+              "heading": "Frequently Asked Questions",
+              "typoPara": [
+                {
+                  "typography": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "Does AllZone Technologies offer staff augmentation & software development services?",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "heading",
+                          "version": 1,
+                          "tag": "h3"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "Yes. AllZone Technologies is one of the best software development, consultancy companies that offer team augmentation services for startups, enterprises, and businesses. The company provides a highly skilled and dedicated team of engineers. They develop programming solutions, cross-platform mobile applications, cloud-native solutions, program maintenance, MVP, ERP, and CRM.",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "paragraph",
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "id": "668d336fd7ed251ce8adde53"
+                },
+                {
+                  "typography": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "What types of technologies does AllZone Technologies have under its belt?",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "heading",
+                          "version": 1,
+                          "tag": "h3"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "Yes. AllZone Technologies is one of the best software development, consultancy companies that offer team augmentation services for startups, enterprises, and businesses. The company provides a highly skilled and dedicated team of engineers. They develop programming solutions, cross-platform mobile applications, cloud-native solutions, program maintenance, MVP, ERP, and CRM.",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "paragraph",
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "id": "668d338bd7ed251ce8adde54"
+                },
+                {
+                  "typography": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "How does the company software development process achieve faster delivery and increased efficiency?",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "heading",
+                          "version": 1,
+                          "tag": "h3"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "Yes. AllZone Technologies is one of the best software development, consultancy companies that offer team augmentation services for startups, enterprises, and businesses. The company provides a highly skilled and dedicated team of engineers. They develop programming solutions, cross-platform mobile applications, cloud-native solutions, program maintenance, MVP, ERP, and CRM.",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "paragraph",
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "id": "668d339fd7ed251ce8adde55"
+                },
+                {
+                  "typography": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "What makes AllZone Technologies’ staff augmentation services better than others?",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "heading",
+                          "version": 1,
+                          "tag": "h3"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "Yes. AllZone Technologies is one of the best software development, consultancy companies that offer team augmentation services for startups, enterprises, and businesses. The company provides a highly skilled and dedicated team of engineers. They develop programming solutions, cross-platform mobile applications, cloud-native solutions, program maintenance, MVP, ERP, and CRM.",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "paragraph",
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "id": "668d33b5d7ed251ce8adde56"
+                }
+              ]
+            },
+            "id": "668d3347d7ed251ce8adde52",
+            "blockName": "Industries FAQ's Section",
+            "blockType": "metaData"
+          },
+          {
+            "industries": {
+              "heading": "Revolutionizing Industries:  AllZoneTechnologies  Leads the Way in Innovation &Competition",
+              "content": [
+                {
+                  "logo": {
+                    "id": "668bbf0f31d9d50e32030706",
+                    "alt": "logo",
+                    "filename": "Insurance-1.svg",
+                    "mimeType": "image/svg+xml",
+                    "filesize": 1325,
+                    "width": 28,
+                    "height": 28,
+                    "createdAt": "2024-07-08T10:27:27.825Z",
+                    "updatedAt": "2024-07-08T10:27:27.825Z",
+                    "url": "http://localhost:4000/media/Insurance-1.svg"
+                  },
+                  "typography": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "Insurance",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "heading",
+                          "version": 1,
+                          "tag": "h3"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "We build digital payment solutions, accounts and banking applications. Let’s consult and allow developers to manage operations. We manage, design, and develop a strategy for ",
+                              "type": "text",
+                              "version": 1
+                            },
+                            {
+                              "type": "linebreak",
+                              "version": 1
+                            },
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "your fintech.",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "paragraph",
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "link": [
+                    {
+                      "type": "page",
+                      "label": "Learn More",
+                      "page": {
+                        "id": "668886e63a874d1a60490332",
+                        "name": "Insurance",
+                        "slug": "insurance",
+                        "layout": [
+                          {
+                            "heading": "I am Insurance Page.",
+                            "text": "Hello from Insurance page.",
+                            "link": [],
+                            "id": "668885118b265d01ecedf459",
+                            "blockName": "Insurance block",
+                            "blockType": "hero"
+                          }
+                        ],
+                        "createdAt": "2024-07-05T23:51:02.092Z",
+                        "updatedAt": "2024-07-05T23:51:42.065Z"
+                      },
+                      "parent": {
+                        "id": "668886e63a874d1a60490332",
+                        "name": "Insurance",
+                        "slug": "insurance",
+                        "layout": [
+                          {
+                            "heading": "I am Insurance Page.",
+                            "text": "Hello from Insurance page.",
+                            "link": [],
+                            "id": "668885118b265d01ecedf459",
+                            "blockName": "Insurance block",
+                            "blockType": "hero"
+                          }
+                        ],
+                        "createdAt": "2024-07-05T23:51:02.092Z",
+                        "updatedAt": "2024-07-05T23:51:42.065Z"
+                      },
+                      "id": "668d31e3d7ed251ce8adde4d"
+                    }
+                  ],
+                  "id": "668d31c8d7ed251ce8adde4c"
+                },
+                {
+                  "logo": {
+                    "id": "668bbf5a31d9d50e32030715",
+                    "alt": "logo",
+                    "filename": "Tourism-1.svg",
+                    "mimeType": "image/svg+xml",
+                    "filesize": 579,
+                    "width": 34,
+                    "height": 34,
+                    "createdAt": "2024-07-08T10:28:42.385Z",
+                    "updatedAt": "2024-07-08T10:28:42.385Z",
+                    "url": "http://localhost:4000/media/Tourism-1.svg"
+                  },
+                  "typography": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "Tourism",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "heading",
+                          "version": 1,
+                          "tag": "h3"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "We build digital payment solutions, accounts and banking applications. Let’s consult and allow developers to manage operations. We manage, design, and develop a strategy for ",
+                              "type": "text",
+                              "version": 1
+                            },
+                            {
+                              "type": "linebreak",
+                              "version": 1
+                            },
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "your fintech.",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "paragraph",
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "link": [
+                    {
+                      "type": "page",
+                      "label": "Learn More",
+                      "page": {
+                        "id": "668887e03a874d1a60490356",
+                        "name": "Tourism",
+                        "slug": "tourism",
+                        "layout": [
+                          {
+                            "heading": "I am Tourism Page.",
+                            "text": "Hello from tourism page.",
+                            "link": [],
+                            "id": "668887c68b265d01ecedf45c",
+                            "blockName": "Tourism block",
+                            "blockType": "hero"
+                          }
+                        ],
+                        "createdAt": "2024-07-05T23:55:12.312Z",
+                        "updatedAt": "2024-07-05T23:55:49.580Z"
+                      },
+                      "parent": {
+                        "id": "668887e03a874d1a60490356",
+                        "name": "Tourism",
+                        "slug": "tourism",
+                        "layout": [
+                          {
+                            "heading": "I am Tourism Page.",
+                            "text": "Hello from tourism page.",
+                            "link": [],
+                            "id": "668887c68b265d01ecedf45c",
+                            "blockName": "Tourism block",
+                            "blockType": "hero"
+                          }
+                        ],
+                        "createdAt": "2024-07-05T23:55:12.312Z",
+                        "updatedAt": "2024-07-05T23:55:49.580Z"
+                      },
+                      "id": "668d3219d7ed251ce8adde4f"
+                    }
+                  ],
+                  "id": "668d31fed7ed251ce8adde4e"
+                },
+                {
+                  "logo": {
+                    "id": "668888623a874d1a60490367",
+                    "alt": "logo",
+                    "filename": "FinTech.svg",
+                    "mimeType": "image/svg+xml",
+                    "filesize": 353,
+                    "width": 29,
+                    "height": 29,
+                    "createdAt": "2024-07-05T23:57:22.771Z",
+                    "updatedAt": "2024-07-05T23:57:22.771Z",
+                    "url": "http://localhost:4000/media/FinTech.svg"
+                  },
+                  "typography": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "FinTech",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "heading",
+                          "version": 1,
+                          "tag": "h3"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "We build digital payment solutions, accounts and banking applications. Let’s consult and allow developers to manage operations. We manage, design, and develop a strategy for ",
+                              "type": "text",
+                              "version": 1
+                            },
+                            {
+                              "type": "linebreak",
+                              "version": 1
+                            },
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "your fintech.",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "paragraph",
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "link": [
+                    {
+                      "type": "page",
+                      "label": "Learn More",
+                      "page": {
+                        "id": "668888bc3a874d1a6049036e",
+                        "name": "FinTech",
+                        "slug": "fintech",
+                        "layout": [
+                          {
+                            "heading": "I am FinTech Page.",
+                            "text": "Hello from fintech page.",
+                            "link": [],
+                            "id": "668888988b265d01ecedf460",
+                            "blockType": "hero"
+                          }
+                        ],
+                        "createdAt": "2024-07-05T23:58:52.985Z",
+                        "updatedAt": "2024-07-05T23:59:30.868Z"
+                      },
+                      "parent": {
+                        "id": "668888bc3a874d1a6049036e",
+                        "name": "FinTech",
+                        "slug": "fintech",
+                        "layout": [
+                          {
+                            "heading": "I am FinTech Page.",
+                            "text": "Hello from fintech page.",
+                            "link": [],
+                            "id": "668888988b265d01ecedf460",
+                            "blockType": "hero"
+                          }
+                        ],
+                        "createdAt": "2024-07-05T23:58:52.985Z",
+                        "updatedAt": "2024-07-05T23:59:30.868Z"
+                      },
+                      "id": "668d324cd7ed251ce8adde51"
+                    }
+                  ],
+                  "id": "668d3230d7ed251ce8adde50"
+                }
+              ]
+            },
+            "id": "668d319dd7ed251ce8adde4b",
+            "blockName": "Industries Services Section",
+            "blockType": "industries"
           }
         ],
         "createdAt": "2024-07-01T16:57:37.241Z",
-        "updatedAt": "2024-07-08T16:07:21.577Z"
+        "updatedAt": "2024-07-09T12:58:03.116Z"
       },
       "parent": {
         "id": "6682e001997fca6ec2333ba1",
@@ -32,23 +667,658 @@
         "slug": "home",
         "layout": [
           {
-            "title": "data",
-            "description": "data",
-            "link": [
-              {
-                "type": "custom",
-                "label": "View More",
-                "url": "#",
-                "id": "668c0e96e005db681ffa68fc"
-              }
-            ],
-            "items": [],
-            "id": "668c0e93e005db681ffa68fb",
-            "blockType": "services"
+            "matadata": {
+              "heading": "Frequently Asked Questions",
+              "typoPara": [
+                {
+                  "typography": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "Does AllZone Technologies offer staff augmentation & software development services?",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "heading",
+                          "version": 1,
+                          "tag": "h3"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "Yes. AllZone Technologies is one of the best software development, consultancy companies that offer team augmentation services for startups, enterprises, and businesses. The company provides a highly skilled and dedicated team of engineers. They develop programming solutions, cross-platform mobile applications, cloud-native solutions, program maintenance, MVP, ERP, and CRM.",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "paragraph",
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "id": "668d336fd7ed251ce8adde53"
+                },
+                {
+                  "typography": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "What types of technologies does AllZone Technologies have under its belt?",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "heading",
+                          "version": 1,
+                          "tag": "h3"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "Yes. AllZone Technologies is one of the best software development, consultancy companies that offer team augmentation services for startups, enterprises, and businesses. The company provides a highly skilled and dedicated team of engineers. They develop programming solutions, cross-platform mobile applications, cloud-native solutions, program maintenance, MVP, ERP, and CRM.",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "paragraph",
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "id": "668d338bd7ed251ce8adde54"
+                },
+                {
+                  "typography": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "How does the company software development process achieve faster delivery and increased efficiency?",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "heading",
+                          "version": 1,
+                          "tag": "h3"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "Yes. AllZone Technologies is one of the best software development, consultancy companies that offer team augmentation services for startups, enterprises, and businesses. The company provides a highly skilled and dedicated team of engineers. They develop programming solutions, cross-platform mobile applications, cloud-native solutions, program maintenance, MVP, ERP, and CRM.",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "paragraph",
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "id": "668d339fd7ed251ce8adde55"
+                },
+                {
+                  "typography": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "What makes AllZone Technologies’ staff augmentation services better than others?",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "heading",
+                          "version": 1,
+                          "tag": "h3"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "Yes. AllZone Technologies is one of the best software development, consultancy companies that offer team augmentation services for startups, enterprises, and businesses. The company provides a highly skilled and dedicated team of engineers. They develop programming solutions, cross-platform mobile applications, cloud-native solutions, program maintenance, MVP, ERP, and CRM.",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "paragraph",
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "id": "668d33b5d7ed251ce8adde56"
+                }
+              ]
+            },
+            "id": "668d3347d7ed251ce8adde52",
+            "blockName": "Industries FAQ's Section",
+            "blockType": "metaData"
+          },
+          {
+            "industries": {
+              "heading": "Revolutionizing Industries:  AllZoneTechnologies  Leads the Way in Innovation &Competition",
+              "content": [
+                {
+                  "logo": {
+                    "id": "668bbf0f31d9d50e32030706",
+                    "alt": "logo",
+                    "filename": "Insurance-1.svg",
+                    "mimeType": "image/svg+xml",
+                    "filesize": 1325,
+                    "width": 28,
+                    "height": 28,
+                    "createdAt": "2024-07-08T10:27:27.825Z",
+                    "updatedAt": "2024-07-08T10:27:27.825Z",
+                    "url": "http://localhost:4000/media/Insurance-1.svg"
+                  },
+                  "typography": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "Insurance",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "heading",
+                          "version": 1,
+                          "tag": "h3"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "We build digital payment solutions, accounts and banking applications. Let’s consult and allow developers to manage operations. We manage, design, and develop a strategy for ",
+                              "type": "text",
+                              "version": 1
+                            },
+                            {
+                              "type": "linebreak",
+                              "version": 1
+                            },
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "your fintech.",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "paragraph",
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "link": [
+                    {
+                      "type": "page",
+                      "label": "Learn More",
+                      "page": {
+                        "id": "668886e63a874d1a60490332",
+                        "name": "Insurance",
+                        "slug": "insurance",
+                        "layout": [
+                          {
+                            "heading": "I am Insurance Page.",
+                            "text": "Hello from Insurance page.",
+                            "link": [],
+                            "id": "668885118b265d01ecedf459",
+                            "blockName": "Insurance block",
+                            "blockType": "hero"
+                          }
+                        ],
+                        "createdAt": "2024-07-05T23:51:02.092Z",
+                        "updatedAt": "2024-07-05T23:51:42.065Z"
+                      },
+                      "parent": {
+                        "id": "668886e63a874d1a60490332",
+                        "name": "Insurance",
+                        "slug": "insurance",
+                        "layout": [
+                          {
+                            "heading": "I am Insurance Page.",
+                            "text": "Hello from Insurance page.",
+                            "link": [],
+                            "id": "668885118b265d01ecedf459",
+                            "blockName": "Insurance block",
+                            "blockType": "hero"
+                          }
+                        ],
+                        "createdAt": "2024-07-05T23:51:02.092Z",
+                        "updatedAt": "2024-07-05T23:51:42.065Z"
+                      },
+                      "id": "668d31e3d7ed251ce8adde4d"
+                    }
+                  ],
+                  "id": "668d31c8d7ed251ce8adde4c"
+                },
+                {
+                  "logo": {
+                    "id": "668bbf5a31d9d50e32030715",
+                    "alt": "logo",
+                    "filename": "Tourism-1.svg",
+                    "mimeType": "image/svg+xml",
+                    "filesize": 579,
+                    "width": 34,
+                    "height": 34,
+                    "createdAt": "2024-07-08T10:28:42.385Z",
+                    "updatedAt": "2024-07-08T10:28:42.385Z",
+                    "url": "http://localhost:4000/media/Tourism-1.svg"
+                  },
+                  "typography": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "Tourism",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "heading",
+                          "version": 1,
+                          "tag": "h3"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "We build digital payment solutions, accounts and banking applications. Let’s consult and allow developers to manage operations. We manage, design, and develop a strategy for ",
+                              "type": "text",
+                              "version": 1
+                            },
+                            {
+                              "type": "linebreak",
+                              "version": 1
+                            },
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "your fintech.",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "paragraph",
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "link": [
+                    {
+                      "type": "page",
+                      "label": "Learn More",
+                      "page": {
+                        "id": "668887e03a874d1a60490356",
+                        "name": "Tourism",
+                        "slug": "tourism",
+                        "layout": [
+                          {
+                            "heading": "I am Tourism Page.",
+                            "text": "Hello from tourism page.",
+                            "link": [],
+                            "id": "668887c68b265d01ecedf45c",
+                            "blockName": "Tourism block",
+                            "blockType": "hero"
+                          }
+                        ],
+                        "createdAt": "2024-07-05T23:55:12.312Z",
+                        "updatedAt": "2024-07-05T23:55:49.580Z"
+                      },
+                      "parent": {
+                        "id": "668887e03a874d1a60490356",
+                        "name": "Tourism",
+                        "slug": "tourism",
+                        "layout": [
+                          {
+                            "heading": "I am Tourism Page.",
+                            "text": "Hello from tourism page.",
+                            "link": [],
+                            "id": "668887c68b265d01ecedf45c",
+                            "blockName": "Tourism block",
+                            "blockType": "hero"
+                          }
+                        ],
+                        "createdAt": "2024-07-05T23:55:12.312Z",
+                        "updatedAt": "2024-07-05T23:55:49.580Z"
+                      },
+                      "id": "668d3219d7ed251ce8adde4f"
+                    }
+                  ],
+                  "id": "668d31fed7ed251ce8adde4e"
+                },
+                {
+                  "logo": {
+                    "id": "668888623a874d1a60490367",
+                    "alt": "logo",
+                    "filename": "FinTech.svg",
+                    "mimeType": "image/svg+xml",
+                    "filesize": 353,
+                    "width": 29,
+                    "height": 29,
+                    "createdAt": "2024-07-05T23:57:22.771Z",
+                    "updatedAt": "2024-07-05T23:57:22.771Z",
+                    "url": "http://localhost:4000/media/FinTech.svg"
+                  },
+                  "typography": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "FinTech",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "heading",
+                          "version": 1,
+                          "tag": "h3"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "We build digital payment solutions, accounts and banking applications. Let’s consult and allow developers to manage operations. We manage, design, and develop a strategy for ",
+                              "type": "text",
+                              "version": 1
+                            },
+                            {
+                              "type": "linebreak",
+                              "version": 1
+                            },
+                            {
+                              "detail": 0,
+                              "format": 0,
+                              "mode": "normal",
+                              "style": "",
+                              "text": "your fintech.",
+                              "type": "text",
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr",
+                          "format": "",
+                          "indent": 0,
+                          "type": "paragraph",
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "link": [
+                    {
+                      "type": "page",
+                      "label": "Learn More",
+                      "page": {
+                        "id": "668888bc3a874d1a6049036e",
+                        "name": "FinTech",
+                        "slug": "fintech",
+                        "layout": [
+                          {
+                            "heading": "I am FinTech Page.",
+                            "text": "Hello from fintech page.",
+                            "link": [],
+                            "id": "668888988b265d01ecedf460",
+                            "blockType": "hero"
+                          }
+                        ],
+                        "createdAt": "2024-07-05T23:58:52.985Z",
+                        "updatedAt": "2024-07-05T23:59:30.868Z"
+                      },
+                      "parent": {
+                        "id": "668888bc3a874d1a6049036e",
+                        "name": "FinTech",
+                        "slug": "fintech",
+                        "layout": [
+                          {
+                            "heading": "I am FinTech Page.",
+                            "text": "Hello from fintech page.",
+                            "link": [],
+                            "id": "668888988b265d01ecedf460",
+                            "blockType": "hero"
+                          }
+                        ],
+                        "createdAt": "2024-07-05T23:58:52.985Z",
+                        "updatedAt": "2024-07-05T23:59:30.868Z"
+                      },
+                      "id": "668d324cd7ed251ce8adde51"
+                    }
+                  ],
+                  "id": "668d3230d7ed251ce8adde50"
+                }
+              ]
+            },
+            "id": "668d319dd7ed251ce8adde4b",
+            "blockName": "Industries Services Section",
+            "blockType": "industries"
           }
         ],
         "createdAt": "2024-07-01T16:57:37.241Z",
-        "updatedAt": "2024-07-08T16:07:21.577Z"
+        "updatedAt": "2024-07-09T12:58:03.116Z"
       },
       "id": "666af8b192a93b4aac22f3e1"
     },
@@ -81,7 +1351,7 @@
           },
           {
             "heading": "Grow your business by hiring skilled professionals",
-            "text": "AllZone Tech is a great platform that assembles developers, engineers and other technical talent to help businesses, startups, and enterprises for their software development needs.\n\nDelivering great software and services is our passion. We provide custom solutions, integrated with cutting-edge technologies like PHP, .net, MERN, MEAN, LAMP, Serverless Stacks, React Native, Flutter, and more.\n\nWe have team of skilled engineers who work in your time zone and have excellent communication skills. We have delivered projects in industries like Real Estate, Health Care, Insurance, Distant Learning.\n\nWe find you the top tech talent, so you don't have to. Partner with us for your next software development project.\nThe success of your business depends on its technology. We have the expertise to build and keep running the software behind it all. Our team of top-notch engineers and technical team will make sure that happens! That leaves you free to focus on what matters most: growing your company.",
+            "text": "AllZone Tech is a great platform that assembles developers, engineers and other technical talent to help businesses, startups, and enterprises for their software development needs.\nDelivering great software and services is our passion. We provide custom solutions, integrated with cutting-edge technologies like PHP, .net, MERN, MEAN, LAMP, Serverless Stacks, React Native, Flutter, and more.\nWe have team of skilled engineers who work in your time zone and have excellent communication skills. We have delivered projects in industries like Real Estate, Health Care, Insurance, Distant Learning.\nWe find you the top tech talent, so you don't have to. Partner with us for your next software development project.\nThe success of your business depends on its technology. We have the expertise to build and keep running the software behind it all. Our team of top-notch engineers and technical team will make sure that happens! That leaves you free to focus on what matters most: growing your company.",
             "image": {
               "id": "668d0f3be1bd34321adf71cc",
               "alt": "CEO-Image",
@@ -95,14 +1365,14 @@
               "url": "http://localhost:4000/media/CEO-Image.png"
             },
             "imageHeading": "One Decade Working Experience",
-            "direction": "reverse",
-            "id": "668d0ebcff5c550e91d5fd80",
+            "direction": "default",
+            "id": "668d3811be54d02a8b4444d3",
             "blockName": "About Company",
             "blockType": "twoColumn"
           }
         ],
         "createdAt": "2024-05-07T11:00:50.514Z",
-        "updatedAt": "2024-07-09T11:45:35.732Z"
+        "updatedAt": "2024-07-09T14:02:35.710Z"
       },
       "parent": {
         "id": "663a09e2af4dedb881ed7698",
@@ -131,7 +1401,7 @@
           },
           {
             "heading": "Grow your business by hiring skilled professionals",
-            "text": "AllZone Tech is a great platform that assembles developers, engineers and other technical talent to help businesses, startups, and enterprises for their software development needs.\n\nDelivering great software and services is our passion. We provide custom solutions, integrated with cutting-edge technologies like PHP, .net, MERN, MEAN, LAMP, Serverless Stacks, React Native, Flutter, and more.\n\nWe have team of skilled engineers who work in your time zone and have excellent communication skills. We have delivered projects in industries like Real Estate, Health Care, Insurance, Distant Learning.\n\nWe find you the top tech talent, so you don't have to. Partner with us for your next software development project.\nThe success of your business depends on its technology. We have the expertise to build and keep running the software behind it all. Our team of top-notch engineers and technical team will make sure that happens! That leaves you free to focus on what matters most: growing your company.",
+            "text": "AllZone Tech is a great platform that assembles developers, engineers and other technical talent to help businesses, startups, and enterprises for their software development needs.\nDelivering great software and services is our passion. We provide custom solutions, integrated with cutting-edge technologies like PHP, .net, MERN, MEAN, LAMP, Serverless Stacks, React Native, Flutter, and more.\nWe have team of skilled engineers who work in your time zone and have excellent communication skills. We have delivered projects in industries like Real Estate, Health Care, Insurance, Distant Learning.\nWe find you the top tech talent, so you don't have to. Partner with us for your next software development project.\nThe success of your business depends on its technology. We have the expertise to build and keep running the software behind it all. Our team of top-notch engineers and technical team will make sure that happens! That leaves you free to focus on what matters most: growing your company.",
             "image": {
               "id": "668d0f3be1bd34321adf71cc",
               "alt": "CEO-Image",
@@ -145,14 +1415,14 @@
               "url": "http://localhost:4000/media/CEO-Image.png"
             },
             "imageHeading": "One Decade Working Experience",
-            "direction": "reverse",
-            "id": "668d0ebcff5c550e91d5fd80",
+            "direction": "default",
+            "id": "668d3811be54d02a8b4444d3",
             "blockName": "About Company",
             "blockType": "twoColumn"
           }
         ],
         "createdAt": "2024-05-07T11:00:50.514Z",
-        "updatedAt": "2024-07-09T11:45:35.732Z"
+        "updatedAt": "2024-07-09T14:02:35.710Z"
       },
       "id": "666af8ca92a93b4aac22f3e2"
     },
