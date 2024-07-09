@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import type { NavLinkType } from "@/src/types/headerTypes";
 
 interface MenuProps {
@@ -7,17 +6,16 @@ interface MenuProps {
 }
 
 const Menu: React.FC<MenuProps> = ({ navLinks }) => {
-  // Filter parent links and child links
   const parentLinks = navLinks.filter((link) => !link.parent);
   const childLinks = navLinks.filter((link) => link.parent);
 
   return (
     <div>
-      {parentLinks.map((parentLink) => (
-        <div key={parentLink.label}>
+      {parentLinks.map((parentLink, index) => (
+        <div key={index}>
           <div>{parentLink.label}</div>
-          {parentLink.layout?.map((item, index) => (
-            <div key={index}>
+          {parentLink.layout?.map((item, idx) => (
+            <div key={idx}>
               <div>{item.heading}</div>
               <div>{item.text}</div>
             </div>
@@ -27,11 +25,11 @@ const Menu: React.FC<MenuProps> = ({ navLinks }) => {
               .filter(
                 (link) => link.parent && link.parent.id === parentLink.link.id
               )
-              .map((childLink) => (
-                <li key={childLink.label}>
+              .map((childLink, index) => (
+                <li key={index}>
                   <div>{childLink.label}</div>
-                  {childLink.layout?.map((item, index) => (
-                    <div key={index}>
+                  {childLink.layout?.map((item, idx) => (
+                    <div key={idx}>
                       <div>{item.heading}</div>
                       <div>{item.text}</div>
                     </div>
