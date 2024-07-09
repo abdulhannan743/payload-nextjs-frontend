@@ -1,24 +1,17 @@
 import React from "react";
 import { fetchWrapper } from "@/src/utils/fetchWrapper";
+import About from "@/components/About";
 
 async function AboutUsPage() {
   const response: any = await fetchWrapper({
     url: "/api/pages?where[slug][equals]=about-us",
     method: "GET",
   });
-  const homeData = response?.docs[0].layout;
+  const aboutData = response?.docs[0].layout;
 
   return (
     <>
-      {homeData?.map((data: any) => (
-        // just for the time being
-        <div key={data?.id}>
-          <h3 className="text-lg font-bold text-primary mb-2">
-            {data?.heading}
-          </h3>
-          <p className="text-sm text-gray text-wrap">{data?.text}</p>
-        </div>
-      ))}
+      <About aboutPageData={aboutData} />
     </>
   );
 }
