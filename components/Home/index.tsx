@@ -2,8 +2,8 @@ import React from "react";
 import ServicesSection from "./ServicesSection";
 import WhyAllZoneSection from "./WhyAllZoneSection";
 import ClientsSection from "./ClientsSection";
-import HeroSection, { HeroSectionType } from "./HeroSection";
-
+import HeroSection from "./HeroSection";
+import type { HeroSectionType } from "./HeroSection";
 type HomeProps = {
   homePageData: any;
 };

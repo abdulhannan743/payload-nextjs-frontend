@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 export type HeroSectionType = {
   heading: string;
@@ -325,20 +325,17 @@ function HeroSection({ heroData }: HeroProps) {
       blockType: "home",
     },
   ];
-  const heroDataArray = [...heroData];
-  const [currentDataIndex, setCurrentDataIndex] = useState(0);
+  const [currentDataIndex, setCurrentDataIndex] = React.useState(0);
 
-  useEffect(() => {
+  React.useEffect(() => {
     const intervalId = setInterval(() => {
-      setCurrentDataIndex(
-        (prevIndex) => (prevIndex + 1) % heroDataArray.length
-      );
+      setCurrentDataIndex((prevIndex) => (prevIndex + 1) % heroData.length);
     }, 5000);
 
     return () => clearInterval(intervalId);
-  }, [heroDataArray]);
+  }, [heroData]);
 
-  const currentData = heroDataArray[currentDataIndex];
+  const currentData = heroData[currentDataIndex];
 
   return (
     <div className="flex bg-white justify-between items-center pl-64 pr-64">
