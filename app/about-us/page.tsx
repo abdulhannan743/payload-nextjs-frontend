@@ -1,7 +1,10 @@
 import React from "react";
 import { fetchWrapper } from "@/src/utils/fetchWrapper";
 import About from "@/components/About";
-import { AboutLayoutItemType, AboutUsResponse } from "@/src/types/AboutUsTypes";
+import type {
+  AboutLayoutItemType,
+  AboutUsResponse,
+} from "@/src/types/AboutUsTypes";
 
 async function AboutUsPage() {
   const response: AboutUsResponse = await fetchWrapper({
@@ -9,8 +12,8 @@ async function AboutUsPage() {
     method: "GET",
   });
 
-  console.log("response", response?.docs[0].layout);
-  const aboutData: AboutLayoutItemType[] = response?.docs[0].layout;
+  const aboutData: AboutLayoutItemType[] =
+    response?.docs.find((item) => item.slug === "about-us")?.layout || [];
 
   return (
     <>
