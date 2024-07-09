@@ -7,18 +7,22 @@ interface NavItemProps {
   link: NavLinkType;
   closeSheet?: () => void;
   showPlusIcon?: boolean;
+  fontWeight?: string;
 }
 
 const NavItem: React.FC<NavItemProps> = ({
   link,
   closeSheet,
   showPlusIcon,
+  fontWeight,
 }) => {
   const href = link.link.slug === "home" ? "/" : `/${link.link.slug}`;
 
   return (
     <li key={link.label} className="relative group pt-2">
-      <div className="flex items-center justify-between cursor-pointer space-x-2 font-bold">
+      <div
+        className={`flex items-center justify-between cursor-pointer space-x-2 ${fontWeight} uppercase`}
+      >
         <Link href={href} onClick={closeSheet}>
           <span>{link.label}</span>
         </Link>
