@@ -2,10 +2,8 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import NavMenu from "./NavMenu";
+import NavItem from "./NavItem"; // Import the new NavItem component
 import { fetchWrapper } from "@/src/utils/fetchWrapper";
-import header from "@/src/globalData/header.json";
-import NavItem from "./NavItem";
-import { Button } from "../ui/button";
 
 function transformData(data) {
   return data.navLinks.reduce(
@@ -65,18 +63,15 @@ export default async function Header() {
             />
           </Link>
         </div>
-        <ul className="hidden lg:flex lg:gap-x-6	 text-black text-md">
+        <ul className="hidden lg:flex gap-12 lg:gap-8 text-black">
           {newData.navLinks.map((link) => (
-            <NavItem key={link.label} link={link} fontWeight="font-semibold" />
+            <NavItem key={link.label} link={link} />
           ))}
         </ul>
         <Link href={`/${buttonUrl}`}>
-          <Button
-            variant={"ghost"}
-            className="hidden md:block border border-blue-700 text-blue-700 rounded-md items-center md:ml-0 lg:ml-10 w-28 h-9 font-bold text-sm font-roboto md:mr-12 lg:mr-0"
-          >
+          <button className="hidden md:block border border-blue-500 text-blue-500 rounded-md items-center lg:ml-10 w-28 h-9 font-bold text-sm font-roboto mr-14 lg:mr-0">
             {buttonLabel}
-          </Button>
+          </button>
         </Link>
       </nav>
     </header>
