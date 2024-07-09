@@ -1,8 +1,9 @@
 import React from "react";
 import HeroSection from "../sharedComponents/HeroSection";
+import { AboutLayoutItemType } from "@/src/types/AboutUsTypes";
 
 type AboutProps = {
-  aboutPageData: any;
+  aboutPageData: AboutLayoutItemType[];
 };
 
 const About = ({ aboutPageData }: AboutProps) => {
