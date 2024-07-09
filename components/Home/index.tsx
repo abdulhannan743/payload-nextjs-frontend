@@ -1,17 +1,32 @@
 import React from "react";
-import IndustriesCard from "./IndustriesCard";
-import { HomeProps } from "@/src/types/HomeTypes";
+import ServicesSection from "./ServicesSection";
+import WhyAllZoneSection from "./WhyAllZoneSection";
+import ClientsSection from "./ClientsSection";
+import PortfolioSection from "./PortfolioSection";
 
-export default function Home({ heading, text, matadata }: HomeProps) {
+type HomeProps = {
+  homePageData: any;
+};
+
+export default function Home({ homePageData }: HomeProps) {
+  const servicesData = homePageData?.find(
+    (item: any) => item?.blockName === "Services Section"
+  );
+  const whyAllzoneData = homePageData?.find(
+    (item: any) => item?.blockName === "Why Allzone Section"
+  );
+  const clientsData = homePageData?.find(
+    (item: any) => item?.blockName === "Our Clients"
+  );
+  const portfolioData = homePageData?.find(
+    (item: any) => item?.blockName === "Our Work"
+  );
   return (
-    <div className="flex bg-white flex-col px-64">
-      <div className="relative overflow-hidden max-w-xl">
-        <h2 className="font-bold text-3xl mb-4 text-blue-500">{heading}</h2>
-        <p className="text-lg text-black">{text}</p>
-      </div>
-      {matadata && (
-        <IndustriesCard heading={matadata.heading} matadata={matadata} />
-      )}
+    <div className="bg-white">
+      <ServicesSection serviceData={servicesData} />
+      <WhyAllZoneSection whyAllzoneData={whyAllzoneData} />
+      <PortfolioSection portfolioData={portfolioData} />
+      <ClientsSection clientsData={clientsData} />
     </div>
   );
 }

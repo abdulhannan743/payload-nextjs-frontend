@@ -1,19 +1,23 @@
 import React from "react";
-import Home from "@/components/Home";
 import { fetchWrapper } from "@/src/utils/fetchWrapper";
+import About from "@/components/About";
+import type {
+  AboutLayoutItemType,
+  AboutUsResponse,
+} from "@/src/types/AboutUsTypes";
 
 async function AboutUsPage() {
-  const response: any = await fetchWrapper({
+  const response: AboutUsResponse = await fetchWrapper({
     url: "/api/pages?where[slug][equals]=about-us",
     method: "GET",
   });
-  const homeData = response?.docs[0].layout;
+
+  const aboutData: AboutLayoutItemType[] =
+    response?.docs.find((item) => item.slug === "about-us")?.layout || [];
 
   return (
     <>
-      {homeData?.map((data: any) => (
-        <Home key={data?.id} heading={data?.heading} text={data?.text} />
-      ))}
+      <About aboutPageData={aboutData} />
     </>
   );
 }
