@@ -15,7 +15,7 @@ export type AboutLayoutItemType = {
   Image: Image;
   heading: string;
   text: string;
-  link: any[];
+  link: string[];
   id: string;
   blockName: string;
   blockType: string;
