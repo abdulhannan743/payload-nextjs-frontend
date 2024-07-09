@@ -22,17 +22,16 @@ const CompanyCard: React.FC<CompanyCardProps> = ({
 }) => {
   return (
     <div className="bg-stone-200  lg:max-w-80 pr-4">
-      <div>
-        <div className="py-4">
-          <Image
-            src={footerImage.url}
-            alt={footerImage.alt}
-            width={footerImage.width}
-            height={footerImage.height}
-          />
-        </div>
-        <div className="text-black lg:text-xs mb-6">{text}</div>
+      <div className="py-4">
+        <Image
+          src={footerImage.url}
+          alt={footerImage.alt}
+          width={footerImage.width}
+          height={footerImage.height}
+        />
       </div>
+      <div className="text-black lg:text-xs mb-6">{text}</div>
+
       <div>
         <Link href={buttonData.page.slug}>
           <Button variant={"brand"} size={"md"}>
