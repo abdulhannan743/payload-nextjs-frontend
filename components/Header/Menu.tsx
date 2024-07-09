@@ -7,76 +7,42 @@ interface MenuProps {
 }
 
 const Menu: React.FC<MenuProps> = ({ navLinks }) => {
+  // Filter parent links and child links
+  const parentLinks = navLinks.filter((link) => !link.parent);
+  const childLinks = navLinks.filter((link) => link.parent);
+
   return (
     <div>
-      {navLinks.map((link) => {
-        if (link.parent) {
-          return null;
-        } else {
-          return (
-            <div key={link.label}>
-              <div>{link.label}</div>
-              {link.layout?.map((item, index) => (
-                <div key={index}>
-                  <div>{item.heading}</div>
-                  <div>{item.text}</div>
-                </div>
-              ))}
+      {parentLinks.map((parentLink) => (
+        <div key={parentLink.label}>
+          <div>{parentLink.label}</div>
+          {parentLink.layout?.map((item, index) => (
+            <div key={index}>
+              <div>{item.heading}</div>
+              <div>{item.text}</div>
             </div>
-          );
-        }
-      })}
-    </div>
-  );
-};
-
-const SubMenu: React.FC<{
-  parentLink: NavLinkType;
-  navLinks: NavLinkType[];
-}> = ({ parentLink, navLinks }) => {
-  return (
-    <div key={parentLink.label}>
-      <div>{parentLink.label}</div>
-      <ul>
-        {navLinks
-          .filter(
-            (link) => link.parent && link.parent.id === parentLink.link.id
-          )
-          .map((sublink) => (
-            <li key={sublink.label}>
-              <div>{sublink.label}</div>
-              {sublink.layout?.map((item, index) => (
-                <div key={index}>
-                  <div>{item.heading}</div>
-                  <div>{item.text}</div>
-                </div>
-              ))}
-            </li>
           ))}
-      </ul>
+          <ul>
+            {childLinks
+              .filter(
+                (link) => link.parent && link.parent.id === parentLink.link.id
+              )
+              .map((childLink) => (
+                <li key={childLink.label}>
+                  <div>{childLink.label}</div>
+                  {childLink.layout?.map((item, index) => (
+                    <div key={index}>
+                      <div>{item.heading}</div>
+                      <div>{item.text}</div>
+                    </div>
+                  ))}
+                </li>
+              ))}
+          </ul>
+        </div>
+      ))}
     </div>
   );
 };
 
-const MenuWithSubmenu: React.FC<MenuProps> = ({ navLinks }) => {
-  return (
-    <div>
-      {navLinks.map((link) => {
-        if (link.parent) {
-          return (
-            <SubMenu key={link.label} parentLink={link} navLinks={navLinks} />
-          );
-        } else {
-          return (
-            <div key={link.label}>
-              <div>{link.label}</div>
-              <Link href={link.link.slug}>{link.label}</Link>
-            </div>
-          );
-        }
-      })}
-    </div>
-  );
-};
-
-export default MenuWithSubmenu;
+export default Menu;
