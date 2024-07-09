@@ -1,22 +1,10 @@
 import React from "react";
 import ScrollableContainer from "../ui/ScrollableContainer";
-
-type Service = {
-  id: string;
-  title: string;
-  description: string;
-  iconName?: string;
-};
+import { ServiceBlockType } from "@/src/types/ServiceBlockTypes";
+import DottedLine from "../ui/DottedLine";
 
 type ServicesProps = {
-  serviceData: {
-    title: string;
-    description: string;
-    id: string;
-    blockName: string;
-    blockType: string;
-    items: Service[];
-  };
+  serviceData: ServiceBlockType;
 };
 
 function ServicesSection({ serviceData }: ServicesProps) {
@@ -74,39 +62,40 @@ function ServicesSection({ serviceData }: ServicesProps) {
     blockType: "services",
   };
   return (
-    <div className="pt-16 pb-10 px-12 md:px-20 lg:px-60 bg-[#F9F9F9]">
-      <div className="max-w-5xl mx-auto flex flex-col items-center justify-center gap-6 mb-12">
-        <h1 className="text-3xl md:text-4xl font-bold text-center">
-          {serviceData?.title}
-        </h1>
-        <div className="flex justify-center align-center gap-1">
-          <hr className="bg-secondary border-none h-[2px] w-[10px]" />
-          <hr className="bg-secondary border-none h-[2px] w-[50px]" />
+    <div className="bg-[#F5F5F5] py-16">
+      <div className="container mx-auto">
+        <div className="max-w-5xl mx-auto flex flex-col items-center justify-center gap-6 mb-12">
+          <h1 className="text-3xl md:text-4xl font-bold text-center">
+            {serviceData?.title}
+          </h1>
+          <DottedLine />
+          <p className="text-lg text-center text-gray">
+            {serviceData?.description}
+          </p>
         </div>
-        <p className="text-lg text-center text-gray">
-          {serviceData?.description}
-        </p>
+        <ScrollableContainer scrollAxis="x">
+          <div className="flex gap-8 pb-8">
+            {serviceData?.items?.map((item) => (
+              <div
+                key={item.id}
+                className="bg-white p-4 shadow-md rounded-lg min-w-[350px] max-w-[350px] mx-auto"
+              >
+                <img
+                  src={`/assets/icons/${item.iconName}.svg`}
+                  alt={`${item.iconName} icon`}
+                  className="mb-3"
+                />
+                <h3 className="text-lg font-bold text-primary mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-sm text-gray text-wrap">
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </ScrollableContainer>
       </div>
-      <ScrollableContainer scrollAxis="x">
-        <div className="flex gap-8 pb-8">
-          {serviceData?.items?.map((item) => (
-            <div
-              key={item.id}
-              className="bg-white p-4 shadow-md rounded-lg min-w-[350px] max-w-[350px] mx-auto"
-            >
-              <img
-                src={`/assets/icons/${item.iconName}.svg`}
-                alt={`${item.iconName} icon`}
-                className="mb-3"
-              />
-              <h3 className="text-lg font-bold text-primary mb-2">
-                {item.title}
-              </h3>
-              <p className="text-sm text-gray text-wrap">{item.description}</p>
-            </div>
-          ))}
-        </div>
-      </ScrollableContainer>
     </div>
   );
 }
