@@ -33,7 +33,11 @@ const IndustriesFAQCard: React.FC<IndustriesCardProps> = ({
       <Accordion type="single" collapsible className="w-full">
         {dataArray?.map((data, index) => (
           <AccordionItem value={`item-${index + 1}`} key={index}>
-            <AccordionTrigger className="text-base sm:text-lg lg:text-xl">
+            <AccordionTrigger
+              closedClassName="text-black"
+              openClassName="text-blue-900"
+              className="text-base sm:text-lg lg:text-xl"
+            >
               {data.question}
             </AccordionTrigger>
             <AccordionContent className="text-sm sm:text-base lg:text-lg">

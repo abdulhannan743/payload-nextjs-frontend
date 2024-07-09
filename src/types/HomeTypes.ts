@@ -55,3 +55,44 @@ export type HomeProps = {
     }>;
   };
 };
+
+// New types for IndustriesServicesCard
+export type IndustryContent = {
+  logo: {
+    url: string;
+    alt: string;
+    width: string | number;
+    uheightrl: string | number;
+  };
+
+  heading: string;
+
+  typography: {
+    root: {
+      children: {
+        children: {
+          text: string;
+        }[];
+      }[];
+    };
+  };
+  paragraph: {
+    root: {
+      children: {
+        children: {
+          text: string;
+        }[];
+      }[];
+    };
+  };
+  link: {
+    label: string;
+  }[];
+};
+
+export type IndustriesProps = {
+  industries: {
+    heading: string;
+    content: IndustryContent[];
+  };
+};

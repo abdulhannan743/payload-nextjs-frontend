@@ -4,6 +4,7 @@ import WhyAllZoneSection from "./WhyAllZoneSection";
 import ClientsSection from "./ClientsSection";
 import PortfolioSection from "./PortfolioSection";
 import IndustriesFAQCard from "./IndustriesFAQCard";
+import IndustriesServicesCard from "./IndustriesServicesCard";
 
 type HomeProps = {
   homePageData: any;
@@ -25,11 +26,14 @@ export default function Home({ homePageData }: HomeProps) {
   const matadata = homePageData?.find(
     (item: any) => item?.blockName === "Industries FAQ's Section"
   );
-  console.log("matadata", matadata);
+  const industries = homePageData?.find(
+    (item: any) => item?.blockName === "Industries Services Section"
+  );
 
   return (
     <div className="bg-white">
       <ServicesSection serviceData={servicesData} />
+      <IndustriesServicesCard industries={industries} />
       <WhyAllZoneSection whyAllzoneData={whyAllzoneData} />
       <PortfolioSection portfolioData={portfolioData} />
       <ClientsSection clientsData={clientsData} />

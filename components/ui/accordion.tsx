@@ -17,17 +17,24 @@ const AccordionItem = React.forwardRef<
 ));
 AccordionItem.displayName = "AccordionItem";
 
+interface AccordionTriggerProps
+  extends React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger> {
+  closedClassName: string;
+  openClassName: string;
+}
+
 const AccordionTrigger = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Trigger>,
-  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger>
->(({ className, children, ...props }, ref) => (
+  AccordionTriggerProps
+>(({ className, closedClassName, openClassName, children, ...props }, ref) => (
   <AccordionPrimitive.Header className="flex">
     <AccordionPrimitive.Trigger
       ref={ref}
       className={cn(
         "flex flex-1 items-center justify-between py-4 font-medium transition-all",
-        "data-[state=open]:text-blue-500 data-[state=closed]:text-black",
-        className
+        className,
+        "data-[state=open]:" + openClassName,
+        "data-[state=closed]:" + closedClassName
       )}
       {...props}
     >
