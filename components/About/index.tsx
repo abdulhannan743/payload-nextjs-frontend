@@ -8,7 +8,7 @@ type AboutProps = {
 
 const About = ({ aboutPageData }: AboutProps) => {
   const HeroSectionData = aboutPageData.find(
-    (item: any) => item.blockName === "Hero"
+    (item) => item.blockName === "Hero"
   );
 
   return <HeroSection HeroSectionData={HeroSectionData} />;
