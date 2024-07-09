@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss";
-import type { PluginAPI } from "tailwindcss/types/config";
 
 const config = {
   darkMode: ["class"],
@@ -19,9 +18,6 @@ const config = {
       },
     },
     extend: {
-      clipPath: {
-        "diagonal-top-right": "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
-      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -78,16 +74,7 @@ const config = {
       },
     },
   },
-  plugins: [
-    function ({ addUtilities }: PluginAPI) {
-      addUtilities({
-        ".clip-diagonal-top-right": {
-          clipPath: "polygon(0 0, 93% 0, 100% 100%, 0 100%)",
-        },
-      });
-    },
-    require("tailwindcss-animate"),
-  ],
+  plugins: [require("tailwindcss-animate")],
 } satisfies Config;
 
 export default config;

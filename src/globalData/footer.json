@@ -26,7 +26,7 @@
             "slug": "contact-us",
             "layout": [
               {
-                "heading": "Contact Us Page dummy",
+                "heading": "Contact Us",
                 "text": "hello from Contact us",
                 "link": [],
                 "id": "663a0a15d76a8e31b0e1d3b0",
@@ -34,7 +34,7 @@
               }
             ],
             "createdAt": "2024-05-07T11:01:41.337Z",
-            "updatedAt": "2024-07-01T14:15:21.745Z"
+            "updatedAt": "2024-06-24T10:49:05.385Z"
           },
           "parent": {
             "id": "663a0a15af4dedb881ed76a5",
@@ -42,7 +42,7 @@
             "slug": "contact-us",
             "layout": [
               {
-                "heading": "Contact Us Page dummy",
+                "heading": "Contact Us",
                 "text": "hello from Contact us",
                 "link": [],
                 "id": "663a0a15d76a8e31b0e1d3b0",
@@ -50,13 +50,12 @@
               }
             ],
             "createdAt": "2024-05-07T11:01:41.337Z",
-            "updatedAt": "2024-07-01T14:15:21.745Z"
+            "updatedAt": "2024-06-24T10:49:05.385Z"
           },
-          "id": "667ee99b72325f0299a99211"
+          "id": "667d4fbcde05db6b429b7a98"
         }
       ],
       "id": "667d4f20de05db6b429b7a97",
-      "blockName": "Description",
       "blockType": "hero"
     },
     {
@@ -213,28 +212,31 @@
                       "format": 0,
                       "mode": "normal",
                       "style": "",
-                      "text": "Phone:",
+                      "text": "Contact Number",
                       "type": "text",
+                      "version": 1
+                    },
+                    {
+                      "type": "linebreak",
                       "version": 1
                     }
                   ],
                   "direction": "ltr",
                   "format": "",
                   "indent": 0,
-                  "type": "heading",
-                  "version": 1,
-                  "tag": "h4"
+                  "type": "paragraph",
+                  "version": 1
                 }
               ],
               "direction": "ltr"
             }
           },
-          "contactNumber": "PK : +92-317-669-5684",
-          "id": "66844ee03662c06cf6671319"
+          "contactNumber": 3215688174,
+          "id": "666adde7cee35ee4b29545cd"
         },
         {
-          "contactNumber": "US : +1 (302) 315-0577",
-          "id": "66844efb3662c06cf667131a"
+          "contactNumber": 3099858253,
+          "id": "666ade24cee35ee4b29545ce"
         }
       ],
       "id": "666ad89dcee35ee4b29545bf",
@@ -261,163 +263,48 @@
         }
       ],
       "id": "667d805436d89d5db4c9506c",
-      "blockName": "BackGround Image",
       "blockType": "slider"
-    },
-    {
-      "backgroundColor": "none",
-      "typography": {
-        "root": {
-          "type": "root",
-          "format": "",
-          "indent": 0,
-          "version": 1,
-          "children": [
-            {
-              "children": [
-                {
-                  "detail": 0,
-                  "format": 0,
-                  "mode": "normal",
-                  "style": "",
-                  "text": "© 2022. All Rights Reserved By",
-                  "type": "text",
-                  "version": 1
-                }
-              ],
-              "direction": "ltr",
-              "format": "",
-              "indent": 0,
-              "type": "paragraph",
-              "version": 1
-            }
-          ],
-          "direction": "ltr"
-        }
-      },
-      "paragraph": {
-        "root": {
-          "type": "root",
-          "format": "",
-          "indent": 0,
-          "version": 1,
-          "children": [
-            {
-              "children": [
-                {
-                  "detail": 0,
-                  "format": 0,
-                  "mode": "normal",
-                  "style": "",
-                  "text": " AllZone Technologies",
-                  "type": "text",
-                  "version": 1
-                }
-              ],
-              "direction": "ltr",
-              "format": "",
-              "indent": 0,
-              "type": "paragraph",
-              "version": 1
-            }
-          ],
-          "direction": "ltr"
-        }
-      },
-      "id": "667eded817bca102e381a4c1",
-      "blockName": "Bottom Bar",
-      "blockType": "typographyAndParaGraph"
     }
   ],
   "globalType": "footer",
   "createdAt": "2024-05-31T16:35:04.543Z",
-  "updatedAt": "2024-07-04T04:54:55.588Z",
+  "updatedAt": "2024-06-27T15:09:03.811Z",
   "navLinks": [
     {
       "label": "Home",
       "link": {
-        "id": "6682e001997fca6ec2333ba1",
+        "id": "6630df1d9663292463780c7b",
         "name": "Home",
         "slug": "home",
         "layout": [
           {
-            "heading": "AllZone Technologies has won the Best Software House Presidential Award 2023",
-            "text": "AllZone Technologies is a prestigious LCCI IT Presidential Award 2023-winning Company. It's been standing like a shining symbol of excellence in software development and consultancy and outsourcing dedicated teams of skilled developers.",
-            "link": [
-              {
-                "type": "page",
-                "label": "Get In Touch",
-                "page": "663a0a15af4dedb881ed76a5",
-                "parent": "663a0a15af4dedb881ed76a5",
-                "id": "66880684bc4864c98561b099"
-              }
-            ],
-            "slides": [
-              {
-                "media": "6682ad9e102596380fca6efc",
-                "id": "668806b0bc4864c98561b09b"
-              },
-              {
-                "media": "6682ad8c102596380fca6ee4",
-                "id": "668806a8bc4864c98561b09a"
-              },
-              {
-                "media": "6682ad66102596380fca6ecd",
-                "id": "668806bcbc4864c98561b09d"
-              },
-              {
-                "media": "6682adb6102596380fca6f15",
-                "id": "668806b5bc4864c98561b09c"
-              }
-            ],
-            "id": "6688066cbc4864c98561b098",
-            "blockType": "home"
+            "heading": "I am Home Page.",
+            "text": "AllZone Technologies has won the Best Software House Presidential Award 2023",
+            "link": [],
+            "id": "66696d51b3f80b427e880657",
+            "blockName": "Home Content",
+            "blockType": "hero"
           }
         ],
-        "createdAt": "2024-07-01T16:57:37.241Z",
-        "updatedAt": "2024-07-05T15:03:57.670Z"
+        "createdAt": "2024-04-30T12:07:57.221Z",
+        "updatedAt": "2024-06-26T13:34:54.398Z"
       },
       "parent": {
-        "id": "6682e001997fca6ec2333ba1",
+        "id": "6630df1d9663292463780c7b",
         "name": "Home",
         "slug": "home",
         "layout": [
           {
-            "heading": "AllZone Technologies has won the Best Software House Presidential Award 2023",
-            "text": "AllZone Technologies is a prestigious LCCI IT Presidential Award 2023-winning Company. It's been standing like a shining symbol of excellence in software development and consultancy and outsourcing dedicated teams of skilled developers.",
-            "link": [
-              {
-                "type": "page",
-                "label": "Get In Touch",
-                "page": "663a0a15af4dedb881ed76a5",
-                "parent": "663a0a15af4dedb881ed76a5",
-                "id": "66880684bc4864c98561b099"
-              }
-            ],
-            "slides": [
-              {
-                "media": "6682ad9e102596380fca6efc",
-                "id": "668806b0bc4864c98561b09b"
-              },
-              {
-                "media": "6682ad8c102596380fca6ee4",
-                "id": "668806a8bc4864c98561b09a"
-              },
-              {
-                "media": "6682ad66102596380fca6ecd",
-                "id": "668806bcbc4864c98561b09d"
-              },
-              {
-                "media": "6682adb6102596380fca6f15",
-                "id": "668806b5bc4864c98561b09c"
-              }
-            ],
-            "id": "6688066cbc4864c98561b098",
-            "blockType": "home"
+            "heading": "I am Home Page.",
+            "text": "AllZone Technologies has won the Best Software House Presidential Award 2023",
+            "link": [],
+            "id": "66696d51b3f80b427e880657",
+            "blockName": "Home Content",
+            "blockType": "hero"
           }
         ],
-        "createdAt": "2024-07-01T16:57:37.241Z",
-        "updatedAt": "2024-07-05T15:03:57.670Z"
+        "createdAt": "2024-04-30T12:07:57.221Z",
+        "updatedAt": "2024-06-26T13:34:54.398Z"
       },
       "id": "666b41bc6ebcc384bfa8dcb5"
     },
@@ -429,15 +316,16 @@
         "slug": "about-us",
         "layout": [
           {
-            "heading": "Hello from About us Page dummy.",
+            "heading": "Hello from About us page.",
             "text": "I am the descrition.",
-            "link": [],
+            "backgroundImage": "666092fa57861575735cc251",
             "id": "663a09e2d76a8e31b0e1d3af",
-            "blockType": "hero"
+            "blockType": "hero",
+            "link": []
           }
         ],
         "createdAt": "2024-05-07T11:00:50.514Z",
-        "updatedAt": "2024-07-01T14:51:56.389Z"
+        "updatedAt": "2024-06-05T16:32:00.128Z"
       },
       "parent": {
         "id": "663a09e2af4dedb881ed7698",
@@ -445,15 +333,16 @@
         "slug": "about-us",
         "layout": [
           {
-            "heading": "Hello from About us Page dummy.",
+            "heading": "Hello from About us page.",
             "text": "I am the descrition.",
-            "link": [],
+            "backgroundImage": "666092fa57861575735cc251",
             "id": "663a09e2d76a8e31b0e1d3af",
-            "blockType": "hero"
+            "blockType": "hero",
+            "link": []
           }
         ],
         "createdAt": "2024-05-07T11:00:50.514Z",
-        "updatedAt": "2024-07-01T14:51:56.389Z"
+        "updatedAt": "2024-06-05T16:32:00.128Z"
       },
       "id": "666b41c76ebcc384bfa8dcb6"
     },
@@ -465,15 +354,16 @@
         "slug": "services",
         "layout": [
           {
-            "heading": "Services Page dummy",
+            "heading": "Services",
             "text": "Hello from this page.",
-            "link": [],
+            "backgroundImage": "6660946657861575735cc323",
             "id": "663a1277d76a8e31b0e1d3b3",
-            "blockType": "hero"
+            "blockType": "hero",
+            "link": []
           }
         ],
         "createdAt": "2024-05-07T11:37:27.969Z",
-        "updatedAt": "2024-07-01T14:10:39.019Z"
+        "updatedAt": "2024-06-05T16:49:10.208Z"
       },
       "parent": {
         "id": "663a1277af4dedb881ed7773",
@@ -481,15 +371,16 @@
         "slug": "services",
         "layout": [
           {
-            "heading": "Services Page dummy",
+            "heading": "Services",
             "text": "Hello from this page.",
-            "link": [],
+            "backgroundImage": "6660946657861575735cc323",
             "id": "663a1277d76a8e31b0e1d3b3",
-            "blockType": "hero"
+            "blockType": "hero",
+            "link": []
           }
         ],
         "createdAt": "2024-05-07T11:37:27.969Z",
-        "updatedAt": "2024-07-01T14:10:39.019Z"
+        "updatedAt": "2024-06-05T16:49:10.208Z"
       },
       "id": "666b41d16ebcc384bfa8dcb7"
     },
@@ -501,22 +392,24 @@
         "slug": "technologies",
         "layout": [
           {
-            "heading": "Second Head Page dummy",
+            "heading": "Second Head",
             "text": "I am Hero Second Block.",
-            "link": [],
+            "backgroundImage": "6661bb440599c56b004d6a04",
             "id": "6661bb27564a9e0c239526e8",
-            "blockType": "hero"
+            "blockType": "hero",
+            "link": []
           },
           {
             "heading": "Technologies",
             "text": "Hello from Technologies page.",
-            "link": [],
+            "backgroundImage": "666096bb57861575735cc462",
             "id": "663a0a8bd76a8e31b0e1d3b1",
-            "blockType": "hero"
+            "blockType": "hero",
+            "link": []
           }
         ],
         "createdAt": "2024-05-07T11:03:39.689Z",
-        "updatedAt": "2024-07-01T14:16:08.906Z"
+        "updatedAt": "2024-06-06T13:37:35.816Z"
       },
       "parent": {
         "id": "663a0a8baf4dedb881ed76e3",
@@ -524,22 +417,24 @@
         "slug": "technologies",
         "layout": [
           {
-            "heading": "Second Head Page dummy",
+            "heading": "Second Head",
             "text": "I am Hero Second Block.",
-            "link": [],
+            "backgroundImage": "6661bb440599c56b004d6a04",
             "id": "6661bb27564a9e0c239526e8",
-            "blockType": "hero"
+            "blockType": "hero",
+            "link": []
           },
           {
             "heading": "Technologies",
             "text": "Hello from Technologies page.",
-            "link": [],
+            "backgroundImage": "666096bb57861575735cc462",
             "id": "663a0a8bd76a8e31b0e1d3b1",
-            "blockType": "hero"
+            "blockType": "hero",
+            "link": []
           }
         ],
         "createdAt": "2024-05-07T11:03:39.689Z",
-        "updatedAt": "2024-07-01T14:16:08.906Z"
+        "updatedAt": "2024-06-06T13:37:35.816Z"
       },
       "id": "666b41e06ebcc384bfa8dcb8"
     },
@@ -551,15 +446,16 @@
         "slug": "journal",
         "layout": [
           {
-            "heading": "Journal Page dummy",
-            "text": "Hello From Journal Page.",
-            "link": [],
+            "heading": "Journal",
+            "text": "Hello From Journal page.",
+            "backgroundImage": "6660975d57861575735cc4c9",
             "id": "663a12bed76a8e31b0e1d3b4",
-            "blockType": "hero"
+            "blockType": "hero",
+            "link": []
           }
         ],
         "createdAt": "2024-05-07T11:38:38.126Z",
-        "updatedAt": "2024-07-01T14:10:19.034Z"
+        "updatedAt": "2024-06-05T16:51:30.022Z"
       },
       "parent": {
         "id": "663a12beaf4dedb881ed7783",
@@ -567,15 +463,16 @@
         "slug": "journal",
         "layout": [
           {
-            "heading": "Journal Page dummy",
-            "text": "Hello From Journal Page.",
-            "link": [],
+            "heading": "Journal",
+            "text": "Hello From Journal page.",
+            "backgroundImage": "6660975d57861575735cc4c9",
             "id": "663a12bed76a8e31b0e1d3b4",
-            "blockType": "hero"
+            "blockType": "hero",
+            "link": []
           }
         ],
         "createdAt": "2024-05-07T11:38:38.126Z",
-        "updatedAt": "2024-07-01T14:10:19.034Z"
+        "updatedAt": "2024-06-05T16:51:30.022Z"
       },
       "id": "666b41eb6ebcc384bfa8dcb9"
     },
@@ -587,15 +484,16 @@
         "slug": "careers",
         "layout": [
           {
-            "heading": "Careers Page dummy",
+            "heading": "Careers ",
             "text": "Hello fro career page.",
-            "link": [],
+            "backgroundImage": "6660953e57861575735cc390",
             "id": "663a0aa1d76a8e31b0e1d3b2",
-            "blockType": "hero"
+            "blockType": "hero",
+            "link": []
           }
         ],
         "createdAt": "2024-05-07T11:04:01.384Z",
-        "updatedAt": "2024-07-01T14:10:49.330Z"
+        "updatedAt": "2024-06-05T16:42:29.941Z"
       },
       "parent": {
         "id": "663a0aa1af4dedb881ed76f0",
@@ -603,15 +501,16 @@
         "slug": "careers",
         "layout": [
           {
-            "heading": "Careers Page dummy",
+            "heading": "Careers ",
             "text": "Hello fro career page.",
-            "link": [],
+            "backgroundImage": "6660953e57861575735cc390",
             "id": "663a0aa1d76a8e31b0e1d3b2",
-            "blockType": "hero"
+            "blockType": "hero",
+            "link": []
           }
         ],
         "createdAt": "2024-05-07T11:04:01.384Z",
-        "updatedAt": "2024-07-01T14:10:49.330Z"
+        "updatedAt": "2024-06-05T16:42:29.941Z"
       },
       "id": "666b41f56ebcc384bfa8dcba"
     },
@@ -623,7 +522,7 @@
         "slug": "contact-us",
         "layout": [
           {
-            "heading": "Contact Us Page dummy",
+            "heading": "Contact Us",
             "text": "hello from Contact us",
             "link": [],
             "id": "663a0a15d76a8e31b0e1d3b0",
@@ -631,7 +530,7 @@
           }
         ],
         "createdAt": "2024-05-07T11:01:41.337Z",
-        "updatedAt": "2024-07-01T14:15:21.745Z"
+        "updatedAt": "2024-06-24T10:49:05.385Z"
       },
       "parent": {
         "id": "663a0a15af4dedb881ed76a5",
@@ -639,7 +538,7 @@
         "slug": "contact-us",
         "layout": [
           {
-            "heading": "Contact Us Page dummy",
+            "heading": "Contact Us",
             "text": "hello from Contact us",
             "link": [],
             "id": "663a0a15d76a8e31b0e1d3b0",
@@ -647,7 +546,7 @@
           }
         ],
         "createdAt": "2024-05-07T11:01:41.337Z",
-        "updatedAt": "2024-07-01T14:15:21.745Z"
+        "updatedAt": "2024-06-24T10:49:05.385Z"
       },
       "id": "666b42066ebcc384bfa8dcbb"
     }
@@ -657,88 +556,38 @@
       "type": "page",
       "label": "Hire Software Developers",
       "page": {
-        "id": "6682e001997fca6ec2333ba1",
-        "name": "Home",
-        "slug": "home",
+        "id": "663a1277af4dedb881ed7773",
+        "name": "Services",
+        "slug": "services",
         "layout": [
           {
-            "heading": "AllZone Technologies has won the Best Software House Presidential Award 2023",
-            "text": "AllZone Technologies is a prestigious LCCI IT Presidential Award 2023-winning Company. It's been standing like a shining symbol of excellence in software development and consultancy and outsourcing dedicated teams of skilled developers.",
-            "link": [
-              {
-                "type": "page",
-                "label": "Get In Touch",
-                "page": "663a0a15af4dedb881ed76a5",
-                "parent": "663a0a15af4dedb881ed76a5",
-                "id": "66880684bc4864c98561b099"
-              }
-            ],
-            "slides": [
-              {
-                "media": "6682ad9e102596380fca6efc",
-                "id": "668806b0bc4864c98561b09b"
-              },
-              {
-                "media": "6682ad8c102596380fca6ee4",
-                "id": "668806a8bc4864c98561b09a"
-              },
-              {
-                "media": "6682ad66102596380fca6ecd",
-                "id": "668806bcbc4864c98561b09d"
-              },
-              {
-                "media": "6682adb6102596380fca6f15",
-                "id": "668806b5bc4864c98561b09c"
-              }
-            ],
-            "id": "6688066cbc4864c98561b098",
-            "blockType": "home"
+            "heading": "Services",
+            "text": "Hello from this page.",
+            "backgroundImage": "6660946657861575735cc323",
+            "id": "663a1277d76a8e31b0e1d3b3",
+            "blockType": "hero",
+            "link": []
           }
         ],
-        "createdAt": "2024-07-01T16:57:37.241Z",
-        "updatedAt": "2024-07-05T15:03:57.670Z"
+        "createdAt": "2024-05-07T11:37:27.969Z",
+        "updatedAt": "2024-06-05T16:49:10.208Z"
       },
       "parent": {
-        "id": "6682e001997fca6ec2333ba1",
-        "name": "Home",
-        "slug": "home",
+        "id": "663a1277af4dedb881ed7773",
+        "name": "Services",
+        "slug": "services",
         "layout": [
           {
-            "heading": "AllZone Technologies has won the Best Software House Presidential Award 2023",
-            "text": "AllZone Technologies is a prestigious LCCI IT Presidential Award 2023-winning Company. It's been standing like a shining symbol of excellence in software development and consultancy and outsourcing dedicated teams of skilled developers.",
-            "link": [
-              {
-                "type": "page",
-                "label": "Get In Touch",
-                "page": "663a0a15af4dedb881ed76a5",
-                "parent": "663a0a15af4dedb881ed76a5",
-                "id": "66880684bc4864c98561b099"
-              }
-            ],
-            "slides": [
-              {
-                "media": "6682ad9e102596380fca6efc",
-                "id": "668806b0bc4864c98561b09b"
-              },
-              {
-                "media": "6682ad8c102596380fca6ee4",
-                "id": "668806a8bc4864c98561b09a"
-              },
-              {
-                "media": "6682ad66102596380fca6ecd",
-                "id": "668806bcbc4864c98561b09d"
-              },
-              {
-                "media": "6682adb6102596380fca6f15",
-                "id": "668806b5bc4864c98561b09c"
-              }
-            ],
-            "id": "6688066cbc4864c98561b098",
-            "blockType": "home"
+            "heading": "Services",
+            "text": "Hello from this page.",
+            "backgroundImage": "6660946657861575735cc323",
+            "id": "663a1277d76a8e31b0e1d3b3",
+            "blockType": "hero",
+            "link": []
           }
         ],
-        "createdAt": "2024-07-01T16:57:37.241Z",
-        "updatedAt": "2024-07-05T15:03:57.670Z"
+        "createdAt": "2024-05-07T11:37:27.969Z",
+        "updatedAt": "2024-06-05T16:49:10.208Z"
       },
       "id": "666b42e7051ab2a2ed9d18a1"
     },
@@ -751,22 +600,24 @@
         "slug": "technologies",
         "layout": [
           {
-            "heading": "Second Head Page dummy",
+            "heading": "Second Head",
             "text": "I am Hero Second Block.",
-            "link": [],
+            "backgroundImage": "6661bb440599c56b004d6a04",
             "id": "6661bb27564a9e0c239526e8",
-            "blockType": "hero"
+            "blockType": "hero",
+            "link": []
           },
           {
             "heading": "Technologies",
             "text": "Hello from Technologies page.",
-            "link": [],
+            "backgroundImage": "666096bb57861575735cc462",
             "id": "663a0a8bd76a8e31b0e1d3b1",
-            "blockType": "hero"
+            "blockType": "hero",
+            "link": []
           }
         ],
         "createdAt": "2024-05-07T11:03:39.689Z",
-        "updatedAt": "2024-07-01T14:16:08.906Z"
+        "updatedAt": "2024-06-06T13:37:35.816Z"
       },
       "parent": {
         "id": "663a0a8baf4dedb881ed76e3",
@@ -774,22 +625,24 @@
         "slug": "technologies",
         "layout": [
           {
-            "heading": "Second Head Page dummy",
+            "heading": "Second Head",
             "text": "I am Hero Second Block.",
-            "link": [],
+            "backgroundImage": "6661bb440599c56b004d6a04",
             "id": "6661bb27564a9e0c239526e8",
-            "blockType": "hero"
+            "blockType": "hero",
+            "link": []
           },
           {
             "heading": "Technologies",
             "text": "Hello from Technologies page.",
-            "link": [],
+            "backgroundImage": "666096bb57861575735cc462",
             "id": "663a0a8bd76a8e31b0e1d3b1",
-            "blockType": "hero"
+            "blockType": "hero",
+            "link": []
           }
         ],
         "createdAt": "2024-05-07T11:03:39.689Z",
-        "updatedAt": "2024-07-01T14:16:08.906Z"
+        "updatedAt": "2024-06-06T13:37:35.816Z"
       },
       "id": "666b42fa051ab2a2ed9d18a2"
     },
@@ -802,15 +655,16 @@
         "slug": "about-us",
         "layout": [
           {
-            "heading": "Hello from About us Page dummy.",
+            "heading": "Hello from About us page.",
             "text": "I am the descrition.",
-            "link": [],
+            "backgroundImage": "666092fa57861575735cc251",
             "id": "663a09e2d76a8e31b0e1d3af",
-            "blockType": "hero"
+            "blockType": "hero",
+            "link": []
           }
         ],
         "createdAt": "2024-05-07T11:00:50.514Z",
-        "updatedAt": "2024-07-01T14:51:56.389Z"
+        "updatedAt": "2024-06-05T16:32:00.128Z"
       },
       "parent": {
         "id": "663a09e2af4dedb881ed7698",
@@ -818,15 +672,16 @@
         "slug": "about-us",
         "layout": [
           {
-            "heading": "Hello from About us Page dummy.",
+            "heading": "Hello from About us page.",
             "text": "I am the descrition.",
-            "link": [],
+            "backgroundImage": "666092fa57861575735cc251",
             "id": "663a09e2d76a8e31b0e1d3af",
-            "blockType": "hero"
+            "blockType": "hero",
+            "link": []
           }
         ],
         "createdAt": "2024-05-07T11:00:50.514Z",
-        "updatedAt": "2024-07-01T14:51:56.389Z"
+        "updatedAt": "2024-06-05T16:32:00.128Z"
       },
       "id": "666b4321051ab2a2ed9d18a3"
     },
@@ -839,15 +694,16 @@
         "slug": "careers",
         "layout": [
           {
-            "heading": "Careers Page dummy",
+            "heading": "Careers ",
             "text": "Hello fro career page.",
-            "link": [],
+            "backgroundImage": "6660953e57861575735cc390",
             "id": "663a0aa1d76a8e31b0e1d3b2",
-            "blockType": "hero"
+            "blockType": "hero",
+            "link": []
           }
         ],
         "createdAt": "2024-05-07T11:04:01.384Z",
-        "updatedAt": "2024-07-01T14:10:49.330Z"
+        "updatedAt": "2024-06-05T16:42:29.941Z"
       },
       "parent": {
         "id": "663a0aa1af4dedb881ed76f0",
@@ -855,15 +711,16 @@
         "slug": "careers",
         "layout": [
           {
-            "heading": "Careers Page dummy",
+            "heading": "Careers ",
             "text": "Hello fro career page.",
-            "link": [],
+            "backgroundImage": "6660953e57861575735cc390",
             "id": "663a0aa1d76a8e31b0e1d3b2",
-            "blockType": "hero"
+            "blockType": "hero",
+            "link": []
           }
         ],
         "createdAt": "2024-05-07T11:04:01.384Z",
-        "updatedAt": "2024-07-01T14:10:49.330Z"
+        "updatedAt": "2024-06-05T16:42:29.941Z"
       },
       "id": "666b4331051ab2a2ed9d18a4"
     },
@@ -876,7 +733,7 @@
         "slug": "contact-us",
         "layout": [
           {
-            "heading": "Contact Us Page dummy",
+            "heading": "Contact Us",
             "text": "hello from Contact us",
             "link": [],
             "id": "663a0a15d76a8e31b0e1d3b0",
@@ -884,7 +741,7 @@
           }
         ],
         "createdAt": "2024-05-07T11:01:41.337Z",
-        "updatedAt": "2024-07-01T14:15:21.745Z"
+        "updatedAt": "2024-06-24T10:49:05.385Z"
       },
       "parent": {
         "id": "663a0a15af4dedb881ed76a5",
@@ -892,7 +749,7 @@
         "slug": "contact-us",
         "layout": [
           {
-            "heading": "Contact Us Page dummy",
+            "heading": "Contact Us",
             "text": "hello from Contact us",
             "link": [],
             "id": "663a0a15d76a8e31b0e1d3b0",
@@ -900,7 +757,7 @@
           }
         ],
         "createdAt": "2024-05-07T11:01:41.337Z",
-        "updatedAt": "2024-07-01T14:15:21.745Z"
+        "updatedAt": "2024-06-24T10:49:05.385Z"
       },
       "id": "666b433f051ab2a2ed9d18a5"
     },
@@ -908,36 +765,38 @@
       "type": "page",
       "label": "Hire MEAN Stack Developers",
       "page": {
-        "id": "663a0aa1af4dedb881ed76f0",
-        "name": "Careers",
-        "slug": "careers",
+        "id": "6630df1d9663292463780c7b",
+        "name": "Home",
+        "slug": "home",
         "layout": [
           {
-            "heading": "Careers Page dummy",
-            "text": "Hello fro career page.",
+            "heading": "I am Home Page.",
+            "text": "AllZone Technologies has won the Best Software House Presidential Award 2023",
             "link": [],
-            "id": "663a0aa1d76a8e31b0e1d3b2",
+            "id": "66696d51b3f80b427e880657",
+            "blockName": "Home Content",
             "blockType": "hero"
           }
         ],
-        "createdAt": "2024-05-07T11:04:01.384Z",
-        "updatedAt": "2024-07-01T14:10:49.330Z"
+        "createdAt": "2024-04-30T12:07:57.221Z",
+        "updatedAt": "2024-06-26T13:34:54.398Z"
       },
       "parent": {
-        "id": "663a0aa1af4dedb881ed76f0",
-        "name": "Careers",
-        "slug": "careers",
+        "id": "6630df1d9663292463780c7b",
+        "name": "Home",
+        "slug": "home",
         "layout": [
           {
-            "heading": "Careers Page dummy",
-            "text": "Hello fro career page.",
+            "heading": "I am Home Page.",
+            "text": "AllZone Technologies has won the Best Software House Presidential Award 2023",
             "link": [],
-            "id": "663a0aa1d76a8e31b0e1d3b2",
+            "id": "66696d51b3f80b427e880657",
+            "blockName": "Home Content",
             "blockType": "hero"
           }
         ],
-        "createdAt": "2024-05-07T11:04:01.384Z",
-        "updatedAt": "2024-07-01T14:10:49.330Z"
+        "createdAt": "2024-04-30T12:07:57.221Z",
+        "updatedAt": "2024-06-26T13:34:54.398Z"
       },
       "id": "666b4354051ab2a2ed9d18a6"
     },
@@ -950,15 +809,16 @@
         "slug": "services",
         "layout": [
           {
-            "heading": "Services Page dummy",
+            "heading": "Services",
             "text": "Hello from this page.",
-            "link": [],
+            "backgroundImage": "6660946657861575735cc323",
             "id": "663a1277d76a8e31b0e1d3b3",
-            "blockType": "hero"
+            "blockType": "hero",
+            "link": []
           }
         ],
         "createdAt": "2024-05-07T11:37:27.969Z",
-        "updatedAt": "2024-07-01T14:10:39.019Z"
+        "updatedAt": "2024-06-05T16:49:10.208Z"
       },
       "parent": {
         "id": "663a1277af4dedb881ed7773",
@@ -966,82 +826,74 @@
         "slug": "services",
         "layout": [
           {
-            "heading": "Services Page dummy",
+            "heading": "Services",
             "text": "Hello from this page.",
-            "link": [],
+            "backgroundImage": "6660946657861575735cc323",
             "id": "663a1277d76a8e31b0e1d3b3",
-            "blockType": "hero"
+            "blockType": "hero",
+            "link": []
           }
         ],
         "createdAt": "2024-05-07T11:37:27.969Z",
-        "updatedAt": "2024-07-01T14:10:39.019Z"
+        "updatedAt": "2024-06-05T16:49:10.208Z"
       },
       "id": "666b4369051ab2a2ed9d18a7"
+    },
+    {
+      "type": "page",
+      "label": "Hire Django Developers",
+      "page": {
+        "id": "663a0a8baf4dedb881ed76e3",
+        "name": "Technologies",
+        "slug": "technologies",
+        "layout": [
+          {
+            "heading": "Second Head",
+            "text": "I am Hero Second Block.",
+            "backgroundImage": "6661bb440599c56b004d6a04",
+            "id": "6661bb27564a9e0c239526e8",
+            "blockType": "hero",
+            "link": []
+          },
+          {
+            "heading": "Technologies",
+            "text": "Hello from Technologies page.",
+            "backgroundImage": "666096bb57861575735cc462",
+            "id": "663a0a8bd76a8e31b0e1d3b1",
+            "blockType": "hero",
+            "link": []
+          }
+        ],
+        "createdAt": "2024-05-07T11:03:39.689Z",
+        "updatedAt": "2024-06-06T13:37:35.816Z"
+      },
+      "parent": {
+        "id": "663a0a8baf4dedb881ed76e3",
+        "name": "Technologies",
+        "slug": "technologies",
+        "layout": [
+          {
+            "heading": "Second Head",
+            "text": "I am Hero Second Block.",
+            "backgroundImage": "6661bb440599c56b004d6a04",
+            "id": "6661bb27564a9e0c239526e8",
+            "blockType": "hero",
+            "link": []
+          },
+          {
+            "heading": "Technologies",
+            "text": "Hello from Technologies page.",
+            "backgroundImage": "666096bb57861575735cc462",
+            "id": "663a0a8bd76a8e31b0e1d3b1",
+            "blockType": "hero",
+            "link": []
+          }
+        ],
+        "createdAt": "2024-05-07T11:03:39.689Z",
+        "updatedAt": "2024-06-06T13:37:35.816Z"
+      },
+      "id": "666b437e051ab2a2ed9d18a8"
     }
   ],
-  "heading": "Services",
-  "linkHeading": {
-    "heading": "Technologies",
-    "links": [
-      {
-        "type": "page",
-        "label": "Hire Software Developers",
-        "page": "663a09e2af4dedb881ed7698",
-        "parent": "663a09e2af4dedb881ed7698",
-        "id": "667ed3a84fb07bb75f95ff75"
-      },
-      {
-        "type": "page",
-        "label": "Hire Mobile App Developers",
-        "page": "6630df1d9663292463780c7b",
-        "parent": "6630df1d9663292463780c7b",
-        "id": "667ed3d24fb07bb75f95ff76"
-      },
-      {
-        "type": "page",
-        "label": "Hire Front-end Developers",
-        "page": "663a12beaf4dedb881ed7783",
-        "parent": "663a12beaf4dedb881ed7783",
-        "id": "667ed3de4fb07bb75f95ff77"
-      },
-      {
-        "type": "page",
-        "label": "Hire Back-end Developers",
-        "page": "663a1277af4dedb881ed7773",
-        "parent": "663a1277af4dedb881ed7773",
-        "id": "667ee1eb17bca102e381a4c2"
-      },
-      {
-        "type": "page",
-        "label": "Hire Full Stack Developers",
-        "page": "663a09e2af4dedb881ed7698",
-        "parent": "663a09e2af4dedb881ed7698",
-        "id": "667ee20b17bca102e381a4c3"
-      },
-      {
-        "type": "page",
-        "label": "Hire MEAN Stack Developers",
-        "page": "663a12beaf4dedb881ed7783",
-        "parent": "663a12beaf4dedb881ed7783",
-        "id": "667ee21917bca102e381a4c4"
-      },
-      {
-        "type": "page",
-        "label": "Hire MERN Stack Developers",
-        "page": "663a0aa1af4dedb881ed76f0",
-        "parent": "663a0aa1af4dedb881ed76f0",
-        "id": "667ee22b17bca102e381a4c5"
-      },
-      {
-        "type": "page",
-        "label": "Hire Django Developers",
-        "page": "663a0a15af4dedb881ed76a5",
-        "parent": "663a0a15af4dedb881ed76a5",
-        "id": "667ee23817bca102e381a4c6"
-      }
-    ]
-  },
-  "linksHeading": "Technologies",
-  "navLinksHeading": "Services",
   "id": "6659fc382340acadb7ec9c16"
 }

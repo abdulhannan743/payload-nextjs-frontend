@@ -5,8 +5,10 @@ const Menu = ({ navLinks }) => {
     <div>
       {navLinks.map((link) => {
         if (link.parent) {
-          return null;
+          // Render submenu
+          return null; // Submenus will be rendered separately
         } else {
+          // Render main link
           return (
             <div key={link.label}>
               <div>{link.label}</div>
@@ -14,6 +16,7 @@ const Menu = ({ navLinks }) => {
                 <div key={index}>
                   <div>{item.heading}</div>
                   <div>{item.text}</div>
+                  {/* You can render other elements like images if needed */}
                 </div>
               ))}
             </div>
@@ -40,6 +43,7 @@ const SubMenu = ({ parentLink, navLinks }) => {
                 <div key={index}>
                   <div>{item.label}</div>
                   <div>{item.slug}</div>
+                  {/* You can render other elements like images if needed */}
                 </div>
               ))}
             </li>

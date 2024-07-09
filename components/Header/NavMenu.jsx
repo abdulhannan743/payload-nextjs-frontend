@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import React from "react";
 import {
   Sheet,
@@ -10,7 +10,6 @@ import {
 } from "@/components/ui/sheet";
 import { FiAlignJustify, FiPlus } from "react-icons/fi";
 import header from "@/src/globalData/header.json";
-
 import Link from "next/link";
 import Image from "next/image";
 import NavItem from "./NavItem";
@@ -81,8 +80,7 @@ const NavMenu = () => {
                       key={link.label}
                       link={link}
                       closeSheet={closeSheet}
-                      showPlusIcon={true}
-                      fontWeight="font-bold"
+                      showPlusIcon={true} // Pass showPlusIcon prop as true in NavMenu.jsx
                     />
                   ))}
                 </ul>
