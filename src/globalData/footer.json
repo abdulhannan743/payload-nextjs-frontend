@@ -372,6 +372,7 @@
                           "tag": "h3"
                         }
                       ],
+
                       "direction": "ltr"
                     }
                   },
@@ -528,6 +529,7 @@
                       "direction": "ltr"
                     }
                   },
+
                   "id": "668d339fd7ed251ce8adde55"
                 },
                 {
@@ -993,6 +995,7 @@
         ],
         "createdAt": "2024-07-01T16:57:37.241Z",
         "updatedAt": "2024-07-09T12:58:03.116Z"
+
       },
       "parent": {
         "id": "6682e001997fca6ec2333ba1",
@@ -1031,6 +1034,7 @@
                           "tag": "h3"
                         }
                       ],
+
                       "direction": "ltr"
                     }
                   },
@@ -1063,6 +1067,7 @@
                       "direction": "ltr"
                     }
                   },
+
                   "id": "668d336fd7ed251ce8adde53"
                 },
                 {
@@ -1125,6 +1130,7 @@
                       "direction": "ltr"
                     }
                   },
+
                   "id": "668d338bd7ed251ce8adde54"
                 },
                 {
@@ -1187,7 +1193,9 @@
                       "direction": "ltr"
                     }
                   },
+
                   "id": "668d339fd7ed251ce8adde55"
+
                 },
                 {
                   "typography": {
@@ -1706,6 +1714,7 @@
         ],
         "createdAt": "2024-05-07T11:00:50.514Z",
         "updatedAt": "2024-07-09T14:02:35.710Z"
+
       },
       "parent": {
         "id": "663a09e2af4dedb881ed7698",
@@ -1995,6 +2004,7 @@
                           "tag": "h3"
                         }
                       ],
+
                       "direction": "ltr"
                     }
                   },
@@ -2027,6 +2037,7 @@
                       "direction": "ltr"
                     }
                   },
+
                   "id": "668d336fd7ed251ce8adde53"
                 },
                 {
@@ -2151,6 +2162,7 @@
                       "direction": "ltr"
                     }
                   },
+
                   "id": "668d339fd7ed251ce8adde55"
                 },
                 {
@@ -2635,6 +2647,7 @@
                       "version": 1,
                       "children": [
                         {
+
                           "children": [
                             {
                               "detail": 0,
@@ -2647,6 +2660,7 @@
                             }
                           ],
                           "direction": "ltr",
+
                           "format": "",
                           "indent": 0,
                           "type": "heading",
@@ -2654,6 +2668,7 @@
                           "tag": "h3"
                         }
                       ],
+
                       "direction": "ltr"
                     }
                   },
@@ -2686,7 +2701,9 @@
                       "direction": "ltr"
                     }
                   },
+
                   "id": "668d336fd7ed251ce8adde53"
+
                 },
                 {
                   "typography": {
@@ -2748,6 +2765,7 @@
                       "direction": "ltr"
                     }
                   },
+
                   "id": "668d338bd7ed251ce8adde54"
                 },
                 {
@@ -2810,6 +2828,7 @@
                       "direction": "ltr"
                     }
                   },
+
                   "id": "668d339fd7ed251ce8adde55"
                 },
                 {
@@ -2872,6 +2891,7 @@
                       "direction": "ltr"
                     }
                   },
+
                   "id": "668d33b5d7ed251ce8adde56"
                 }
               ]
