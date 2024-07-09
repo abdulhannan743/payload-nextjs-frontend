@@ -8,28 +8,29 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { FiAlignJustify, FiPlus } from "react-icons/fi";
+import { FiAlignJustify } from "react-icons/fi";
 import header from "@/src/globalData/header.json";
 
 import Link from "next/link";
 import Image from "next/image";
 import NavItem from "./NavItem";
+import type { HeaderType, NavLinkType } from "@/src/types/headerTypes";
 
-function transformData(data) {
-  return data.navLinks.reduce(
+function transformData(data: HeaderType) {
+  return data.navLinks.reduce<{ navLinks: NavLinkType[] }>(
     (acc, item) => {
       const transformedItem = { ...item };
 
       if (item.parent) {
         const parentIndex = acc.navLinks.findIndex(
-          (el) => el.link.id === item.parent.id
+          (el) => el.link.id === item.parent!.id
         );
 
         if (parentIndex !== -1) {
           if (!acc.navLinks[parentIndex].childrens) {
             acc.navLinks[parentIndex].childrens = [];
           }
-          acc.navLinks[parentIndex].childrens.push(transformedItem);
+          acc?.navLinks[parentIndex]?.childrens?.push(transformedItem);
         } else {
           acc.navLinks.push(transformedItem);
         }
@@ -45,7 +46,7 @@ function transformData(data) {
 
 const newData = transformData(header);
 
-const NavMenu = () => {
+const NavMenu: React.FC = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   const closeSheet = () => setIsOpen(false);
@@ -82,7 +83,6 @@ const NavMenu = () => {
                       link={link}
                       closeSheet={closeSheet}
                       showPlusIcon={true}
-                      fontWeight="font-bold"
                     />
                   ))}
                 </ul>

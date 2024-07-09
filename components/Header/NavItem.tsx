@@ -1,8 +1,21 @@
 import React from "react";
 import Link from "next/link";
 import { FiPlus } from "react-icons/fi";
+import type { NavLinkType } from "@/src/types/headerTypes";
 
-const NavItem = ({ link, closeSheet, showPlusIcon, fontWeight }) => {
+interface NavItemProps {
+  link: NavLinkType;
+  closeSheet?: () => void;
+  showPlusIcon?: boolean;
+  fontWeight?: string;
+}
+
+const NavItem: React.FC<NavItemProps> = ({
+  link,
+  closeSheet,
+  showPlusIcon,
+  fontWeight,
+}) => {
   const href = link.link.slug === "home" ? "/" : `/${link.link.slug}`;
 
   return (

@@ -12,6 +12,7 @@
   "dependencies": {
     "@headlessui/react": "^2.1.1",
     "@heroicons/react": "^2.1.4",
+    "@radix-ui/react-accordion": "^1.2.0",
     "@radix-ui/react-dialog": "^1.1.1",
     "@radix-ui/react-icons": "^1.3.0",
     "@radix-ui/react-slot": "^1.1.0",
@@ -25,11 +26,12 @@
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.2.1",
+    "react-swiper": "^0.1.5",
+    "swiper": "^8.2.4",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "tsx": "4.15.7",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
@@ -37,7 +39,9 @@
     "eslint": "^8",
     "eslint-config-next": "13.5.6",
     "postcss": "^8",
+    "tailwind-scrollbar": "^3.1.0",
     "tailwindcss": "^3",
+    "tsx": "4.15.7",
     "typescript": "^5"
   }
 }

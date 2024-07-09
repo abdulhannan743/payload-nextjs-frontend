@@ -2,26 +2,27 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import NavMenu from "./NavMenu";
-import { fetchWrapper } from "@/src/utils/fetchWrapper";
 import header from "@/src/globalData/header.json";
-import NavItem from "./NavItem";
 import { Button } from "../ui/button";
+import NavItem from "./NavItem";
+import { fetchWrapper } from "@/src/utils/fetchWrapper";
+import type { HeaderType, NavLinkType } from "@/src/types/headerTypes";
 
-function transformData(data) {
-  return data.navLinks.reduce(
+function transformData(data: HeaderType): { navLinks: NavLinkType[] } {
+  return data.navLinks.reduce<{ navLinks: NavLinkType[] }>(
     (acc, item) => {
       const transformedItem = { ...item };
 
       if (item.parent) {
         const parentIndex = acc.navLinks.findIndex(
-          (el) => el.link.id === item.parent.id
+          (el) => el.link.id === item.parent?.id
         );
 
         if (parentIndex !== -1) {
           if (!acc.navLinks[parentIndex].childrens) {
             acc.navLinks[parentIndex].childrens = [];
           }
-          acc.navLinks[parentIndex].childrens.push(transformedItem);
+          acc?.navLinks[parentIndex]?.childrens?.push(transformedItem);
         } else {
           acc.navLinks.push(transformedItem);
         }
@@ -36,10 +37,11 @@ function transformData(data) {
 }
 
 export default async function Header() {
-  const header = await fetchWrapper({
+  const header: HeaderType = await fetchWrapper({
     url: "/api/globals/header",
     method: "GET",
   });
+
   const buttonLink = header.link?.[0];
   const buttonLabel = buttonLink?.label;
   const buttonUrl = buttonLink?.page?.slug;
@@ -67,7 +69,13 @@ export default async function Header() {
         </div>
         <ul className="hidden lg:flex lg:gap-x-6	 text-black text-md">
           {newData.navLinks.map((link) => (
-            <NavItem key={link.label} link={link} fontWeight="font-semibold" />
+            <NavItem
+              key={link.label}
+              link={link}
+              fontWeight="font-semibold"
+              closeSheet={undefined}
+              showPlusIcon={undefined}
+            />
           ))}
         </ul>
         <Link href={`/${buttonUrl}`}>
