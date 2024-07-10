@@ -1,4 +1,4 @@
-import { AboutLayoutItemType } from "@/src/types/AboutUsTypes";
+import type { AboutLayoutItemType } from "@/src/types/AboutUsTypes";
 import Image from "next/image";
 import React from "react";
 import vector from "../../public/Vector.png";
