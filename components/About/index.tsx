@@ -1,6 +1,7 @@
 import React from "react";
 import HeroSection from "../sharedComponents/HeroSection";
-import { AboutLayoutItemType } from "@/src/types/AboutUsTypes";
+import type { AboutLayoutItemType } from "@/src/types/AboutUsTypes";
+import AboutCompany from "./AboutCompany";
 
 type AboutProps = {
   aboutPageData: AboutLayoutItemType[];
@@ -11,7 +12,16 @@ const About = ({ aboutPageData }: AboutProps) => {
     (item) => item.blockName === "Hero"
   );
 
-  return <HeroSection HeroSectionData={HeroSectionData} />;
+  const AboutCompanyData = aboutPageData.find(
+    (item) => item.blockName === "About Company"
+  );
+
+  return (
+    <>
+      <HeroSection HeroSectionData={HeroSectionData} />
+      <AboutCompany AboutCompanyData={AboutCompanyData} />
+    </>
+  );
 };
 
 export default About;
