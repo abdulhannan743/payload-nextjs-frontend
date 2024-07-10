@@ -1,9 +1,11 @@
 import Home from "@/components/Home";
+import { RESOURCE_TYPES } from "@/src/constants/common";
+import { getPageURL } from "@/src/utils";
 import { fetchWrapper } from "@/src/utils/fetchWrapper";
 
 export default async function HomePage() {
   const response: any = await fetchWrapper({
-    url: "/api/pages?where[slug][equals]=home",
+    url: getPageURL(RESOURCE_TYPES.HOME),
     method: "GET",
   });
   const homePageData = response?.docs[0].layout;
@@ -11,6 +13,7 @@ export default async function HomePage() {
   return (
     <>
       <Home homePageData={homePageData} />
+
     </>
   );
 }
