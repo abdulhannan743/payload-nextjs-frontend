@@ -28,7 +28,7 @@ const IndustriesFAQCard: React.FC<IndustriesCardProps> = ({
   const dataArray = extractAccordionData(matadata.typoPara);
 
   return (
-    <div className="py-10 container">
+    <div className="py-10 container faq-dark">
       <h2 className="text-2xl sm:text-3xl font-bold mt-8">{heading}</h2>
       <Accordion type="single" collapsible className="w-full">
         {dataArray?.map((data, index) => (
@@ -36,11 +36,11 @@ const IndustriesFAQCard: React.FC<IndustriesCardProps> = ({
             <AccordionTrigger
               closedClassName="text-black"
               openClassName="text-blue-900"
-              className="text-base sm:text-lg lg:text-xl"
+              className="accordion-trigger text-base sm:text-lg lg:text-xl"
             >
               {data.question}
             </AccordionTrigger>
-            <AccordionContent className="text-sm sm:text-base lg:text-lg">
+            <AccordionContent className="text-sm sm:text-base lg:text-base">
               {data.answer}
             </AccordionContent>
           </AccordionItem>

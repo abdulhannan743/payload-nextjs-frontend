@@ -6,27 +6,32 @@ import {
   AccordionContent,
 } from "@/components/ui/accordion";
 import Image from "next/image";
-import { IndustriesProps } from "@/src/types/HomeTypes";
+import type { IndustriesProps } from "@/src/types/HomeTypes";
+import { SlArrowRight } from "react-icons/sl";
+import { Button } from "../ui/button";
+import DottedLine from "../ui/DottedLine";
+import Link from "next/link";
 
 function IndustriesServicesCard({ industries }: IndustriesProps) {
   return (
-    <div className="h-auto bg-blue-900 text-white py-10">
+    <div className="h-auto bg-[#0D2234] text-white py-14">
       <div className="container mx-auto flex flex-col lg:flex-row gap-20">
-        <h1 className="text-4xl font-bold lg:w-1/3">{industries.heading}</h1>
+        <div className="flex flex-col items-baseline">
+          <h1 className="text-4xl font-bold lg:max-w-lg mb-6 mt-2">
+            {industries?.heading}
+          </h1>
+          <DottedLine />
+        </div>
         <div className="lg:w-2/3">
           <Accordion type="single" collapsible>
-            {industries.content.map((item, index) => (
-              <AccordionItem
-                value={`item-${index + 1}`}
-                key={index}
-                className="text-white"
-              >
+            {industries?.content.map((item, index) => (
+              <AccordionItem value={`item-${index + 1}`} key={index}>
                 <AccordionTrigger
                   closedClassName="text-white"
-                  openClassName="text-green-500"
-                  className="text-base sm:text-lg lg:text-xl"
+                  openClassName="text-green-400"
+                  className="accordion-trigger text-base sm:text-lg lg:text-xl"
                 >
-                  <div className="flex items-center">
+                  <div className="flex items-center gap-2">
                     <Image
                       src={item.logo.url}
                       alt={item.logo.alt}
@@ -37,20 +42,19 @@ function IndustriesServicesCard({ industries }: IndustriesProps) {
                   </div>
                 </AccordionTrigger>
                 <AccordionContent>
-                  <div className="pl-9">
-                    {item.paragraph.root.children.map((para, i) => (
-                      <p key={i}>
-                        {para.children.map((text, j) => (
-                          <React.Fragment key={j}>
-                            {text.text}
-                            <br />
-                          </React.Fragment>
-                        ))}
-                      </p>
+                  <div className="pl-8">
+                    {item.paragraph.root.children.map((para, index) => (
+                      <p key={index}>{para.children[0].text}</p>
                     ))}
-                    <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded">
-                      {item.link[0].label}
-                    </button>
+                    <Link href={`/${item.link[0].page.slug}`}>
+                      <Button
+                        variant={"outline"}
+                        className="mt-4 px-4 py-2 bg-[#0D2234] text-white rounded uppercase text-xs font-normal"
+                      >
+                        {item.link[0].label}
+                        <SlArrowRight size={8} className="ml-2" />
+                      </Button>
+                    </Link>
                   </div>
                 </AccordionContent>
               </AccordionItem>

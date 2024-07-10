@@ -56,17 +56,14 @@ export type HomeProps = {
   };
 };
 
-// New types for IndustriesServicesCard
 export type IndustryContent = {
   logo: {
     url: string;
     alt: string;
-    width: string | number;
-    uheightrl: string | number;
+    width: number | `${number}`;
+    height: number | `${number}`;
   };
-
   heading: string;
-
   typography: {
     root: {
       children: {
@@ -87,6 +84,9 @@ export type IndustryContent = {
   };
   link: {
     label: string;
+    page: {
+      slug: string;
+    };
   }[];
 };
 

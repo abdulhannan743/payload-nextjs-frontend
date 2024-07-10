@@ -33,7 +33,7 @@ export default function Home({ homePageData }: HomeProps) {
   return (
     <div className="bg-white">
       <ServicesSection serviceData={servicesData} />
-      <IndustriesServicesCard industries={industries} />
+      <IndustriesServicesCard industries={industries.industries} />
       <WhyAllZoneSection whyAllzoneData={whyAllzoneData} />
       <PortfolioSection portfolioData={portfolioData} />
       <ClientsSection clientsData={clientsData} />
