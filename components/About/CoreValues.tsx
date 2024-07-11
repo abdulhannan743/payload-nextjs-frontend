@@ -68,7 +68,7 @@ const CoreValuesSection = ({
   return (
     <div className="relative w-full mt-16 mb-10">
       <div className="flex flex-col align-middle justify-center items-center">
-        <h2 className="text-3xl font-semibold text-[#1D2746]">
+        <h2 className="text-4xl font-semibold text-[#1D2746]">
           Our Core Values
         </h2>
         <hr className="w-24 h-1 bg-secondary mt-3 rounded-full" />
