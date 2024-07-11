@@ -13,16 +13,15 @@ const About = ({ aboutPageData }: AboutProps) => {
   );
 
   const CoreValuesSectionData = aboutPageData.find(
-    (item) => item.blockName === "Leadership"
+    (item) => item.blockName === "Core Values"
   );
+
+  console.log(CoreValuesSectionData);
 
   return (
     <>
       <HeroSection HeroSectionData={HeroSectionData} />
-      <CoreValuesSection
-        CoreValuesSectionData={CoreValuesSectionData}
-        aboutPageData={aboutPageData}
-      />
+      <CoreValuesSection CoreValuesSectionData={CoreValuesSectionData} />
     </>
   );
 };

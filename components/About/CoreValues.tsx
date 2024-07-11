@@ -10,7 +10,6 @@ import type { AboutLayoutItemType } from "@/src/types/AboutUsTypes";
 
 type CoreValuesSectionProps = {
   CoreValuesSectionData: AboutLayoutItemType | undefined;
-  aboutPageData: AboutLayoutItemType[];
 };
 
 type tabsDataTypes = {
@@ -29,13 +28,18 @@ const tabsData: tabsDataTypes[] = [
 
 const CoreValuesSection = ({
   CoreValuesSectionData,
-  aboutPageData,
 }: CoreValuesSectionProps) => {
+  const coreValuesData = CoreValuesSectionData?.content[0].layout;
+
+  const InitialData = coreValuesData?.find(
+    (item) => item.blockName === "Leadership"
+  );
+
   const [activeLink, setActiveLink] = React.useState<string>("Leadership");
   const [activeSection, setActiveSection] = React.useState<string>("01");
   const [activeSectionInfo, setActiveSectionInfo] = React.useState<
     AboutLayoutItemType | undefined
-  >(CoreValuesSectionData);
+  >(InitialData);
 
   const nextSection = () => {
     const currentIndex = tabsData.findIndex((tab) => tab.name === activeLink);
@@ -44,7 +48,7 @@ const CoreValuesSection = ({
 
     const nextTab = tabsData[nextIndex];
 
-    const nextActiveSection = aboutPageData.find(
+    const nextActiveSection = coreValuesData?.find(
       (item) => item.blockName === nextTab.name
     );
     setActiveLink(nextTab.name);
@@ -58,7 +62,7 @@ const CoreValuesSection = ({
 
     const prevTab = tabsData[prevIndex];
 
-    const prevActiveSection = aboutPageData.find(
+    const prevActiveSection = coreValuesData?.find(
       (item) => item.blockName === prevTab.name
     );
     setActiveLink(prevTab.name);
@@ -79,7 +83,7 @@ const CoreValuesSection = ({
             <p
               className="text-gray cursor-pointer"
               onClick={() => {
-                const activeData = aboutPageData.find(
+                const activeData = coreValuesData?.find(
                   (item) => item.blockName === tab.name
                 );
                 setActiveLink(tab.name);
@@ -160,7 +164,7 @@ const CoreValuesSection = ({
         </div>
         <div>
           <p className="text-lg font-bold text-secondary">
-            {activeSection} / 6
+            {activeSection.split("0")} / 6
           </p>
         </div>
         <div className="text-primary cursor-pointer" onClick={nextSection}>
