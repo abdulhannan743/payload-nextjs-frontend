@@ -33,14 +33,11 @@ export default function Home({ homePageData }: HomeProps) {
   return (
     <div className="bg-white">
       <ServicesSection serviceData={servicesData} />
-      <IndustriesServicesCard industries={industries.industries} />
+      <IndustriesServicesCard industries={industries} />
       <WhyAllZoneSection whyAllzoneData={whyAllzoneData} />
       <PortfolioSection portfolioData={portfolioData} />
       <ClientsSection clientsData={clientsData} />
-      <IndustriesFAQCard
-        matadata={matadata.matadata}
-        heading={matadata.matadata.heading}
-      />
+      <IndustriesFAQCard matadata={matadata} />
     </div>
   );
 }

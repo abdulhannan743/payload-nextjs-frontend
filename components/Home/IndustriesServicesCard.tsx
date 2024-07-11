@@ -11,8 +11,10 @@ import { SlArrowRight } from "react-icons/sl";
 import { Button } from "../ui/button";
 import DottedLine from "../ui/DottedLine";
 import Link from "next/link";
+import { IndustriesData } from "@/src/constants/HomePageData";
 
 function IndustriesServicesCard({ industries }: IndustriesProps) {
+  industries = IndustriesData;
   return (
     <div className="h-auto bg-[#0D2234] text-white py-14">
       <div className="container mx-auto flex flex-col lg:flex-row gap-20">
