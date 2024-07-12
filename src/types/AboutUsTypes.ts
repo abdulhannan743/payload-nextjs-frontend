@@ -10,6 +10,19 @@ interface Image {
   updatedAt: string;
   url: string;
 }
+interface Layout {
+  heading: string;
+  text: string;
+  image: Image;
+  id: string;
+  blockName: string;
+  blockType: string;
+}
+
+interface content {
+  layout: AboutLayoutItemType[];
+  id: string;
+}
 
 export type AboutLayoutItemType = {
   Image?: Image;
@@ -21,6 +34,7 @@ export type AboutLayoutItemType = {
   imageHeading?: string;
   ceoText?: string;
   blockName: string;
+  content: content[];
   blockType: string;
 };
 
