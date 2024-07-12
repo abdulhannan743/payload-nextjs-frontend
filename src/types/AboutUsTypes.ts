@@ -12,11 +12,14 @@ interface Image {
 }
 
 export type AboutLayoutItemType = {
-  Image: Image;
+  Image?: Image;
+  image?: Image;
   heading: string;
   text: string;
   link: string[];
   id: string;
+  imageHeading?: string;
+  ceoText?: string;
   blockName: string;
   blockType: string;
 };
