@@ -5,7 +5,6 @@ import OurTeamSection from "./OurTeamSection";
 import CoreValuesSection from "./CoreValues";
 import AboutCompany from "./AboutCompany";
 
-
 type AboutProps = {
   aboutPageData: AboutLayoutItemType[];
 };
@@ -15,27 +14,23 @@ const About = ({ aboutPageData }: AboutProps) => {
     (item) => item.blockName === "Hero"
   );
 
-
   const TeamSectionData = aboutPageData.find(
     (item) => item.blockName === "Our Team"
   );
 
-
-     
   const CoreValuesSectionData = aboutPageData.find(
     (item) => item.blockName === "Core Values"
-  );    
+  );
 
   const AboutCompanyData = aboutPageData.find(
     (item) => item.blockName === "About Company"
-
-);
+  );
   return (
     <>
-      <HeroSection HeroSectionData={HeroSectionData} />
-         <AboutCompany AboutCompanyData={AboutCompanyData} />
+      <HeroSection heroSectionData={HeroSectionData} isContentCentered={true} />
+      <AboutCompany AboutCompanyData={AboutCompanyData} />
       <CoreValuesSection CoreValuesSectionData={CoreValuesSectionData} />
-       <OurTeamSection TeamSectionData={TeamSectionData} />
+      <OurTeamSection TeamSectionData={TeamSectionData} />
     </>
   );
 };

@@ -29,7 +29,7 @@ export type AboutLayoutItemType = {
   image?: Image;
   heading: string;
   text: string;
-  link: string[];
+  link: any[];
   id: string;
   imageHeading?: string;
   ceoText?: string;

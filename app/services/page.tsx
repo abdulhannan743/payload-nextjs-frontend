@@ -1,23 +1,18 @@
 import React from "react";
 import { fetchWrapper } from "@/src/utils/fetchWrapper";
+import { getPageURL } from "@/src/utils";
+import { RESOURCE_TYPES } from "@/src/constants/common";
+import Services from "@/components/Services";
 
 async function ServicesPage() {
   const response: any = await fetchWrapper({
-    url: "/api/pages?where[slug][equals]=services",
+    url: getPageURL(RESOURCE_TYPES.SERVICES),
     method: "GET",
   });
-  const homeData = response?.docs[0].layout;
+  const servicesPageData = response?.docs[0].layout;
   return (
     <>
-      {homeData?.map((data: any) => (
-        // just for the time being
-        <div key={data?.id}>
-          <h3 className="text-lg font-bold text-primary mb-2">
-            {data?.heading}
-          </h3>
-          <p className="text-sm text-gray text-wrap">{data?.text}</p>
-        </div>
-      ))}
+      <Services servicesPageData={servicesPageData} />
     </>
   );
 }
