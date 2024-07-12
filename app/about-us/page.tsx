@@ -11,7 +11,6 @@ async function AboutUsPage() {
     url: "/api/pages?where[slug][equals]=about-us",
     method: "GET",
   });
-
   const aboutData: AboutLayoutItemType[] =
     response?.docs.find((item) => item.slug === "about-us")?.layout || [];
 

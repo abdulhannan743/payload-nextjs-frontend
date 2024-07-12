@@ -22,8 +22,8 @@ const HeroSection = ({ HeroSectionData }: HeroSectionProps) => {
         width={HeroSectionData?.Image?.width}
         alt={HeroSectionData?.Image?.alt || ""}
       />
-      <div className="absolute rounded-full bg-green-300 opacity-30 w-[384px] h-[384px] bottom-[-100px] right-[-100px] flex items-end justify-center text-white p-4"></div>
-      <div className="absolute rounded-full bg-green-300 opacity-30 w-12 h-12 top-56 right-5 flex items-end justify-center text-white p-4"></div>
+      <div className="absolute rounded-full bg-secondary opacity-30 w-96 h-96 -bottom-24 -right-24 flex items-end justify-center text-white p-4"></div>
+      <div className="absolute rounded-full bg-secondary opacity-30 w-12 h-12 top-56 right-5 flex items-end justify-center text-white p-4"></div>
     </div>
   );
 };

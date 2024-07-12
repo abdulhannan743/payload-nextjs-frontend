@@ -31,6 +31,8 @@ export type AboutLayoutItemType = {
   text: string;
   link: string[];
   id: string;
+  imageHeading?: string;
+  ceoText?: string;
   blockName: string;
   content: content[];
   blockType: string;
