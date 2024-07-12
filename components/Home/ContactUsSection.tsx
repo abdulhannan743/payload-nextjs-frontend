@@ -1,43 +1,13 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
 import { Button } from "../ui/button";
 import { FaDiamondTurnRight } from "react-icons/fa6";
 import DottedLine from "../ui/DottedLine";
-
-interface Office {
-  officeName: string;
-  officeAddress: string;
-  officeImage: { url: string };
-  link: { type: string; label: string; url: string }[];
-}
-
-interface FormField {
-  name: string;
-  label: string;
-  width: number;
-  defaultValue?: string;
-  required: boolean;
-  blockType: string;
-}
-
-interface ContactForm {
-  id: string;
-  title: string;
-  fields: FormField[];
-  submitButtonLabel: string;
-}
-
-export interface ContactFormBlockProps {
-  title: string;
-  subtitle: string;
-  description: string;
-  offices: Office[];
-  contactForm: ContactForm;
-}
+import type { ContactFormBlockProps } from "@/src/types/HomeTypes";
 
 const ContactFormBlock: React.FC<ContactFormBlockProps> = ({
   title,
@@ -54,6 +24,7 @@ const ContactFormBlock: React.FC<ContactFormBlockProps> = ({
   );
 
   const [errors, setErrors] = useState<{ [key: string]: boolean }>({});
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -63,7 +34,6 @@ const ContactFormBlock: React.FC<ContactFormBlockProps> = ({
   };
 
   const handleSubmit = (e: React.FormEvent) => {
-    console.log("clicked");
     e.preventDefault();
     const newErrors: { [key: string]: boolean } = {};
 
@@ -81,20 +51,37 @@ const ContactFormBlock: React.FC<ContactFormBlockProps> = ({
     }
   };
 
+  const handleFileClick = () => {
+    if (fileInputRef.current) {
+      fileInputRef.current.click();
+    }
+  };
+
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { files } = e.target;
+    if (files && files.length > 0) {
+      setFormData({ ...formData, file: files[0].name });
+    }
+  };
+
+  // Find the number field
+  const numberField = contactForm.fields.find(
+    (field) => field.blockType === "number"
+  );
+
   return (
-    <div className="container mx-auto py-16 px-4 ">
-      <div className="text-center flex flex-col gap-6">
+    <div className="container mx-auto py-10 px-4">
+      <div className="text-center flex flex-col gap-4">
         <h2 className="text-2xl font-semibold text-blue-900 uppercase">
           {title}
         </h2>
         <DottedLine />
-
         <p className="text-4xl font-bold">{subtitle}</p>
         <p className="text-black font-semibold mb-14">{description}</p>
       </div>
       <div className="bg-[#F5F5F5] p-8 rounded-lg shadow-lg">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div className="space-y-8">
+          <div className="space-y-6">
             {offices.map((office, index) => (
               <div
                 key={index}
@@ -105,7 +92,7 @@ const ContactFormBlock: React.FC<ContactFormBlockProps> = ({
                   backgroundPosition: "center",
                 }}
               >
-                <div className="absolute inset-0 bg-black opacity-60"></div>
+                <div className="absolute inset-0 bg-black opacity-65"></div>
                 <div className="relative p-4 text-white flex flex-col justify-center h-full">
                   <h3 className="text-lg font-bold">{office.officeName}</h3>
                   <p className="mb-4">{office.officeAddress}</p>
@@ -136,45 +123,102 @@ const ContactFormBlock: React.FC<ContactFormBlockProps> = ({
                   value: formData[field.name],
                   onChange: handleChange,
                   className:
-                    "form-input mt-1 block w-full border-gray-300 rounded-md bg-white p-2",
+                    "form-input mt-1 block w-full border border-gray-300 rounded-md bg-white p-2",
                 };
 
-                return (
-                  <div key={index} className="mb-4">
-                    <label className="block text-gray-700">{field.label}</label>
-                    {field.blockType === "text" && (
+                if (field.blockType === "text") {
+                  return (
+                    <div key={index} className="mb-4">
+                      <label className="block text-gray-700 font-semibold">
+                        {field.label}
+                      </label>
                       <input type="text" {...commonProps} />
-                    )}
-                    {field.blockType === "email" && (
-                      <input type="email" {...commonProps} />
-                    )}
-                    {field.blockType === "number" && (
-                      <input type="text" {...commonProps} />
-                    )}
-                    {field.blockType === "textarea" && (
+                    </div>
+                  );
+                } else if (field.blockType === "email") {
+                  return (
+                    <div key={index} className="flex gap-x-4 mb-4">
+                      <div className="w-1/2">
+                        <label className="block text-gray-700 font-semibold">
+                          {field.label}
+                        </label>
+                        <input type="email" {...commonProps} />
+                      </div>
+                      <div className="w-1/2">
+                        <label className="block text-gray-700 font-semibold">
+                          {numberField ? numberField.label : "Phone"}
+                        </label>
+                        <input
+                          type="text"
+                          name={numberField ? numberField.name : "phone"}
+                          value={
+                            formData[numberField ? numberField.name : "phone"]
+                          }
+                          onChange={handleChange}
+                          className="form-input mt-1 block w-full border border-gray-300 rounded-md bg-white p-2"
+                        />
+                      </div>
+                    </div>
+                  );
+                } else if (field.blockType === "textarea") {
+                  return (
+                    <div key={index} className="mb-4">
+                      <label className="block text-gray-700 font-semibold">
+                        {field.label}
+                      </label>
                       <textarea
-                        rows={5}
+                        rows={7}
                         {...commonProps}
-                        className="form-textarea mt-1 block w-full border-gray-300 rounded-md bg-white p-2"
+                        className="form-textarea mt-1 block w-full border border-gray-300 rounded-md bg-white p-2 mb-6"
                       />
-                    )}
-                    {errors[field.name] && (
-                      <span className="text-red-600">
-                        This field is required
-                      </span>
-                    )}
-                  </div>
-                );
+                    </div>
+                  );
+                } else if (field.blockType === "file") {
+                  return (
+                    <div key={index} className="">
+                      <label className="block text-gray-700 font-semibold">
+                        {field.label}
+                      </label>
+                      <div className="flex">
+                        <input
+                          type="file"
+                          ref={fileInputRef}
+                          onChange={handleFileChange}
+                          // {...commonProps}
+                          className="hidden"
+                        />
+                        <input
+                          type="text"
+                          name="file"
+                          value={formData.file || ""}
+                          placeholder="No file chosen"
+                          // {...commonProps}
+                          readOnly
+                          className="form-input block w-3/4 border border-gray-300 rounded-md rounded-r-none bg-white p-2"
+                        />
+                        <Button
+                          variant={"brand"}
+                          className="rounded-l-none w-40 h-12"
+                          onClick={handleFileClick}
+                        >
+                          Choose File
+                        </Button>
+                      </div>
+                    </div>
+                  );
+                }
+                return null;
               })}
-              <div className="mb-4">
-                <label className="block text-gray-700">Upload a file</label>
-                <div className="flex items-center">
-                  <input
-                    type="file"
-                    name="file"
-                    className="form-input mt-1 block w-full border-gray-300 rounded-md bg-white p-2"
-                  />
-                </div>
+              <div>
+                {contactForm.fields.map((field, index) => {
+                  return (
+                    errors[field.name] && (
+                      <span key={index} className="text-red-600 block">
+                        {field.label} is required
+                      </span>
+                    )
+                  );
+                })}
               </div>
               <Button variant={"brand"} type="submit">
                 {contactForm.submitButtonLabel}

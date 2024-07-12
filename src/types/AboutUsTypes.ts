@@ -10,14 +10,31 @@ interface Image {
   updatedAt: string;
   url: string;
 }
+interface Layout {
+  heading: string;
+  text: string;
+  image: Image;
+  id: string;
+  blockName: string;
+  blockType: string;
+}
+
+interface content {
+  layout: AboutLayoutItemType[];
+  id: string;
+}
 
 export type AboutLayoutItemType = {
-  Image: Image;
+  Image?: Image;
+  image?: Image;
   heading: string;
   text: string;
   link: string[];
   id: string;
+  imageHeading?: string;
+  ceoText?: string;
   blockName: string;
+  content: content[];
   blockType: string;
 };
 
@@ -41,4 +58,21 @@ export type AboutUsResponse = {
   hasNextPage: boolean;
   prevPage: number | null;
   nextPage: number | null;
+};
+
+//Team Section Types
+
+export type TeamSectionContentType = {
+  image: Image;
+  heading: string;
+  text: string;
+  id: string;
+};
+
+export type TeamSectionLayout = {
+  heading: string;
+  id: string;
+  blockName: string;
+  content: TeamSectionContentType[];
+  blockType: string;
 };
