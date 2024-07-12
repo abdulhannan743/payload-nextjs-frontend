@@ -15,7 +15,6 @@ export type TypographyChild = {
   indent?: number;
   type?: string;
   version?: number;
-  tag?: string;
 };
 
 export type Typography = {
@@ -35,8 +34,8 @@ export type AccordionData = {
 };
 
 export type IndustriesCardProps = {
-  heading: string;
   matadata: {
+    heading: string;
     typoPara: Array<{
       typography: Typography;
       paragraph: Typography;
@@ -53,5 +52,59 @@ export type HomeProps = {
       typography: Typography;
       paragraph: Typography;
     }>;
+  };
+};
+
+export type IndustryContent = {
+  logo: {
+    url: string;
+    alt: string;
+    width: number | `${number}`;
+    height: number | `${number}`;
+  };
+  typography: Typography;
+  paragraph: Typography;
+  link: {
+    type: string;
+    label: string;
+    page: {
+      id: string;
+      name: string;
+      slug: string;
+      layout: Array<{
+        heading: string;
+        text: string;
+        link: any[];
+        id: string;
+        blockName?: string;
+        blockType: string;
+      }>;
+      createdAt: string;
+      updatedAt: string;
+    };
+    parent: {
+      id: string;
+      name: string;
+      slug: string;
+      layout: Array<{
+        heading: string;
+        text: string;
+        link: any[];
+        id: string;
+        blockName?: string;
+        blockType: string;
+      }>;
+      createdAt: string;
+      updatedAt: string;
+    };
+    id: string;
+  }[];
+  id: string;
+};
+
+export type IndustriesProps = {
+  industries: {
+    heading: string;
+    content: IndustryContent[];
   };
 };
