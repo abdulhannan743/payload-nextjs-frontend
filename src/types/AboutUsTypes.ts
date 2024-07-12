@@ -59,3 +59,20 @@ export type AboutUsResponse = {
   prevPage: number | null;
   nextPage: number | null;
 };
+
+//Team Section Types
+
+export type TeamSectionContentType = {
+  image: Image;
+  heading: string;
+  text: string;
+  id: string;
+};
+
+export type TeamSectionLayout = {
+  heading: string;
+  id: string;
+  blockName: string;
+  content: TeamSectionContentType[];
+  blockType: string;
+};

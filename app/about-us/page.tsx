@@ -5,6 +5,7 @@ import type {
   AboutLayoutItemType,
   AboutUsResponse,
 } from "@/src/types/AboutUsTypes";
+import OurTeamSection from "@/components/About/OurTeamSection";
 
 async function AboutUsPage() {
   const response: AboutUsResponse = await fetchWrapper({
