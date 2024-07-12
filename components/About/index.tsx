@@ -16,7 +16,6 @@ const About = ({ aboutPageData }: AboutProps) => {
     (item) => item.blockName === "Core Values"
   );
 
-  console.log(CoreValuesSectionData);
 
   return (
     <>
