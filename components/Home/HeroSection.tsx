@@ -338,7 +338,7 @@ function HeroSection({ heroData }: HeroProps) {
   const currentData = heroData[currentDataIndex];
 
   return (
-    <div className="flex bg-white justify-between items-center pl-64 pr-64">
+    <div className="flex bg-white justify-between items-center pl-64 pr-64 mb-24">
       <div className="w-1/2 pl-24 pr-48 mb-4">
         <h2 className="font-bold text-3xl mb-4 text-blue-500">
           {currentData.heading}

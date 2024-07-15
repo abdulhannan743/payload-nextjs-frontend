@@ -70,7 +70,7 @@ const CoreValuesSection = ({
     setActiveSectionInfo(prevActiveSection);
   };
   return (
-    <div className="relative w-full mt-16 mb-10">
+    <div className="relative w-full mb-10">
       <div className="flex flex-col align-middle justify-center items-center">
         <h2 className="text-4xl font-semibold text-[#1D2746]">
           Our Core Values
