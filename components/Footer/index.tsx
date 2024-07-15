@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
 
   return (
     <footer className="bg-zinc-200 pt-10 md:pt-14">
-      <FlexContainer className="flex-col md:flex-row px-20 lg:flex-nowrap md:flex-wrap">
+      <FlexContainer className="flex-col md:flex-row px-20 lg:flex-nowrap md:flex-wrap container">
         {companySection &&
           companySection.Image &&
           companySection.text &&
