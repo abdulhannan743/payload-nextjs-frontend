@@ -6,17 +6,24 @@ import HeroSection from "./HeroSection";
 import type { HeroSectionType } from "./HeroSection";
 import PortfolioSection from "./PortfolioSection";
 import IndustriesFAQCard from "./IndustriesFAQCard";
+import LogoSection from "./logoSection";
+
 
 import IndustriesServicesCard from "./IndustriesServicesCard";
 
 
         
 
+
 type HomeProps = {
   homePageData: any;
 };
 
 export default function Home({ homePageData }: HomeProps) {
+  const logoData = homePageData?.find(
+    (item: any) => item?.blockName === "logo"
+  );
+
   const servicesData = homePageData?.find(
     (item: any) => item?.blockName === "Services Section"
   );
@@ -46,6 +53,7 @@ export default function Home({ homePageData }: HomeProps) {
   return (
     <div className="bg-white">
       <HeroSection heroData={heroData} />
+      <LogoSection logoData={logoData} />
       <ServicesSection serviceData={servicesData} />
       <IndustriesServicesCard industries={industries} />
       <WhyAllZoneSection whyAllzoneData={whyAllzoneData} />
