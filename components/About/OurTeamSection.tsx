@@ -22,7 +22,7 @@ const OurTeamSection = ({ TeamSectionData }: OurTeamProps) => {
   }
 
   return (
-    <div className="container mt-14 mb-14">
+    <div className="container mt-16 mb-14">
       <div className="flex flex-col items-center">
         <h2 className="text-4xl font-bold text-[#1D2746]">
           {TeamSectionData?.heading}
