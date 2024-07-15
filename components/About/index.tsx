@@ -6,6 +6,7 @@ import CoreValuesSection from "./CoreValues";
 import AboutCompany from "./AboutCompany";
 import OurCultureSection from "./OurCulture";
 
+
 type AboutProps = {
   aboutPageData: AboutLayoutItemType[];
 };
@@ -26,7 +27,7 @@ const About = ({ aboutPageData }: AboutProps) => {
   const AboutCompanyData = aboutPageData.find(
     (item) => item.blockName === "About Company"
   );
-
+    
   const OurCultureSectionData = aboutPageData.find(
     (item) => item.blockName === "Our Culture"
   );

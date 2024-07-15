@@ -36,3 +36,14 @@ export type CustomLink = {
   url: string;
   id: string;
 };
+
+export type PageLink = {
+  type: string;
+  label: string;
+  page: {
+    id: string;
+    name: string;
+    slug: string;
+  };
+  id: string;
+};
