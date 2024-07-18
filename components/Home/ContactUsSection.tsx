@@ -1,8 +1,6 @@
 "use client";
 
 import React, { useState, useRef } from "react";
-import Image from "next/image";
-import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
 import { Button } from "../ui/button";
 import { FaDiamondTurnRight } from "react-icons/fa6";
@@ -20,9 +18,10 @@ const ContactFormBlock: React.FC<ContactFormBlockProps> = ({
     contactForm.fields.reduce((acc, field) => {
       acc[field.name] = field.defaultValue || "";
       return acc;
-    }, {} as { [key: string]: string })
+    }, {} as { [key: string]: string | File })
   );
-
+  console.log("formData", formData);
+  const [isLoading, setIsLoading] = useState(false);
   const [errors, setErrors] = useState<{ [key: string]: boolean }>({});
   const fileInputRef = useRef<HTMLInputElement>(null);
 
@@ -33,7 +32,7 @@ const ContactFormBlock: React.FC<ContactFormBlockProps> = ({
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const newErrors: { [key: string]: boolean } = {};
 
@@ -47,7 +46,68 @@ const ContactFormBlock: React.FC<ContactFormBlockProps> = ({
       setErrors(newErrors);
     } else {
       setErrors({});
-      console.log(formData);
+      setIsLoading(true);
+      try {
+        let fileUrl = "";
+
+        // Check if file is selected
+        if (formData.file instanceof File) {
+          const formDataFile = new FormData();
+          formDataFile.append("file", formData.file);
+
+          const fileReq = await fetch(
+            `${process.env.NEXT_PUBLIC_PAYLOAD_URL}/api/media`,
+            {
+              method: "POST",
+              credentials: "include",
+              body: formDataFile,
+            }
+          );
+
+          const fileRes = await fileReq.json();
+          if (fileRes.doc.id) {
+            fileUrl = fileRes.doc.url;
+          }
+
+          if (fileReq.status >= 400) {
+            throw new Error(
+              fileRes.errors?.[0]?.message || "File upload error"
+            );
+          }
+        }
+
+        const req = await fetch(
+          `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/form-submissions`,
+          {
+            method: "POST",
+            credentials: "include",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              form: "669003e609d26fbe3e19e82c",
+              submissionData: {
+                ...formData,
+                file: fileUrl,
+              },
+            }),
+          }
+        );
+
+        const res = await req.json();
+        console.log("data", res);
+
+        if (req.status >= 400) {
+          throw new Error(res.errors?.[0]?.message || "Internal Server Error");
+        }
+
+        setIsLoading(false);
+        // handle successful form submission
+      } catch (error) {
+        console.warn(error);
+        setIsLoading(false);
+        setErrors({ status: true, message: errors.message });
+      }
     }
   };
 
@@ -60,7 +120,9 @@ const ContactFormBlock: React.FC<ContactFormBlockProps> = ({
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { files } = e.target;
     if (files && files.length > 0) {
-      setFormData({ ...formData, file: files[0].name });
+      console.log("files", files);
+      const file = files[0];
+      setFormData({ ...formData, file });
     }
   };
 
@@ -116,11 +178,15 @@ const ContactFormBlock: React.FC<ContactFormBlockProps> = ({
             ))}
           </div>
           <div>
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form
+              onSubmit={handleSubmit}
+              className="space-y-4"
+              encType="multipart/form-data"
+            >
               {contactForm.fields.map((field, index) => {
                 const commonProps = {
                   name: field.name,
-                  value: formData[field.name],
+                  value: formData[field.name] as string,
                   onChange: handleChange,
                   className:
                     "form-input mt-1 block w-full border border-gray-300 rounded-md bg-white p-2",
@@ -152,7 +218,9 @@ const ContactFormBlock: React.FC<ContactFormBlockProps> = ({
                           type="text"
                           name={numberField ? numberField.name : "phone"}
                           value={
-                            formData[numberField ? numberField.name : "phone"]
+                            formData[
+                              numberField ? numberField.name : "phone"
+                            ] as string
                           }
                           onChange={handleChange}
                           className="form-input mt-1 block w-full border border-gray-300 rounded-md bg-white p-2"
@@ -184,15 +252,17 @@ const ContactFormBlock: React.FC<ContactFormBlockProps> = ({
                           type="file"
                           ref={fileInputRef}
                           onChange={handleFileChange}
-                          // {...commonProps}
                           className="hidden"
                         />
                         <input
                           type="text"
-                          name="file"
-                          value={formData.file || ""}
+                          name="uploadFile"
+                          value={
+                            formData.file instanceof File
+                              ? formData.file.name
+                              : ""
+                          }
                           placeholder="No file chosen"
-                          // {...commonProps}
                           readOnly
                           className="form-input block w-3/4 border border-gray-300 rounded-md rounded-r-none bg-white p-2"
                         />
@@ -220,7 +290,7 @@ const ContactFormBlock: React.FC<ContactFormBlockProps> = ({
                   );
                 })}
               </div>
-              <Button variant={"brand"} type="submit">
+              <Button variant={"brand"} type="submit" isLoading={isLoading}>
                 {contactForm.submitButtonLabel}
               </Button>
             </form>

@@ -1,3 +1,5 @@
+// Industries FAQ Card Types
+
 export type TypographyNode = {
   text: string;
   detail?: number;
@@ -54,6 +56,8 @@ export type HomeProps = {
     }>;
   };
 };
+
+// Industries Services Card Types
 
 export type IndustryContent = {
   logo: {
