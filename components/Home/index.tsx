@@ -45,12 +45,12 @@ export default function Home({ homePageData }: HomeProps) {
   );
   return (
     <div className="bg-white">
-      {/* <HeroSection heroData={heroData} /> */}
-      {/* <ServicesSection serviceData={servicesData} /> */}
+      <HeroSection heroData={heroData} />
+      <ServicesSection serviceData={servicesData} />
       <IndustriesServicesCard industries={industries} />
-      {/* <WhyAllZoneSection whyAllzoneData={whyAllzoneData} /> */}
-      {/* <PortfolioSection portfolioData={portfolioData} /> */}
-      {/* <ClientsSection clientsData={clientsData} /> */}
+      <WhyAllZoneSection whyAllzoneData={whyAllzoneData} />
+      <PortfolioSection portfolioData={portfolioData} />
+      <ClientsSection clientsData={clientsData} />
       <ContactUsSection {...contactForm} />
       <IndustriesFAQCard matadata={matadata} />
     </div>
