@@ -15,14 +15,7 @@ function ServiceInfoSection({ sectionData }: ServiceInfoSectionProps) {
         <DottedLine />
         <p className="text-lg text-gray">{sectionData?.description}</p>
       </div>
-      <div className="w-1/2 flex flex-col gap-4 h-[500px] lg:h-[410px] overflow-y-auto p-1 two-column-container">
-        <style>
-          {`
-            .two-column-container::-webkit-scrollbar {
-              display: none;
-            }
-            `}
-        </style>
+      <div className="w-1/2 flex flex-col gap-4 h-[500px] lg:h-[410px] overflow-y-auto p-1 hide_scrollbar">
         {sectionData?.items?.map((item) => (
           <div
             key={item.id}

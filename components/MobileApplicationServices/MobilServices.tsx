@@ -1,7 +1,7 @@
 import React from "react";
-import { ServiceBlockType } from "@/src/types/ServiceBlockTypes";
 import DottedLine from "../ui/DottedLine";
 import RenderDescription from "../sharedComponents/RenderDescription";
+import { ServiceBlockType } from "@/src/types/ServiceBlockTypes";
 
 type MobilServicesProps = {
   mobilServicesData: ServiceBlockType;
@@ -20,7 +20,9 @@ function MobilServices({ mobilServicesData }: MobilServicesProps) {
       {mobilServicesData?.items?.map((item, index) => (
         <div key={item?.id}>
           <div
-            className={`flex gap-4 ${index % 2 !== 0 && "flex-row-reverse"} items-center`}
+            className={`flex gap-4 ${
+              index % 2 !== 0 && "flex-row-reverse"
+            } items-center`}
           >
             <div className="w-1/2">
               <img src={item?.image?.url} alt={item?.image?.alt} />

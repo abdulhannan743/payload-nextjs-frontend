@@ -42,7 +42,7 @@ const config = {
         },
         lightDark: {
           DEFAULT: "#1D2746",
-          foreground: "hsl(var(--gray-foreground))",
+          foreground: "hsl(var(--lightDark-foreground))",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
@@ -64,6 +64,7 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        "light-gray": "var(--light-gray)",
       },
       borderRadius: {
         lg: "var(--radius)",

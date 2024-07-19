@@ -66,7 +66,7 @@ function ServicesSection({
     blockType: "services",
   };
   return (
-    <div className={`bg-${isBackgroundWhite ? "white" : "[#F5F5F5]"} py-16`}>
+    <div className={`bg-${isBackgroundWhite ? "white" : "light-gray"} py-16`}>
       <div className="container mx-auto">
         <div className="max-w-5xl mx-auto flex flex-col items-center justify-center gap-6 mb-12">
           <h1 className="text-3xl md:text-4xl font-bold text-center">

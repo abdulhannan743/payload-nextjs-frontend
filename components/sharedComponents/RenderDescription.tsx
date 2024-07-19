@@ -9,12 +9,6 @@ function RenderDescription({ description }: RenderDescriptionProps) {
     <div className={`text-md max-w-4xl text-lg text-gray`}>
       <p>{mainParagraph}</p>
       <ul className="list-disc ml-5 mt-4 ">
-        <style>{`
-        .custom-list::marker {
-          color: #20C897;
-          font-size: 1.5rem;
-        }
-        `}</style>
         {features.map((feature, index) => (
           <li key={index} className="py-2 custom-list">
             {feature}

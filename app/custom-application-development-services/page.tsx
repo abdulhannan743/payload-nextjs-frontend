@@ -11,11 +11,9 @@ async function MobileApplicationServicesPage() {
   });
   const mobileApplicationServicesData = response?.docs[0].layout;
   return (
-    <>
-      <MobileApplicationServices
-        mobileApplicationServicesData={mobileApplicationServicesData}
-      />
-    </>
+    <MobileApplicationServices
+      mobileApplicationServicesData={mobileApplicationServicesData}
+    />
   );
 }
 
