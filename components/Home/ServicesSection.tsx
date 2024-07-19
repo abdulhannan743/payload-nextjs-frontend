@@ -5,9 +5,13 @@ import DottedLine from "../ui/DottedLine";
 
 type ServicesProps = {
   serviceData: ServiceBlockType;
+  isBackgroundWhite?: boolean;
 };
 
-function ServicesSection({ serviceData }: ServicesProps) {
+function ServicesSection({
+  serviceData,
+  isBackgroundWhite = false,
+}: ServicesProps) {
   // just a dummy data for the time being
   serviceData = {
     title: "Services We offer For Software Development & Consultancy",
@@ -62,7 +66,7 @@ function ServicesSection({ serviceData }: ServicesProps) {
     blockType: "services",
   };
   return (
-    <div className="bg-[#F5F5F5] py-16">
+    <div className={`bg-${isBackgroundWhite ? "white" : "light-gray"} py-16`}>
       <div className="container mx-auto">
         <div className="max-w-5xl mx-auto flex flex-col items-center justify-center gap-6 mb-12">
           <h1 className="text-3xl md:text-4xl font-bold text-center">
@@ -74,11 +78,12 @@ function ServicesSection({ serviceData }: ServicesProps) {
           </p>
         </div>
         <ScrollableContainer scrollAxis="x">
-          <div className="flex gap-8 pb-8">
+          <div className="flex gap-8 p-1 pb-8">
             {serviceData?.items?.map((item) => (
               <div
                 key={item.id}
                 className="bg-white p-4 shadow-md rounded-lg min-w-[350px] max-w-[350px] mx-auto"
+                style={{ boxShadow: "0px 0px 5px 1px #0000000D" }}
               >
                 <img
                   src={`/assets/icons/${item.iconName}.svg`}

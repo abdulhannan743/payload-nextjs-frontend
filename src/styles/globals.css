@@ -10,9 +10,11 @@
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
-    --primary: 222.2 47.4% 11.2%;
+    --primary: #0D4C8F;
     --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
+    --secondary: #20C897;
+    --light-gray: #F5F5F5;
+    --gray: #666666;
     --secondary-foreground: 222.2 47.4% 11.2%;
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
@@ -78,4 +80,13 @@ h3[data-state="open"] {
 
 .accordion-trigger[data-state="open"] img {
   filter: brightness(0) saturate(100%) invert(54%) sepia(19%) saturate(2995%) hue-rotate(123deg) brightness(95%) contrast(101%);
+}
+
+.hide_scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.custom-list::marker {
+  color: var(--secondary);
+  font-size: 1.5rem;
 }

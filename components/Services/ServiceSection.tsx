@@ -3,8 +3,9 @@ import React from "react";
 import { Button } from "../ui/button";
 import { ServiceType } from "@/src/types/ServicesTypes";
 import { CustomLink, PageLink } from "@/src/types/ServiceBlockTypes";
+import Link from "next/link";
 
-type Link = CustomLink | PageLink;
+type Link = PageLink;
 
 type ServiceSectionProps = {
   backgroundDark?: boolean;
@@ -17,35 +18,26 @@ function ServiceSection({
 }: ServiceSectionProps) {
   const [activeTab, setActiveTab] = React.useState(0);
 
-  const renderLinks = (links: Link[], backgroundDark: boolean) => {
-    return links.map((link, index) => {
-      if (link.type === "page" && "page" in link) {
-        return (
-          <Button
-            key={index}
-            variant={backgroundDark ? "secondary" : "default"}
-            className={`text-white`}
-          >
-            <a href={`/${link.page.slug}`}>{link.label}</a>
-          </Button>
-        );
-      } else if (link.type === "custom" && "url" in link) {
-        return (
-          <Button
-            key={index}
-            variant={"outline"}
-            className={`${
-              backgroundDark ? "border-secondary" : "border-primary"
-            } text-${backgroundDark ? "secondary" : "primary"}
+  const renderLinks = (links: Link[], backgroundDark: boolean) => (
+    <>
+      <Button
+        variant={backgroundDark ? "secondary" : "default"}
+        className={`text-white`}
+      >
+        <Link href={links[0]?.page?.slug || ""}>{links[0]?.label}</Link>
+      </Button>
+      <Button
+        variant={"outline"}
+        className={`${
+          backgroundDark ? "border-secondary" : "border-primary"
+        } text-${backgroundDark ? "secondary" : "primary"}
             bg-${backgroundDark ? "[#0D2234]" : "white"} `}
-          >
-            <a href={link.url}>{link.label}</a>
-          </Button>
-        );
-      }
-      return null;
-    });
-  };
+      >
+        <Link href={links[1]?.page?.slug || ""}>{links[1]?.label}</Link>
+      </Button>
+    </>
+  );
+
   const renderDescription = (description: string, backgroundDark: boolean) => {
     const [mainParagraph, ...features] = description.split("\n");
     return (

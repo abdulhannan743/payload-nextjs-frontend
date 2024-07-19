@@ -7,7 +7,6 @@ import AboutCompany from "./AboutCompany";
 import Analytics from "../sharedComponents/AnalyticsServices";
 import OurCultureSection from "./OurCulture";
 
-
 type AboutProps = {
   aboutPageData: AboutLayoutItemType[];
 };
@@ -32,7 +31,7 @@ const About = ({ aboutPageData }: AboutProps) => {
   const analyticsData = aboutPageData.find(
     (item) => item.blockName === "analytics"
   );
-    
+
   const OurCultureSectionData = aboutPageData.find(
     (item) => item.blockName === "Our Culture"
   );
@@ -40,7 +39,7 @@ const About = ({ aboutPageData }: AboutProps) => {
 
   return (
     <>
-      <HeroSection HeroSectionData={HeroSectionData} />
+      <HeroSection heroSectionData={HeroSectionData} isContentCentered={true} />
       <AboutCompany AboutCompanyData={AboutCompanyData} />
       <CoreValuesSection CoreValuesSectionData={CoreValuesSectionData} />
       <Analytics analyticsData={analyticsData} />
