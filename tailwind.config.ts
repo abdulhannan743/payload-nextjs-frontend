@@ -40,6 +40,10 @@ const config = {
           DEFAULT: "#666666",
           foreground: "hsl(var(--gray-foreground))",
         },
+        lightDark: {
+          DEFAULT: "#1D2746",
+          foreground: "hsl(var(--gray-foreground))",
+        },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
