@@ -12,7 +12,7 @@ type AboutDataProps = {
 const AboutCompany = ({ AboutCompanyData }: AboutDataProps) => {
   return (
     <div className="container flex flex-row items-start pt-20 mt-8 px-28 justify-between w-full">
-      <div className="absolute -left-60 top-3/4 z-[-10]">
+      <div className="absolute -left-60 top-2/3 z-[-10]">
         <Image src={vector} alt="vector" />
       </div>
 

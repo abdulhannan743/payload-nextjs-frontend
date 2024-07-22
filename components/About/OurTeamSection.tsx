@@ -5,6 +5,7 @@ import type {
   AboutLayoutItemType,
   TeamSectionLayout,
 } from "@/src/types/AboutUsTypes";
+import DottedLine from "../ui/DottedLine";
 
 type OurTeamProps = {
   TeamSectionData: AboutLayoutItemType | TeamSectionLayout | undefined;
@@ -27,7 +28,7 @@ const OurTeamSection = ({ TeamSectionData }: OurTeamProps) => {
         <h2 className="text-4xl font-bold text-[#1D2746]">
           {TeamSectionData?.heading}
         </h2>
-        <hr className="w-20 h-1 rounded-full bg-secondary mt-4" />
+        <DottedLine />
       </div>
       <div className="container mt-10">
         <div className="grid grid-cols-4 gap-10">

@@ -43,7 +43,10 @@ function MobileApplicationServices({
       <HeroSection heroSectionData={heroSectionData} />
       <ServiceInfoSection sectionData={companyProcessData} />
       <MobilServices mobilServicesData={mobileApplicationData} />
-      <AccordianSection accordianSectionData={appDevelopmentTeamData} />
+      <AccordianSection
+        accordianSectionData={appDevelopmentTeamData}
+        backgroundStyling={true}
+      />
       <ServicesSection
         serviceData={planingToExecutionData}
         isBackgroundWhite={true}

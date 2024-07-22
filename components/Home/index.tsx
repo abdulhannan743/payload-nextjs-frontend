@@ -8,12 +8,7 @@ import PortfolioSection from "./PortfolioSection";
 import IndustriesFAQCard from "./IndustriesFAQCard";
 import LogoSection from "./logoSection";
 
-
 import IndustriesServicesCard from "./IndustriesServicesCard";
-
-
-        
-
 
 type HomeProps = {
   homePageData: any;
@@ -48,7 +43,6 @@ export default function Home({ homePageData }: HomeProps) {
   const industries = homePageData?.find(
     (item: any) => item?.blockName === "Industries Services Section"
   );
-
 
   return (
     <div className="bg-white">
