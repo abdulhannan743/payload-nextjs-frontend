@@ -33,7 +33,7 @@ function HeroSection({
   };
 
   return (
-    <div className="container max-auto">
+    <div className="container mx-auto w-full">
       <div className="container relative px-0 max-auto overflow-hidden">
         <div
           className={`rounded-md bg-black/50 text-white w-full min-h-[544px] px-6 md:px-16 py-12 relative z-10 flex items-center ${
@@ -41,7 +41,7 @@ function HeroSection({
           }`}
         >
           <div
-            className={`flex flex-col gap-4 md:gap-8 max-auto ${
+            className={`flex flex-col gap-4 md:gap-8 max-auto  ${
               isContentCentered ? "items-center" : ""
             }`}
           >
@@ -65,12 +65,12 @@ function HeroSection({
           </div>
         </div>
         <img
-          className="absolute inset-0 object-fit w-full h-full bg-cover"
+          className="absolute inset-0 object-cover w-full h-full bg-cover lg:object-fill"
           src={heroSectionData?.Image?.url || ""}
           alt={heroSectionData?.Image?.alt || ""}
         />
-        <div className="absolute rounded-full bg-secondary opacity-30 w-96 h-96 -bottom-24 -right-24 flex items-end justify-center text-white p-4"></div>
-        <div className="absolute rounded-full bg-secondary opacity-30 w-12 h-12 top-48 right-5 flex items-end justify-center text-white p-4"></div>
+        <div className="absolute rounded-full bg-secondary opacity-30 w-96 h-96 md:-bottom-24 -bottom-64  md:-right-32 -right-28 flex items-end justify-center text-white p-4"></div>
+        <div className="absolute rounded-full bg-secondary opacity-30 w-10 h-10 lg:w-12 lg:h-12 top-48 right-5 max-sm:inset-y-80 max-sm:inset-x-72 flex items-end justify-center text-white p-4"></div>
       </div>
     </div>
   );

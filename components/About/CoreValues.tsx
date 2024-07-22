@@ -7,6 +7,7 @@ import squareVector from "../../public/images/Vector.png";
 import dotsStyle from "../../public/images/Group 39932.png";
 import Hamburger from "../../public/images/Hamburger.png";
 import type { AboutLayoutItemType } from "@/src/types/AboutUsTypes";
+import DottedLine from "../ui/DottedLine";
 
 type CoreValuesSectionProps = {
   CoreValuesSectionData: AboutLayoutItemType | undefined;
@@ -73,9 +74,9 @@ const CoreValuesSection = ({
     <div className="relative w-full mb-10">
       <div className="flex flex-col align-middle justify-center items-center">
         <h2 className="text-4xl font-semibold text-[#1D2746]">
-          Our Core Values
+          {CoreValuesSectionData?.heading}
         </h2>
-        <hr className="w-24 h-1 bg-secondary mt-3 rounded-full" />
+        <DottedLine />
       </div>
       <div className="container flex flex-row items-center justify-between mt-10">
         {tabsData.map((tab: tabsDataTypes, index) => (
@@ -97,7 +98,7 @@ const CoreValuesSection = ({
             <hr
               className={`w-4 h-4 rounded-full border ${
                 activeLink === tab.name ? "bg-primary" : "bg-white"
-              } mt-1.5`}
+              } mt-4`}
             />
           </div>
         ))}
