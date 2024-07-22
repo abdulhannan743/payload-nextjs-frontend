@@ -4,8 +4,8 @@ import type { AboutLayoutItemType } from "@/src/types/AboutUsTypes";
 import OurTeamSection from "./OurTeamSection";
 import CoreValuesSection from "./CoreValues";
 import AboutCompany from "./AboutCompany";
+import Analytics from "../sharedComponents/AnalyticsServices";
 import OurCultureSection from "./OurCulture";
-
 
 type AboutProps = {
   aboutPageData: AboutLayoutItemType[];
@@ -27,16 +27,22 @@ const About = ({ aboutPageData }: AboutProps) => {
   const AboutCompanyData = aboutPageData.find(
     (item) => item.blockName === "About Company"
   );
-    
+
+  const analyticsData = aboutPageData.find(
+    (item) => item.blockName === "analytics"
+  );
+
   const OurCultureSectionData = aboutPageData.find(
     (item) => item.blockName === "Our Culture"
   );
 
+
   return (
     <>
-      <HeroSection HeroSectionData={HeroSectionData} />
+      <HeroSection heroSectionData={HeroSectionData} isContentCentered={true} />
       <AboutCompany AboutCompanyData={AboutCompanyData} />
       <CoreValuesSection CoreValuesSectionData={CoreValuesSectionData} />
+      <Analytics analyticsData={analyticsData} />
       <OurTeamSection TeamSectionData={TeamSectionData} />
       <OurCultureSection OurCultureSectionData={OurCultureSectionData} />
     </>

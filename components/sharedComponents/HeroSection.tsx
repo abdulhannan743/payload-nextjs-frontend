@@ -11,7 +11,10 @@ function HeroSection({
   heroSectionData,
   isContentCentered = false,
 }: HeroSectionProps) {
-  const renderDescription = (description: string, isContentCentered: boolean) => {
+  const renderDescription = (
+    description: string,
+    isContentCentered: boolean
+  ) => {
     const [mainParagraph, ...features] = description.split("\n");
     return (
       <div
@@ -32,12 +35,14 @@ function HeroSection({
   return (
     <div className="container max-auto">
       <div className="container relative px-0 max-auto overflow-hidden">
-        <div className="rounded-md bg-black/50 text-white w-full h-full px-6 md:px-16 py-12 relative z-10">
+        <div
+          className={`rounded-md bg-black/50 text-white w-full min-h-[544px] px-6 md:px-16 py-12 relative z-10 flex items-center ${
+            isContentCentered ? "justify-center" : ""
+          }`}
+        >
           <div
             className={`flex flex-col gap-4 md:gap-8 max-auto ${
-              isContentCentered
-                ? "justify-center items-center h-[300px] md:h-[500px]"
-                : ""
+              isContentCentered ? "items-center" : ""
             }`}
           >
             <h2
@@ -65,7 +70,7 @@ function HeroSection({
           alt={heroSectionData?.Image?.alt || ""}
         />
         <div className="absolute rounded-full bg-secondary opacity-30 w-96 h-96 -bottom-24 -right-24 flex items-end justify-center text-white p-4"></div>
-        <div className="absolute rounded-full bg-secondary opacity-30 w-12 h-12 top-56 right-5 flex items-end justify-center text-white p-4"></div>
+        <div className="absolute rounded-full bg-secondary opacity-30 w-12 h-12 top-48 right-5 flex items-end justify-center text-white p-4"></div>
       </div>
     </div>
   );

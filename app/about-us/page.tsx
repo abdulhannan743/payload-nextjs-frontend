@@ -15,11 +15,7 @@ async function AboutUsPage() {
   const aboutData: AboutLayoutItemType[] =
     response?.docs.find((item) => item.slug === "about-us")?.layout || [];
 
-  return (
-    <>
-      <About aboutPageData={aboutData} />
-    </>
-  );
+  return <About aboutPageData={aboutData} />;
 }
 
 export default AboutUsPage;

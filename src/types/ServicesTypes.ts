@@ -13,6 +13,6 @@ type ServiceTab = {
   heading: string;
   title?: string;
   description?: string;
-  link: (CustomLink | PageLink)[];
+  link: PageLink[];
   id: string;
 };
