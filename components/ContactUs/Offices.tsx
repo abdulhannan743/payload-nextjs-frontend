@@ -7,7 +7,7 @@ import { Office } from "@/src/types/HomeTypes";
 const Offices: React.FC<{ offices: Office[] }> = ({ offices }) => {
   return (
     <div className="space-y-6">
-      {offices.map((office, index) => (
+      {offices?.map((office, index) => (
         <div
           key={index}
           className="relative bg-gray-900 rounded-lg overflow-hidden h-40"

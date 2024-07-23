@@ -25,6 +25,7 @@ const renderField = ({
   fileInputRef,
   handleFileClick,
 }: RenderFieldProps) => {
+  const fileButtonLabel = "Chose File";
   const commonProps = {
     name: field.name,
     value: formik.values[field.name],
@@ -63,10 +64,10 @@ const renderField = ({
         </div>
         <div className="w-1/2">
           <label className="block text-gray-700 font-semibold">
-            {field.name === "phone" ? field.label : "Phone*"}
+            {field.name === "phone" ? field.label : "Phone *"}
           </label>
           <input
-            type="text"
+            type="number"
             name="phone"
             value={formik.values.phone}
             onChange={formik.handleChange}
@@ -124,7 +125,7 @@ const renderField = ({
             onClick={handleFileClick}
             type="button"
           >
-            {"Chose File"}
+            {fileButtonLabel}
           </Button>
         </div>
         {formik.touched.file && formik.errors.file && (

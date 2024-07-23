@@ -5,10 +5,8 @@ import ClientsSection from "./ClientsSection";
 import HeroSection from "./HeroSection";
 import type { HeroSectionType } from "./HeroSection";
 import PortfolioSection from "./PortfolioSection";
-import IndustriesFAQCard from "./IndustriesFAQCard";
 import LogoSection from "./logoSection";
 import IndustriesServicesCard from "./IndustriesServicesCard";
-import ContactFormBlock from "../ContactUs/ContactFormBlock";
 
 type HomeProps = {
   homePageData: any;
@@ -36,17 +34,11 @@ export default function Home({ homePageData }: HomeProps) {
   const portfolioData = homePageData?.find(
     (item: any) => item?.blockName === "Our Work"
   );
-  const matadata = homePageData?.find(
-    (item: any) => item?.blockName === "Industries FAQ's Section"
-  );
 
   const industries = homePageData?.find(
     (item: any) => item?.blockName === "Industries Services Section"
   );
 
-  const form = homePageData?.find(
-    (item: any) => item?.blockName === "Contact Us Form "
-  );
   return (
     <div className="bg-white">
       <HeroSection heroData={heroData} />
@@ -56,8 +48,6 @@ export default function Home({ homePageData }: HomeProps) {
       <WhyAllZoneSection whyAllzoneData={whyAllzoneData} />
       <PortfolioSection portfolioData={portfolioData} />
       <ClientsSection clientsData={clientsData} />
-      <ContactFormBlock {...form} />
-      <IndustriesFAQCard matadata={matadata} />
     </div>
   );
 }

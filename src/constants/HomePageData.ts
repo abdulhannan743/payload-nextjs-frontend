@@ -885,7 +885,6 @@ export const formSectionData = {
     {
       officeName: "USA Office",
       officeAddress: "256 Chapman Rd, Newark, DE 19702,USA",
-
       officeImage: {
         id: "66900a2eaa01f28abff4c8e8",
         alt: "Image",
@@ -898,7 +897,6 @@ export const formSectionData = {
         updatedAt: "2024-07-11T16:37:02.262Z",
         url: "http://localhost:4000/media/USA-Image.svg",
       },
-
       link: [
         {
           type: "custom",
@@ -909,11 +907,9 @@ export const formSectionData = {
       ],
       id: "66900a07f27e64260a235e3a",
     },
-
     {
       officeName: "Qatar Office",
       officeAddress: "Office No. 1, Floor No. 9, QFC Tower1 Doha, Qatar",
-
       officeImage: {
         id: "66900aaeaa01f28abff4c8f9",
         alt: "Image",
@@ -926,7 +922,6 @@ export const formSectionData = {
         updatedAt: "2024-07-11T16:39:10.641Z",
         url: "http://localhost:4000/media/Qatar-Image.svg",
       },
-
       link: [
         {
           type: "custom",
@@ -937,12 +932,10 @@ export const formSectionData = {
       ],
       id: "66900a8ff27e64260a235e3c",
     },
-
     {
       officeName: "Pakistan Office",
       officeAddress:
         "93, J1-, Sunflower Housing Society Johar Town, 54000, Pakistan",
-
       officeImage: {
         id: "66900b0caa01f28abff4c906",
         alt: "Image",
@@ -955,7 +948,6 @@ export const formSectionData = {
         updatedAt: "2024-07-11T16:40:44.889Z",
         url: "http://localhost:4000/media/PK-Image.svg",
       },
-
       link: [
         {
           type: "custom",
@@ -970,11 +962,9 @@ export const formSectionData = {
   title: "Let’s talk",
   subtitle: "Talk to us and get your project moving!",
   description: "Contact us for free Consultation,time & cost for your Projects",
-
   contactForm: {
     id: "669003e609d26fbe3e19e82c",
     title: "Contact Us Form",
-
     fields: [
       {
         name: "name",
@@ -986,7 +976,6 @@ export const formSectionData = {
         blockName: "Name",
         blockType: "text",
       },
-
       {
         name: "email",
         label: "Email *",
@@ -996,7 +985,6 @@ export const formSectionData = {
         blockName: "Email",
         blockType: "email",
       },
-
       {
         name: "phone",
         label: "Phone *",
@@ -1006,7 +994,6 @@ export const formSectionData = {
         blockName: "Phone",
         blockType: "number",
       },
-
       {
         name: "message",
         label: "Please describe what you need *",
@@ -1017,7 +1004,6 @@ export const formSectionData = {
         blockName: "Text Area",
         blockType: "textarea",
       },
-
       {
         name: "uploadFile",
         width: 50,
@@ -1025,18 +1011,18 @@ export const formSectionData = {
         id: "66911cffaa008a2e98cf8c68",
         blockName: "Upload File ",
         blockType: "file",
+        label: "Upload File",
+        required: false,
       },
     ],
     submitButtonLabel: "Send Massage",
     confirmationType: "message",
-
     confirmationMessage: {
       root: {
         type: "root",
         format: "",
         indent: 0,
         version: 1,
-
         children: [
           {
             children: [
@@ -1045,7 +1031,7 @@ export const formSectionData = {
                 format: 0,
                 mode: "normal",
                 style: "",
-                text: "Your form is sumitted successfully.",
+                text: "Your form is submitted successfully.",
                 type: "text",
                 version: 1,
               },
@@ -1060,11 +1046,9 @@ export const formSectionData = {
         direction: "ltr",
       },
     },
-
     redirect: {
       type: "reference",
     },
-
     emails: [],
     createdAt: "2024-07-11T16:10:14.664Z",
     updatedAt: "2024-07-12T21:01:38.352Z",

@@ -16,14 +16,14 @@ const ContactForm: React.FC<{ contactForm: ContactFormProps }> = ({
   contactForm,
 }) => {
   const fileInputRef = useRef<HTMLInputElement>(null);
-
-  const initialValues = contactForm.fields.reduce((acc, field) => {
+  const formID = "669003e609d26fbe3e19e82c";
+  const initialValues = contactForm?.fields.reduce((acc, field) => {
     acc[field.name] = field.defaultValue || "";
     return acc;
   }, {} as Record<string, string>);
 
   const validationSchema = Yup.object(
-    contactForm.fields.reduce((acc, field) => {
+    contactForm?.fields.reduce((acc, field) => {
       if (field.required) {
         acc[field.name] = Yup.string().required(`${field.label} is required`);
       }
@@ -42,6 +42,49 @@ const ContactForm: React.FC<{ contactForm: ContactFormProps }> = ({
           formData.append(key, values[key]);
         }
       }
+
+      const handleFormSubmission = async () => {
+        const bodyData = Array.from(formData.entries()).map(([key, value]) => ({
+          field: key,
+          value,
+        }));
+
+        try {
+          const req = await fetch(
+            `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/form-submissions`,
+            {
+              method: "POST",
+              credentials: "include",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                form: formID,
+                submissionData: bodyData,
+              }),
+            }
+          );
+
+          const res = await req.json();
+
+          if (req.status >= 400) {
+            throw new Error(
+              res.errors?.[0]?.message || "Internal Server Error"
+            );
+          }
+
+          resetForm();
+          if (fileInputRef.current) {
+            fileInputRef.current.value = "";
+          }
+          toast.success(
+            contactForm.confirmationMessage.root.children[0].children[0].text
+          );
+        } catch (error: any) {
+          console.error(error);
+          toast.error(error.message || "Internal Server Error");
+        }
+      };
 
       if (fileInputRef.current?.files?.length) {
         const file = fileInputRef.current.files[0];
@@ -64,6 +107,7 @@ const ContactForm: React.FC<{ contactForm: ContactFormProps }> = ({
           }
 
           if (fileRes.doc.id) {
+            formData.delete("file");
             formData.append("file", fileRes.doc.url);
           }
         } catch (error: any) {
@@ -71,45 +115,9 @@ const ContactForm: React.FC<{ contactForm: ContactFormProps }> = ({
           toast.error(error.message || "File upload error");
           return;
         }
-      } else {
-        console.error("No file selected or file is empty.");
-        toast.error("No file selected or file is empty.");
-        return;
       }
 
-      try {
-        const req = await fetch(
-          `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/form-submissions`,
-          {
-            method: "POST",
-            credentials: "include",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              form: "669003e609d26fbe3e19e82c",
-              submissionData: Object.fromEntries(formData.entries()),
-            }),
-          }
-        );
-
-        const res = await req.json();
-
-        if (req.status >= 400) {
-          throw new Error(res.errors?.[0]?.message || "Internal Server Error");
-        }
-
-        resetForm();
-        if (fileInputRef.current) {
-          fileInputRef.current.value = "";
-        }
-        toast.success(
-          contactForm.confirmationMessage.root.children[0].children[0].text
-        );
-      } catch (error: any) {
-        console.error(error);
-        toast.error(error.message || "Internal Server Error");
-      }
+      await handleFormSubmission();
     },
   });
 
@@ -124,11 +132,11 @@ const ContactForm: React.FC<{ contactForm: ContactFormProps }> = ({
       onSubmit={formik.handleSubmit}
       className="space-y-4 max-w-lg lg:max-w-2xl"
     >
-      {contactForm.fields.map((field, index) =>
+      {contactForm?.fields.map((field, index) =>
         renderField({ field, index, formik, fileInputRef, handleFileClick })
       )}
       <Button type="submit" variant={"brand"} className="py-3">
-        {contactForm.submitButtonLabel}
+        {contactForm?.submitButtonLabel}
       </Button>
     </form>
   );
