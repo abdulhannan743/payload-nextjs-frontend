@@ -10,11 +10,7 @@ async function ServicesPage() {
     method: "GET",
   });
   const servicesPageData = response?.docs[0].layout;
-  return (
-    <>
-      <Services servicesPageData={servicesPageData} />
-    </>
-  );
+  return <Services servicesPageData={servicesPageData} />;
 }
 
 export default ServicesPage;

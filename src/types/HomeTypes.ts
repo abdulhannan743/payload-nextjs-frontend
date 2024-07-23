@@ -55,6 +55,8 @@ export type HomeProps = {
   };
 };
 
+// Industries Services Card Types
+
 export type IndustryContent = {
   logo: {
     url: string;
@@ -107,4 +109,46 @@ export type IndustriesProps = {
     heading: string;
     content: IndustryContent[];
   };
+};
+
+// Contact us section types
+
+export type ContactFormProps = {
+  id: string;
+  title: string;
+  fields: FormField[];
+  submitButtonLabel: string;
+  confirmationMessage: {
+    root: {
+      children: {
+        children: {
+          text: string;
+        }[];
+      }[];
+    };
+  };
+};
+
+export type Office = {
+  officeName: string;
+  officeAddress: string;
+  officeImage: { url: string };
+  link: { type: string; label: string; url: string }[];
+};
+
+export type FormField = {
+  name: string;
+  label: string;
+  width: number;
+  defaultValue?: string;
+  required: boolean;
+  blockType: string;
+};
+
+export type ContactFormBlockProps = {
+  title: string;
+  subtitle: string;
+  description: string;
+  offices: Office[];
+  contactForm: ContactFormProps;
 };

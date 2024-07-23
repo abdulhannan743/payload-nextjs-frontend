@@ -10,10 +10,5 @@ export default async function HomePage() {
   });
   const homePageData = response?.docs[0].layout;
 
-  return (
-    <>
-      <Home homePageData={homePageData} />
-
-    </>
-  );
+  return <Home homePageData={homePageData} />;
 }

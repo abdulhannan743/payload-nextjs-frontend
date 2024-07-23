@@ -40,6 +40,10 @@ const config = {
           DEFAULT: "#666666",
           foreground: "hsl(var(--gray-foreground))",
         },
+        lightDark: {
+          DEFAULT: "#1D2746",
+          foreground: "hsl(var(--lightDark-foreground))",
+        },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
@@ -60,6 +64,9 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        "light-gray": "var(--light-gray)",
+        "dark-blue": "var(--dark-blue)",
+        "secondary-light": "var(--secondary-light)",
       },
       borderRadius: {
         lg: "var(--radius)",
