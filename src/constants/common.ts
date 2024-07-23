@@ -6,5 +6,7 @@ export const RESOURCE_TYPES = {
   CONTACT_US: "contact-us",
   CAREERS: "careers",
   ABOUT_US: "about-us",
-  MOBIL_APPLICATION_SERVICES: "custom-application-development-services",
+  MOBILE_APPLICATION_SERVICES: "custom-application-development-services",
+  ENTERPRISE_SOFTWARE_SERVICES: "enterprise-application-development-services",
+  AI_DEVELOPMENT_SERVICES: "ai-development-services",
 } as const;

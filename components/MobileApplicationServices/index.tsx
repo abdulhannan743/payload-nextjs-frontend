@@ -37,13 +37,20 @@ function MobileApplicationServices({
           className="w-full h-full"
         />
       </div>
-      <h2 className="text-9xl font-bold text-[#20C8971A] absolute inset-[21%] z-[-1] overflow-hidden text-nowrap">
-        App Development
-      </h2>
+      <div className="absolute top-[18.5%] md:top-[22%] lg:top-[21.8%] xl:top-[19.5%] z-[0] w-full">
+        <img
+          src="/assets/images/AppDevelopmentBG.png"
+          alt="Technology Background"
+          className="w-full h-full"
+        />
+      </div>
       <HeroSection heroSectionData={heroSectionData} />
       <ServiceInfoSection sectionData={companyProcessData} />
       <MobilServices mobilServicesData={mobileApplicationData} />
-      <AccordianSection accordianSectionData={appDevelopmentTeamData} />
+      <AccordianSection
+        accordianSectionData={appDevelopmentTeamData}
+        backgroundStyling={true}
+      />
       <ServicesSection
         serviceData={planingToExecutionData}
         isBackgroundWhite={true}

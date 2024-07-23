@@ -6,7 +6,7 @@ import { fetchWrapper } from "@/src/utils/fetchWrapper";
 
 async function MobileApplicationServicesPage() {
   const response: any = await fetchWrapper({
-    url: getPageURL(RESOURCE_TYPES.MOBIL_APPLICATION_SERVICES),
+    url: getPageURL(RESOURCE_TYPES.MOBILE_APPLICATION_SERVICES),
     method: "GET",
   });
   const mobileApplicationServicesData = response?.docs[0].layout;
