@@ -12,7 +12,7 @@ import DevelopmentModelImage from "../../public/images/DevelopmentModel.png";
 
 type AccordianSectionProps = {
   accordianSectionData: ServiceBlockType;
-  backgroundStyling: boolean;
+  backgroundStyling?: boolean;
 };
 
 function AccordianSection({
@@ -20,18 +20,18 @@ function AccordianSection({
   backgroundStyling = true,
 }: AccordianSectionProps) {
   return (
-    <div
-      className={`py-16 ${backgroundStyling ? "bg-[#0D2234] text-white" : ""}`}
-    >
+    <div className={`py-16 ${backgroundStyling && "bg-dark-blue text-white"}`}>
       <div
         className={`container mx-auto flex ${
-          backgroundStyling ? " justify-between" : "flex-col"
+          backgroundStyling
+            ? "justify-between flex-col md:flex-row"
+            : "flex-col"
         }`}
       >
         <div
           className={`flex flex-col gap-4 relative ${
             backgroundStyling
-              ? " items-baseline w-1/3"
+              ? " items-baseline md:w-2/5 lg:w-1/3"
               : "container lg:px-20 px-0 justify-center text-center"
           }`}
         >
@@ -44,7 +44,7 @@ function AccordianSection({
           )}
           <h1
             className={`lg:text-4xl text-3xl font-bold ${
-              backgroundStyling ? "" : "text-[#1D2746]"
+              backgroundStyling ? "" : "text-lightDark"
             }`}
           >
             {accordianSectionData?.title}
@@ -60,7 +60,7 @@ function AccordianSection({
         </div>
 
         {backgroundStyling ? (
-          <div className="w-1/2">
+          <div className="md:w-2/5 lg:w-1/3">
             <Accordion type="single" collapsible>
               {accordianSectionData?.items.map((item, index) => (
                 <AccordionItem value={`item-${index + 1}`} key={index}>
@@ -94,7 +94,7 @@ function AccordianSection({
                   <AccordionItem value={`item-${index + 1}`} key={index}>
                     <AccordionTrigger
                       closedClassName={`${
-                        !backgroundStyling ? "text-white" : "text-[#1D2746]"
+                        !backgroundStyling ? "text-white" : "text-lightDark"
                       }`}
                       openClassName="text-green-400"
                       className="accordion-trigger text-base lg:text-xl"

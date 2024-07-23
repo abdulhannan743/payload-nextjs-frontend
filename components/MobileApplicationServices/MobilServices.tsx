@@ -20,14 +20,14 @@ function MobilServices({ mobilServicesData }: MobilServicesProps) {
       {mobilServicesData?.items?.map((item, index) => (
         <div key={item?.id}>
           <div
-            className={`flex gap-4 ${
+            className={`flex gap-4 flex-col md:flex-row md:${
               index % 2 !== 0 && "flex-row-reverse"
             } items-center`}
           >
-            <div className="w-1/2">
+            <div className="w-full md:w-1/2">
               <img src={item?.image?.url} alt={item?.image?.alt} />
             </div>
-            <div className="flex flex-col gap-4 w-1/2">
+            <div className="flex flex-col gap-4 w-full md:w-1/2">
               <h2 className="text-4xl font-bold text-lightDark">
                 {item?.title}
               </h2>
