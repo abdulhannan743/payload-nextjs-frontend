@@ -1,5 +1,3 @@
-// Industries FAQ Card Types
-
 export type TypographyNode = {
   text: string;
   detail?: number;
@@ -113,7 +111,23 @@ export type IndustriesProps = {
   };
 };
 
-// contac us section types
+// Contact us section types
+
+export type ContactFormProps = {
+  id: string;
+  title: string;
+  fields: FormField[];
+  submitButtonLabel: string;
+  confirmationMessage: {
+    root: {
+      children: {
+        children: {
+          text: string;
+        }[];
+      }[];
+    };
+  };
+};
 
 export type Office = {
   officeName: string;
@@ -131,17 +145,10 @@ export type FormField = {
   blockType: string;
 };
 
-export type ContactForm = {
-  id: string;
-  title: string;
-  fields: FormField[];
-  submitButtonLabel: string;
-};
-
 export type ContactFormBlockProps = {
   title: string;
   subtitle: string;
   description: string;
   offices: Office[];
-  contactForm: ContactForm;
+  contactForm: ContactFormProps;
 };

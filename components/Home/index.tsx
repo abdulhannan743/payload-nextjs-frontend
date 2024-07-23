@@ -6,10 +6,9 @@ import HeroSection from "./HeroSection";
 import type { HeroSectionType } from "./HeroSection";
 import PortfolioSection from "./PortfolioSection";
 import IndustriesFAQCard from "./IndustriesFAQCard";
-import ContactUsSection from "./ContactUsSection";
 import LogoSection from "./logoSection";
-
 import IndustriesServicesCard from "./IndustriesServicesCard";
+import ContactFormBlock from "../ContactUs/ContactFormBlock";
 
 type HomeProps = {
   homePageData: any;
@@ -45,7 +44,7 @@ export default function Home({ homePageData }: HomeProps) {
     (item: any) => item?.blockName === "Industries Services Section"
   );
 
-  const contactForm = homePageData?.find(
+  const form = homePageData?.find(
     (item: any) => item?.blockName === "Contact Us Form "
   );
   return (
@@ -57,7 +56,7 @@ export default function Home({ homePageData }: HomeProps) {
       <WhyAllZoneSection whyAllzoneData={whyAllzoneData} />
       <PortfolioSection portfolioData={portfolioData} />
       <ClientsSection clientsData={clientsData} />
-      <ContactUsSection {...contactForm} />
+      <ContactFormBlock {...form} />
       <IndustriesFAQCard matadata={matadata} />
     </div>
   );
