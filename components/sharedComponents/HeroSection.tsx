@@ -33,21 +33,21 @@ function HeroSection({
   };
 
   return (
-    <div className="container mx-auto w-full">
-      <div className="container relative px-0 max-auto overflow-hidden">
+    <div className="container mx-auto w-full ">
+      <div className="container relative px-0 max-auto overflow-hidden rounded-md">
         <div
           className={`rounded-md bg-black/50 text-white w-full min-h-[544px] px-6 md:px-16 py-12 relative z-10 flex items-center ${
             isContentCentered ? "justify-center" : ""
           }`}
         >
           <div
-            className={`flex flex-col gap-4 md:gap-8 max-auto  ${
+            className={`flex flex-col text-2xl gap-4 md:gap-8 max-auto  ${
               isContentCentered ? "items-center" : ""
             }`}
           >
             <h2
               className={`font-bold text-2xl max-w-3xl ${
-                isContentCentered ? " md:text-6xl" : " md:text-4xl"
+                isContentCentered ? "text-4xl lg:text-6xl" : " md:text-4xl"
               }`}
             >
               {heroSectionData?.heading}
