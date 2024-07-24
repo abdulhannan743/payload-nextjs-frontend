@@ -4,6 +4,7 @@ import type {
   AboutLayoutItemType,
   TeamSectionLayout,
 } from "@/src/types/AboutUsTypes";
+import DottedLine from "../ui/DottedLine";
 
 type OurCultureSectionProps = {
   OurCultureSectionData: AboutLayoutItemType | TeamSectionLayout | undefined;
@@ -28,7 +29,7 @@ const OurCultureSection = ({
         <h2 className="text-4xl font-bold text-[#1D2746]">
           {OurCultureSectionData?.heading}
         </h2>
-        <hr className="w-20 h-1 rounded-full bg-secondary mt-4" />
+        <DottedLine />
       </div>
       <div className="w-full mt-10">
         <div className="w-full h-80 grid grid-cols-5 gap-0 place-items-center bg-white overflow-hidden">

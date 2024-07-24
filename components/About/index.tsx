@@ -36,7 +36,6 @@ const About = ({ aboutPageData }: AboutProps) => {
     (item) => item.blockName === "Our Culture"
   );
 
-
   return (
     <>
       <HeroSection heroSectionData={HeroSectionData} isContentCentered={true} />
