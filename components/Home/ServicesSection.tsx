@@ -90,8 +90,8 @@ function ServicesSection({
                 style={{ boxShadow: "0px 0px 5px 1px #0000000D" }}
               >
                 <img
-                  src={item?.image?.url ?? `/assets/icons/${item.iconName}.svg`}
-                  alt={item?.image?.alt ?? `${item.iconName} icon`}
+                  src={`/assets/icons/${item.iconName}.svg`}
+                  alt={`${item.iconName} icon`}
                   className="mb-3"
                 />
                 <h3 className="text-lg font-bold text-primary mb-2">
