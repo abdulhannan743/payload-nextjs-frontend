@@ -1634,6 +1634,7 @@ export const IndustriesData1 = {
       id: "668fcda4e4a9fb2d7118411d",
     },
   ],
+};
 export const formSectionData = {
   offices: [
     {
@@ -1810,5 +1811,4 @@ export const formSectionData = {
   id: "669009d3f27e64260a235e39",
   blockName: "Contact Us Form ",
   blockType: "contactFormBlock",
-
 };
