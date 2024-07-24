@@ -6,7 +6,6 @@ import CoreValues from "./CoreValues";
 import AboutCompany from "./AboutCompany";
 import Analytics from "../sharedComponents/AnalyticsServices";
 import OurCultureSection from "./OurCulture";
-import CoreValuesSection from "./CoreValuesSection";
 
 type AboutProps = {
   aboutPageData: AboutLayoutItemType[];
