@@ -1,9 +1,9 @@
 // src/sharedComponents/DataAnalyticsOverview.tsx
 import React from "react";
-import Image from "next/image";
 import DottedLine from "../ui/DottedLine";
-import { DataAnalyticsOverviewType } from "@/src/types/DataAnalyticsTypes";
 import RenderDescription from "./RenderDescription";
+import { DataAnalyticsOverviewType } from "@/src/types/DataAnalyticsTypes";
+
 type analyticsDataProps = {
   analyticsData: DataAnalyticsOverviewType;
 };
