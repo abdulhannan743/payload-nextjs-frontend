@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import {
+import type {
   ServiceBlockItemType,
   ServiceBlockType,
 } from "@/src/types/ServiceBlockTypes";

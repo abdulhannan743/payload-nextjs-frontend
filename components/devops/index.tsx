@@ -9,7 +9,7 @@ import CarousalContainer from "../ui/CarousalContainer";
 interface DevopsProps {
   DevopsPageData: any;
 }
-const Devops = ({ DevopsPageData }: any) => {
+const Devops = ({ DevopsPageData }: DevopsProps) => {
   const heroSectionData = DevopsPageData?.find(
     (item: any) => item?.blockName === "Hero"
   );
@@ -26,7 +26,7 @@ const Devops = ({ DevopsPageData }: any) => {
     (item: any) => item?.blockName === "whychose"
   );
   return (
-    <div className="">
+    <div>
       <HeroSection heroSectionData={heroSectionData} />
       <ServiceInfoSection sectionData={servicesSectionData} />
       <AccordianSection
