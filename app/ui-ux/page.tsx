@@ -1,8 +1,8 @@
+import React from "react";
 import UI_UX from "@/components/ui-ux";
 import { RESOURCE_TYPES } from "@/src/constants/common";
 import { getPageURL } from "@/src/utils";
 import { fetchWrapper } from "@/src/utils/fetchWrapper";
-import React from "react";
 
 const page = async () => {
   const response: any = await fetchWrapper({

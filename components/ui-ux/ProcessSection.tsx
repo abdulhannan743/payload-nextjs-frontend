@@ -1,20 +1,20 @@
 "use client";
-import React, { useRef, useEffect, useCallback } from "react";
-import DottedLine from "../ui/DottedLine";
-import { LayoutItemType } from "@/src/types/CommonTypes";
+import React from "react";
 import Image from "next/image";
+import DottedLine from "../ui/DottedLine";
+import type { LayoutItemType } from "@/src/types/CommonTypes";
 
 interface ProcessSectionProps {
   processSectionData: LayoutItemType | undefined;
 }
 
 const ProcessSection = ({ processSectionData }: ProcessSectionProps) => {
-  const lineRef = useRef<HTMLDivElement | null>(null);
-  const itemsRef = useRef<HTMLDivElement[]>([]);
-  const topCircleRef = useRef<HTMLDivElement | null>(null);
-  const bottomCircleRef = useRef<HTMLDivElement | null>(null);
+  const lineRef = React.useRef<HTMLDivElement | null>(null);
+  const itemsRef = React.useRef<HTMLDivElement[]>([]);
+  const topCircleRef = React.useRef<HTMLDivElement | null>(null);
+  const bottomCircleRef = React.useRef<HTMLDivElement | null>(null);
 
-  const handleScroll = useCallback(() => {
+  const handleScroll = React.useCallback(() => {
     const scrollY = window.scrollY;
     const line = lineRef.current;
     const items = itemsRef.current;
@@ -75,7 +75,7 @@ const ProcessSection = ({ processSectionData }: ProcessSectionProps) => {
     }
   }, []);
 
-  useEffect(() => {
+  React.useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
     return () => {
