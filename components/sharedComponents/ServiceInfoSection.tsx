@@ -36,7 +36,7 @@ function ServiceInfoSection({ sectionData }: ServiceInfoSectionProps) {
             className="bg-white py-4 px-8 rounded-lg flex gap-4 items-start shadow-md"
           >
             <img
-              src={`/assets/icons/${item.iconName}.svg`}
+              src={item?.image?.url ?? `/assets/icons/${item.iconName}.svg`}
               alt={`${item.iconName} icon`}
             />
             <div>

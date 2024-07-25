@@ -38,7 +38,11 @@ const About = ({ aboutPageData }: AboutProps) => {
 
   return (
     <>
-      <HeroSection heroSectionData={HeroSectionData} isContentCentered={true} />
+      <HeroSection
+        heroSectionData={HeroSectionData}
+        isContentCentered={true}
+        isAboutUsSection={true}
+      />
       <AboutCompany AboutCompanyData={AboutCompanyData} />
       <CoreValuesSection CoreValuesSectionData={CoreValuesSectionData} />
       <Analytics analyticsData={analyticsData} />

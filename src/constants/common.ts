@@ -8,4 +8,5 @@ export const RESOURCE_TYPES = {
   ABOUT_US: "about-us",
   MOBIL_APPLICATION_SERVICES: "custom-application-development-services",
   AI_DEVELOPMENT_SERVICES: "ai-development-services",
+  DEVOPS: "devops",
 } as const;
