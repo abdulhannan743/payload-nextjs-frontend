@@ -125,57 +125,20 @@
   color: black;
 }
 .accordion-trigger[data-state="open"].text-blue-900 {
-  color: #1e3a8a;
+  color: #1e3a8a; 
 }
 .accordion-trigger[data-state="closed"].text-white {
   color: white;
 }
 h3[data-state="open"] {
-  color: #20c897;
+  color: #20C897;
 }
 
 .faq-dark h3[data-state="open"] {
-  color: #0d4c8f;
+  color: #0D4C8F;
 }
 
 .accordion-trigger[data-state="open"] img {
-
-  filter: brightness(0) saturate(100%) invert(54%) sepia(19%) saturate(2995%)
-    hue-rotate(123deg) brightness(95%) contrast(101%);
-}
-
-/* global.css */
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-}
-
-.container {
-  height: 100%;
-}
-
-.line-segment {
-  transition: border-color 0.3s;
-}
-
-.active .line-segment {
-  border-color: #0d4c8f; /* Tailwind's blue-500 */
-}
-
-.bg-blue-500 {
-  background-color: #0d4c8f; /* Tailwind's blue-500 */
-}
-.active-heading {
-  color: #0d4c8f; /* Tailwind's blue-500 equivalent */
-  transition: color 0.3s;
-}
-
-.svg-filter {
-  filter: brightness(0) saturate(100%) invert(12%) sepia(90%) saturate(3697%)
-    hue-rotate(201deg) brightness(99%) contrast(90%);
   filter: brightness(0) saturate(100%) invert(54%) sepia(19%) saturate(2995%) hue-rotate(123deg) brightness(95%) contrast(101%);
 }
 
@@ -187,4 +150,3 @@ body {
   color: var(--secondary);
   font-size: 1.5rem;
 }
-
