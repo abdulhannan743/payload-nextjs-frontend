@@ -11,7 +11,7 @@ import Image from "next/image";
 import DevelopmentModelImage from "../../public/images/DevelopmentModel.png";
 
 type AccordianSectionProps = {
-  accordianSectionData: ServiceBlockType;
+  accordianSectionData: ServiceBlockType | undefined;
   backgroundStyling?: boolean;
 };
 

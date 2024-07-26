@@ -3,6 +3,7 @@ import DottedLine from "../ui/DottedLine";
 import { ServiceBlockType } from "@/src/types/ServiceBlockTypes";
 import ServicesSection from "../Home/ServicesSection";
 import { AboutLayoutItemType } from "@/src/types/AboutUsTypes";
+import Image from "next/image";
 
 type ServiceInfoSectionProps = {
   sectionData: ServiceBlockType | AboutLayoutItemType | undefined;
@@ -36,9 +37,11 @@ function ServiceInfoSection({ sectionData }: ServiceInfoSectionProps) {
               className="bg-white py-4 px-8 rounded-lg flex gap-4 items-start"
               style={{ boxShadow: "0px 0px 5px 1px #0000001A" }}
             >
-              <img
-                src={`/assets/icons/${item.iconName}.svg`}
+              <Image
+                src={item?.image?.url || ` /assets/icons/${item.iconName}.svg`}
                 alt={`${item.iconName} icon`}
+                width={50}
+                height={50}
               />
               <div>
                 <h3 className="text-lg font-bold text-primary mb-2">
