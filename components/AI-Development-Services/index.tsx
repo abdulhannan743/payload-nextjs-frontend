@@ -52,10 +52,17 @@ const AIDevelopmentServices = ({
 
       <HeroSection heroSectionData={HeroSectionData} />
       <ServiceInfoSection sectionData={SoftwareDevelopmentCompany} />
-      <AccordianSection
-        accordianSectionData={AIDevelopmentModels}
-        backgroundStyling={false}
-      />
+      <div className="relative  ">
+        <div className="absolute w-full flex justify-center">
+          <h2 className="w-full text-9xl text-center font-bold text-[#20C8971A]   z-[-1] overflow-hidden text-nowrap">
+            Artificial Intelligence
+          </h2>
+        </div>
+        <AccordianSection
+          accordianSectionData={AIDevelopmentModels}
+          backgroundStyling={false}
+        />
+      </div>
       <EnterprisePlanning
         planningSectionData={DevelopmentPlanningSectionData}
       />

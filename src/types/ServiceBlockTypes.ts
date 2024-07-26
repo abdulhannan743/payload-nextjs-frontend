@@ -4,6 +4,7 @@ export type ServiceBlockType = {
   description?: string;
   blockName: string;
   blockType: string;
+  image?: Image;
   items: ServiceBlockItemType[];
   link?: CustomLink[];
 };
