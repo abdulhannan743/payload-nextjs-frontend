@@ -2,7 +2,6 @@ import React from "react";
 import HeroSection from "../sharedComponents/HeroSection";
 import AccordianSection from "../sharedComponents/AccordianSection";
 import type { AboutLayoutItemType } from "@/src/types/AboutUsTypes";
-import IndustriesFAQCard from "../Home/IndustriesFAQCard";
 import EnterprisePlanning from "./EnterpriseWebApplicationPlanning";
 import ServiceInfoSection from "../sharedComponents/ServiceInfoSection";
 import Image from "next/image";
@@ -60,7 +59,6 @@ const AIDevelopmentServices = ({
         planningSectionData={DevelopmentPlanningSectionData}
       />
       <WhyChooseAI WhyChooseAIData={WhyChooseAIData} />
-      <IndustriesFAQCard matadata={matadata.matadata} />
     </div>
   );
 };

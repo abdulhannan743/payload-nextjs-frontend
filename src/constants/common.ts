@@ -10,4 +10,5 @@ export const RESOURCE_TYPES = {
   ENTERPRISE_SOFTWARE_SERVICES: "enterprise-application-development-services",
   AI_DEVELOPMENT_SERVICES: "ai-development-services",
   ENTERPRISE_DATA_AND_ANALYTICS: "enterprise-data-and-analytics",
+  DEDICATED_TEAM: "dedicated-team",
 } as const;
