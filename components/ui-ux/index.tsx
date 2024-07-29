@@ -8,6 +8,7 @@ import ServiceInfoSection from "../sharedComponents/ServiceInfoSection";
 import UiUxDesign from "./uiux-Design";
 import AccordianSection from "../sharedComponents/AccordianSection";
 import ServicesSection from "../Home/ServicesSection";
+import "./ui-ux.css";
 
 interface HeroSectionProps {
   uiUxPageData: LayoutItemType[];
