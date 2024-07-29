@@ -29,33 +29,34 @@ const CustomDevelopment: React.FC<CustomDevelopmentProps> = ({ data }) => {
     <div className="bg-gray-900 overflow-hidden">
       <Slider {...settings}>
         {data.map((item, index) => (
-          <div key={index} className="py-8 container">
-            <div className="flex flex-col md:flex-row text-white px-4 md:px-0">
+          <div key={index} className="py-8">
+            <div className=" container flex flex-col md:flex-row text-white px-4 md:px-10">
               <div className="pt-8 ">
                 <div className="lg:w-2/3 w-full flex flex-col items-start justify-between">
                   <h2 className="mb-3">{item.heading}</h2>
                   <DottedLine />
                   <p className="mt-3">{item.text}</p>
                 </div>
-                <div className="flex flex-col lg:flex-row md:flex-row ">
+                <div className="flex flex-col lg:flex-row  ">
                   <div className="flex items-center mt-16">
-                    {index !== 0 && (
-                      <Image
-                        src={ProcessIoTLine2}
-                        alt="dotted line"
-                        width={300}
-                        height={100}
-                        className="hidden sm:block md:block"
-                      />
-                    )}
-                    <div className="bg-[#0F333E] p-6 rounded-lg shadow-lg w-full ml-4 ">
+                    <div className="hidden lg:block">
+                      {index !== 0 && (
+                        <Image
+                          src={ProcessIoTLine2}
+                          alt="dotted line"
+                          width={300}
+                          height={100}
+                        />
+                      )}
+                    </div>
+                    <div className="bg-zink p-6 rounded-lg shadow-lg w-full ml-4 ">
                       <Image
                         src={item.icon.url}
                         alt={item.icon.alt}
                         width={item.icon.width}
                         height={item.icon.height}
                       />
-                      <h3 className="mt-4 mb-2 text-[#20C897]">
+                      <h3 className="mt-4 mb-2 text-secondary">
                         {item.iconHeading}
                       </h3>
                       <p>{item.iconText}</p>
@@ -68,7 +69,7 @@ const CustomDevelopment: React.FC<CustomDevelopmentProps> = ({ data }) => {
                       width={400}
                       height={400}
                     />
-                    <div className="hidden sm:block md:block mt-16">
+                    <div className="hidden lg:block mt-16">
                       <Image
                         src={IoTProcessLine1}
                         alt="dotted line"
