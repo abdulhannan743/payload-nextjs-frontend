@@ -368,7 +368,6 @@ function HeroSection({ heroData }: HeroProps) {
               alt={slide.media.alt}
               width={slide.media.width}
               height={slide.media.height}
-              layout="fixed"
               className="object-cover"
             />
           </div>

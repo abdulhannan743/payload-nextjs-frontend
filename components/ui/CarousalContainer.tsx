@@ -1,5 +1,5 @@
 import React from "react";
-import { Pagination, Navigation } from "swiper";
+import { Pagination, Navigation, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Swiper styles
 import "swiper/css";
@@ -9,22 +9,34 @@ type CarousalContainerProps = {
   carousalData: any;
   renderCard: (item: any, index: number) => React.ReactNode;
   className?: string;
+  autoPlay?: boolean;
+  slidesPerView?: number;
 };
 
 function CarousalContainer({
   carousalData,
   renderCard,
-  className,
+  className = "block md:hidden",
+  autoPlay = false,
+  slidesPerView = 1,
 }: CarousalContainerProps) {
   return (
     <Swiper
-      className={`block md:hidden ${className}`}
-      modules={[Pagination, Navigation]}
+      className={className}
+      modules={[Pagination, Navigation, Autoplay]}
       spaceBetween={40}
-      slidesPerView={1}
+      slidesPerView={slidesPerView}
       navigation
-      pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
+      pagination={autoPlay ? false : { clickable: true }}
+      scrollbar={autoPlay ? false : { draggable: true }}
+      autoplay={
+        autoPlay && {
+          delay: 5000,
+          disableOnInteraction: false,
+          waitForTransition: true,
+          reverseDirection: true,
+        }
+      }
     >
       <style>
         {`
