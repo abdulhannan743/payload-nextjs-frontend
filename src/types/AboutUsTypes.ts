@@ -21,6 +21,8 @@ interface Layout {
 
 interface content {
   layout: AboutLayoutItemType[];
+  heading: string;
+  image: Image;
   id: string;
 }
 
