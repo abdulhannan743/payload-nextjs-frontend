@@ -5,11 +5,15 @@ import { AboutLayoutItemType } from "@/src/types/AboutUsTypes";
 type HeroSectionProps = {
   heroSectionData: AboutLayoutItemType | undefined;
   isContentCentered?: boolean;
+  isAboutUsSection?: boolean;
+  isDisplayCircleImage?: boolean;
 };
 
 function HeroSection({
   heroSectionData,
   isContentCentered = false,
+  isAboutUsSection = false,
+  isDisplayCircleImage = true,
 }: HeroSectionProps) {
   const renderDescription = (
     description: string,
@@ -19,7 +23,7 @@ function HeroSection({
     return (
       <div
         className={`text-md max-w-4xl ${
-          isContentCentered ? "md:text-4xl" : "md:text-lg"
+          isAboutUsSection ? "md:text-4xl" : "md:text-lg"
         }`}
       >
         <p>{mainParagraph}</p>
@@ -69,8 +73,12 @@ function HeroSection({
           src={heroSectionData?.Image?.url || ""}
           alt={heroSectionData?.Image?.alt || ""}
         />
-        <div className="absolute rounded-full bg-secondary opacity-30 w-96 h-96 md:-bottom-24 -bottom-64  md:-right-32 -right-28 flex items-end justify-center text-white p-4"></div>
-        <div className="absolute rounded-full bg-secondary opacity-30 w-10 h-10 lg:w-12 lg:h-12 top-48 right-5 max-sm:inset-y-80 max-sm:inset-x-72 flex items-end justify-center text-white p-4"></div>
+        {isDisplayCircleImage && (
+          <div>
+            <div className="absolute rounded-full bg-secondary opacity-30 w-96 h-96 md:-bottom-24 -bottom-64  md:-right-32 -right-28 flex items-end justify-center text-white p-4"></div>
+            <div className="absolute rounded-full bg-secondary opacity-30 w-10 h-10 lg:w-12 lg:h-12 top-48 right-5 max-sm:inset-y-80 max-sm:inset-x-72 flex items-end justify-center text-white p-4"></div>
+          </div>
+        )}
       </div>
     </div>
   );
