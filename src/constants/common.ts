@@ -14,4 +14,6 @@ export const RESOURCE_TYPES = {
   DEVOPS: "devops",
   ENTERPRISE_DATA_AND_ANALYTICS: "enterprise-data-and-analytics",
   DEDICATED_TEAM: "dedicated-team",
+  CLOUD_SERVICES: "cloud-services",
+  SOLUTIONS: "solutions",
 } as const;
