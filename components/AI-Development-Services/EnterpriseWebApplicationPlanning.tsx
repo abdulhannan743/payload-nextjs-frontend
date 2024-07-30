@@ -45,8 +45,8 @@ const EnterprisePlanning = ({
                 index % 2 !== 0 ? "lg:flex-row-reverse flex-col" : ""
               }`}
             >
-              <div className="lg:w-[489px] w-96 md:w-4/5 bg-[#0F333E] flex flex-col justify-start items-center align-middle rounded-lg px-5 lg:mx-28 mx-0 my-auto">
-                <div className="py-8 px-6">
+              <div className="lg:w-[489px] w-72 md:w-4/5 bg-[#0F333E] flex flex-col justify-start items-center align-middle rounded-lg px-5 lg:mx-28 mx-0 my-auto">
+                <div className="md:py-8 md:px-6 px-2 py-4">
                   <Image
                     src={item.icon.url || ""}
                     alt={item.icon.alt || ""}
@@ -54,10 +54,12 @@ const EnterprisePlanning = ({
                     height={60}
                   />
 
-                  <h2 className="text-secondary font-bold text-lg mt-4">
+                  <h2 className="text-secondary font-bold text-base md:text-lg mt-4">
                     {item.heading}
                   </h2>
-                  <p className="text-white text-sm mt-2">{item.text}</p>
+                  <p className="text-white text-xs md:text-sm mt-2">
+                    {item.text}
+                  </p>
                 </div>
               </div>
               <div className="lg:w-1/2 w-3/4">

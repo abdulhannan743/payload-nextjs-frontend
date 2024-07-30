@@ -6,21 +6,30 @@ import {
   AccordionContent,
 } from "@/components/ui/accordion";
 import DottedLine from "../ui/DottedLine";
-import { ServiceBlockType } from "@/src/types/ServiceBlockTypes";
+import type {
+  ServiceBlockItemType,
+  ServiceBlockType,
+} from "@/src/types/ServiceBlockTypes";
 import Image from "next/image";
 import DevelopmentModelImage from "../../public/images/DevelopmentModel.png";
 
 type AccordianSectionProps = {
   accordianSectionData: ServiceBlockType | undefined;
   backgroundStyling?: boolean;
+  accordianContent?: (item: ServiceBlockItemType) => React.ReactNode;
 };
 
 function AccordianSection({
   accordianSectionData,
   backgroundStyling = true,
+  accordianContent,
 }: AccordianSectionProps) {
   return (
-    <div className={`py-16 ${backgroundStyling && "bg-dark-blue text-white"}`}>
+    <div
+      className={`py-16 my-16 ${
+        backgroundStyling && "bg-dark-blue text-white"
+      }`}
+    >
       <div
         className={`container mx-auto flex ${
           backgroundStyling
@@ -53,7 +62,7 @@ function AccordianSection({
         </div>
 
         {backgroundStyling ? (
-          <div className="md:w-2/5 lg:w-1/3">
+          <div className="w-full md:w-1/2">
             <Accordion type="single" collapsible>
               {accordianSectionData?.items.map((item, index) => (
                 <AccordionItem value={`item-${index + 1}`} key={index}>
@@ -65,7 +74,9 @@ function AccordianSection({
                     <h2 className="text-4xl font-medium">{item?.title}</h2>
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-lg">{item?.description}</p>
+                    {accordianContent?.(item) || (
+                      <p className="text-lg">{item?.description}</p>
+                    )}
                   </AccordionContent>
                 </AccordionItem>
               ))}

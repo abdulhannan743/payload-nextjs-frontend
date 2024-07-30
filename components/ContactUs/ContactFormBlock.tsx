@@ -17,7 +17,7 @@ const ContactFormBlock: React.FC<ContactFormBlockProps> = ({
   contactForm,
 }) => {
   return (
-    <div className="container mx-auto py-10 pb-6 px-4">
+    <div className="container mx-auto py-10 pb-6 px-4" id="contact-us">
       <ToastContainer />
       <div className="text-center flex flex-col gap-4">
         <h2 className="text-2xl font-semibold text-blue-900 uppercase">
