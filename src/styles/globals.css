@@ -15,8 +15,14 @@
     --secondary: #20c897;
     --light-gray: #f5f5f5;
     --gray: #666666;
+
+    --zink:#0F333E;
+    --dark-blue: #0D2234;
+    --secondary-light: #20C8971A;
+
     --dark-blue: #0d2234;
     --secondary-light: #20c8971a;
+
     --secondary-foreground: 222.2 47.4% 11.2%;
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
