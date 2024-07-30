@@ -85,7 +85,7 @@ function DevelopersSection({ developersData }: DevelopersSectionProps) {
                 )}
               </div>
               {developer?.link?.map((link) => (
-                <HireDeveloperButton className="mt-4">
+                <HireDeveloperButton className="mt-4" key={link?.id}>
                   {link?.label}
                 </HireDeveloperButton>
               ))}
