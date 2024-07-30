@@ -1,12 +1,29 @@
+import { Typography } from "./HomeTypes";
+
 export type ServiceBlockType = {
   id: string;
   title: string;
   description?: string;
   blockName: string;
   blockType: string;
+  image?: Image;
   items: ServiceBlockItemType[];
   link?: CustomLink[];
 };
+
+interface matadata {
+  heading: string;
+  typoPara: Array<{
+    typography: Typography;
+    paragraph: Typography;
+  }>;
+}
+
+interface blockType {
+  matadata: matadata;
+  id: string;
+  blockname: string;
+}
 
 export type ServiceBlockItemType = {
   id: string;
@@ -14,7 +31,23 @@ export type ServiceBlockItemType = {
   description?: string;
   iconName?: string;
   image?: Image;
-  link?: CustomLink[];
+  link: CustomLink[];
+  slides: Slides[];
+};
+
+export type Slides = {
+  media: {
+    id: string;
+    alt: string;
+    filename: string;
+    mimeType: string;
+    filesize: number;
+    width: number;
+    height: number;
+    createdAt: string;
+    updatedAt: string;
+    url: string;
+  };
 };
 
 export type Image = {
@@ -35,11 +68,13 @@ export type CustomLink = {
   label: string;
   url: string;
   id: string;
+  page: PageLink;
 };
 
 export type PageLink = {
   type: string;
   label: string;
+  slug: string;
   page: {
     id: string;
     name: string;

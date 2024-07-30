@@ -2,7 +2,6 @@ import React from "react";
 import HeroSection from "../sharedComponents/HeroSection";
 import AccordianSection from "../sharedComponents/AccordianSection";
 import type { AboutLayoutItemType } from "@/src/types/AboutUsTypes";
-import IndustriesFAQCard from "../Home/IndustriesFAQCard";
 import EnterprisePlanning from "./EnterpriseWebApplicationPlanning";
 import ServiceInfoSection from "../sharedComponents/ServiceInfoSection";
 import Image from "next/image";
@@ -52,15 +51,21 @@ const AIDevelopmentServices = ({
 
       <HeroSection heroSectionData={HeroSectionData} />
       <ServiceInfoSection sectionData={SoftwareDevelopmentCompany} />
-      <AccordianSection
-        accordianSectionData={AIDevelopmentModels}
-        backgroundStyling={false}
-      />
+      <div className="relative  ">
+        <div className="absolute w-full flex justify-center">
+          <h2 className="w-full text-9xl text-center font-bold text-[#20C8971A]   z-[-1] overflow-hidden text-nowrap">
+            Artificial Intelligence
+          </h2>
+        </div>
+        <AccordianSection
+          accordianSectionData={AIDevelopmentModels}
+          backgroundStyling={false}
+        />
+      </div>
       <EnterprisePlanning
         planningSectionData={DevelopmentPlanningSectionData}
       />
       <WhyChooseAI WhyChooseAIData={WhyChooseAIData} />
-      <IndustriesFAQCard matadata={matadata.matadata} />
     </div>
   );
 };

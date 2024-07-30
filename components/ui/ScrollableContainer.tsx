@@ -2,15 +2,21 @@ import React from "react";
 
 type ScrollableContainerProps = {
   children: React.ReactNode;
-  scrollAxis: "x" | "y";
+  scrollAxis?: "x" | "y";
+  shouldScrollEnable?: boolean;
 };
 
 function ScrollableContainer({
   children,
   scrollAxis,
+  shouldScrollEnable = true,
 }: ScrollableContainerProps) {
   return (
-    <div className={`overflow-x-scroll scrollbar-custom`}>
+    <div
+      className={`overflow-x-scroll scrollbar-custom ${
+        !shouldScrollEnable && "hide_scrollbar"
+      }`}
+    >
       <style>
         {`
               .scrollbar-custom {

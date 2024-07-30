@@ -5,11 +5,12 @@ import type {
   AboutLayoutItemType,
   AboutUsResponse,
 } from "@/src/types/AboutUsTypes";
-import OurTeamSection from "@/components/About/OurTeamSection";
+import { getPageURL } from "@/src/utils";
+import { RESOURCE_TYPES } from "@/src/constants/common";
 
 async function AboutUsPage() {
   const response: AboutUsResponse = await fetchWrapper({
-    url: "/api/pages?where[slug][equals]=about-us",
+    url: getPageURL(RESOURCE_TYPES.ABOUT_US),
     method: "GET",
   });
   const aboutData: AboutLayoutItemType[] =

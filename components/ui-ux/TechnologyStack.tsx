@@ -1,10 +1,10 @@
-import { LayoutItemType } from "@/src/types/CommonTypes";
 import React from "react";
-import DottedLine from "../ui/DottedLine";
 import Image from "next/image";
+import DottedLine from "../ui/DottedLine";
+import type { LayoutItemType } from "@/src/types/CommonTypes";
 
 interface technologySectionDataProps {
-  technologySectionData: LayoutItemType | undefined;
+  technologySectionData?: LayoutItemType | undefined;
 }
 const TechnologyStack = ({
   technologySectionData,
@@ -22,7 +22,11 @@ const TechnologyStack = ({
       </div>
       {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-10 mt-5">
+
           {technologySectionData?.content?.map((item, index) => (
+
+          {technologySectionData?.content.map((item, index) => (
+
             <div
               key={index}
               className="flex flex-col items-center justify-center"

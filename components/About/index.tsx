@@ -2,7 +2,7 @@ import React from "react";
 import HeroSection from "../sharedComponents/HeroSection";
 import type { AboutLayoutItemType } from "@/src/types/AboutUsTypes";
 import OurTeamSection from "./OurTeamSection";
-import CoreValuesSection from "./CoreValues";
+import CoreValues from "./CoreValues";
 import AboutCompany from "./AboutCompany";
 import Analytics from "../sharedComponents/AnalyticsServices";
 import OurCultureSection from "./OurCulture";
@@ -38,9 +38,13 @@ const About = ({ aboutPageData }: AboutProps) => {
 
   return (
     <>
-      <HeroSection heroSectionData={HeroSectionData} isContentCentered={true} />
+      <HeroSection
+        heroSectionData={HeroSectionData}
+        isContentCentered={true}
+        isAboutUsSection={true}
+      />
       <AboutCompany AboutCompanyData={AboutCompanyData} />
-      <CoreValuesSection CoreValuesSectionData={CoreValuesSectionData} />
+      <CoreValues CoreValuesSectionData={CoreValuesSectionData} />
       <Analytics analyticsData={analyticsData} />
       <OurTeamSection TeamSectionData={TeamSectionData} />
       <OurCultureSection OurCultureSectionData={OurCultureSectionData} />
