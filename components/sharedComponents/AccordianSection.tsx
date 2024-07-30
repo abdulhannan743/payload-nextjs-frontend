@@ -12,6 +12,9 @@ import type {
 } from "@/src/types/ServiceBlockTypes";
 import Image from "next/image";
 import DevelopmentModelImage from "../../public/images/DevelopmentModel.png";
+import Link from "next/link";
+import { Button } from "../ui/button";
+import { SlArrowRight } from "react-icons/sl";
 
 type AccordianSectionProps = {
   accordianSectionData: ServiceBlockType;
@@ -78,11 +81,35 @@ function AccordianSection({
                     openClassName="text-green-400"
                     className="accordion-trigger text-base lg:text-xl"
                   >
-                    <h2 className="text-4xl font-medium">{item?.title}</h2>
+                    <h2 className="text-4xl font-medium flex ">
+                      {(item.image || item.iconName) && (
+                        <img
+                          src={
+                            item?.image?.url ??
+                            `/assets/icons/${item.iconName}.svg`
+                          }
+                          alt={item?.image?.alt ?? `${item.iconName} icon`}
+                          className="mr-3"
+                        />
+                      )}
+                      {item?.title}
+                    </h2>
                   </AccordionTrigger>
                   <AccordionContent>
                     {accordianContent?.(item) || (
                       <p className="text-lg">{item?.description}</p>
+                    )}
+                    <p className="text-lg">{item?.description}</p>
+                    {item.link?.length > 0 && (
+                      <Link href={`/${item?.link?.[0]?.page?.slug}`}>
+                        <Button
+                          variant={"outline"}
+                          className="mt-4 px-4 py-2 bg-[#0D2234] text-white rounded uppercase text-xs font-normal"
+                        >
+                          {item?.link?.[0]?.label}
+                          <SlArrowRight size={8} className="ml-2" />
+                        </Button>
+                      </Link>
                     )}
                   </AccordionContent>
                 </AccordionItem>
