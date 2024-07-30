@@ -67,6 +67,7 @@ const config = {
         "light-gray": "var(--light-gray)",
         "dark-blue": "var(--dark-blue)",
         "secondary-light": "var(--secondary-light)",
+        zink: "var(--zink)",
       },
       borderRadius: {
         lg: "var(--radius)",
