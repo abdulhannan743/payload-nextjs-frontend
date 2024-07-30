@@ -12,23 +12,43 @@ type IoTDevelopmentProps = {
 };
 
 function IoTDevelopment({ IoTDevelopmentData }: IoTDevelopmentProps) {
-  const businessGrowthSoftware = IoTDevelopmentData?.find(
-    (item: any) => item?.blockName === "IoT Hero Block"
-  );
-  const companyBenifitsInfoData = IoTDevelopmentData?.find(
-    (item: any) => item?.blockName === "Top-Tier Benefits of AllZone"
-  );
-  const analyticsData = IoTDevelopmentData?.find(
-    (item: any) => item?.blockName === "Why IoT Application"
-  );
-  const analytics = IoTDevelopmentData?.find(
-    (item: any) => item?.blockName === "Build Software Across Industries"
-  );
-  const customDevelopmentData = IoTDevelopmentData?.find(
-    (item: any) => item?.blockName === "Process IoT Development Block"
-  );
-  const technologySectionData = IoTDevelopmentData?.find(
-    (item: any) => item?.blockName === "Technology Stacks And Tools"
+  const SECTIONS = {
+    HERO: "IoT Hero Block",
+    BENEFITS: "Top-Tier Benefits of AllZone",
+    WHY_IOT: "Why IoT Application",
+    BUILD_SOFTWARE: "Build Software Across Industries",
+    PROCESS_IOT: "Process IoT Development Block",
+    TECHNOLOGY_STACK: "Technology Stacks And Tools",
+  };
+
+  // Reduce the data to an object with relevant sections
+  const data = IoTDevelopmentData.reduce(
+    (acc: any, item: any) => {
+      switch (item?.blockName) {
+        case SECTIONS.HERO:
+          acc.businessGrowthSoftware = item;
+          break;
+        case SECTIONS.BENEFITS:
+          acc.companyBenifitsInfoData = item;
+          break;
+        case SECTIONS.WHY_IOT:
+          acc.analyticsData = item;
+          break;
+        case SECTIONS.BUILD_SOFTWARE:
+          acc.analytics = item;
+          break;
+        case SECTIONS.PROCESS_IOT:
+          acc.customDevelopmentData = item;
+          break;
+        case SECTIONS.TECHNOLOGY_STACK:
+          acc.technologySectionData = item;
+          break;
+        default:
+          break;
+      }
+      return acc;
+    },
+    {} // Initial value for the accumulator
   );
 
   return (
@@ -49,12 +69,12 @@ function IoTDevelopment({ IoTDevelopmentData }: IoTDevelopmentProps) {
           width={1500}
         />
       </div>
-      <HeroSection heroSectionData={businessGrowthSoftware} />
-      <ServiceInfoSection sectionData={companyBenifitsInfoData} />
-      <DataAnalyticsOverview analyticsData={analyticsData} />
-      <Analytics analyticsData={analytics} />
-      <TechnologyStack technologySectionData={technologySectionData} />
-      <CustomDevelopment data={customDevelopmentData} />
+      <HeroSection heroSectionData={data.businessGrowthSoftware} />
+      <ServiceInfoSection sectionData={data.companyBenifitsInfoData} />
+      <DataAnalyticsOverview analyticsData={data.analyticsData} />
+      <Analytics analyticsData={data.analytics} />
+      <TechnologyStack technologySectionData={data.technologySectionData} />
+      <CustomDevelopment data={data.customDevelopmentData} />
     </div>
   );
 }
