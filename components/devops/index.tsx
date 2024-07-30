@@ -29,10 +29,15 @@ const Devops = ({ DevopsPageData }: DevopsProps) => {
     <div>
       <HeroSection heroSectionData={heroSectionData} />
       <ServiceInfoSection sectionData={servicesSectionData} />
-      <AccordianSection
-        accordianSectionData={DevelopmentSectionData}
-        backgroundStyling={false}
-      />
+      <div className="relative  ">
+        <div className="absolute w-full flex justify-center">
+          <img src="/assets/images/devops.png" alt="devops" />
+        </div>
+        <AccordianSection
+          accordianSectionData={DevelopmentSectionData}
+          backgroundStyling={false}
+        />
+      </div>
       <WhyAllZone whyAllzoneData={whyAllZoneSectionData} />
       <HeroSection
         heroSectionData={whyChoseSectionData}

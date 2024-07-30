@@ -104,7 +104,7 @@ const ProcessSection = ({ processSectionData }: ProcessSectionProps) => {
             style={{ top: "-0.5rem" }}
           ></div>
 
-          {processSectionData?.layout.map((item, index) => (
+          {processSectionData?.content.map((item, index) => (
             <div
               key={index}
               ref={(el) => {

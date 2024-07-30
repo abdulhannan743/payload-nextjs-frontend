@@ -14,7 +14,7 @@ import Image from "next/image";
 import DevelopmentModelImage from "../../public/images/DevelopmentModel.png";
 
 type AccordianSectionProps = {
-  accordianSectionData: ServiceBlockType;
+  accordianSectionData: ServiceBlockType | undefined;
   backgroundStyling?: boolean;
   accordianContent?: (item: ServiceBlockItemType) => React.ReactNode;
 };
@@ -44,13 +44,6 @@ function AccordianSection({
               : "container lg:px-20 px-0 justify-center text-center"
           }`}
         >
-          {backgroundStyling ? (
-            <></>
-          ) : (
-            <h2 className="w-full text-9xl text-center font-bold text-[#20C8971A] -inset-y-[5%] -inset-x-[10%] absolute lg:-inset-y-[20%] lg:inset-x-[0%] z-[-1] overflow-hidden text-nowrap">
-              Artificial Intelligence
-            </h2>
-          )}
           <h1
             className={`lg:text-4xl text-3xl font-bold ${
               backgroundStyling ? "" : "text-lightDark"
@@ -93,8 +86,8 @@ function AccordianSection({
           <div className="container flex lg:flex-row flex-col items-center px-0 justify-between my-4">
             <div className="py-4">
               <Image
-                src={DevelopmentModelImage}
-                alt="development model image"
+                src={accordianSectionData?.image?.url || ""}
+                alt={accordianSectionData?.image?.alt || ""}
                 width={400}
                 height={400}
               />
