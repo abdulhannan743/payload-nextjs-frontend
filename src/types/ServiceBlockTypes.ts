@@ -31,8 +31,23 @@ export type ServiceBlockItemType = {
   description?: string;
   iconName?: string;
   image?: Image;
-  block?: blockType[];
-  link?: CustomLink[];
+  link: CustomLink[];
+  slides: Slides[];
+};
+
+export type Slides = {
+  media: {
+    id: string;
+    alt: string;
+    filename: string;
+    mimeType: string;
+    filesize: number;
+    width: number;
+    height: number;
+    createdAt: string;
+    updatedAt: string;
+    url: string;
+  };
 };
 
 export type Image = {
@@ -53,11 +68,13 @@ export type CustomLink = {
   label: string;
   url: string;
   id: string;
+  page: PageLink;
 };
 
 export type PageLink = {
   type: string;
   label: string;
+  slug: string;
   page: {
     id: string;
     name: string;

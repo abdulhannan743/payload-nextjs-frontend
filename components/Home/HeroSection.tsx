@@ -1,379 +1,70 @@
 "use client";
-import Image from "next/image";
-import Link from "next/link";
 import React from "react";
+import Image from "next/image";
+import CarousalContainer from "../ui/CarousalContainer";
+import { ServiceBlockItemType } from "@/src/types/ServiceBlockTypes";
+import { HeroSectionType } from "@/src/types/HeroBlockTypes";
+import HireDeveloperButton from "../ui/HireDeveloperButton";
 
-export type HeroSectionType = {
-  heading: string;
-  text: string;
-  id: string;
-  blockName: string;
-  blockType: string;
-  link: {
-    type: string;
-    label: string;
-    page: {
-      slug: string;
-      [key: string]: any;
-    };
-    parent: {
-      [key: string]: any;
-    };
-    id: string;
-  }[];
-  slides: {
-    id: string;
-    media: {
-      id: string;
-      url: string;
-      alt: string;
-      width: number;
-      height: number;
-    };
-  }[];
-};
-type HeroProps = {
-  heroData: HeroSectionType[];
+type HeroSectionProps = {
+  heroSectionData: HeroSectionType;
 };
 
-function HeroSection({ heroData }: HeroProps) {
-  heroData = [
-    {
-      heading:
-        "AllZone Technologies  has won the Best Software House Presidential Award 2023",
-      text:
-        "AllZone Technologies is a prestigious LCCI IT Presidential Award\n" +
-        "2023-winning Company. It's been standing like a shining symbol of\n" +
-        "excellence in software development and consultancy and\n" +
-        "outsourcing dedicated teams of skilled developers.",
-      link: [
-        {
-          type: "page",
-          label: "Get In Touch",
-          page: {
-            id: "663a0a15af4dedb881ed76a5",
-            name: "Contact Us",
-            slug: "contact-us",
-            layout: [Array],
-            createdAt: "2024-05-07T11:01:41.337Z",
-            updatedAt: "2024-07-01T14:15:21.745Z",
-          },
-          parent: {
-            id: "663a0a15af4dedb881ed76a5",
-            name: "Contact Us",
-            slug: "contact-us",
-            layout: [Array],
-            createdAt: "2024-05-07T11:01:41.337Z",
-            updatedAt: "2024-07-01T14:15:21.745Z",
-          },
-          id: "668bc2e874a4bf39006c23f9",
-        },
-      ],
-      slides: [
-        {
-          media: {
-            id: "6682ad8c102596380fca6ee4",
-            alt: "trophy",
-            width: 93,
-            height: 242,
-            url: "http://localhost:4000/media/5.png",
-          },
-          id: "668bc2f774a4bf39006c23fa",
-        },
-        {
-          media: {
-            id: "6682ad9e102596380fca6efc",
-            alt: "group photo",
-            width: 373,
-            height: 243,
-            url: "http://localhost:4000/media/8 (1).png",
-          },
-          id: "668bc30474a4bf39006c23fb",
-        },
-        {
-          media: {
-            id: "6682adb6102596380fca6f15",
-            alt: "blue bg",
-            width: 374,
-            height: 129,
-            url: "http://localhost:4000/media/Blue-bg-1.svg",
-          },
-          id: "668bc30e74a4bf39006c23fc",
-        },
-        {
-          media: {
-            id: "6682ad66102596380fca6ecd",
-            alt: "dev",
-            width: 93,
-            height: 128,
-            url: "http://localhost:4000/media/onbench-1.svg",
-          },
-          id: "668bc31974a4bf39006c23fd",
-        },
-      ],
-
-      id: "668bc2ac74a4bf39006c23f8",
-      blockName: "Hero Section",
-      blockType: "home",
-    },
-    {
-      heading:
-        "Software Development Consultancy for Startups, Enterprises & Businesses",
-      text: "AllZone Technologies is one of the top software development companies offering consultancy to startups, businesses, and enterprises. We outsource dedicated developers to scale your engineering needs with suitable time zones following your work model.",
-
-      link: [
-        {
-          type: "page",
-          label: "Get In Touch",
-
-          page: {
-            id: "663a0a15af4dedb881ed76a5",
-            name: "Contact Us",
-            slug: "contact-us",
-
-            layout: [
-              {
-                heading: "Contact Us Page dummy",
-                text: "hello from Contact us",
-
-                link: [],
-                id: "663a0a15d76a8e31b0e1d3b0",
-                blockType: "hero",
-              },
-            ],
-            createdAt: "2024-05-07T11:01:41.337Z",
-            updatedAt: "2024-07-01T14:15:21.745Z",
-          },
-
-          parent: {
-            id: "663a0a15af4dedb881ed76a5",
-            name: "Contact Us",
-            slug: "contact-us",
-
-            layout: [
-              {
-                heading: "Contact Us Page dummy",
-                text: "hello from Contact us",
-
-                link: [],
-                id: "663a0a15d76a8e31b0e1d3b0",
-                blockType: "hero",
-              },
-            ],
-            createdAt: "2024-05-07T11:01:41.337Z",
-            updatedAt: "2024-07-01T14:15:21.745Z",
-          },
-          id: "668bc2e874a4bf39006c23f9",
-        },
-      ],
-
-      slides: [
-        {
-          media: {
-            id: "668be3e90c20fdd3e8269983",
-            alt: "1",
-
-            width: 394,
-            height: 242,
-
-            url: "http://localhost:4000/media/5 (1).png",
-          },
-          id: "668bc2f774a4bf39006c23fa",
-        },
-
-        {
-          media: {
-            id: "668be4070c20fdd3e82699a1",
-            alt: "2",
-
-            width: 73,
-            height: 243,
-
-            url: "http://localhost:4000/media/8.png",
-          },
-          id: "668bc30474a4bf39006c23fb",
-        },
-
-        {
-          media: {
-            id: "668be41c0c20fdd3e82699be",
-            alt: "3",
-
-            width: 113,
-            height: 129,
-
-            url: "http://localhost:4000/media/3.png",
-          },
-          id: "668bc30e74a4bf39006c23fc",
-        },
-
-        {
-          media: {
-            id: "668be4300c20fdd3e82699dc",
-            alt: "4",
-
-            width: 353,
-            height: 128,
-
-            url: "http://localhost:4000/media/4.png",
-          },
-          id: "668bc31974a4bf39006c23fd",
-        },
-      ],
-      id: "668be32bac5a1e16c2782942",
-      blockName: "Hero Section2",
-      blockType: "home",
-    },
-    {
-      heading:
-        "Your Digital Transformation Partner using cutting Edge Technologies",
-      text: "You are on the brink of the digital transformation of your business. Our cutting-edge technologies help you to get your projects and products off the ground. Our team will guide you through the transformative process and craft solutions that align with your challenges.",
-
-      link: [
-        {
-          type: "page",
-          label: "Get In Touch",
-
-          page: {
-            id: "663a0a15af4dedb881ed76a5",
-            name: "Contact Us",
-            slug: "contact-us",
-
-            layout: [
-              {
-                heading: "Contact Us Page dummy",
-                text: "hello from Contact us",
-
-                link: [],
-                id: "663a0a15d76a8e31b0e1d3b0",
-                blockType: "hero",
-              },
-            ],
-            createdAt: "2024-05-07T11:01:41.337Z",
-            updatedAt: "2024-07-01T14:15:21.745Z",
-          },
-
-          parent: {
-            id: "663a0a15af4dedb881ed76a5",
-            name: "Contact Us",
-            slug: "contact-us",
-
-            layout: [
-              {
-                heading: "Contact Us Page dummy",
-                text: "hello from Contact us",
-
-                link: [],
-                id: "663a0a15d76a8e31b0e1d3b0",
-                blockType: "hero",
-              },
-            ],
-            createdAt: "2024-05-07T11:01:41.337Z",
-            updatedAt: "2024-07-01T14:15:21.745Z",
-          },
-          id: "668bc2e874a4bf39006c23f9",
-        },
-      ],
-
-      slides: [
-        {
-          media: {
-            id: "668be47d0c20fdd3e82699fa",
-            alt: "1",
-            width: 93,
-            height: 129,
-            url: "http://localhost:4000/media/6.png",
-          },
-          id: "668bc2f774a4bf39006c23fa",
-        },
-
-        {
-          media: {
-            id: "668be48c0c20fdd3e8269a18",
-            alt: "2",
-            width: 373,
-            height: 129,
-            url: "http://localhost:4000/media/7.png",
-          },
-          id: "668bc30474a4bf39006c23fb",
-        },
-
-        {
-          media: {
-            id: "668be49e0c20fdd3e8269a31",
-            alt: "3",
-            width: 374,
-            height: 242,
-            url: "http://localhost:4000/media/3 (1).png",
-          },
-          id: "668bc30e74a4bf39006c23fc",
-        },
-
-        {
-          media: {
-            id: "668be4ab0c20fdd3e8269a4f",
-            alt: "4",
-            width: 93,
-            height: 242,
-            url: "http://localhost:4000/media/4 (1).png",
-          },
-          id: "668bc31974a4bf39006c23fd",
-        },
-      ],
-      id: "668be32fac5a1e16c2782944",
-      blockName: "Hero Section3",
-      blockType: "home",
-    },
-  ];
-  const [currentDataIndex, setCurrentDataIndex] = React.useState(0);
-
-  React.useEffect(() => {
-    const intervalId = setInterval(() => {
-      setCurrentDataIndex((prevIndex) => (prevIndex + 1) % heroData.length);
-    }, 5000);
-
-    return () => clearInterval(intervalId);
-  }, [heroData]);
-
-  const currentData = heroData[currentDataIndex];
-
+const SlidesCard = (item: ServiceBlockItemType) => {
+  const windowSize = window.innerWidth;
   return (
-    <div className="flex bg-white justify-between items-center pl-64 pr-64 mb-24">
-      <div className="w-1/2 pl-24 pr-48 mb-4">
-        <h2 className="font-bold text-3xl mb-4 text-blue-500">
-          {currentData.heading}
-        </h2>
-        <p className="text-lg text-black mb-4">{currentData.text}</p>
-        {currentData.link[0] && (
-          <Link href={currentData.link[0]?.page.slug}>
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-              {currentData.link[0]?.label}
-            </button>
-          </Link>
-        )}
+    <div className="relative flex flex-col lg:flex-row  w-full justify-between items-center container">
+      <div className="w-full lg:w-1/3 xl:w-1/2  text-center lg:text-start">
+        <div className="relative flex flex-col justify-between">
+          <h1 className="text-primary text-4xl font-bold">{item?.title}</h1>
+          <img
+            src="/assets/icons/Clip.svg"
+            className="absolute bottom-0 hidden md:block"
+          />
+        </div>
+        <p className="text-lg font-light my-5">{item?.description}</p>
+        <div className="hidden lg:block">
+          <HireDeveloperButton>{item.link?.[0]?.label}</HireDeveloperButton>
+        </div>
       </div>
-      <div className="w-1/2 flex flex-wrap justify-center items-center pr-24">
-        {currentData.slides.map((slide: any) => (
+      <div className="w-full lg:w-2/3 xl:w-1/2 flex flex-wrap mt-5 justify-center items-center">
+        {item.slides.map((slide, index: number) => (
           <div
-            key={slide.id}
-            className="relative transform transition-transform hover:scale-105 hover:shadow-lg m-2 "
+            key={index}
+            className="relative transform transition-transform hover:scale-105 hover:shadow-lg m-2"
             style={{
-              width: `${slide.media.width}px`,
-              height: `${slide.media.height}px`,
-              margin: "10px",
+              margin: "5px",
             }}
           >
             <Image
               src={slide.media.url}
               alt={slide.media.alt}
-              width={slide.media.width}
-              height={slide.media.height}
+              width={
+                windowSize < 768 ? slide.media.width / 2 : slide.media.width
+              }
+              height={
+                windowSize < 768 ? slide.media.height / 2 : slide.media.height
+              }
               className="object-cover"
             />
           </div>
         ))}
       </div>
+      <div className="lg:hidden my-3 rounded-full text-base w-36 h-10 bg-primary text-white flex justify-center items-center ">
+        <HireDeveloperButton>{item.link?.[0]?.label}</HireDeveloperButton>
+      </div>
     </div>
+  );
+};
+
+function HeroSection({ heroSectionData }: HeroSectionProps) {
+  return (
+    <CarousalContainer
+      className="md:block"
+      carousalData={heroSectionData}
+      autoPlay={true}
+      renderCard={SlidesCard}
+    />
   );
 }
 

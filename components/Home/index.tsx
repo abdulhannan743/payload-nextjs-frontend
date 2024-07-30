@@ -1,21 +1,34 @@
+"use client";
+
 import React from "react";
 import ServicesSection from "./ServicesSection";
 import WhyAllZoneSection from "./WhyAllZoneSection";
 import ClientsSection from "./ClientsSection";
 import HeroSection from "./HeroSection";
-import type { HeroSectionType } from "./HeroSection";
 import PortfolioSection from "./PortfolioSection";
 import LogoSection from "./logoSection";
-import IndustriesServicesCard from "./IndustriesServicesCard";
+import AwardWinningSection from "./AwardWinningSection";
+import { useWindowSize } from "@/src/utils/useWindowSizeForResponsiveness";
+import AccordianSection from "../sharedComponents/AccordianSection";
+import DeveloperHeroSection from "../HireAnExpert/DeveloperHeroSection";
 
 type HomeProps = {
   homePageData: any;
 };
 
 export default function Home({ homePageData }: HomeProps) {
-  const logoData = homePageData?.find(
-    (item: any) => item?.blockName === "logo"
-  );
+  const windowSize = useWindowSize();
+
+  let logoData;
+  if (windowSize.width < 1024) {
+    logoData = homePageData?.find(
+      (item: any) => item?.blockName === "logo mobile"
+    );
+  } else {
+    logoData = homePageData?.find(
+      (item: any) => item?.blockName === "logo wide"
+    );
+  }
 
   const servicesData = homePageData?.find(
     (item: any) => item?.blockName === "Services Section"
@@ -27,7 +40,7 @@ export default function Home({ homePageData }: HomeProps) {
     (item: any) => item?.blockName === "Our Clients"
   );
 
-  const heroData: HeroSectionType[] = homePageData?.filter(
+  const heroData: any = homePageData?.filter(
     (item: any) => item?.blockName === "Hero Section"
   );
 
@@ -40,11 +53,12 @@ export default function Home({ homePageData }: HomeProps) {
   );
 
   return (
-    <div className="bg-white">
-      <HeroSection heroData={heroData} />
+    <div>
+      <HeroSection heroSectionData={heroData} />
       <LogoSection logoData={logoData} />
       <ServicesSection serviceData={servicesData} />
-      <IndustriesServicesCard industries={industries} />
+      <AccordianSection accordianSectionData={industries} />
+      <AwardWinningSection />
       <WhyAllZoneSection whyAllzoneData={whyAllzoneData} />
       <PortfolioSection portfolioData={portfolioData} />
       <ClientsSection clientsData={clientsData} />

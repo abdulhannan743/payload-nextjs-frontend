@@ -33,45 +33,6 @@ const WhyAllzoneCarousalCard = (item: ServiceBlockItemType) => (
 );
 
 function WhyAllZoneSection({ whyAllzoneData }: WhyAllZoneSectionProps) {
-  // just a dummy data for the time being
-  whyAllzoneData = {
-    title:
-      "Why AllZone Technologies For Software Development & Staff Augmentation?",
-    items: [
-      {
-        title: "Tailored Solutions",
-        description:
-          "Our developers provide customized software development and consultancy following your needs. Our services are easy to adapt and scalable for the growth of your business.",
-        iconName: "tailoredSolutions",
-        id: "668547922c83d937dfa70da2",
-      },
-      {
-        title: "Satisfied Customers",
-        description:
-          "Are you Looking for 100% accuracy and efficiency, and error-free coding? Employ our developers and put your development worries to rest-guaranteed.",
-        iconName: "satisfiedCustomers",
-        id: "668547bf2c83d937dfa70da3",
-      },
-      {
-        title: "Full Stack Developers",
-        description:
-          "AllZone Technologies offers staff augmentation services, like junior, mid-level, and senior resources. They will provide emerging solutions to keep you ahead.",
-        iconName: "fullStackDevelopers",
-        id: "668547db2c83d937dfa70da4",
-      },
-      {
-        title: "Cooperative partnership",
-        description:
-          "Cooperation is our priority with clients, and we take care of time zone, cost, and code quality. That’s why we are best at ideating and building software solutions.",
-        iconName: "cooperativePartnership",
-        id: "668547fa2c83d937dfa70da5",
-      },
-    ],
-    id: "668547872c83d937dfa70da1",
-    blockName: "Why Allzone Section",
-    blockType: "services",
-  };
-
   return (
     <div className="container pt-16 md:py-16 mx-auto bg-[#FFFFFFCC]">
       <h1 className="text-3xl md:text-4xl font-bold text-center mb-8 max-w-3xl mx-auto">
