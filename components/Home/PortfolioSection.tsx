@@ -60,38 +60,11 @@ function PortfolioSection({ portfolioData }: PortfolioProps) {
           </p>
         </div>
       </Link>
-      <div className="hidden md:block">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 mb-8">
-          {portfolioData.items.map((item, index) => (
-            <div
-              key={index}
-              className="portfolio-item rounded-lg overflow-hidden"
-            >
-              <Link
-                href={item.link?.[0]?.url || "#"}
-                className="block hover:text-primary hover:underline text-lightDark"
-              >
-                <div>
-                  <img
-                    src={item?.image?.url}
-                    alt={item?.image?.alt}
-                    className="w-full h-auto mb-3 object-cover"
-                  />
-                  <div className="flex items-center justify-between">
-                    <h4 className="text-base font-semibold">
-                      {item.link?.[0]?.label}
-                    </h4>
-                    <ArrowRightIcon className="w-6 h-6" />
-                  </div>
-                </div>
-              </Link>
-            </div>
-          ))}
-        </div>
-      </div>
       <CarousalContainer
         carousalData={portfolioData?.items}
         renderCard={PortfolioCarousalCard}
+        isOneSlidePerView={false}
+        shouldFiveSlidesPerViewEnable={true}
       />
       <Link
         href={portfolioData.link?.[0]?.url || "#"}

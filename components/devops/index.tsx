@@ -3,8 +3,7 @@ import React from "react";
 import HeroSection from "../sharedComponents/HeroSection";
 import ServiceInfoSection from "../sharedComponents/ServiceInfoSection";
 import AccordianSection from "../sharedComponents/AccordianSection";
-import WhyAllZone from "./WhyAllZone";
-import CarousalContainer from "../ui/CarousalContainer";
+import WhyAllZoneSection from "../Home/WhyAllZoneSection";
 
 interface DevopsProps {
   DevopsPageData: any;
@@ -38,7 +37,7 @@ const Devops = ({ DevopsPageData }: DevopsProps) => {
           backgroundStyling={false}
         />
       </div>
-      <WhyAllZone whyAllzoneData={whyAllZoneSectionData} />
+      <WhyAllZoneSection whyAllzoneData={whyAllZoneSectionData} />
       <HeroSection
         heroSectionData={whyChoseSectionData}
         isContentCentered={true}

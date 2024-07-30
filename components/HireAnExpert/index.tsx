@@ -12,6 +12,9 @@ function HireAnExpert({ hireAnExpertPageData }: HireAnExpertProps) {
   const heroSectionData = hireAnExpertPageData.find(
     (item: any) => item.blockName === "Hero Section"
   );
+  const logoData = hireAnExpertPageData.find(
+    (item: any) => item.blockName === "logo wide"
+  );
   const developersSectionData = hireAnExpertPageData.find(
     (item: any) => item.blockName === "Developers Section"
   );
@@ -24,7 +27,7 @@ function HireAnExpert({ hireAnExpertPageData }: HireAnExpertProps) {
   return (
     <div>
       <DeveloperHeroSection heroSectionData={heroSectionData} />
-      <LogoSection logoData={heroSectionData} />
+      <LogoSection logoData={logoData} />
       <div className="relative">
         <Image
           src={"/assets/images/frequency-layers-bg.png"}

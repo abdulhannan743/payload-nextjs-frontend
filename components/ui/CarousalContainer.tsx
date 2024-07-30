@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { Pagination, Navigation, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -10,22 +11,23 @@ type CarousalContainerProps = {
   renderCard: (item: any, index: number) => React.ReactNode;
   className?: string;
   autoPlay?: boolean;
-  slidesPerView?: number;
+  isOneSlidePerView?: boolean;
+  shouldFiveSlidesPerViewEnable?: boolean;
 };
 
 function CarousalContainer({
   carousalData,
   renderCard,
-  className = "block md:hidden",
+  className,
   autoPlay = false,
-  slidesPerView = 1,
+  isOneSlidePerView = true,
+  shouldFiveSlidesPerViewEnable = false,
 }: CarousalContainerProps) {
   return (
     <Swiper
       className={className}
       modules={[Pagination, Navigation, Autoplay]}
       spaceBetween={40}
-      slidesPerView={slidesPerView}
       navigation
       pagination={autoPlay ? false : { clickable: true }}
       scrollbar={autoPlay ? false : { draggable: true }}
@@ -36,6 +38,27 @@ function CarousalContainer({
           waitForTransition: true,
           reverseDirection: true,
         }
+      }
+      breakpoints={
+        isOneSlidePerView
+          ? {}
+          : {
+              640: {
+                slidesPerView: 1,
+              },
+              768: {
+                slidesPerView: 2,
+              },
+              1024: {
+                slidesPerView: 3,
+              },
+              1280: {
+                slidesPerView: 4,
+              },
+              1536: {
+                slidesPerView: shouldFiveSlidesPerViewEnable ? 5 : 4,
+              },
+            }
       }
     >
       <style>

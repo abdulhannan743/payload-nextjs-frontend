@@ -13,5 +13,6 @@ export const RESOURCE_TYPES = {
   HIRE_AN_EXPERT: "hire-an-expert",
   DEVOPS: "devops",
   ENTERPRISE_DATA_AND_ANALYTICS: "enterprise-data-and-analytics",
+  FINTECH: "fintech",
   DEDICATED_TEAM: "dedicated-team",
 } as const;

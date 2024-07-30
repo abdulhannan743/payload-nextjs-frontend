@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import { Button } from "../ui/button";
 import { ServiceType } from "@/src/types/ServicesTypes";
-import { CustomLink, PageLink } from "@/src/types/ServiceBlockTypes";
-import Link from "next/link";
+import { PageLink } from "@/src/types/ServiceBlockTypes";
 
 type Link = PageLink;
 
@@ -47,8 +47,8 @@ function ServiceSection({
           {features.map((feature, index) => (
             <li
               key={index}
-              className={`py-1 marker:text-2xl marker:text-${
-                backgroundDark ? "secondary" : "primary"
+              className={`py-1 marker:text-2xl ${
+                backgroundDark ? "marker:text-secondary" : "marker:text-primary"
               }`}
             >
               {feature}
