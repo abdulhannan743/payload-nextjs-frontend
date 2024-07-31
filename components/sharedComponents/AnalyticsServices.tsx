@@ -52,8 +52,6 @@ const Analytics = ({ analyticsData }: AnalyticsProps) => {
 
     const nextTab = analyticsData?.content[nextIndex];
 
-    console.log("nextTab", nextTab);
-
     filteredTabs = nextTab;
     setActiveBlock(nextIndex);
   };
@@ -80,7 +78,7 @@ const Analytics = ({ analyticsData }: AnalyticsProps) => {
   }
 
   return (
-    <div className="w-full bg-[#0D2234] py-8 relative flex justify-center ">
+    <div className="w-full bg-[#0D2234] py-16 relative flex justify-center">
       <Image
         src="./lightGreenStyle.svg"
         alt="style"
@@ -107,7 +105,7 @@ const Analytics = ({ analyticsData }: AnalyticsProps) => {
           {filteredTabs?.map((item, index: number) => {
             return (
               <div
-                className="w-72 h-32 bg-[#0F333E] flex items-center justify-start rounded-lg px-3 m-auto"
+                className="w-80 h-32 bg-[#0F333E] flex items-center justify-start rounded-lg px-3 m-auto"
                 key={index}
               >
                 <Image
