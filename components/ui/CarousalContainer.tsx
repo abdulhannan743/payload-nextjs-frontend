@@ -64,7 +64,7 @@ function CarousalContainer({
       <style>
         {`
             .swiper-pagination-bullet-active {
-              background: #0D4C8F;
+              background: #20C897;
             }
         `}
       </style>

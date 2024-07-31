@@ -5,12 +5,16 @@ type RenderDescriptionProps = {
   backgroundDark?: boolean;
   isBulletSecondaryOnDarkBackground?: boolean;
 };
+
 function RenderDescription({
   description,
   backgroundDark = false,
   isBulletSecondaryOnDarkBackground = true,
 }: RenderDescriptionProps) {
   const [mainParagraph, ...features] = description.split("\n");
+
+  const isSteps = features.some((feature) => feature.startsWith("Step"));
+
   return (
     <div
       className={`text-md max-w-4xl text-lg ${
@@ -18,7 +22,8 @@ function RenderDescription({
       }`}
     >
       <p>{mainParagraph}</p>
-      <ul className="list-disc ml-5 mt-4 ">
+
+      <ul className={`ml-5 mt-4 relative ${isSteps ? "" : "list-disc"}`}>
         {features.map((feature, index) => (
           <li
             key={index}
@@ -30,7 +35,16 @@ function RenderDescription({
                 : "marker:text-primary"
             }`}
           >
-            <p>{feature}</p>
+            {isSteps ? (
+              <p>
+                <span className="text-base font-bold text-primary">
+                  Step {index + 1}:
+                </span>
+                {feature.split("Step")}
+              </p>
+            ) : (
+              <p>{feature}</p>
+            )}
           </li>
         ))}
       </ul>
