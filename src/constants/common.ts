@@ -19,4 +19,7 @@ export const RESOURCE_TYPES = {
   CLOUD_SERVICES: "cloud-services",
   SOLUTIONS: "solutions",
   HEALTH_CARE: "healthcare",
+  EDUCATION: "education",
+  INSURANCE: "insurance",
+  ECOMMERCE: "e-commerce",
 } as const;
