@@ -95,7 +95,7 @@ const Analytics = ({ analyticsData }: AnalyticsProps) => {
           </div>
           <DottedLine />
 
-          <div className="text-white py-5  text-center text-wrap">
+          <div className="text-white py-5  text-center text-wrap container">
             {analyticsData?.text}
           </div>
         </div>

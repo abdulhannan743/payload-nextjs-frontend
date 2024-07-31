@@ -14,10 +14,10 @@ interface HeroSectionProps {
   uiUxPageData: LayoutItemType[];
 }
 const UI_UX = ({ uiUxPageData }: HeroSectionProps) => {
-  const heroSectionData = uiUxPageData?.find(
+  const heroSectionData: any = uiUxPageData?.find(
     (item: any) => item?.blockName === "Hero"
   );
-  const ServiceSectionData = uiUxPageData?.find(
+  const ServiceSectionData: any = uiUxPageData?.find(
     (item: any) => item?.blockName === "service"
   );
   const WhyChoseSectionData = uiUxPageData?.find(
@@ -32,7 +32,6 @@ const UI_UX = ({ uiUxPageData }: HeroSectionProps) => {
   const customerSectionData: ServiceBlockType | undefined = uiUxPageData?.find(
     (item: any) => item?.blockName === "customer"
   ) as ServiceBlockType | undefined;
-  console.log(customerSectionData, "customerSectionData");
   return (
     <div>
       <HeroSection heroSectionData={heroSectionData} />

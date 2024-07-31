@@ -17,4 +17,5 @@ export const RESOURCE_TYPES = {
   FINTECH: "fintech",
   DEDICATED_TEAM: "dedicated-team",
   HEALTH_CARE: "healthcare",
+  TOURISM: "tourism",
 } as const;

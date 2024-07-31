@@ -33,6 +33,7 @@ export type ServiceBlockItemType = {
   image?: Image;
   link: CustomLink[];
   slides: Slides[];
+  block: blockType[];
 };
 
 export type Slides = {
