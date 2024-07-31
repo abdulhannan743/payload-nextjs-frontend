@@ -3,8 +3,7 @@ import React from "react";
 import HeroSection from "../sharedComponents/HeroSection";
 import ServiceInfoSection from "../sharedComponents/ServiceInfoSection";
 import AccordianSection from "../sharedComponents/AccordianSection";
-import WhyAllZone from "./WhyAllZone";
-import CarousalContainer from "../ui/CarousalContainer";
+import WhyAllZoneSection from "../Home/WhyAllZoneSection";
 
 interface DevopsProps {
   DevopsPageData: any;
@@ -29,11 +28,16 @@ const Devops = ({ DevopsPageData }: DevopsProps) => {
     <div>
       <HeroSection heroSectionData={heroSectionData} />
       <ServiceInfoSection sectionData={servicesSectionData} />
-      <AccordianSection
-        accordianSectionData={DevelopmentSectionData}
-        backgroundStyling={false}
-      />
-      <WhyAllZone whyAllzoneData={whyAllZoneSectionData} />
+      <div className="relative  ">
+        <div className="absolute w-full flex justify-center">
+          <img src="/assets/images/devops.png" alt="devops" />
+        </div>
+        <AccordianSection
+          accordianSectionData={DevelopmentSectionData}
+          backgroundStyling={false}
+        />
+      </div>
+      <WhyAllZoneSection whyAllzoneData={whyAllZoneSectionData} />
       <HeroSection
         heroSectionData={whyChoseSectionData}
         isContentCentered={true}

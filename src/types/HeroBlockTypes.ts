@@ -4,6 +4,7 @@ export type HeroSectionType = {
   text: string;
   heading: string;
   link: PageLink[];
+  Image: Image;
   slides?: {
     id: string;
     title: string;

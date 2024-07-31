@@ -51,7 +51,7 @@ function DeveloperHeroSection({ heroSectionData }: HeroSectionProps) {
           <p>{heroSectionData.text}</p>
           <div>
             <HireDeveloperButton>
-              {heroSectionData.link[0]?.label}
+              {heroSectionData.link?.[0]?.label}
             </HireDeveloperButton>
           </div>
         </div>

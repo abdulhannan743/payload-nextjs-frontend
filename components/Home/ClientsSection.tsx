@@ -71,8 +71,8 @@ function ClientsSection({ clientsData }: ClientsSectionProps) {
             </button>
           </div>
           <div className="text-center text-white flex flex-col items-center">
-            <p className="text-base max-w-2xl mx-auto mb-3">
-              {clientsData?.items[activeIndex].description}
+            <p className="text-sm max-w-2xl mx-auto mb-3">
+              {clientsData.items[activeIndex]?.description}
             </p>
             <div className="flex justify-between align-center w-full md:w-auto">
               <button
@@ -83,11 +83,11 @@ function ClientsSection({ clientsData }: ClientsSectionProps) {
                 <ChevronLeftIcon className="w-6 h-6" />
               </button>
               <div>
-                <h3 className="text-xl font-extrabold mb-2">
-                  {clientsData?.items[activeIndex].title}
+                <h3 className="text-lg font-bold mb-2">
+                  {clientsData.items[activeIndex]?.title}
                 </h3>
-                <p className="text-base text-secondary font-bold">
-                  {clientsData?.items[activeIndex].iconName}
+                <p className="text-sm text-secondary font-bold">
+                  {clientsData.items[activeIndex]?.iconName}
                 </p>
               </div>
               <button

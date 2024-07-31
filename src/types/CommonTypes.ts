@@ -22,6 +22,8 @@ export interface Layout {
 export interface content {
   layout: LayoutItemType[];
   id: string;
+  image?: Image;
+  heading: string;
 }
 export interface layout {
   Image?: Image;
@@ -48,7 +50,7 @@ export interface LayoutItemType {
   imageHeading?: string;
   ceoText?: string;
   blockName: string;
-  content: content[];
+  content: LayoutItemType[];
   layout: layout[];
   blockType: string;
 }
