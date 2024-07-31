@@ -14,7 +14,7 @@ const NavigationCard: React.FC<NavigationCardProps> = ({
 }) => (
   <Container>
     <div className="text-blue-900 font-bold text-lg md:text-lg">{heading}</div>
-    <div className="text-black lg:text-xs lg:border-l border-dashed border-gray-500 mt-2 md:mt-4">
+    <div className="text-black lg:text-xs border-l border-dashed border-gray-500 mt-2 md:mt-4">
       <nav className="pl-2 md:pl-4">
         <ul className="space-y-2 md:space-y-3">
           {navLinks.map((service, index) => (

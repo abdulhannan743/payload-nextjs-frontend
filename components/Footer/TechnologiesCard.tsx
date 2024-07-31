@@ -19,7 +19,7 @@ const TechnologiesCard: React.FC<TechnologiesCardProps> = ({
       </div>
       <div className="text-black">
         <div className="flex flex-col md:flex-row md:space-x-4 flex-wrap">
-          <ul className="space-y-3 lg:border-l border-dashed border-gray-500 pl-4 lg:text-xs">
+          <ul className="space-y-3 border-l border-dashed border-gray-500 pl-4 lg:text-xs">
             {link.map((tech) => (
               <li key={tech.id}>
                 <CustomLink slug={tech.page.slug} label={tech.label} />
