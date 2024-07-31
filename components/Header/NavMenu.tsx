@@ -59,7 +59,7 @@ const NavMenu: React.FC = () => {
             <FiAlignJustify size={40} />
           </button>
         </SheetTrigger>
-        <SheetContent side={"left"}>
+        <SheetContent side={"left"} className="w-full">
           <SheetHeader>
             <SheetTitle>
               <div className="flex lg:flex-1">
@@ -76,7 +76,7 @@ const NavMenu: React.FC = () => {
             </SheetTitle>
             <SheetDescription>
               <div>
-                <ul className="text-black">
+                <ul className="text-black font-semibold">
                   {newData.navLinks.map((link) => (
                     <NavItem
                       key={link.label}
