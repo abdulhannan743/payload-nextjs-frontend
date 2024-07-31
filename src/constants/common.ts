@@ -16,5 +16,7 @@ export const RESOURCE_TYPES = {
   IOT_DEVELOPMENT: "iot-development",
   FINTECH: "fintech",
   DEDICATED_TEAM: "dedicated-team",
+  CLOUD_SERVICES: "cloud-services",
+  SOLUTIONS: "solutions",
   HEALTH_CARE: "healthcare",
 } as const;
