@@ -19,6 +19,7 @@ export const RESOURCE_TYPES = {
   CLOUD_SERVICES: "cloud-services",
   SOLUTIONS: "solutions",
   HEALTH_CARE: "healthcare",
+  TOURISM: "tourism",
   EDUCATION: "education",
   INSURANCE: "insurance",
   ECOMMERCE: "e-commerce",

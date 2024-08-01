@@ -36,6 +36,7 @@ export type ServiceBlockItemType = {
   slider?: SliderType[];
   link: CustomLink[];
   slides: Slides[];
+  block: blockType[];
 };
 
 export type Slides = {
