@@ -31,6 +31,9 @@ export type ServiceBlockItemType = {
   description?: string;
   iconName?: string;
   image?: Image;
+  block?: blockType[];
+  link?: CustomLink[];
+  slider?: SliderType[];
   link: CustomLink[];
   slides: Slides[];
   block: blockType[];
@@ -82,4 +85,9 @@ export type PageLink = {
     slug: string;
   };
   id: string;
+};
+
+type SliderType = {
+  id: string;
+  slides?: { media: Image }[];
 };

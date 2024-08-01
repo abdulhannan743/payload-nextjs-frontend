@@ -130,7 +130,7 @@ const ContactForm: React.FC<{ contactForm: ContactFormProps }> = ({
   return (
     <form
       onSubmit={formik.handleSubmit}
-      className="space-y-4 max-w-lg lg:max-w-2xl"
+      className="space-y-4 max-w-lg lg:max-w-2xl md:max-w-2xl"
     >
       {contactForm?.fields.map((field, index) =>
         renderField({ field, index, formik, fileInputRef, handleFileClick })

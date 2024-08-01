@@ -27,12 +27,12 @@ const Footer: React.FC = () => {
 
   return (
     <footer className="bg-zinc-200 pt-10 md:pt-14">
-      <FlexContainer className="flex-col md:flex-row px-20 lg:flex-nowrap md:flex-wrap container">
+      <FlexContainer className="lg:flex-row md:flex-row flex-col-reverse sm:flex-wrap lg:px-20 lg:flex-nowrap md:flex-wrap container">
         {companySection &&
           companySection.Image &&
           companySection.text &&
           companySection.link?.[0] && (
-            <FlexChild>
+            <FlexChild className="hidden sm:hidden lg:block">
               <CompanyCard
                 footerImage={companySection.Image}
                 text={companySection.text}
@@ -55,8 +55,19 @@ const Footer: React.FC = () => {
             <ContactInfoCard layout={contactSection} />
           </FlexChild>
         )}
+        {companySection &&
+          companySection.Image &&
+          companySection.text &&
+          companySection.link?.[0] && (
+            <FlexChild className="block lg:hidden sm:block ">
+              <CompanyCard
+                footerImage={companySection.Image}
+                text={companySection.text}
+                buttonData={companySection.link[0]}
+              />
+            </FlexChild>
+          )}
       </FlexContainer>
-
       {imageSection?.slides?.[0]?.media && (
         <div className="ml-4 md:ml-32 mt-4 md:mt-0 md:mr-20">
           <Image

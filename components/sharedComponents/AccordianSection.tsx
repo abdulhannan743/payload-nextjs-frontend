@@ -29,7 +29,7 @@ function AccordianSection({
 }: AccordianSectionProps) {
   return (
     <div
-      className={`py-16 mt-16 ${
+      className={`py-16 mt-16${
         backgroundStyling && "bg-dark-blue text-white"
       }`}
     >

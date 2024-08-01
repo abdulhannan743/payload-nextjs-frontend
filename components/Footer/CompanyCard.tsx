@@ -21,7 +21,7 @@ const CompanyCard: React.FC<CompanyCardProps> = ({
   buttonData,
 }) => {
   return (
-    <div className="bg-stone-200  lg:max-w-80 pr-4">
+    <div className="bg-stone-200 max-w-96 lg:max-w-80  pr-4">
       <div className="py-4">
         <Image
           src={footerImage.url}
