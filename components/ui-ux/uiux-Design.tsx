@@ -5,7 +5,7 @@ const UiUxDesign = () => {
   return (
     <div>
       <Image
-        src={`/assets/images/uiux-designing.png`}
+        src="/assets/images/uiux-designing.png"
         alt="ui ux designing"
         layout="responsive"
         width={100}

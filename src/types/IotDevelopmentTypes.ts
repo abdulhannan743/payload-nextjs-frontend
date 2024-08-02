@@ -14,6 +14,13 @@ export interface Image {
   height: number;
 }
 
+interface Layout {
+  heading: string;
+  text: string;
+  icon: Icon;
+  image: Image;
+}
+
 export interface CustomDevelopmentData {
   heading: string;
   text: string;
@@ -21,4 +28,5 @@ export interface CustomDevelopmentData {
   iconText: string;
   icon: Icon;
   image: Image;
+  layout: Layout[];
 }

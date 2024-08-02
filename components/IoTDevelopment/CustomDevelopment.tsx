@@ -8,10 +8,9 @@ import IoTProcessLine1 from "../../public/assets/images/IoTProcessLine1.png";
 import ProcessIoTLine2 from "../../public/assets/images/ProcessIoTLine2.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { customDevelopmentData } from "@/src/constants/IoTDevelopment";
 
 interface CustomDevelopmentProps {
-  data: CustomDevelopmentData[];
+  data: CustomDevelopmentData;
 }
 
 const CustomDevelopment: React.FC<CustomDevelopmentProps> = ({ data }) => {
@@ -24,18 +23,18 @@ const CustomDevelopment: React.FC<CustomDevelopmentProps> = ({ data }) => {
     initialSlide: 1,
     speed: 500,
   };
-  data = customDevelopmentData;
+
   return (
-    <div className="bg-gray-900 overflow-hidden">
+    <div className="bg-[#0D2234] overflow-hidden">
       <Slider {...settings}>
-        {data.map((item, index) => (
+        {data?.layout?.map((item, index: number) => (
           <div key={index} className="py-8">
             <div className=" container flex flex-col md:flex-row text-white px-4 md:px-10">
               <div className="pt-8 ">
                 <div className="lg:w-2/3 w-full flex flex-col items-start justify-between">
-                  <h2 className="mb-3">{item.heading}</h2>
+                  <h2 className="mb-3">{data.heading}</h2>
                   <DottedLine />
-                  <p className="mt-3">{item.text}</p>
+                  <p className="mt-3">{data.text}</p>
                 </div>
                 <div className="flex flex-col lg:flex-row  ">
                   <div className="flex items-center mt-16">
@@ -57,9 +56,9 @@ const CustomDevelopment: React.FC<CustomDevelopmentProps> = ({ data }) => {
                         height={item.icon.height}
                       />
                       <h3 className="mt-4 mb-2 text-secondary">
-                        {item.iconHeading}
+                        {item.heading}
                       </h3>
-                      <p>{item.iconText}</p>
+                      <p>{item.text}</p>
                     </div>
                   </div>
                   <div className="w-full lg:w-full md:w-1/2  mt-16 md:mt-0 md:ml-8 flex flex-row items-center ">

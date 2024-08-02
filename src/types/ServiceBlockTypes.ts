@@ -32,7 +32,6 @@ export type ServiceBlockItemType = {
   iconName?: string;
   image?: Image;
   block?: blockType[];
-  link?: CustomLink[];
   slider?: SliderType[];
   link: CustomLink[];
   slides: Slides[];

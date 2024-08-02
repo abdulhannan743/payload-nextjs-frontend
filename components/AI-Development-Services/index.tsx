@@ -62,9 +62,15 @@ const AIDevelopmentServices = ({
           backgroundStyling={false}
         />
       </div>
-      <EnterprisePlanning
-        planningSectionData={DevelopmentPlanningSectionData}
-      />
+      <div className="relative">
+        <div className="absolute right-0">
+          <img src="assets/images/semiOval.png" alt="" />
+        </div>
+        <EnterprisePlanning
+          planningSectionData={DevelopmentPlanningSectionData}
+        />
+      </div>
+
       <WhyChooseAI WhyChooseAIData={WhyChooseAIData} />
     </div>
   );
