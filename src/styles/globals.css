@@ -16,9 +16,9 @@
     --light-gray: #f5f5f5;
     --gray: #666666;
 
-    --zink:#0F333E;
-    --dark-blue: #0D2234;
-    --secondary-light: #20C8971A;
+    --zink: #0f333e;
+    --dark-blue: #0d2234;
+    --secondary-light: #20c8971a;
 
     --dark-blue: #0d2234;
     --secondary-light: #20c8971a;
@@ -158,7 +158,7 @@ h3[data-state="open"] {
   font-size: 1.5rem;
 }
 .speech-bubble::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -15px;
   left: 10%;
@@ -170,7 +170,7 @@ h3[data-state="open"] {
   border-left: 0;
 }
 .speech-bubble::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -18px;
   left: 10%;
@@ -182,4 +182,33 @@ h3[data-state="open"] {
   border-left: 0;
   margin-left: -1px;
   z-index: -1;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.line-segment {
+  transition: border-color 0.3s;
+}
+
+.active .line-segment {
+  border-color: #0d4c8f;
+}
+
+.bg-blue-500 {
+  background-color: #0d4c8f;
+}
+.active-heading {
+  color: #0d4c8f;
+  transition: color 0.3s;
+}
+
+.svg-filter {
+  filter: brightness(0) saturate(100%) invert(12%) sepia(90%) saturate(3697%)
+    hue-rotate(201deg) brightness(99%) contrast(90%);
 }

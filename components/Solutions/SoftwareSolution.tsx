@@ -10,11 +10,11 @@ const SoftwareSolution = ({ SoftwareSectionData }: SoftwareSolutionProps) => {
   return (
     <div className="md:flex justify-center items-center container mx-auto raletive mt-10 overflow-hidden">
       <Image
-        src={"/images/Vector1.png"}
+        src={"/assets/images/Vector.png"}
         alt=""
-        width={900}
-        height={900}
-        className="absolute -bottom-64 -right-80 -z-10"
+        width={400}
+        height={400}
+        className="absolute right-0 -z-10"
       />
       <div className=" flex-1">
         <h1>{SoftwareSectionData?.heading}</h1>

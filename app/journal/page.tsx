@@ -1,9 +1,19 @@
 import React from "react";
+import { Metadata } from "next";
+
 import { fetchWrapper } from "@/src/utils/fetchWrapper";
+import { RESOURCE_TYPES } from "@/src/constants/common";
+import { getPageURL } from "@/src/utils";
+import { fetchMetadata } from "@/src/utils/metaData";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const url = getPageURL(RESOURCE_TYPES.JOURNAL);
+  return fetchMetadata(url);
+}
 
 async function JournalPage() {
   const response: any = await fetchWrapper({
-    url: "/api/pages?where[slug][equals]=journal",
+    url: getPageURL(RESOURCE_TYPES.JOURNAL),
     method: "GET",
   });
   const homeData = response?.docs[0].layout;

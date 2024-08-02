@@ -1,9 +1,18 @@
 import React from "react";
-import { fetchWrapper } from "@/src/utils/fetchWrapper";
+import { Metadata } from "next";
 
+import { RESOURCE_TYPES } from "@/src/constants/common";
+import { fetchWrapper } from "@/src/utils/fetchWrapper";
+import { fetchMetadata } from "@/src/utils/metaData";
+import { getPageURL } from "@/src/utils";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const url = getPageURL(RESOURCE_TYPES.CAREERS);
+  return fetchMetadata(url);
+}
 async function CareersPage() {
   const response: any = await fetchWrapper({
-    url: "/api/pages?where[slug][equals]=careers",
+    url: getPageURL(RESOURCE_TYPES.CAREERS),
     method: "GET",
   });
   const homeData = response?.docs[0].layout;

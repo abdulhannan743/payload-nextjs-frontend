@@ -1,9 +1,18 @@
 import React from "react";
-import { fetchWrapper } from "@/src/utils/fetchWrapper";
+import { Metadata } from "next";
 
+import { RESOURCE_TYPES } from "@/src/constants/common";
+import { getPageURL } from "@/src/utils";
+import { fetchWrapper } from "@/src/utils/fetchWrapper";
+import { fetchMetadata } from "@/src/utils/metaData";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const url = getPageURL(RESOURCE_TYPES.CONTACT_US);
+  return fetchMetadata(url);
+}
 async function ContactUsPage() {
   const response: any = await fetchWrapper({
-    url: "/api/pages?where[slug][equals]=contact-us",
+    url: getPageURL(RESOURCE_TYPES.CONTACT_US),
     method: "GET",
   });
   const homeData = response?.docs[0].layout;
