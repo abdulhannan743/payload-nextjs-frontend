@@ -24,7 +24,7 @@ function ServiceSection({
         variant={backgroundDark ? "secondary" : "default"}
         className={`text-white`}
       >
-        <Link href={links[0]?.page?.slug || ""}>{links[0]?.label}</Link>
+        <Link href={links?.[0]?.page?.slug || ""}>{links?.[0]?.label}</Link>
       </Button>
       <Button
         variant={"outline"}
@@ -33,7 +33,7 @@ function ServiceSection({
         } text-${backgroundDark ? "secondary" : "primary"}
             bg-${backgroundDark ? "[#0D2234]" : "white"} `}
       >
-        <Link href={links[1]?.page?.slug || ""}>{links[1]?.label}</Link>
+        <Link href={links?.[1]?.page?.slug || ""}>{links?.[1]?.label}</Link>
       </Button>
     </>
   );
@@ -64,21 +64,21 @@ function ServiceSection({
       <div className="container mx-auto">
         <div className="flex items-center gap-4">
           <img
-            src={`/assets/icons/${serviceSectionData.iconName}.svg`}
-            alt={`${serviceSectionData.iconName} icon`}
+            src={`/assets/icons/${serviceSectionData?.iconName}.svg`}
+            alt={`${serviceSectionData?.iconName} icon`}
           />
           <h1
             className={`text-2xl md:text-4xl font-bold ${
               backgroundDark ? "text-secondary" : "text-primary"
             }`}
           >
-            {serviceSectionData.title}
+            {serviceSectionData?.title}
           </h1>
         </div>
         <hr className="bg-[#20C89766] border-none h-[1px] w-full my-4" />
         <div className="flex pt-6 justify-between">
           <ul>
-            {serviceSectionData.tabs.map((tab, index) => (
+            {serviceSectionData?.tabs.map((tab, index) => (
               <div key={index}>
                 <li
                   className={`relative flex items-center cursor-pointer py-3 font-bold text-md ${
@@ -106,7 +106,7 @@ function ServiceSection({
                     }`}
                   ></span>
                   {tab.heading}
-                  {index < serviceSectionData.tabs.length - 1 && (
+                  {index < serviceSectionData?.tabs.length - 1 && (
                     <span
                       className={`absolute left-2 top-8 h-2/3 hidden lg:inline border-r border-dashed`}
                     ></span>
@@ -143,20 +143,20 @@ function ServiceSection({
                 backgroundDark ? "text-white" : "text-[#1D2746]"
               }`}
             >
-              {serviceSectionData.tabs[activeTab].title}
+              {serviceSectionData?.tabs[activeTab]?.title}
             </h2>
             <div
               className={`${backgroundDark ? "text-white" : "text-[#666666]"}`}
             >
-              {serviceSectionData.tabs[activeTab].description &&
+              {serviceSectionData?.tabs[activeTab]?.description &&
                 renderDescription(
-                  serviceSectionData.tabs[activeTab].description,
+                  serviceSectionData.tabs[activeTab]?.description,
                   backgroundDark
                 )}
             </div>
             <div className="mt-4 flex gap-6">
               {renderLinks(
-                serviceSectionData.tabs[activeTab].link,
+                serviceSectionData?.tabs[activeTab]?.link,
                 backgroundDark
               )}
             </div>

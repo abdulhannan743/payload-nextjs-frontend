@@ -38,7 +38,7 @@ function LogoSection({ logoData }: LogoProps) {
         </div>
       </div>
       <div className=" relative flex lg:hidden overflow-hidden items-center">
-        <div className="px-12 flex animate-marquee whitespace-nowrap">
+        <div className="px-8 flex animate-marquee whitespace-nowrap">
           {logoData?.slides?.map((slide, index) => (
             <div key={index} className="w-40">
               <Image
@@ -51,7 +51,7 @@ function LogoSection({ logoData }: LogoProps) {
             </div>
           ))}
         </div>
-        <div className=" px-12 flex absolute top-0 animate-marquee2 whitespace-nowrap">
+        <div className=" px-8 flex absolute top-0 animate-marquee2 whitespace-nowrap">
           {logoData?.slides?.map((slide, index) => (
             <div key={index} className="w-40">
               <Image

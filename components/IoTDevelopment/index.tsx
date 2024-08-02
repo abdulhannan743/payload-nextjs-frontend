@@ -17,7 +17,7 @@ function IoTDevelopment({ IoTDevelopmentData }: IoTDevelopmentProps) {
     BENEFITS: "Top-Tier Benefits of AllZone",
     WHY_IOT: "Why IoT Application",
     BUILD_SOFTWARE: "Build Software Across Industries",
-    PROCESS_IOT: "Process IoT Development Block",
+    PROCESS_IOT: "Custom IoT Development",
     TECHNOLOGY_STACK: "Technology Stacks And Tools",
   };
 
@@ -61,20 +61,28 @@ function IoTDevelopment({ IoTDevelopmentData }: IoTDevelopmentProps) {
           height={60}
         />
       </div>
-      <div className="absolute top-[20%] lg:top-[26%] md:top-[15%] z-[0] w-full">
-        <Image
-          src="/assets/images/ArtificailIntelligence.png"
-          alt="heroSectionBg"
-          height={50}
-          width={1500}
-        />
-      </div>
+
       <HeroSection heroSectionData={data.businessGrowthSoftware} />
       <ServiceInfoSection sectionData={data.companyBenifitsInfoData} />
+
+      <div className="w-full overflow-hidden -z-1">
+        <img
+          src="assets/images/iot.png"
+          alt="iotDevelopment"
+          className="w-full h-full"
+        />
+      </div>
+
       <DataAnalyticsOverview analyticsData={data.analyticsData} />
+
       <Analytics analyticsData={data.analytics} />
       <TechnologyStack technologySectionData={data.technologySectionData} />
-      <CustomDevelopment data={data.customDevelopmentData} />
+      <div className="realtive">
+        <div className="absolute right-0">
+          <img src="assets/images/semiOval.png" alt="" />
+        </div>
+        <CustomDevelopment data={data.customDevelopmentData} />
+      </div>
     </div>
   );
 }

@@ -4,6 +4,7 @@ import HeroSection from "../sharedComponents/HeroSection";
 import ServiceInfoSection from "../sharedComponents/ServiceInfoSection";
 import AccordianSection from "../sharedComponents/AccordianSection";
 import WhyAllZoneSection from "../Home/WhyAllZoneSection";
+import Banner from "./banner";
 
 interface DevopsProps {
   DevopsPageData: any;
@@ -38,11 +39,7 @@ const Devops = ({ DevopsPageData }: DevopsProps) => {
         />
       </div>
       <WhyAllZoneSection whyAllzoneData={whyAllZoneSectionData} />
-      <HeroSection
-        heroSectionData={whyChoseSectionData}
-        isContentCentered={true}
-        isDisplayCircleImage={false}
-      />
+      <Banner heroSectionData={whyChoseSectionData} />
     </div>
   );
 };

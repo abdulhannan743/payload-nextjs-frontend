@@ -29,7 +29,7 @@ function AccordianSection({
 }: AccordianSectionProps) {
   return (
     <div
-      className={`py-16 mt-16${
+      className={`py-16 mt-16 ${
         backgroundStyling && "bg-dark-blue text-white"
       }`}
     >
@@ -92,8 +92,7 @@ function AccordianSection({
                     {accordianContent?.(item) || (
                       <p className="text-lg">{item?.description}</p>
                     )}
-                    <p className="text-lg">{item?.description}</p>
-                    {item.link?.length > 0 && (
+                    {item?.link?.length > 0 && (
                       <Link href={`/${item?.link?.[0]?.page?.slug}`}>
                         <Button
                           variant={"outline"}

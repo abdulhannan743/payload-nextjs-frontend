@@ -48,8 +48,6 @@ const Analytics = ({ analyticsData }: AnalyticsProps) => {
 
     const nextIndex = (currentIndex + 1) % analyticsData?.content.length;
 
-    console.log("nextIndex", nextIndex);
-
     const nextTab = analyticsData?.content[nextIndex];
 
     filteredTabs = nextTab;
@@ -78,7 +76,7 @@ const Analytics = ({ analyticsData }: AnalyticsProps) => {
   }
 
   return (
-    <div className="w-full bg-[#0D2234] py-16 relative flex justify-center">
+    <div className="w-full bg-[#0D2234] py-16 my-16 relative flex justify-center">
       <Image
         src="./lightGreenStyle.svg"
         alt="style"
@@ -87,18 +85,18 @@ const Analytics = ({ analyticsData }: AnalyticsProps) => {
         className="absolute top-0 right-0 w-auto h-auto"
       />
       <div className="">
-        <div className="w-full m-auto">
-          <div className="text-secondary text-2xl lg:text-4xl text-center font-medium pb-5">
+        <div className="container m-auto">
+          <h2 className="text-secondary text-center font-medium pb-5 lg:px-20">
             {analyticsData?.heading}
-          </div>
+          </h2>
           <DottedLine />
 
-          <div className="text-white py-5  text-center text-wrap container">
+          <p className="text-white text-center text-lg py-7 lg:px-12 xl:px-40">
             {analyticsData?.text}
-          </div>
+          </p>
         </div>
         <div
-          className="grid lg:grid-cols-3 md:grid-cols-2 max-sm:grid-cols-1 gap-5
+          className=" grid lg:grid-cols-3 md:grid-cols-2 max-sm:grid-cols-1 gap-5
            lg:gap-x-5 xl:gap-x-36 
          lg:gap-y-20  mt-5"
         >
@@ -123,7 +121,7 @@ const Analytics = ({ analyticsData }: AnalyticsProps) => {
             );
           })}
         </div>
-        <div className="w-full flex flex-row justify-end mt-5 lg:hidden">
+        <div className="container flex flex-row justify-end mt-5 lg:hidden">
           <div
             className="text-white cursor-pointer mr-2"
             onClick={previousBlock}

@@ -2,11 +2,11 @@ import type { AboutLayoutItemType } from "@/src/types/AboutUsTypes";
 import React from "react";
 import HeroSection from "../sharedComponents/HeroSection";
 import ServicesSection from "../Home/ServicesSection";
-import SymbolOfExcellence from "./SymbolOfExcellence";
 import ClientsSection from "../Home/ClientsSection";
 import TechnologyStackSection from "../EnterpriseSoftwareServices/TechnologyStackSection";
 import AccordianSection from "../sharedComponents/AccordianSection";
 import type { ServiceBlockItemType } from "@/src/types/ServiceBlockTypes";
+import WhyAllZoneSection from "../Home/WhyAllZoneSection";
 
 type DedicatedTeamDataProps = {
   DedicatedTeamData: AboutLayoutItemType[];
@@ -85,19 +85,22 @@ const DedicatedTeam = ({ DedicatedTeamData }: DedicatedTeamDataProps) => {
         accordianContent={accordianContentCard}
       />
       <div className="relative">
-        <div className="absolute top-16 md:top-0 z-[0] w-full">
+        <div className="absolute top-12 md:top-0 z-[0] w-full">
           <img
-            src="/assets/images/dedicatedTeamBG.png"
+            src="/assets/images/dedicatedTeam.png"
             alt="Technology Background"
             className="w-full h-full"
           />
         </div>
-        <ServicesSection serviceData={WhyAllZoneBest} />
+        <ServicesSection
+          serviceData={WhyAllZoneBest}
+          isBackgroundWhite={true}
+        />
       </div>
       <TechnologyStackSection
         technologyStacksData={DevelopmentTechnologiesData}
       />
-      <SymbolOfExcellence SymbolOfExcellenceData={WhatMakeExcellent} />
+      <WhyAllZoneSection whyAllzoneData={WhatMakeExcellent} />
       <ClientsSection clientsData={OurClients} />
     </div>
   );
