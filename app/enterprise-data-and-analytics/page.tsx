@@ -55,7 +55,14 @@ async function EnterpriseDataAndAnalyticsPage() {
       <HeroSection heroSectionData={heroSectionData} />
       <ServiceInfoSection sectionData={serviceInfoSectionData} />
       <AccordianSection accordianSectionData={accordianSectionData} />
-      <ServicesSection serviceData={servicesData} />
+      <div className="relative">
+        <div className="absolute w-full flex justify-center">
+          <h2 className="w-full text-9xl text-center font-bold text-[#20C8971A] overflow-hidden text-nowrap">
+            Data Analytics
+          </h2>
+        </div>
+        <ServicesSection serviceData={servicesData} isBackgroundWhite={true} />
+      </div>
       <DataAnalyticsOverview analyticsData={analyticsData} />
       <Analytics analyticsData={analytics} />
     </div>

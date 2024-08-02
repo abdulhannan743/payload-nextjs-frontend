@@ -14,4 +14,5 @@ export type DataAnalyticsOverviewType = {
   heading: string;
   text: string;
   Image: Image;
+  blockName: string;
 };

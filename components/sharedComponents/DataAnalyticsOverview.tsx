@@ -9,17 +9,39 @@ type analyticsDataProps = {
 };
 
 function DataAnalyticsOverview({ analyticsData }: analyticsDataProps) {
+  const ChangeDescriptionStyle =
+    analyticsData?.blockName === "Why IoT Application" ? true : false;
+
   return (
-    <div className="container flex flex-col gap-12 md:flex-row  items-start py-8 justify-between">
-      <div className="w-full md:w-1/3">
-        <img src={analyticsData?.Image?.url} alt={analyticsData?.Image?.alt} />
+    <div className="container flex flex-col gap-5 lg:gap-0 lg:flex-row  items-start justify-between">
+      <div className="w-full lg:w-1/3 xl:w-1/2 flex justify-center items-center">
+        <img
+          src={analyticsData?.Image?.url}
+          alt={analyticsData?.Image?.alt}
+          className={`${
+            ChangeDescriptionStyle ? "w-full h-full" : "w-[450px] h-[600px]"
+          }`}
+        />
       </div>
-      <div className="flex flex-col gap-8 w-full md:w-2/3 items-baseline pr-32">
-        <h2 className="text-4xl font-bold text-lightDark ">
+      <div className="flex flex-col gap-8 w-full lg:w-1/2 items-baseline">
+        <h2 className="text-4xl font-bold text-lightDark">
           {analyticsData.heading}
         </h2>
         <DottedLine />
-        <RenderDescription description={analyticsData.text} />
+
+        <div
+          className={`whitespace-pre-wrap ${
+            ChangeDescriptionStyle
+              ? "text-base font-semibold"
+              : "text-xl font-normal"
+          } text-gray`}
+        >
+          {ChangeDescriptionStyle ? (
+            analyticsData.text
+          ) : (
+            <RenderDescription description={analyticsData.text} />
+          )}
+        </div>
       </div>
     </div>
   );

@@ -17,18 +17,20 @@ function ServicesSection({
   shouldScrollEnable = true,
 }: ServicesProps) {
   return (
-    <div className={`bg-${isBackgroundWhite ? "white" : "light-gray"} my-12`}>
+    <div
+      className={`bg-${
+        isBackgroundWhite ? "white" : "light-gray"
+      } py-12 mt-10 md:mt-0`}
+    >
       <div className="container mx-auto">
         <div
-          className={`max-w-5xl mx-auto flex flex-col justify-center gap-6 mb-12 ${
+          className={`flex flex-col justify-center gap-6 mb-12 ${
             isContentCentered ? "items-center text-center" : "items-baseline"
           }`}
         >
-          <h1 className="text-3xl md:text-4xl font-bold text-lightDark">
-            {serviceData?.title}
-          </h1>
+          <h1 className="text-lightDark">{serviceData?.title}</h1>
           <DottedLine />
-          <p className="text-base md:text-lg text-gray">
+          <p className="text-gray max-w-4xl mx-auto">
             {serviceData?.description}
           </p>
         </div>

@@ -50,8 +50,8 @@ const renderField = ({
       </div>
     ),
     email: () => (
-      <div key={index} className="flex gap-x-4 mb-4">
-        <div className="w-1/2">
+      <div key={index} className="lg:flex gap-x-4 mb-4">
+        <div className=" w-full lg:w-1/2">
           <label className="block text-gray-700 font-semibold">
             {field.label}
           </label>
@@ -62,7 +62,7 @@ const renderField = ({
             </span>
           )}
         </div>
-        <div className="w-1/2">
+        <div className="lg:w-1/2 w-full lg:mt-0 mt-4">
           <label className="block text-gray-700 font-semibold">
             {field.name === "phone" ? field.label : "Phone *"}
           </label>

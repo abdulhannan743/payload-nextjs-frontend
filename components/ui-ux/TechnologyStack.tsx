@@ -10,23 +10,23 @@ const TechnologyStack = ({
   technologySectionData,
 }: technologySectionDataProps) => {
   return (
-    <div className="max-w-[1060px] mx-auto py-5">
-      <div className="text-2xl lg:text-4xl font-bold px-5 text-center">
+    <div className="container mx-auto my-16">
+      <div className="w-full md:container text-2xl lg:text-4xl font-bold text-center text-lightDark">
         {technologySectionData?.heading}
       </div>
       <div className="my-3">
         <DottedLine />
       </div>
-      <div className="text-center text-md lg:text-lg">
+      <div className="w-full md:container text-center text-md lg:text-lg text-gray xl:px-16">
         {technologySectionData?.text}
       </div>
       {
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-10 mt-5">
-
+        <div
+          className={`grid grid-cols-2 sm:grid-cols-3 gap-10 mt-10 ${
+            technologySectionData?.content.length == 6 ? "md:grid-cols-3" : ""
+          }`}
+        >
           {technologySectionData?.content?.map((item, index) => (
-
-          {technologySectionData?.content.map((item, index) => (
-
             <div
               key={index}
               className="flex flex-col items-center justify-center"

@@ -5,16 +5,17 @@ import CarousalContainer from "../ui/CarousalContainer";
 import { ServiceBlockItemType } from "@/src/types/ServiceBlockTypes";
 import { HeroSectionType } from "@/src/types/HeroBlockTypes";
 import HireDeveloperButton from "../ui/HireDeveloperButton";
+import { useWindowSize } from "@/src/utils/useWindowSizeForResponsiveness";
 
 type HeroSectionProps = {
   heroSectionData: HeroSectionType;
 };
 
 const SlidesCard = (item: ServiceBlockItemType) => {
-  const windowSize = window.innerWidth;
+  const windowSize = useWindowSize();
   return (
-    <div className="relative flex flex-col lg:flex-row  w-full justify-between items-center container">
-      <div className="w-full lg:w-1/3 xl:w-1/2  text-center lg:text-start">
+    <div className="relative flex flex-col lg:flex-row justify-between items-center container">
+      <div className="w-full lg:w-1/2 xl:w-1/2  text-center lg:text-start">
         <div className="relative flex flex-col justify-between">
           <h1 className="text-primary text-4xl font-bold">{item?.title}</h1>
           <img
@@ -40,10 +41,14 @@ const SlidesCard = (item: ServiceBlockItemType) => {
               src={slide.media.url}
               alt={slide.media.alt}
               width={
-                windowSize < 768 ? slide.media.width / 2 : slide.media.width
+                windowSize.width < 768
+                  ? slide.media.width / 2
+                  : slide.media.width
               }
               height={
-                windowSize < 768 ? slide.media.height / 2 : slide.media.height
+                windowSize.width < 768
+                  ? slide.media.height / 2
+                  : slide.media.height
               }
               className="object-cover"
             />

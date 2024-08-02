@@ -9,15 +9,16 @@ import UiUxDesign from "./uiux-Design";
 import AccordianSection from "../sharedComponents/AccordianSection";
 import ServicesSection from "../Home/ServicesSection";
 import "./ui-ux.css";
+import Image from "next/image";
 
 interface HeroSectionProps {
   uiUxPageData: LayoutItemType[];
 }
 const UI_UX = ({ uiUxPageData }: HeroSectionProps) => {
-  const heroSectionData = uiUxPageData?.find(
+  const heroSectionData: any = uiUxPageData?.find(
     (item: any) => item?.blockName === "Hero"
   );
-  const ServiceSectionData = uiUxPageData?.find(
+  const ServiceSectionData: any = uiUxPageData?.find(
     (item: any) => item?.blockName === "service"
   );
   const WhyChoseSectionData = uiUxPageData?.find(
@@ -32,18 +33,30 @@ const UI_UX = ({ uiUxPageData }: HeroSectionProps) => {
   const customerSectionData: ServiceBlockType | undefined = uiUxPageData?.find(
     (item: any) => item?.blockName === "customer"
   ) as ServiceBlockType | undefined;
-  console.log(customerSectionData, "customerSectionData");
+
   return (
     <div>
       <HeroSection heroSectionData={heroSectionData} />
       <ServiceInfoSection sectionData={ServiceSectionData} />
-      <UiUxDesign />
-      <AccordianSection accordianSectionData={WhyChoseSectionData} />
+      <div>
+        <Image
+          src="/assets/images/uiux-designing.png"
+          alt="ui ux designing"
+          layout="responsive"
+          width={100}
+          height={100}
+        />
+      </div>
+      <AccordianSection
+        accordianSectionData={WhyChoseSectionData}
+        backgroundStyling={true}
+      />
       <ProcessSection processSectionData={processSectionData} />
       <TechnologyStack technologySectionData={technologySectionData} />
       <ServicesSection
         serviceData={customerSectionData}
         shouldScrollEnable={false}
+        isBackgroundWhite={true}
       />
     </div>
   );

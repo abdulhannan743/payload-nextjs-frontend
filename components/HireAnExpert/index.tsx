@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import DeveloperHeroSection from "./DeveloperHeroSection";
@@ -5,16 +7,28 @@ import LogoSection from "../Home/logoSection";
 import DevelopersSection from "./DevelopersSection";
 import HiringProcessSection from "./HiringProcessSection";
 import BannerSection from "../sharedComponents/BannerSection";
+import { useWindowSize } from "@/src/utils/useWindowSizeForResponsiveness";
 type HireAnExpertProps = {
   hireAnExpertPageData: any;
 };
 function HireAnExpert({ hireAnExpertPageData }: HireAnExpertProps) {
+  const windowSize = useWindowSize();
+
+  let logoData;
+  if (windowSize.width < 1024) {
+    logoData = hireAnExpertPageData?.find(
+      (item: any) => item?.blockName === "logo mobile"
+    );
+  } else {
+    logoData = hireAnExpertPageData?.find(
+      (item: any) => item?.blockName === "logo wide"
+    );
+  }
+
   const heroSectionData = hireAnExpertPageData.find(
     (item: any) => item.blockName === "Hero Section"
   );
-  const logoData = hireAnExpertPageData.find(
-    (item: any) => item.blockName === "logo wide"
-  );
+
   const developersSectionData = hireAnExpertPageData.find(
     (item: any) => item.blockName === "Developers Section"
   );

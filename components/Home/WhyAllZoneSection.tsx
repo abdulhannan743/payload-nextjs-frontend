@@ -20,7 +20,7 @@ const WhyAllzoneCarousalCard = (item: ServiceBlockItemType) => (
     <Image
       src={`/assets/icons/cardEllipse.svg`}
       alt={`${item.title} icon`}
-      className="absolute top-0 right-0"
+      className="absolute top-0 right-0 rounded-tr-lg"
       width={100}
       height={100}
     />
@@ -33,7 +33,7 @@ const WhyAllzoneCarousalCard = (item: ServiceBlockItemType) => (
     <p className="text-sm text-gray font-medium max-w-5xl mx-auto">
       {item.description}
     </p>
-    <div className="flex justify-center align-center bg-primary rounded-md h-16 px-8 py-4 items-center  mt-auto text-center">
+    <div className="flex justify-center align-center bg-primary rounded-md h-16 p-4 items-center mt-auto text-center">
       <h3 className="text-lg font-semibold text-white">{item.title}</h3>
     </div>
   </div>
@@ -42,13 +42,19 @@ const WhyAllzoneCarousalCard = (item: ServiceBlockItemType) => (
 function WhyAllZoneSection({ whyAllzoneData }: WhyAllZoneSectionProps) {
   return (
     <div className="container pt-16 mx-auto bg-[#FFFFFFCC]">
-      <h1 className="text-3xl md:text-4xl font-bold text-center mb-7 max-w-3xl mx-auto">
+      <h1
+        className={`text-center mb-7 mx-auto ${
+          !whyAllzoneData?.description && "max-w-3xl"
+        }`}
+      >
         {whyAllzoneData.title}
       </h1>
       <div className="pb-7">
         <DottedLine />
       </div>
-      <p className="text-gray text-center mb-7">{whyAllzoneData.description}</p>
+      <p className="text-gray text-center mb-7 max-w-4xl mx-auto">
+        {whyAllzoneData.description}
+      </p>
       <CarousalContainer
         carousalData={whyAllzoneData?.items}
         renderCard={WhyAllzoneCarousalCard}

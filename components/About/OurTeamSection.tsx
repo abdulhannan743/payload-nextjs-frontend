@@ -47,31 +47,11 @@ const OurTeamSection = ({ TeamSectionData }: OurTeamProps) => {
         </h2>
         <DottedLine />
       </div>
-      <div className="hidden md:block mt-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
-          {TeamSectionData?.content.map((content, index: number) => (
-            <div key={index} className="flex flex-col items-center">
-              <div className="w-72 h-72">
-                <Image
-                  src={content?.image.url || ""}
-                  width={content?.image.width}
-                  height={content?.image.height}
-                  alt={content?.image.alt || ""}
-                />
-              </div>
-              <h3 className="text-xl font-semibold text-primary mt-4">
-                {content?.heading}
-              </h3>
-              <p className="text-base text-secondary mt-1 font-medium">
-                {content.text}
-              </p>
-            </div>
-          ))}
-        </div>
-      </div>
       <CarousalContainer
         carousalData={TeamSectionData?.content}
         renderCard={TeamCarousalCard}
+        shouldFiveSlidesPerViewEnable={false}
+        isOneSlidePerView={false}
       />
     </div>
   );
