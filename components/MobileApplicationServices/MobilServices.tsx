@@ -2,7 +2,6 @@ import React from "react";
 import DottedLine from "../ui/DottedLine";
 import RenderDescription from "../sharedComponents/RenderDescription";
 import { ServiceBlockType } from "@/src/types/ServiceBlockTypes";
-import Image from "next/image";
 
 type MobilServicesProps = {
   mobilServicesData: ServiceBlockType;
@@ -26,12 +25,7 @@ function MobilServices({ mobilServicesData }: MobilServicesProps) {
             } items-center`}
           >
             <div className="w-full md:w-1/2">
-              <Image
-                src={item?.image?.url || ""}
-                alt={item?.image?.alt || ""}
-                width={item.image?.width}
-                height={item.image?.height}
-              />
+              <img src={item?.image?.url} alt={item?.image?.alt} />
             </div>
             <div className="flex flex-col gap-4 w-full md:w-1/2">
               <h2 className="text-4xl font-bold text-lightDark">

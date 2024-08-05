@@ -1,7 +1,6 @@
 import React from "react";
 import { Button } from "../ui/button";
 import { AboutLayoutItemType } from "@/src/types/AboutUsTypes";
-import Image from "next/image";
 
 type HeroSectionProps = {
   heroSectionData: AboutLayoutItemType | undefined;
@@ -69,12 +68,10 @@ function HeroSection({
             )}
           </div>
         </div>
-        <Image
+        <img
           className="absolute inset-0 object-cover w-full h-full bg-cover lg:object-fill"
           src={heroSectionData?.Image?.url || ""}
           alt={heroSectionData?.Image?.alt || ""}
-          width={heroSectionData?.Image?.width}
-          height={heroSectionData?.Image?.height}
         />
         {isDisplayCircleImage && (
           <div>
