@@ -1,11 +1,12 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import NavMenu from "./NavMenu";
-import header from "@/src/globalData/header.json";
+import ServicesSubMenu from "./ServicesSubMenu";
 import { Button } from "../ui/button";
 import NavItem from "./NavItem";
-import { fetchWrapper } from "@/src/utils/fetchWrapper";
 import type { HeaderType, NavLinkType } from "@/src/types/headerTypes";
 
 function transformData(data: HeaderType): { navLinks: NavLinkType[] } {
@@ -36,16 +37,19 @@ function transformData(data: HeaderType): { navLinks: NavLinkType[] } {
   );
 }
 
-export default async function Header() {
-  const header: HeaderType = await fetchWrapper({
-    url: "/api/globals/header",
-    method: "GET",
-  });
+export default function Header({ header }: { header: HeaderType }) {
+  const pathname = usePathname();
 
   const buttonLink = header.link?.[0];
   const buttonLabel = buttonLink?.label;
   const buttonUrl = buttonLink?.page?.slug;
   const newData = transformData(header);
+  const servicesSubMenu = newData.navLinks.find(
+    (item) => item.label === "Services"
+  )?.subMenu;
+  // const IndustriesSubMenu = newData.navLinks.find(
+  //   (item) => item.label === "Industries"
+  // )?.subMenu;
 
   return (
     <div className="w-full md:container sticky top-0 z-50">
@@ -90,5 +94,6 @@ export default async function Header() {
         </nav>
       </header>
     </div>
+
   );
 }

@@ -1,9 +1,18 @@
 import React from "react";
-import { fetchWrapper } from "@/src/utils/fetchWrapper";
+import { Metadata } from "next";
 
+import { fetchWrapper } from "@/src/utils/fetchWrapper";
+import { getPageURL } from "@/src/utils";
+import { RESOURCE_TYPES } from "@/src/constants/common";
+import { fetchMetadata } from "@/src/utils/metaData";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const url = getPageURL(RESOURCE_TYPES.TECHNOLOGIES);
+  return fetchMetadata(url);
+}
 async function TechnologiesPage() {
   const response: any = await fetchWrapper({
-    url: "/api/pages?where[slug][equals]=technologies",
+    url: getPageURL(RESOURCE_TYPES.TECHNOLOGIES),
     method: "GET",
   });
   const homeData = response?.docs[0].layout;

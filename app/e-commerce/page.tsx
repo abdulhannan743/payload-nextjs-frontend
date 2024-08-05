@@ -1,11 +1,18 @@
+import { Metadata } from "next";
+
 import HeroSection from "@/components/sharedComponents/HeroSection";
 import TwoColumnSection from "@/components/sharedComponents/TwoColumnSection";
 import WhyAllZoneSection from "@/components/Home/WhyAllZoneSection";
 import ServicesSection from "@/components/Home/ServicesSection";
+import { RESOURCE_TYPES } from "@/src/constants/common";
 import { fetchWrapper } from "@/src/utils/fetchWrapper";
 import { getPageURL } from "@/src/utils";
-import { RESOURCE_TYPES } from "@/src/constants/common";
+import { fetchMetadata } from "@/src/utils/metaData";
 
+export async function generateMetadata(): Promise<Metadata> {
+  const url = getPageURL(RESOURCE_TYPES.ECOMMERCE);
+  return fetchMetadata(url);
+}
 export default async function ECommercePage() {
   const response: any = await fetchWrapper({
     url: getPageURL(RESOURCE_TYPES.ECOMMERCE),

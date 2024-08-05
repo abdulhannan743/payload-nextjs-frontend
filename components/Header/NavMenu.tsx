@@ -1,5 +1,7 @@
 "use client";
 import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 import {
   Sheet,
   SheetContent,
@@ -9,44 +11,18 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { FiAlignJustify } from "react-icons/fi";
-import header from "@/src/globalData/header.json";
-
-import Link from "next/link";
-import Image from "next/image";
 import NavItem from "./NavItem";
-import type { HeaderType, NavLinkType } from "@/src/types/headerTypes";
+import { NavLinkType } from "@/src/types/headerTypes";
+import { Image as ImageType } from "@/src/types/CommonTypes";
 
-function transformData(data: HeaderType) {
-  return data.navLinks.reduce<{ navLinks: NavLinkType[] }>(
-    (acc, item) => {
-      const transformedItem = { ...item };
+type NavMenuProps = {
+  logo: ImageType;
+  newData: {
+    navLinks: NavLinkType[];
+  };
+};
 
-      if (item.parent) {
-        const parentIndex = acc.navLinks.findIndex(
-          (el) => el.link.id === item.parent!.id
-        );
-
-        if (parentIndex !== -1) {
-          if (!acc.navLinks[parentIndex].childrens) {
-            acc.navLinks[parentIndex].childrens = [];
-          }
-          acc?.navLinks[parentIndex]?.childrens?.push(transformedItem);
-        } else {
-          acc.navLinks.push(transformedItem);
-        }
-      } else {
-        acc.navLinks.push(transformedItem);
-      }
-
-      return acc;
-    },
-    { navLinks: [] }
-  );
-}
-
-const newData = transformData(header);
-
-const NavMenu: React.FC = () => {
+function NavMenu({ logo, newData }: NavMenuProps) {
   const [isOpen, setIsOpen] = React.useState(false);
 
   const closeSheet = () => setIsOpen(false);
@@ -65,11 +41,11 @@ const NavMenu: React.FC = () => {
               <div className="flex lg:flex-1">
                 <Link href="/">
                   <Image
-                    src={header.logo.url}
+                    src={logo.url}
                     className="h-10 w-auto"
-                    width={header.logo.width}
-                    height={header.logo.height}
-                    alt={header.logo.alt}
+                    width={logo.width}
+                    height={logo.height}
+                    alt={logo.alt}
                   />
                 </Link>
               </div>
@@ -93,6 +69,6 @@ const NavMenu: React.FC = () => {
       </Sheet>
     </div>
   );
-};
+}
 
 export default NavMenu;

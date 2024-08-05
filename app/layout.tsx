@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
-import "@/src/styles/globals.css";
-import { cn } from "@/lib/utils";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import IndustriesFAQCard from "@/components/Home/IndustriesFAQCard";
 import ContactFormBlock from "../components/ContactUs/ContactFormBlock";
 import { RESOURCE_TYPES } from "@/src/constants/common";
+import { cn } from "@/lib/utils";
 import { getPageURL } from "@/src/utils";
 import { fetchWrapper } from "@/src/utils/fetchWrapper";
-import IndustriesFAQCard from "@/components/Home/IndustriesFAQCard";
+import { fetchMetadata } from "@/src/utils/metaData";
+import { AZT_ROUTES } from "@/src/constants/routes";
+import { HeaderType } from "@/src/types/headerTypes";
+import "@/src/styles/globals.css";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -16,10 +19,10 @@ const roboto = Roboto({
   variable: "--font-roboto",
 });
 
-export const metadata: Metadata = {
-  title: "AllZone Technologies",
-  description: "Digitally Yours",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const url = getPageURL(RESOURCE_TYPES.HOME);
+  return fetchMetadata(url);
+}
 
 type RootLayoutProps = {
   children: React.ReactNode;
@@ -29,6 +32,10 @@ type RootLayoutProps = {
 export default async function RootLayout({ children }: RootLayoutProps) {
   const response: any = await fetchWrapper({
     url: getPageURL(RESOURCE_TYPES.HOME),
+    method: "GET",
+  });
+  const header: HeaderType = await fetchWrapper({
+    url: AZT_ROUTES.HEADER,
     method: "GET",
   });
   const homePageData = response?.docs[0]?.layout;
@@ -48,11 +55,10 @@ export default async function RootLayout({ children }: RootLayoutProps) {
           roboto.variable
         )}
       >
-        <Header />
+        <Header header={header} />
         {children}
         <ContactFormBlock {...form} />
         <IndustriesFAQCard matadata={matadata} />
-
         <Footer />
       </body>
     </html>

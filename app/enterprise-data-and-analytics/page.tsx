@@ -1,4 +1,6 @@
 import React from "react";
+import { Metadata } from "next";
+
 import HeroSection from "@/components/sharedComponents/HeroSection";
 import ServiceInfoSection from "@/components/sharedComponents/ServiceInfoSection";
 import AccordianSection from "@/components/sharedComponents/AccordianSection";
@@ -12,6 +14,12 @@ import { AboutLayoutItemType } from "@/src/types/AboutUsTypes";
 import { ServiceBlockType } from "@/src/types/ServiceBlockTypes";
 import { DataAnalyticsOverviewType } from "@/src/types/DataAnalyticsTypes";
 import Image from "next/image";
+import { fetchMetadata } from "@/src/utils/metaData";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const url = getPageURL(RESOURCE_TYPES.ENTERPRISE_DATA_AND_ANALYTICS);
+  return fetchMetadata(url);
+}
 
 async function EnterpriseDataAndAnalyticsPage() {
   const response: any = await fetchWrapper({
