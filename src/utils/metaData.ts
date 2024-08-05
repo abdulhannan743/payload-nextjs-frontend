@@ -7,10 +7,10 @@ export async function fetchMetadata(url: string): Promise<Metadata> {
     method: "GET",
   });
 
-  const uiUxMetaaData = response?.docs[0].meta;
+  const uiUxMetaaData = response?.docs[0]?.meta;
   return {
-    title: uiUxMetaaData.title,
-    description: uiUxMetaaData.description,
-    keywords: uiUxMetaaData.keywords,
+    title: uiUxMetaaData?.title || "",
+    description: uiUxMetaaData?.description || "",
+    keywords: uiUxMetaaData?.keywords || "",
   };
 }

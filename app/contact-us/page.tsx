@@ -5,6 +5,7 @@ import { RESOURCE_TYPES } from "@/src/constants/common";
 import { getPageURL } from "@/src/utils";
 import { fetchWrapper } from "@/src/utils/fetchWrapper";
 import { fetchMetadata } from "@/src/utils/metaData";
+import HeroSection from "@/components/sharedComponents/HeroSection";
 
 export async function generateMetadata(): Promise<Metadata> {
   const url = getPageURL(RESOURCE_TYPES.CONTACT_US);
@@ -16,17 +17,13 @@ async function ContactUsPage() {
     method: "GET",
   });
   const homeData = response?.docs[0].layout;
+
+  const heroSectionData = homeData?.find(
+    (item: any) => item?.blockName === "Hero"
+  );
   return (
     <>
-      {homeData?.map((data: any) => (
-        // just for the time being
-        <div key={data?.id}>
-          <h3 className="text-lg font-bold text-primary mb-2">
-            {data?.heading}
-          </h3>
-          <p className="text-sm text-gray text-wrap">{data?.text}</p>
-        </div>
-      ))}
+      <HeroSection heroSectionData={heroSectionData} isContentCentered={true} />
     </>
   );
 }
