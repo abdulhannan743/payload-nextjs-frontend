@@ -1,3 +1,5 @@
+import { Image } from "./CommonTypes";
+
 export interface LinkType {
   id: string;
   slug: string;
@@ -12,7 +14,24 @@ export interface NavLinkType {
     heading: string;
     text: string;
   }[];
+  subMenu: SubMenuType[];
 }
+
+export type SubMenuType = {
+  heading: string;
+  link: {
+    label: string;
+    page: {
+      slug: string;
+    };
+  }[];
+  subMenuItems: {
+    icon: Image;
+    title: string;
+    description: string;
+    page: LinkType;
+  }[];
+};
 
 export interface HeaderType {
   logo: {

@@ -1,11 +1,12 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import NavMenu from "./NavMenu";
-import header from "@/src/globalData/header.json";
+import ServicesSubMenu from "./ServicesSubMenu";
 import { Button } from "../ui/button";
 import NavItem from "./NavItem";
-import { fetchWrapper } from "@/src/utils/fetchWrapper";
 import type { HeaderType, NavLinkType } from "@/src/types/headerTypes";
 
 function transformData(data: HeaderType): { navLinks: NavLinkType[] } {
@@ -36,25 +37,28 @@ function transformData(data: HeaderType): { navLinks: NavLinkType[] } {
   );
 }
 
-export default async function Header() {
-  const header: HeaderType = await fetchWrapper({
-    url: "/api/globals/header",
-    method: "GET",
-  });
+export default function Header({ header }: { header: HeaderType }) {
+  const pathname = usePathname();
 
   const buttonLink = header.link?.[0];
   const buttonLabel = buttonLink?.label;
   const buttonUrl = buttonLink?.page?.slug;
   const newData = transformData(header);
+  const servicesSubMenu = newData.navLinks.find(
+    (item) => item.label === "Services"
+  )?.subMenu;
+  // const IndustriesSubMenu = newData.navLinks.find(
+  //   (item) => item.label === "Industries"
+  // )?.subMenu;
 
   return (
     <header className="bg-white py-14">
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between lg:px-8 lg:shadow lg:rounded-xl lg:p-3 lg:border-2 lg:py-6"
+        className="mx-auto flex max-w-7xl items-center justify-between lg:px-8 lg:rounded-xl lg:shadow-header-shadow lg:p-3 lg:py-6 relative"
         aria-label="Global"
       >
         <div className="text-black ml-8 sm:ml-12 md:ml-16 lg:hidden">
-          <NavMenu />
+          <NavMenu logo={header?.logo} newData={newData} />
         </div>
         <div className="flex lg:flex-1">
           <Link href="/">
@@ -67,15 +71,39 @@ export default async function Header() {
             />
           </Link>
         </div>
-        <ul className="hidden lg:flex lg:gap-x-6	 text-black text-md">
+        <ul className="hidden lg:flex lg:gap-x-6 text-navbar-black text-sm">
           {newData.navLinks.map((link) => (
-            <NavItem
+            <div
+              className={`nav-item border-b-2 hover:text-primary hover:border-primary ${
+                pathname === `/${link.link.slug}` ||
+                (link.link.slug === "home" && pathname === "/")
+                  ? "text-primary border-primary"
+                  : "border-transparent"
+              }`}
               key={link.label}
-              link={link}
-              fontWeight="font-semibold"
-              closeSheet={undefined}
-              showPlusIcon={undefined}
-            />
+            >
+              <NavItem
+                link={link}
+                fontWeight="font-semibold"
+                closeSheet={undefined}
+                showPlusIcon={undefined}
+              />
+              <div className="dropdown-content">
+                {(link.label === "Services" || link.label === "Industries") && (
+                  <div className="mx-auto max-w-7xl px-16 lg:rounded-xl py-6 bg-white lg:shadow-header-shadow">
+                    {(link.label === "Services" ||
+                      link.label === "Industries") &&
+                      servicesSubMenu && (
+                        <ServicesSubMenu servicesSubMenu={servicesSubMenu} />
+                      )}
+                    {/* just for the future reference
+                  {link.label === "Industries" && (
+                    <TechnologiesSubMenu />
+                  )} */}
+                  </div>
+                )}
+              </div>
+            </div>
           ))}
         </ul>
         <Link href={`/${buttonUrl}`}>
