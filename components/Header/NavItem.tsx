@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { FiPlus } from "react-icons/fi";
+import { FiMinus, FiPlus } from "react-icons/fi";
 import type { NavLinkType } from "@/src/types/headerTypes";
 
 interface NavItemProps {
@@ -17,6 +17,11 @@ const NavItem: React.FC<NavItemProps> = ({
   fontWeight,
 }) => {
   const href = link.link.slug === "home" ? "/" : `/${link.link.slug}`;
+  const [isSubMenuOpen, setIsSubMenuOpen] = React.useState(false);
+
+  const toggleSubMenu = () => {
+    setIsSubMenuOpen(!isSubMenuOpen);
+  };
 
   return (
     <li key={link.label} className="relative group pt-2">
@@ -26,15 +31,26 @@ const NavItem: React.FC<NavItemProps> = ({
         <Link href={href} onClick={closeSheet}>
           <span>{link.label}</span>
         </Link>
-        {showPlusIcon && <FiPlus />}
+        {showPlusIcon ? (
+          isSubMenuOpen ? (
+            <FiMinus onClick={toggleSubMenu} />
+          ) : (
+            <FiPlus onClick={toggleSubMenu} />
+          )
+        ) : null}
       </div>
-      {link.childrens && (
-        <ul className="absolute top-full left-0 bg-white shadow-md rounded-lg py-2 px-4 hidden group-hover:block z-10">
-          {link.childrens.map((sublink) => (
-            <li key={sublink.label} className="pt-2">
-              <Link href={`/${sublink.link.slug}`} onClick={closeSheet}>
-                {sublink.label}
+      {isSubMenuOpen && link.subMenu.length > 0 && (
+        <ul className="text-left">
+          {link.subMenu[0].subMenuItems.map((sublink) => (
+            <li key={sublink.title} className="pt-2">
+              <Link
+                href={`/${sublink.page.slug}`}
+                onClick={closeSheet}
+                className="pl-4"
+              >
+                {sublink.title}
               </Link>
+              <hr className="mt-2" />
             </li>
           ))}
         </ul>

@@ -68,6 +68,7 @@ const config = {
         "dark-blue": "var(--dark-blue)",
         "secondary-light": "var(--secondary-light)",
         zink: "var(--zink)",
+        "navbar-black": "var(--navbar-black)",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -101,6 +102,9 @@ const config = {
       },
       screens: {
         xl: "1440px",
+      },
+      boxShadow: {
+        "header-shadow": "0px 0px 5px 0px #00000026",
       },
     },
   },
