@@ -22,8 +22,11 @@ export interface Layout {
 export interface content {
   layout: LayoutItemType[];
   id: string;
-  image?: Image;
   heading: string;
+  text: string;
+  content: layout[];
+
+  image?: Image;
 }
 export interface layout {
   Image?: Image;

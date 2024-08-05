@@ -1,12 +1,20 @@
 import React from "react";
+import { Metadata } from "next";
+
+import { RESOURCE_TYPES } from "@/src/constants/common";
 import { fetchWrapper } from "@/src/utils/fetchWrapper";
+import { fetchMetadata } from "@/src/utils/metaData";
 import AIDevelopmentServices from "@/components/AI-Development-Services";
 import type {
   AboutLayoutItemType,
   AboutUsResponse,
 } from "@/src/types/AboutUsTypes";
 import { getPageURL } from "@/src/utils";
-import { RESOURCE_TYPES } from "@/src/constants/common";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const url = getPageURL(RESOURCE_TYPES.AI_DEVELOPMENT_SERVICES);
+  return fetchMetadata(url);
+}
 
 async function AboutUsPage() {
   const response: AboutUsResponse = await fetchWrapper({

@@ -9,6 +9,7 @@ import { RESOURCE_TYPES } from "@/src/constants/common";
 import { getPageURL } from "@/src/utils";
 import { fetchWrapper } from "@/src/utils/fetchWrapper";
 import IndustriesFAQCard from "@/components/Home/IndustriesFAQCard";
+import { fetchMetadata } from "@/src/utils/metaData";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -16,10 +17,10 @@ const roboto = Roboto({
   variable: "--font-roboto",
 });
 
-export const metadata: Metadata = {
-  title: "AllZone Technologies",
-  description: "Digitally Yours",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const url = getPageURL(RESOURCE_TYPES.HOME);
+  return fetchMetadata(url);
+}
 
 type RootLayoutProps = {
   children: React.ReactNode;
