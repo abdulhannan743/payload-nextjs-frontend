@@ -36,7 +36,7 @@ const IndustriesFAQCard: React.FC<IndustriesCardProps> = ({ matadata }) => {
             <AccordionTrigger
               closedClassName="text-black"
               openClassName="text-blue-900"
-              className="accordion-trigger text-base sm:text-lg lg:text-xl text-start"
+              className="accordion-trigger text-base sm:text-lg lg:text-xl"
             >
               {data.question}
             </AccordionTrigger>

@@ -4,7 +4,6 @@ import MobilServices from "./MobilServices";
 import ServiceInfoSection from "../sharedComponents/ServiceInfoSection";
 import ServicesSection from "../Home/ServicesSection";
 import AccordianSection from "../sharedComponents/AccordianSection";
-import Image from "next/image";
 
 type MobileApplicationServicesProps = {
   mobileApplicationServicesData: any;
@@ -32,20 +31,16 @@ function MobileApplicationServices({
   return (
     <div className="relative">
       <div className="absolute top-0 right-0 z-[-1]">
-        <Image
+        <img
           src="/assets/images/oval_background.png"
           alt="heroSectionBg"
-          width={450}
-          height={450}
           className="w-full h-full"
         />
       </div>
       <div className="absolute top-[18.5%] md:top-[22%] lg:top-[21.8%] xl:top-[19.5%] z-[0] w-full">
-        <Image
+        <img
           src="/assets/images/AppDevelopmentBG.png"
           alt="Technology Background"
-          width={1540}
-          height={1540}
           className="w-full h-full"
         />
       </div>

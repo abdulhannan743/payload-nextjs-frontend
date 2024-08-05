@@ -5,7 +5,6 @@ import ServiceInfoSection from "../sharedComponents/ServiceInfoSection";
 import AccordianSection from "../sharedComponents/AccordianSection";
 import WhyAllZoneSection from "../Home/WhyAllZoneSection";
 import Banner from "./banner";
-import Image from "next/image";
 
 interface DevopsProps {
   DevopsPageData: any;
@@ -31,13 +30,8 @@ const Devops = ({ DevopsPageData }: DevopsProps) => {
       <HeroSection heroSectionData={heroSectionData} />
       <ServiceInfoSection sectionData={servicesSectionData} />
       <div className="relative  ">
-        <div className="absolute top-20 md:top-0 w-full flex justify-center overflow-hidden">
-          <Image
-            src="/assets/images/devops.png"
-            alt="devops"
-            width={600}
-            height={600}
-          />
+        <div className="absolute w-full flex justify-center">
+          <img src="/assets/images/devops.png" alt="devops" />
         </div>
         <AccordianSection
           accordianSectionData={DevelopmentSectionData}

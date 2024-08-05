@@ -76,14 +76,12 @@ function AccordianSection({
                   >
                     <h2 className="text-4xl font-medium flex ">
                       {(item.image || item.iconName) && (
-                        <Image
+                        <img
                           src={
                             item?.image?.url ??
                             `/assets/icons/${item.iconName}.svg`
                           }
                           alt={item?.image?.alt ?? `${item.iconName} icon`}
-                          width={30}
-                          height={30}
                           className="mr-3"
                         />
                       )}

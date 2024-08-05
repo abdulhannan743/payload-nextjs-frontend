@@ -5,7 +5,6 @@ import ServicesSection from "../Home/ServicesSection";
 import AccordianSection from "../sharedComponents/AccordianSection";
 import WhyAllZoneSection from "../Home/WhyAllZoneSection";
 import TechnologyStackSection from "./TechnologyStackSection";
-import Image from "next/image";
 
 type EnterpriseSoftwareServicesProps = {
   enterpriseSoftwareServicesData: any;
@@ -37,29 +36,24 @@ function EnterpriseSoftwareServices({
   return (
     <div className="relative">
       <div className="absolute top-0 right-0 z-[-1]">
-        <Image
+        <img
           src="/assets/images/oval_background.png"
           alt="heroSectionBg"
-          width={450}
-          height={450}
+          className="w-full h-full"
+        />
+      </div>
+      <div className="absolute top-[55%] md:top-[67%] lg:top-[63%] z-[0] w-full h-[2%] md:h-[4%] lg:h-[8%]">
+        <img
+          src="/assets/images/Technologybg.png"
+          alt="Technology Background"
+          className="w-full h-full"
         />
       </div>
       <HeroSection heroSectionData={heroSectionData} />
       <ServiceInfoSection sectionData={companyInfoData} />
       <AccordianSection accordianSectionData={methodologiesData} />
       <WhyAllZoneSection whyAllzoneData={servicesProviderData} />
-      <div className="relative">
-        <div className="absolute top-12 md:top-0 lg:-top-4 xl:-top-8 flex items-center justify-center w-full">
-          <Image
-            src="/assets/images/Technologybg.png"
-            alt="Technology Background"
-            width={1140}
-            height={1140}
-          />
-        </div>
-        <TechnologyStackSection technologyStacksData={technologyStacksData} />
-      </div>
-
+      <TechnologyStackSection technologyStacksData={technologyStacksData} />
       <ServicesSection
         serviceData={enjoyOurServicesData}
         isBackgroundWhite={true}

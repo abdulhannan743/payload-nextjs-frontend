@@ -2,7 +2,6 @@
 import React from "react";
 import DottedLine from "../ui/DottedLine";
 import { ServiceType } from "@/src/types/ServicesTypes";
-import Image from "next/image";
 
 type TechnologyStackSectionProps = {
   technologyStacksData: ServiceType;
@@ -44,12 +43,7 @@ function TechnologyStackSection({
                     key={item.id}
                     className="flex flex-col items-center gap-2"
                   >
-                    <Image
-                      src={item.image?.url || ""}
-                      alt={item.title || ""}
-                      width={item.image?.width}
-                      height={item.image?.height}
-                    />
+                    <img src={item.image?.url} alt={item.title} />
                     <h3 className="text-lg text-dark-blue">{item.title}</h3>
                   </div>
                 ))}
@@ -61,12 +55,7 @@ function TechnologyStackSection({
       <div className="hidden md:flex items-end justify-evenly">
         {technologyStacksData.tabs[activeTab]?.items.map((item) => (
           <div key={item.id} className="flex flex-col items-center gap-6">
-            <Image
-              src={item.image?.url || ""}
-              alt={item.title || ""}
-              width={item.image?.width}
-              height={item.image?.height}
-            />
+            <img src={item.image?.url} alt={item.title} />
             <h3 className="text-lg text-dark-blue">{item.title}</h3>
           </div>
         ))}
