@@ -52,23 +52,25 @@ function IoTDevelopment({ IoTDevelopmentData }: IoTDevelopmentProps) {
   );
 
   return (
-    <div className="relative">
-      <div className="absolute max-sm:w-72 max-sm:h-96 top-0 right-0 max-sm:inset-y-[500px] z-[-1]">
-        <Image
-          src="/assets/images/Vector.png"
-          alt="heroSectionBg"
-          width={60}
-          height={60}
-        />
+    <div>
+      <div className="relative">
+        <div className="absolute right-0 z-[-1]">
+          <Image
+            src="/assets/images/Vector.png"
+            alt="heroSectionBg"
+            width={430}
+            height={430}
+          />
+        </div>
+        <HeroSection heroSectionData={data.businessGrowthSoftware} />
       </div>
-
-      <HeroSection heroSectionData={data.businessGrowthSoftware} />
       <ServiceInfoSection sectionData={data.companyBenifitsInfoData} />
-
       <div className="w-full overflow-hidden -z-1">
-        <img
-          src="assets/images/iot.png"
+        <Image
+          src="/assets/images/iot.png"
           alt="iotDevelopment"
+          width={1400}
+          height={1400}
           className="w-full h-full"
         />
       </div>
@@ -77,9 +79,14 @@ function IoTDevelopment({ IoTDevelopmentData }: IoTDevelopmentProps) {
 
       <Analytics analyticsData={data.analytics} />
       <TechnologyStack technologySectionData={data.technologySectionData} />
-      <div className="realtive">
+      <div className="realtive w-full">
         <div className="absolute right-0">
-          <img src="assets/images/semiOval.png" alt="" />
+          <Image
+            src="/assets/images/semiOval.png"
+            alt="semi oval"
+            width={250}
+            height={250}
+          />
         </div>
         <CustomDevelopment data={data.customDevelopmentData} />
       </div>

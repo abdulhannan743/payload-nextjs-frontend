@@ -1,5 +1,6 @@
 import React from "react";
 import type { AboutLayoutItemType } from "@/src/types/AboutUsTypes";
+import Image from "next/image";
 
 type HeroSectionProps = {
   heroSectionData: AboutLayoutItemType | undefined;
@@ -16,10 +17,12 @@ function Banner({ heroSectionData }: HeroSectionProps) {
           <p className="text-lg">{heroSectionData?.text}</p>
         </div>
       </div>
-      <img
+      <Image
         className="absolute inset-0 object-cover w-full h-full bg-cover lg:object-fill"
         src={heroSectionData?.Image?.url || ""}
         alt={heroSectionData?.Image?.alt || ""}
+        width={heroSectionData?.Image?.width}
+        height={heroSectionData?.Image?.height}
       />
     </div>
   );
