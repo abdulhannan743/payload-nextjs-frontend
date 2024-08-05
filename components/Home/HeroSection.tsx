@@ -15,11 +15,14 @@ const SlidesCard = (item: ServiceBlockItemType) => {
   const windowSize = useWindowSize();
   return (
     <div className="relative flex flex-col lg:flex-row justify-between items-center container">
-      <div className="w-full lg:w-1/2 xl:w-1/2  text-center lg:text-start">
+      <div className="w-full lg:w-1/2  text-center lg:text-start">
         <div className="relative flex flex-col justify-between">
           <h1 className="text-primary text-4xl font-bold">{item?.title}</h1>
-          <img
+          <Image
             src="/assets/icons/Clip.svg"
+            alt="underline"
+            width={450}
+            height={450}
             className="absolute bottom-0 hidden md:block"
           />
         </div>
@@ -41,12 +44,12 @@ const SlidesCard = (item: ServiceBlockItemType) => {
               src={slide.media.url}
               alt={slide.media.alt}
               width={
-                windowSize.width < 768
+                windowSize.width < 550
                   ? slide.media.width / 2
                   : slide.media.width
               }
               height={
-                windowSize.width < 768
+                windowSize.width < 550
                   ? slide.media.height / 2
                   : slide.media.height
               }

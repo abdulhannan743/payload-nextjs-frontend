@@ -8,6 +8,7 @@ import {
   ServiceBlockItemType,
   ServiceBlockType,
 } from "@/src/types/ServiceBlockTypes";
+import Image from "next/image";
 
 type PortfolioProps = {
   portfolioData: ServiceBlockType;
@@ -20,9 +21,11 @@ const PortfolioCarousalCard = (item: ServiceBlockItemType) => (
       className="block hover:text-primary hover:underline"
     >
       <div className="pb-12">
-        <img
-          src={item?.image?.url}
-          alt={item?.image?.alt}
+        <Image
+          src={item?.image?.url || ""}
+          alt={item?.image?.alt || ""}
+          width={item?.image?.width}
+          height={item?.image?.height}
           className="w-full h-auto mb-3 object-cover"
         />
         <div className="flex items-center justify-between">
@@ -39,24 +42,24 @@ function PortfolioSection({ portfolioData }: PortfolioProps) {
     <div className="container py-12 mx-auto">
       <div className="text-left mb-8 md:mb-12 flex flex-col gap-4  max-w-3xl">
         <h3 className="text-primary text-lg font-bold uppercase">
-          {portfolioData.blockName}
+          {portfolioData?.blockName}
         </h3>
         <h1 className="text-3xl md:text-4xl font-bold text-lightDark">
-          {portfolioData.title}
+          {portfolioData?.title}
         </h1>
         <div className="flex">
           <DottedLine />
         </div>
-        <p className="text-lg text-[#1F1F1F]">{portfolioData.description}</p>
+        <p className="text-lg text-[#1F1F1F]">{portfolioData?.description}</p>
       </div>
       <Link
-        href={portfolioData.link?.[0]?.url || "#"}
+        href={portfolioData?.link?.[0]?.url || "#"}
         className="hover:underline block md:hidden mb-8"
       >
         <div className="flex items-center gap-1">
           <TriangleRightIcon className="w-6 h-6 text-primary" />
           <p className="text-lg font-semibold text-black">
-            {portfolioData.link?.[0]?.label}
+            {portfolioData?.link?.[0]?.label}
           </p>
         </div>
       </Link>
@@ -67,13 +70,13 @@ function PortfolioSection({ portfolioData }: PortfolioProps) {
         shouldFiveSlidesPerViewEnable={true}
       />
       <Link
-        href={portfolioData.link?.[0]?.url || "#"}
+        href={portfolioData?.link?.[0]?.url || "#"}
         className="hover:underline hidden md:block"
       >
         <div className="flex items-center gap-1">
           <TriangleRightIcon className="w-6 h-6 text-primary" />
           <p className="text-lg font-semibold text-lightDark">
-            {portfolioData.link?.[0]?.label}
+            {portfolioData?.link?.[0]?.label}
           </p>
         </div>
       </Link>

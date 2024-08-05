@@ -64,7 +64,12 @@ const AIDevelopmentServices = ({
       </div>
       <div className="relative">
         <div className="absolute right-0">
-          <img src="assets/images/semiOval.png" alt="" />
+          <Image
+            src="/assets/images/semiOval.png"
+            alt="semi oval"
+            width={250}
+            height={250}
+          />
         </div>
         <EnterprisePlanning
           planningSectionData={DevelopmentPlanningSectionData}
