@@ -22,7 +22,7 @@ const TechnologyStack = ({
       </div>
       {
         <div
-          className={`grid grid-cols-2 sm:grid-cols-3 gap-10 mt-10 ${
+          className={`grid grid-cols-2 sm:grid-cols-4 gap-10 mt-10 ${
             technologySectionData?.content.length == 6 ? "md:grid-cols-3" : ""
           }`}
         >

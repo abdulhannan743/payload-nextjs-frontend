@@ -1,18 +1,15 @@
 import React from "react";
 import HeroSection from "../sharedComponents/HeroSection";
 import ProcessSection from "./ProcessSection";
+import Image from "next/image";
 import TechnologyStack from "./TechnologyStack";
-import type { ServiceBlockType } from "@/src/types/ServiceBlockTypes";
-import type { LayoutItemType } from "@/src/types/CommonTypes";
 import ServiceInfoSection from "../sharedComponents/ServiceInfoSection";
-import UiUxDesign from "./uiux-Design";
 import AccordianSection from "../sharedComponents/AccordianSection";
 import ServicesSection from "../Home/ServicesSection";
-import "./ui-ux.css";
-import Image from "next/image";
+import type { ServiceBlockType } from "@/src/types/ServiceBlockTypes";
 
 interface HeroSectionProps {
-  uiUxPageData: LayoutItemType[];
+  uiUxPageData: any;
 }
 const UI_UX = ({ uiUxPageData }: HeroSectionProps) => {
   const heroSectionData: any = uiUxPageData?.find(
