@@ -23,9 +23,9 @@ async function ContactUsPage() {
     (item: any) => item?.blockName === "Hero"
   );
   return (
-    <>
+    <div className="px-4">
       <HeaderBanner HeaderBannerData={headerSectionData} />
-    </>
+    </div>
   );
 }
 
