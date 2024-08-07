@@ -14,6 +14,7 @@ import { AboutLayoutItemType } from "@/src/types/AboutUsTypes";
 import { ServiceBlockType } from "@/src/types/ServiceBlockTypes";
 import { DataAnalyticsOverviewType } from "@/src/types/DataAnalyticsTypes";
 import { fetchMetadata } from "@/src/utils/metaData";
+import Image from "next/image";
 
 export async function generateMetadata(): Promise<Metadata> {
   const url = getPageURL(RESOURCE_TYPES.ENTERPRISE_DATA_AND_ANALYTICS);
@@ -52,16 +53,19 @@ async function EnterpriseDataAndAnalyticsPage() {
   );
 
   return (
+    <div>
+      <HeroSection heroSectionData={heroSectionData} />
     <div className="relative">
       <div className="absolute top-0 right-0 z-[-1]">
-        <img
-          src="/assets/images/oval_background.png"
-          alt="heroSectionBg"
-          className="w-full h-full"
-        />
+          <Image
+            src="/assets/images/oval_background.png"
+            alt="heroSectionBg"
+            width={430}
+            height={430}
+          />
       </div>
-      <HeroSection heroSectionData={heroSectionData} />
       <ServiceInfoSection sectionData={serviceInfoSectionData} />
+     </div>
       <AccordianSection accordianSectionData={accordianSectionData} />
       <div className="relative">
         <div className="absolute w-full flex justify-center">

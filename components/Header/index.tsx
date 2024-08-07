@@ -36,7 +36,11 @@ function transformData(data: HeaderType): { navLinks: NavLinkType[] } {
     { navLinks: [] }
   );
 }
-
+export const metadata = {
+  icons: {
+    icon: '/favicon.webp',
+  },
+}
 export default function Header({ header }: { header: HeaderType }) {
   const pathname = usePathname();
 
@@ -50,11 +54,12 @@ export default function Header({ header }: { header: HeaderType }) {
   // const IndustriesSubMenu = newData.navLinks.find(
   //   (item) => item.label === "Industries"
   // )?.subMenu;
-
+  
   return (
-    <header className="bg-white py-14">
+    <div className="w-full md:container sticky top-0 z-50">
+    <header className="bg-white my-14">
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between lg:px-8 lg:rounded-xl lg:shadow-header-shadow lg:p-3 lg:py-6 relative"
+        className="mx-auto flex items-center sticky z-50 justify-between lg:px-8 lg:rounded-xl lg:shadow-header-shadow lg:p-3 lg:py-6 relative"
         aria-label="Global"
       >
         <div className="text-black ml-8 sm:ml-12 md:ml-16 lg:hidden">
@@ -90,7 +95,7 @@ export default function Header({ header }: { header: HeaderType }) {
               />
               <div className="dropdown-content">
                 {(link.label === "Services" || link.label === "Industries") && (
-                  <div className="mx-auto max-w-7xl px-16 lg:rounded-xl py-6 bg-white lg:shadow-header-shadow">
+                  <div className="mx-auto px-16 lg:rounded-xl py-6 bg-white lg:shadow-header-shadow">
                     {(link.label === "Services" ||
                       link.label === "Industries") &&
                       servicesSubMenu && (
@@ -116,5 +121,6 @@ export default function Header({ header }: { header: HeaderType }) {
         </Link>
       </nav>
     </header>
+  </div>
   );
 }

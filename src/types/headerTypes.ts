@@ -34,12 +34,7 @@ export type SubMenuType = {
 };
 
 export interface HeaderType {
-  logo: {
-    url: string;
-    width: number;
-    height: number;
-    alt: string;
-  };
+  logo: Image;
   navLinks: NavLinkType[];
   link: {
     label: string;

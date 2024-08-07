@@ -44,7 +44,13 @@ function DeveloperHeroSection({ heroSectionData }: HeroSectionProps) {
           <div>
             <div className="relative">
               <h1 className="text-primary">{heading}</h1>
-              <img src="/assets/icons/Clip.svg" className="absolute bottom-0" />
+              <Image
+                src="/assets/icons/Clip.svg"
+                alt="clip icon"
+                className="absolute bottom-0"
+                width={350}
+                height={350}
+              />
             </div>
             <h1 className="text-dark-blue font-normal">{subHeading}</h1>
           </div>

@@ -47,13 +47,13 @@ function WhyAllZoneSection({ whyAllzoneData }: WhyAllZoneSectionProps) {
           !whyAllzoneData?.description && "max-w-3xl"
         }`}
       >
-        {whyAllzoneData.title}
+        {whyAllzoneData?.title}
       </h1>
       <div className="pb-7">
         <DottedLine />
       </div>
       <p className="text-gray text-center mb-7 max-w-4xl mx-auto">
-        {whyAllzoneData.description}
+        {whyAllzoneData?.description}
       </p>
       <CarousalContainer
         carousalData={whyAllzoneData?.items}

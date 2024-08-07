@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 import { ServiceType } from "@/src/types/ServicesTypes";
 import { PageLink } from "@/src/types/ServiceBlockTypes";
+import Image from "next/image";
 
 type Link = PageLink;
 
@@ -63,9 +64,11 @@ function ServiceSection({
     <div className={`${backgroundDark ? "bg-[#0D2234]" : ""} py-16`}>
       <div className="container mx-auto">
         <div className="flex items-center gap-4">
-          <img
+          <Image
             src={`/assets/icons/${serviceSectionData?.iconName}.svg`}
             alt={`${serviceSectionData?.iconName} icon`}
+            width={50}
+            height={50}
           />
           <h1
             className={`text-2xl md:text-4xl font-bold ${

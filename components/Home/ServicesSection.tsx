@@ -2,6 +2,7 @@ import React from "react";
 import ScrollableContainer from "../ui/ScrollableContainer";
 import { ServiceBlockType } from "@/src/types/ServiceBlockTypes";
 import DottedLine from "../ui/DottedLine";
+import Image from "next/image";
 
 type ServicesProps = {
   serviceData: ServiceBlockType | undefined;
@@ -45,9 +46,11 @@ function ServicesSection({
                 className="bg-white p-4 shadow-md rounded-lg min-w-[350px] max-w-[350px] mx-auto"
                 style={{ boxShadow: "0px 0px 5px 1px #0000000D" }}
               >
-                <img
+                <Image
                   src={item?.image?.url ?? `/assets/icons/${item.iconName}.svg`}
                   alt={item?.image?.alt ?? `${item.iconName} icon`}
+                  width={item?.image?.width ?? 50}
+                  height={item?.image?.height ?? 50}
                   className="mb-3"
                 />
                 <h3 className="text-lg font-bold text-primary mb-2">

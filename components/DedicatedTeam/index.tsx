@@ -7,6 +7,7 @@ import TechnologyStackSection from "../EnterpriseSoftwareServices/TechnologyStac
 import AccordianSection from "../sharedComponents/AccordianSection";
 import type { ServiceBlockItemType } from "@/src/types/ServiceBlockTypes";
 import WhyAllZoneSection from "../Home/WhyAllZoneSection";
+import Image from "next/image";
 
 type DedicatedTeamDataProps = {
   DedicatedTeamData: AboutLayoutItemType[];
@@ -85,10 +86,12 @@ const DedicatedTeam = ({ DedicatedTeamData }: DedicatedTeamDataProps) => {
         accordianContent={accordianContentCard}
       />
       <div className="relative">
-        <div className="absolute top-12 md:top-0 z-[0] w-full">
-          <img
+        <div className="absolute flex items-center justify-center top-12 md:top-0 z-[0] w-full overflow-hidden">
+          <Image
             src="/assets/images/dedicatedTeam.png"
             alt="Technology Background"
+            width={1440}
+            height={1440}
             className="w-full h-full"
           />
         </div>

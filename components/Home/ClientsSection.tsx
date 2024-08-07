@@ -3,6 +3,7 @@ import React from "react";
 import clsx from "clsx";
 import { ChevronRightIcon, ChevronLeftIcon } from "@radix-ui/react-icons";
 import { ServiceBlockType } from "@/src/types/ServiceBlockTypes";
+import Image from "next/image";
 
 type ClientsSectionProps = {
   clientsData: ServiceBlockType;
@@ -13,13 +14,13 @@ function ClientsSection({ clientsData }: ClientsSectionProps) {
 
   const handlePrev = () => {
     setActiveIndex((prevIndex) =>
-      prevIndex === 0 ? clientsData.items.length - 1 : prevIndex - 1
+      prevIndex === 0 ? clientsData?.items?.length - 1 : prevIndex - 1
     );
   };
 
   const handleNext = () => {
     setActiveIndex((prevIndex) =>
-      prevIndex === clientsData.items.length - 1 ? 0 : prevIndex + 1
+      prevIndex === clientsData?.items?.length - 1 ? 0 : prevIndex + 1
     );
   };
 
@@ -55,16 +56,18 @@ function ClientsSection({ clientsData }: ClientsSectionProps) {
                   }
                 )}
               >
-                <img
-                  src={item?.image?.url}
-                  alt={item?.image?.alt}
-                  className="object-cover h-full w-full"
-                />
+                 <Image
+                  src={item?.image?.url || ""}
+                  alt={item?.image?.alt || ""}
+                  width={item?.image?.width}
+                  height={item?.image?.height}
+                   className="object-cover h-full w-full"
+                  />
               </div>
             ))}
             <button
               onClick={handleNext}
-              disabled={activeIndex === clientsData?.items.length - 1}
+              disabled={activeIndex === clientsData?.items?.length - 1}
               className="text-white hidden md:block"
             >
               <ChevronRightIcon className="w-6 h-6" />
@@ -72,7 +75,7 @@ function ClientsSection({ clientsData }: ClientsSectionProps) {
           </div>
           <div className="text-center text-white flex flex-col items-center">
             <p className="text-sm max-w-2xl mx-auto mb-3">
-              {clientsData.items[activeIndex]?.description}
+              {clientsData?.items[activeIndex]?.description}
             </p>
             <div className="flex justify-between align-center w-full md:w-auto">
               <button
@@ -84,15 +87,15 @@ function ClientsSection({ clientsData }: ClientsSectionProps) {
               </button>
               <div>
                 <h3 className="text-lg font-bold mb-2">
-                  {clientsData.items[activeIndex]?.title}
+                  {clientsData?.items[activeIndex]?.title}
                 </h3>
                 <p className="text-sm text-secondary font-bold">
-                  {clientsData.items[activeIndex]?.iconName}
+                  {clientsData?.items[activeIndex]?.iconName}
                 </p>
               </div>
               <button
                 onClick={handleNext}
-                disabled={activeIndex === clientsData?.items.length - 1}
+                disabled={activeIndex === clientsData?.items?.length - 1}
                 className="text-white md:hidden"
               >
                 <ChevronRightIcon className="w-6 h-6" />

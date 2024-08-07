@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -50,8 +51,8 @@ const AwardWinningSection = () => {
             </svg>
           </Link>
         </div>
-        <img
-          src="assets/images/curvedText.png"
+        <Image
+          src="/assets/images/curvedText.png"
           alt="rotating text"
           width={250}
           height={250}
