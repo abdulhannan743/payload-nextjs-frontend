@@ -6,6 +6,7 @@ import { getPageURL } from "@/src/utils";
 import { fetchWrapper } from "@/src/utils/fetchWrapper";
 import { fetchMetadata } from "@/src/utils/metaData";
 import HeroSection from "@/components/sharedComponents/HeroSection";
+import HeaderBanner from "@/components/sharedComponents/HeaderBanner";
 
 export async function generateMetadata(): Promise<Metadata> {
   const url = getPageURL(RESOURCE_TYPES.CONTACT_US);
@@ -18,13 +19,13 @@ async function ContactUsPage() {
   });
   const homeData = response?.docs[0].layout;
 
-  const heroSectionData = homeData?.find(
+  const headerSectionData = homeData?.find(
     (item: any) => item?.blockName === "Hero"
   );
   return (
-    <>
-      <HeroSection heroSectionData={heroSectionData} isContentCentered={true} />
-    </>
+    <div className="px-4">
+      <HeaderBanner HeaderBannerData={headerSectionData} />
+    </div>
   );
 }
 
