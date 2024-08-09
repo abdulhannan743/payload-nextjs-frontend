@@ -6,6 +6,7 @@ import Analytics from "../sharedComponents/AnalyticsServices";
 import DataAnalyticsOverview from "../sharedComponents/DataAnalyticsOverview";
 import TechnologyStack from "../ui-ux/TechnologyStack";
 import CustomDevelopment from "./CustomDevelopment";
+import EnterprisePlanning from "../AI-Development-Services/EnterpriseWebApplicationPlanning";
 
 type IoTDevelopmentProps = {
   IoTDevelopmentData: any;
@@ -61,11 +62,9 @@ function IoTDevelopment({ IoTDevelopmentData }: IoTDevelopmentProps) {
           width={60}
           height={60}
         />
-        </div>
-        <HeroSection heroSectionData={data.businessGrowthSoftware} />
       </div>
+      <HeroSection heroSectionData={data.businessGrowthSoftware} />
       <ServiceInfoSection sectionData={data.companyBenifitsInfoData} />
-
       <div className="w-full overflow-hidden -z-1">
         <Image
           src="/assets/images/iot.png"
@@ -75,21 +74,14 @@ function IoTDevelopment({ IoTDevelopmentData }: IoTDevelopmentProps) {
           className="w-full h-full"
         />
       </div>
-
       <DataAnalyticsOverview analyticsData={data.analyticsData} />
-
       <Analytics analyticsData={data.analytics} />
       <TechnologyStack technologySectionData={data.technologySectionData} />
-      <div className="realtive w-full">
-        <div className="absolute right-0">
-        <Image
-            src="/assets/images/semiOval.png"
-            alt="semi oval"
-            width={250}
-            height={250}
-          />
-        </div>
+      <div className="hidden lg:block">
         <CustomDevelopment data={data.customDevelopmentData} />
+      </div>
+      <div className="block lg:hidden">
+        <EnterprisePlanning planningSectionData={data.customDevelopmentData} />
       </div>
     </div>
   );
