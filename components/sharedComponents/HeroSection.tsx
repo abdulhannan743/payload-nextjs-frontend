@@ -38,8 +38,8 @@ function HeroSection({
   };
 
   return (
-    <div className="container mx-auto w-full ">
-      <div className="container relative px-0 max-auto overflow-hidden rounded-md">
+    <div className="container mx-auto w-full">
+      <div className="container relative px-0 max-auto w-full h-full overflow-hidden rounded-md">
         <div
           className={`rounded-md bg-black/50 text-white w-full min-h-[544px] px-6 md:px-16 py-12 relative z-10 flex items-center ${
             isContentCentered ? "justify-center" : ""
@@ -70,7 +70,7 @@ function HeroSection({
           </div>
         </div>
         <Image
-          className="absolute inset-0 object-cover w-full bg-cover lg:object-fill"
+          className="absolute inset-0 object-cover w-full h-full bg-cover lg:object-fill"
           src={heroSectionData?.Image?.url || ""}
           alt={heroSectionData?.Image?.alt || ""}
           width={heroSectionData?.Image?.width}

@@ -38,9 +38,9 @@ function transformData(data: HeaderType): { navLinks: NavLinkType[] } {
 }
 export const metadata = {
   icons: {
-    icon: '/favicon.webp',
+    icon: "/favicon.webp",
   },
-}
+};
 export default function Header({ header }: { header: HeaderType }) {
   const pathname = usePathname();
 
@@ -54,73 +54,75 @@ export default function Header({ header }: { header: HeaderType }) {
   // const IndustriesSubMenu = newData.navLinks.find(
   //   (item) => item.label === "Industries"
   // )?.subMenu;
-  
+
   return (
     <div className="w-full md:container sticky top-0 z-50">
-    <header className="bg-white my-14">
-      <nav
-        className="mx-auto flex items-center sticky z-50 justify-between lg:px-8 lg:rounded-xl lg:shadow-header-shadow lg:p-3 lg:py-6 relative"
-        aria-label="Global"
-      >
-        <div className="text-black ml-8 sm:ml-12 md:ml-16 lg:hidden">
-          <NavMenu logo={header?.logo} newData={newData} />
-        </div>
-        <div className="flex lg:flex-1">
-          <Link href="/">
-            <Image
-              src={header.logo.url}
-              className="h-10 w-auto"
-              width={header.logo.width}
-              height={header.logo.height}
-              alt={header.logo.alt}
-            />
-          </Link>
-        </div>
-        <ul className="hidden lg:flex lg:gap-x-6 text-navbar-black text-sm">
-          {newData.navLinks.map((link) => (
-            <div
-              className={`nav-item border-b-2 hover:text-primary hover:border-primary ${
-                pathname === `/${link.link.slug}` ||
-                (link.link.slug === "home" && pathname === "/")
-                  ? "text-primary border-primary"
-                  : "border-transparent"
-              }`}
-              key={link.label}
-            >
-              <NavItem
-                link={link}
-                fontWeight="font-semibold"
-                closeSheet={undefined}
-                showPlusIcon={undefined}
+      <header className="bg-white my-14">
+        <nav
+          className="lg:mx-auto md:mx-auto flex items-center sticky z-50 justify-between lg:px-8 rounded-xl shadow-header-shadow p-3 lg:py-6 relative mx-5"
+          aria-label="Global"
+        >
+          <div className="flex lg:flex-1">
+            <Link href="/">
+              <Image
+                src={header.logo.url}
+                className="h-10 w-auto"
+                width={header.logo.width}
+                height={header.logo.height}
+                alt={header.logo.alt}
               />
-              <div className="dropdown-content">
-                {(link.label === "Services" || link.label === "Industries") && (
-                  <div className="mx-auto px-16 lg:rounded-xl py-6 bg-white lg:shadow-header-shadow">
-                    {(link.label === "Services" ||
-                      link.label === "Industries") &&
-                      servicesSubMenu && (
-                        <ServicesSubMenu servicesSubMenu={servicesSubMenu} />
-                      )}
-                    {/* just for the future reference
+            </Link>
+          </div>
+
+          <ul className="hidden lg:flex lg:gap-x-6 text-navbar-black text-sm">
+            {newData.navLinks.map((link) => (
+              <div
+                className={`nav-item border-b-2 hover:text-primary hover:border-primary ${
+                  pathname === `/${link.link.slug}` ||
+                  (link.link.slug === "home" && pathname === "/")
+                    ? "text-primary border-primary"
+                    : "border-transparent"
+                }`}
+                key={link.label}
+              >
+                <NavItem
+                  link={link}
+                  fontWeight="font-semibold"
+                  closeSheet={undefined}
+                  showPlusIcon={undefined}
+                />
+                <div className="dropdown-content">
+                  {(link.label === "Services" ||
+                    link.label === "Industries") && (
+                    <div className="mx-auto px-16 lg:rounded-xl py-6 bg-white lg:shadow-header-shadow">
+                      {(link.label === "Services" ||
+                        link.label === "Industries") &&
+                        servicesSubMenu && (
+                          <ServicesSubMenu servicesSubMenu={servicesSubMenu} />
+                        )}
+                      {/* just for the future reference
                   {link.label === "Industries" && (
                     <TechnologiesSubMenu />
                   )} */}
-                  </div>
-                )}
+                    </div>
+                  )}
+                </div>
               </div>
-            </div>
-          ))}
-        </ul>
-        <Link href={`/${buttonUrl}`}>
-          <Button
-            variant={"ghost"}
-            className="hidden md:block border border-blue-700 text-blue-700 rounded-md items-center md:ml-0 lg:ml-10 w-28 h-9 font-bold text-sm font-roboto md:mr-12 lg:mr-0"
-          >
-            {buttonLabel}
-          </Button>
-        </Link>
-      </nav>
-    </header>
-  </div>
+            ))}
+          </ul>
+          <Link href={`/${buttonUrl}`}>
+            <Button
+              variant={"ghost"}
+              className="hidden md:block border border-blue-700 text-blue-700 rounded-md items-center md:ml-0 lg:ml-10 w-28 h-9 font-bold text-sm font-roboto md:mr-12 lg:mr-0"
+            >
+              {buttonLabel}
+            </Button>
+          </Link>
+          <div className="text-black ml-8 sm:ml-12 md:ml-16 lg:hidden">
+            <NavMenu logo={header?.logo} newData={newData} />
+          </div>
+        </nav>
+      </header>
+    </div>
   );
 }

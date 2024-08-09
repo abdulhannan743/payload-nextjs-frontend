@@ -35,7 +35,7 @@ function NavMenu({ logo, newData }: NavMenuProps) {
             <FiAlignJustify size={40} />
           </button>
         </SheetTrigger>
-        <SheetContent side={"left"} className="w-full">
+        <SheetContent side={"right"} className="w-full">
           <SheetHeader>
             <SheetTitle>
               <div className="flex lg:flex-1">
