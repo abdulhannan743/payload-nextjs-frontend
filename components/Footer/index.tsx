@@ -27,57 +27,59 @@ const Footer: React.FC = () => {
 
   return (
     <footer className="bg-zinc-200 pt-10 md:pt-14">
-      <FlexContainer className="lg:flex-row md:flex-row flex-col-reverse sm:flex-wrap lg:flex-nowrap md:flex-wrap container">
-        {companySection &&
-          companySection.Image &&
-          companySection.text &&
-          companySection.link?.[0] && (
-            <FlexChild className="hidden sm:hidden lg:block">
-              <CompanyCard
-                footerImage={companySection.Image}
-                text={companySection.text}
-                buttonData={companySection.link[0]}
-              />
+      <div className="container">
+        <FlexContainer className="lg:flex-row md:flex-row flex-col-reverse sm:flex-wrap lg:flex-nowrap md:flex-wrap ">
+          {companySection &&
+            companySection.Image &&
+            companySection.text &&
+            companySection.link?.[0] && (
+              <FlexChild className="hidden sm:hidden lg:block">
+                <CompanyCard
+                  footerImage={companySection.Image}
+                  text={companySection.text}
+                  buttonData={companySection.link[0]}
+                />
+              </FlexChild>
+            )}
+          {heading && navLinks && (
+            <FlexChild>
+              <NavigationCard heading={heading} navLinks={navLinks} />
             </FlexChild>
           )}
-        {heading && navLinks && (
-          <FlexChild>
-            <NavigationCard heading={heading} navLinks={navLinks} />
-          </FlexChild>
-        )}
-        {linkHeading && link && (
-          <FlexChild>
-            <TechnologiesCard linkHeading={linkHeading} link={link} />
-          </FlexChild>
-        )}
-        {contactSection && (
-          <FlexChild>
-            <ContactInfoCard layout={contactSection} />
-          </FlexChild>
-        )}
-        {companySection &&
-          companySection.Image &&
-          companySection.text &&
-          companySection.link?.[0] && (
-            <FlexChild className="block lg:hidden sm:block ">
-              <CompanyCard
-                footerImage={companySection.Image}
-                text={companySection.text}
-                buttonData={companySection.link[0]}
-              />
+          {linkHeading && link && (
+            <FlexChild>
+              <TechnologiesCard linkHeading={linkHeading} link={link} />
             </FlexChild>
           )}
-      </FlexContainer>
-      {imageSection?.slides?.[0]?.media && (
-        <div className="ml-4 md:ml-32 mt-4 md:mt-0 md:mr-20">
-          <Image
-            src={imageSection.slides[0].media.url}
-            alt={imageSection.slides[0].media.alt}
-            width={imageSection.slides[0].media.width}
-            height={imageSection.slides[0].media.height}
-          />
-        </div>
-      )}
+          {contactSection && (
+            <FlexChild>
+              <ContactInfoCard layout={contactSection} />
+            </FlexChild>
+          )}
+          {companySection &&
+            companySection.Image &&
+            companySection.text &&
+            companySection.link?.[0] && (
+              <FlexChild className="block lg:hidden sm:block">
+                <CompanyCard
+                  footerImage={companySection.Image}
+                  text={companySection.text}
+                  buttonData={companySection.link[0]}
+                />
+              </FlexChild>
+            )}
+        </FlexContainer>
+        {imageSection?.slides?.[0]?.media && (
+          <div className=" mt-4 md:mt-0 md:mr-20">
+            <Image
+              src={imageSection.slides[0].media.url}
+              alt={imageSection.slides[0].media.alt}
+              width={imageSection.slides[0].media.width}
+              height={imageSection.slides[0].media.height}
+            />
+          </div>
+        )}
+      </div>
 
       <div className="bg-sky-950 lg:max-w-screen-xl md:w-10/12 h-16 flex flex-col md:flex-row items-center justify-between pl-4 md:pl-16 pr-4 md:pr-24 clip-diagonal-top-right mt-4 md:mt-0">
         {textSection && (

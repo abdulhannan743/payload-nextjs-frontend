@@ -5,6 +5,7 @@ import { RESOURCE_TYPES } from "@/src/constants/common";
 import { fetchWrapper } from "@/src/utils/fetchWrapper";
 import { fetchMetadata } from "@/src/utils/metaData";
 import { getPageURL } from "@/src/utils";
+import Careers from "@/components/Careers";
 
 export async function generateMetadata(): Promise<Metadata> {
   const url = getPageURL(RESOURCE_TYPES.CAREERS);
@@ -15,18 +16,12 @@ async function CareersPage() {
     url: getPageURL(RESOURCE_TYPES.CAREERS),
     method: "GET",
   });
-  const homeData = response?.docs[0].layout;
+  const CareersData = response?.docs[0].layout;
   return (
     <>
-      {homeData?.map((data: any) => (
-        // just for the time being
-        <div key={data?.id}>
-          <h3 className="text-lg font-bold text-primary mb-2">
-            {data?.heading}
-          </h3>
-          <p className="text-sm text-gray text-wrap">{data?.text}</p>
-        </div>
-      ))}
+      <div>
+        <Careers CareersData={CareersData} />
+      </div>
     </>
   );
 }
