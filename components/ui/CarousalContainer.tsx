@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Pagination, Navigation, Autoplay } from "swiper";
+import { Pagination, Navigation, Autoplay, Mousewheel } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Swiper styles
 import "swiper/css";
@@ -13,6 +13,8 @@ type CarousalContainerProps = {
   autoPlay?: boolean;
   isOneSlidePerView?: boolean;
   shouldFiveSlidesPerViewEnable?: boolean;
+  isMouseWheelEnable?: boolean;
+  // isPaginationEnable?: boolean;
 };
 
 function CarousalContainer({
@@ -22,14 +24,18 @@ function CarousalContainer({
   autoPlay = false,
   isOneSlidePerView = true,
   shouldFiveSlidesPerViewEnable = false,
+  isMouseWheelEnable = false,
 }: CarousalContainerProps) {
   return (
     <Swiper
       className={className}
-      modules={[Pagination, Navigation, Autoplay]}
+      modules={[Pagination, Navigation, Autoplay, Mousewheel]}
       spaceBetween={40}
       navigation
-      pagination={autoPlay ? false : { clickable: true }}
+      pagination={
+        autoPlay ? false : isMouseWheelEnable ? false : { clickable: true }
+      }
+      mousewheel={isMouseWheelEnable}
       scrollbar={autoPlay ? false : { draggable: true }}
       autoplay={
         autoPlay && {
@@ -69,7 +75,12 @@ function CarousalContainer({
         `}
       </style>
       {carousalData?.map((item: any, index: number) => (
-        <SwiperSlide key={index}>{renderCard(item, index)}</SwiperSlide>
+        <SwiperSlide
+          key={index}
+          className={`${isMouseWheelEnable ? "Sticky-child-component" : ""}`}
+        >
+          {renderCard(item, index)}
+        </SwiperSlide>
       ))}
     </Swiper>
   );

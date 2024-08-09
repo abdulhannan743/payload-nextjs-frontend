@@ -41,7 +41,7 @@ const EnterprisePlanning = ({
         {planningSectionData?.layout.map((item, index: number) => (
           <div key={index} className="relative">
             <div
-              className={`flex lg:flex-row flex-col-reverse w-full lg:mb-20 mb-10 items-center ${
+              className={`flex lg:flex-row flex-col gap-10 w-full lg:mb-20 my-10 items-center ${
                 index % 2 !== 0 ? "lg:flex-row-reverse flex-col" : ""
               }`}
             >
@@ -62,7 +62,7 @@ const EnterprisePlanning = ({
                   </p>
                 </div>
               </div>
-              <div className="lg:w-1/2 w-3/4">
+              <div className="lg:w-1/2  w-full md:w-3/4">
                 <Image
                   src={item.image.url}
                   alt={item.image.alt}
@@ -75,10 +75,13 @@ const EnterprisePlanning = ({
               <Image
                 src={Line1}
                 alt="line"
-                className={`absolute top-full translate-y-[-25%] left-1/2 transform -translate-x-1/2 hidden lg:flex ${
-                  index % 2 !== 0 ? "scale-x-[-1] " : ""
+                className={`container w-72 md:w-96 md:h-60 h-32 mb-10 lg:absolute lg:top-full lg:translate-y-[-25%] lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:flex ${
+                  index % 2 !== 0
+                    ? "lg:scale-x-[-1]"
+                    : "scale-x-[-1] lg:scale-x-90"
                 }`}
                 width={300}
+                height={300}
               />
             ) : (
               <></>
