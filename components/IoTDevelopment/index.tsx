@@ -55,15 +55,16 @@ function IoTDevelopment({ IoTDevelopmentData }: IoTDevelopmentProps) {
   return (
     <div>
       <div className="relative">
-      <div className="absolute max-sm:w-72 max-sm:h-96 top-0 right-0 max-sm:inset-y-[500px] z-[-1]">
-        <Image
-          src="/assets/images/Vector.png"
-          alt="heroSectionBg"
-          width={60}
-          height={60}
-        />
+        <div className="absolute max-sm:w-72 max-sm:h-96 top-0 right-0 max-sm:inset-y-[500px] z-[-1]">
+          <Image
+            src="/assets/images/Vector.png"
+            alt="heroSectionBg"
+            width={450}
+            height={450}
+          />
+        </div>
+        <HeroSection heroSectionData={data.businessGrowthSoftware} />
       </div>
-      <HeroSection heroSectionData={data.businessGrowthSoftware} />
       <ServiceInfoSection sectionData={data.companyBenifitsInfoData} />
       <div className="w-full overflow-hidden -z-1">
         <Image
